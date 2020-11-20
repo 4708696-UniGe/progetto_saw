@@ -1,0 +1,61 @@
+﻿
+.container { 
+    position: relative;
+    width: 50%;
+ }
+
+
+
+.image { 
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+
+.overlay_right {
+    position: absolute;
+    bottom: 15%;
+    left: 0;
+    right: 0;
+    background-color: #008CBA;
+    overflow: hidden;
+    width: 0;
+    height: 70%;
+    transition: .5s ease;
+    display: inline-block;
+}
+
+.overlay_left {
+    position: absolute;
+    bottom: 15%;
+    left: 100%;
+    right: 0;
+    background-color: #008CBA;
+    overflow: hidden;
+    width: 0;
+    height: 70%;
+    transition: .5s ease;
+    display: inline-block;
+}
+
+
+.container:hover .overlay_left { 
+    width: 100%;
+}
+
+.container:hover .overlay_right {
+    left: 0;
+    width: 100%;
+}
+
+
+.text {
+    color: white;
+    position: relative;
+    font-size: 20px;
+    overflow: hidden;
+    top: 10%;
+    left: 0;
+}
