@@ -1,6 +1,7 @@
-﻿.container {
+﻿.container_left {
     position: relative;
     width: 50%;
+
 }
 
 .image {
@@ -9,30 +10,56 @@
     height: auto;
 }
 
-.overlay {
+.overlay_left {
     position: absolute;
-    bottom: 0;
+    bottom: 10%;
     left: 100%;
     right: 0;
-    background-color: #008CBA;
+    background-color: #faebd7;
     overflow: hidden;
     width: 0;
-    height: 100%;
-    transition: .5s ease;
+    height: 80%;
+    transition: 1s ease;
 }
 
-.container:hover .overlay {
+.container_left:hover .overlay_left {
     width: 100%;
 }
 
-.text {
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
+
+.container_right {
+    position: relative;
     left: 50%;
+    right: 0;
+    width: 50%;
+}
+
+.overlay_right {
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    right: 0;
+    background-color: #faebd7;
+    overflow: hidden;
+    width: 0;
+    height: 80%;
+    transition: 1s ease;
+}
+
+.container_right:hover .overlay_right {
+    width: 100%;
+    left: -100%;
+}
+
+.text {
+    color: black;
+    font-size: 20px;
+    padding: 5px;
+    position: absolute;
+    top: 30%;
+    left: 35%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    white-space: nowrap;
+    word-wrap: break-word;
 }
