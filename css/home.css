@@ -72,8 +72,13 @@
     white-space: nowrap;
 }
 
-#first_block {
-    top: 45%;
+#title{
+    top: 15%;
+    font-size: 2vw;
+}
+
+#block {
+    top: 55%;
 }
 
 #inline_link {

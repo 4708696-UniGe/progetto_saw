@@ -1,11 +1,11 @@
 nav {
-    margin-bottom: 10px;
+    margin-bottom: 4vw;
     padding: 0;
     background-color: #2D3142;
     width: 100%;
     border-width: 1px 0;
     font-family: system-ui;
-    font-size: 0.8vw;
+    font-size: 1vw;
     color: #FBFFF4;
     border: 1px solid black;
 }
@@ -23,7 +23,7 @@ nav li {
 nav a:link,
 nav a:visited {
     color: #FBFFF4;
-    padding: 20px 40px 4px 10px;
+    padding: 0px 40px 40px 10px;
     width: auto;
     text-decoration: none;
 }
@@ -37,6 +37,7 @@ body {
 }
 
 footer {
+    margin-top: 4vw;
     background-color: #2D3142;
     padding-bottom: 0.1vw;
     font-family: system-ui;
@@ -50,10 +51,16 @@ footer li {
 }
 
 #logo {
-    width: auto;
-    height: 70%;
-    max-height: 8vh;
-    margin-left: 48vw;
+
+    text-align: center;
+    width: 10%;
+    height: 10%;
+}
+
+#logotop {
+    width: 10%;
+    height: 10%;
+    margin-top: -4vw;
 }
 
 #email,

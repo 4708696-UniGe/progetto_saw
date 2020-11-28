@@ -6,29 +6,35 @@
 	<title> System Hospital </title>
 	<link rel="stylesheet" href="../css/home.css">
 	<link rel="stylesheet" href="../css/navbar_footer.css">
+	<link rel="icon" href="../images/icon.png">
 	</head>
 
 	<body>
-			<nav> <?php include 'navbar.php'; ?> </nav>
+		<nav> <?php include 'navbar.php'; ?>
+			<a title="Home" href="home.php">
+			<img id="logotop" src="../images/logo.png" alt="Logo azienda"> </a></nav>
 
 		<div class="container_left">
-			<img src="https://www.infoaut.org/media/k2/items/cache/006c7e95702c8679fc1d4c3cdf4084a0_XL.jpg" alt="Avatar" class = "image" >
+			<img src="../images/prima.jpg" alt="Avatar" class = "image" >
 			<div class="overlay_left">
-			<div class="text" id="first_block">Il nostro obiettivo è offrire assistenza informatica professionale ad imprese. <br> <a title="Scopri di più" href="about.php">Scopri di più</a>  </div>
+			<h1 class = "text" id="title">Chi siamo?<br></h1>
+			<div class="text" id="block">Il nostro obiettivo è offrire assistenza informatica professionale ad imprese. <br> <a title="Scopri di più" href="about.php">Scopri di più</a>  </div>
 		</div>
 	</div>
 
 	<div class="container_right">
-			<img src="https://www.tdblog.it/wp-content/uploads/2018/11/market_server.jpg" alt="Avatar" class="image" >
+			<img src="../images/seconda.jpg" alt="Avatar" class="image" >
 			<div class="overlay_right">
-			<div class="text">Scopri i nostri <a id="inline_link" href="products.php">prodotti.</a> </div>
+			<h1 class = "text" id="title">Cosa offriamo?<br></h1>
+			<div class="text" id="block">Scopri i nostri <a id="inline_link" href="products.php">prodotti.</a> </div>
 		</div>
 	</div>
 
 	<div class="container_left">
-			<img src="https://images-na.ssl-images-amazon.com/images/I/51PqLGdZpaL._AC_SX425_.jpg" alt="Avatar" class="image" >
+			<img src="../images/2.jpg" alt="SO" class="image" >
 			<div class="overlay_left">
-			<div class="text">Su quale piattaforma lavori? <br>Guarda le <a id="inline_link" href="platform_list.php">piattaforme supportate.</a> </div>
+			<h1 class = "text" id="title">Su quale piattaforma lavori?<br></h1>
+			<div class="text" id="block">Trova la tua tra le nostre <a id="inline_link" href="platform_list.php">piattaforme supportate.</a> </div>
 		</div>
 	</div>
 		<footer> <?php include 'footer.php'; ?> </footer>

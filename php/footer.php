@@ -1,5 +1,6 @@
 <?php ?>
-  <img id="logo" src="../images/logo.png" alt="Logo azienda">
+<a title="Home" href="home.php">
+  <img id="logo" src="../images/logo.png" alt="Logo azienda"></a>
 	<ul id"footer">
 	  <li id="email">Email: <a title="Contattaci" href="mailto:s4708696@studenti.unige.it">s4708696@studenti.unige.it</a></li>
 	  <li id="phone">Telefono: +39 3479620471</li>
