@@ -1,12 +1,13 @@
 nav {
     margin-bottom: 10px;
     padding: 0;
-    background-color: dodgerblue;
+    background-color: #2D3142;
     width: 100%;
-    border: 1px solid #2D3142;
     border-width: 1px 0;
     font-family: system-ui;
     font-size: 0.8vw;
+    color: #FBFFF4;
+    border: 1px solid black;
 }
 
 nav ul {
@@ -21,7 +22,7 @@ nav li {
 
 nav a:link,
 nav a:visited {
-    color: #000;
+    color: #FBFFF4;
     padding: 20px 40px 4px 10px;
     width: auto;
     text-decoration: none;
@@ -31,16 +32,28 @@ nav a:hover {
     color: white;
 }
 
+body {
+    background-color: #edf6f9;
+}
+
 footer {
-    background-color: dodgerblue;
+    background-color: #2D3142;
     padding-bottom: 0.1vw;
     font-family: system-ui;
     font-size: 0.8vw;
+    color: #FBFFF4;
 }
 
 footer li {
     display: inline;
     margin: 0;
+}
+
+#logo {
+    width: auto;
+    height: 70%;
+    max-height: 8vh;
+    margin-left: 48vw;
 }
 
 #email,
@@ -51,7 +64,13 @@ footer li {
 
 #email a:link,
 #email a:visited {
+    color: #FBFFF4;
     text-decoration: none;
+}
+
+#email a:hover {
+    text-decoration: underline;
+    text-decoration-color: #fbfff4;
 }
 
 #piva {
