@@ -1,0 +1,107 @@
+﻿.container_left {
+    position: relative;
+    width: 50%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    border-color: #000000;
+}
+
+.overlay_left {
+    position: absolute;
+    bottom: 20%;
+    left: 100.5%;
+    right: 0;
+    background-color: #faebd7;
+    overflow: hidden;
+    width: 0;
+    height: 60%;
+    transition: 1s ease;
+}
+
+.container_left:hover .overlay_left {
+    width: 100%;
+}
+
+
+.container_right {
+    margin-right: 40px;
+    position: relative;
+    left: 50%;
+    width: 50%;
+}
+
+.overlay_right {
+    position: absolute;
+    bottom:20%;
+    left: 0;
+    right: 0;
+    background-color: #faebd7;
+    overflow: hidden;
+    width: 0;
+    height: 60%;
+    transition: 1s ease;
+}
+
+.container_right:hover .overlay_right {
+    width: 100%;
+    left: -100%;
+}
+
+.text {
+    color: black;
+    font-size: 20px;
+    padding: 5px;
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    word-wrap: break-word;
+}
+
+nav {
+    margin-bottom: 10px;
+    padding: 0;
+    background-color: dodgerblue;
+    float: left;
+    width: 100%;
+    border: 1px solid #42432d;
+    border-width: 1px 0;
+}
+
+ul {
+    text-align: right;
+}
+
+nav li {
+    display: inline;
+    padding: 0;
+    margin: 0;
+}
+
+nav a:link,
+nav a:visited {
+    color: #000;
+    padding: 20px 40px 4px 10px;
+    width: auto;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: white;
+}
+
+footer {
+    text-align: center;
+    background-color: dodgerblue;
+}
+
