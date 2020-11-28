@@ -1,0 +1,9 @@
+Funzionalità sito:
+	- Richi : Carrello
+	- Giulia : Chat interna
+	- Carlo : Area amministrativa
+
+Pulsanti Home
+	- about text
+	- rimando a prodotti
+	- piattaforme trattate

@@ -2,7 +2,8 @@
     margin-top: 10px;
     margin-bottom: 10px;
     position: relative;
-    width: 50%;
+    left: 5%;
+    width: 35%;
 }
 
 .image {
@@ -16,7 +17,7 @@
     position: absolute;
     bottom: 20%;
     left: 100%;
-    background-color: #faebd7;
+    background-color: #EF8354;
     overflow: hidden;
     width: 0;
     height: 60%;
@@ -30,16 +31,16 @@
 
 .container_right {
     position: relative;
-    left: 50%;
-    width: 50%;
+    left: 60%;
+    width: 35%;
 }
 
 .overlay_right {
     position: absolute;
-    bottom:20%;
+    bottom: 20%;
     left: 0;
     right: 0;
-    background-color: #faebd7;
+    background-color: #EF8354;
     overflow: hidden;
     width: 0;
     height: 60%;
@@ -52,11 +53,12 @@
 }
 
 .text {
-    color: black;
-    font-size: 1.5vw;
+    color: white;
+    font-family: system-ui;
+    font-size: 1.0vw;
     padding: 5px;
     position: absolute;
-    top: 30%;
+    top: 40%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -64,39 +66,19 @@
     white-space: nowrap;
 }
 
-nav {
-    margin-bottom: 10px;
-    padding: 0;
-    background-color: dodgerblue;
-    width: 100%;
-    border: 1px solid #42432d;
-    border-width: 1px 0;
+#first_block {
+    top: 45%;
 }
 
-ul {
-    text-align: right;
-}
-
-nav li {
+#inline_link {
     display: inline;
-    padding: 0;
-    margin: 0;
 }
 
-nav a:link,
-nav a:visited {
-    color: #000;
-    padding: 20px 40px 4px 10px;
-    width: auto;
+
+.text a:link,
+.text a:visited{
+    color: teal;
     text-decoration: none;
-}
-
-nav a:hover {
-    color: white;
-}
-
-footer {
     text-align: center;
-    background-color: dodgerblue;
+    display: block;
 }
-
