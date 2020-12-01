@@ -10,7 +10,7 @@
 	
 	<link rel="stylesheet" href="../css/socialbar.css">
 	<link rel="stylesheet" href="fontawesome/css/all.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+	
 	</head>
 
 	<body>
