@@ -5,7 +5,7 @@
 
 .icon-bar {
     position: fixed;
-    top: 3.5vw;
+    top: 5vw;
 }
 
 .icon-bar a {
@@ -14,7 +14,7 @@
     padding: 0.7vw;
     transition: all 0.3s ease;
     color: white;
-    font-size: 1vw;
+    font-size: 1.5vw;
     border-radius: 0 1vw 1vw 0;
 }
 

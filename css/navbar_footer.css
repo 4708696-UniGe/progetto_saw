@@ -12,6 +12,7 @@ nav {
 
 nav ul {
     text-align: right;
+    margin-top: -0.5vw;
 }
 
 nav li {
@@ -23,7 +24,7 @@ nav li {
 nav a:link,
 nav a:visited {
     color: #FBFFF4;
-    padding: 0px 40px 40px 10px;
+    padding: 1vw 1vw 1vw 1vw;
     width: auto;
     text-decoration: none;
 }
@@ -51,16 +52,21 @@ footer li {
 }
 
 #logo {
-
+    position: relative;
+    left: 47.4vw;
+    top: 0.6vw;
+    margin-bottom: -0.4vw;
     text-align: center;
     width: 10%;
     height: 10%;
 }
 
 #logotop {
-    width: 10%;
-    height: 10%;
-    margin-top: -4vw;
+    width: auto;
+    height: 3vw;
+    position: absolute;
+    left: 0.8vw;
+    top: 0.2vw;
 }
 
 #email,
