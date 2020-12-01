@@ -11,6 +11,7 @@
 
 	<body>
 		<nav> <?php include 'navbar.php'; ?>
+		<?php include 'socialbar.php'; ?>
 			<a title="Home" href="home.php">
 			<img id="logotop" src="../images/logo.png" alt="Logo azienda"> </a></nav>
 
