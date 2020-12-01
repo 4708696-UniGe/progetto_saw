@@ -10,4 +10,13 @@ Pulsanti Home
 
 
 Wizard aggiunta macchina e richiesta assistenza
-	
+	Richiesta aggiunta macchina dopo form di registration/salta
+		In caso, "Quale sistema operativo usi?"
+Lista di dispositivi reperibile sulla pagina di profilo personale 
+	Possibilità di aggiunta, rimozione, richiesta di assistenza per specifico dispositivo(stile issue GitHub)
+Per gli assistenti-admin
+	Motore di ricerca per id-macchina, id-profilo, sistema operativo, numero issue
+	Pulsante per connessione a macchina, richiesto id-macchina, password temporanea univoca per sessione(?)
+	Caso di fallimento connessione(?)
+	Aggiunta di FLAG(ON/OFF) durante login utente per verifica sessione attiva utente dopo richiesta di connessione da admin
+LOG(?)
