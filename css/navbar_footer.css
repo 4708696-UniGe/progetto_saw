@@ -39,9 +39,9 @@ body {
 
 footer {
     margin-top: 4vw;
+    padding-bottom: 1px;
     background-color: #2D3142;
-    padding-bottom: 0.1vw;
-    font-family: system-ui;
+    font-family: 'coolveticaregular', Arial, sans-serif;
     font-size: 0.8vw;
     color: #FBFFF4;
 }
@@ -49,13 +49,13 @@ footer {
 footer li {
     display: inline;
     margin: 0;
-}
+    }
 
 #logo {
     position: relative;
     left: 47.4vw;
     top: 0.6vw;
-    margin-bottom: -0.4vw;
+    margin-bottom: -3.5vw;
     text-align: center;
     width: 10%;
     height: 10%;
@@ -94,4 +94,19 @@ footer li {
 #copyright {
     float: right;
     padding-right: 1vw;
+}
+
+.social_footer li:last-of-type {
+    margin-right: 0;
+}
+
+.social_footer .fab {
+    font-size: 1.3rem;
+    color: #fefefe;
+}
+
+.social_footer .fab:hover,
+.social_footer .fab:visited {
+    color: #ffffff;
+    transition: color 0.3s ease-in;
 }

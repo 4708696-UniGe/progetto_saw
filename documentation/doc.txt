@@ -7,3 +7,7 @@ Pulsanti Home
 	- about text
 	- rimando a prodotti
 	- piattaforme trattate
+
+
+Wizard aggiunta macchina e richiesta assistenza
+	
