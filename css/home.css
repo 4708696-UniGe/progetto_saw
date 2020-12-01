@@ -72,6 +72,12 @@
     white-space: nowrap;
 }
 
+h1 {
+    font-family: 'bebas_neueregular', Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
 #title{
     top: 15%;
     font-size: 2vw;
