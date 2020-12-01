@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html>
 	<head>
@@ -15,11 +13,11 @@
 
 	<body>
 		<div class="icon-bar">
-			<a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
-			<a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
-			<a href="#" class="google"><i class="fab fa-google"></i></a>
-			<a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
-			<a href="#" class="youtube"><i class="fab fa-youtube"></i></a>
+			<a href="under_construction.php" class="facebook"><i class="fab fa-facebook-f"></i></a>
+			<a href="under_construction.php" class="twitter"><i class="fab fa-twitter"></i></a>
+			<a href="under_construction.php" class="google"><i class="fab fa-google"></i></a>
+			<a href="under_construction.php" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+			<a href="under_construction.php" class="youtube"><i class="fab fa-youtube"></i></a>
 		</div>
 	</body>
 

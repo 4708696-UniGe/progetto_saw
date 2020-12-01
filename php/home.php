@@ -30,7 +30,7 @@
 	</div>
 
 	<div class="container_left">
-			<img src="../images/2.jpg" alt="SO" class="image" >
+			<img src="../images/terza.jpg" alt="SO" class="image" >
 			<div class="overlay_left">
 			<h1 class = "text" id="title">Su quale piattaforma lavori?<br></h1>
 			<div class="text" id="block">Trova la tua tra le nostre <a id="inline_link" href="platform_list.php">piattaforme supportate.</a> </div>
