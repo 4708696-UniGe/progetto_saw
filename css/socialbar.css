@@ -1,0 +1,53 @@
+﻿body {
+    margin: 0;
+    height: 0;
+}
+
+.icon-bar {
+    position: fixed;
+    top: 3.5vw;
+}
+
+.icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 0.7vw;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 2vw;
+    border-radius: 0 1vw 1vw 0;
+}
+
+.icon-bar a:hover {
+    background-color: #EF8354;
+}
+
+.facebook {
+    background: #2D3142;
+    color: white;
+}
+
+.twitter {
+    background: #2D3142;
+    color: white;
+}
+
+.google {
+    background: #2D3142;
+    color: white;
+}
+
+.linkedin {
+    background: #2D3142;
+    color: white;
+}
+
+.youtube {
+    background: #2D3142;
+    color: white;
+}
+
+.content {
+    margin-left: 75vw;
+    font-size: 30vw;
+}
