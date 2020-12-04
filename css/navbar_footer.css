@@ -50,12 +50,16 @@ footer li {
     margin: 0;
     }
 
+div.logo{
+    display: block;
+    text-align: center;
+}
+
 #logo {
     position: relative;
-    left: 47.4vw;
+
     top: 0.6vw;
     margin-bottom: -3.5vw;
-    text-align: center;
     width: 10%;
     height: auto;
 }
