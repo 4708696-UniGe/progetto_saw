@@ -25,5 +25,16 @@
 	echo "Error creating table: " . $conn->error;
 	}
 
+	$firstname = $_POST['firstname'];
+	$lastname = $_POST['lastname'];
+	$email = $_POST['email'];
+	$psw = $_POST['password'];
+
+	$firstname = mysqli_real_escape_string($conn, $firstname);
+	$lastname = mysqli_real_escape_string($conn, $lastname);
+	$email = mysqli_real_escape_string($conn, $email);
+	$psw = mysqli_real_escape_string($conn, $psw)
+
+
 	$conn->close();
 ?>
