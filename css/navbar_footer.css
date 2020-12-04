@@ -1,6 +1,5 @@
 nav {
     margin-bottom: 4vw;
-    padding: 0;
     background-color: #2D3142;
     width: 100%;
     border-width: 1px 0;
@@ -12,7 +11,7 @@ nav {
 
 nav ul {
     text-align: right;
-    margin-top: -0.5vw;
+    margin-top: -2vw;
 }
 
 nav li {
@@ -58,13 +57,13 @@ footer li {
     margin-bottom: -3.5vw;
     text-align: center;
     width: 10%;
-    height: 10%;
+    height: auto;
 }
 
 #logotop {
     width: auto;
     height: 3vw;
-    position: absolute;
+    position: relative;
     left: 0.8vw;
     top: 0.2vw;
 }
