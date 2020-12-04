@@ -1,6 +1,8 @@
 <?php ?>
+<div class="logo">
 <a title="Home" href="home.php">
   <img id="logo" src="../images/logo.png" alt="Logo azienda"></a>
+  </div>
 
 
 	<link rel="stylesheet" href="fontawesome/css/all.css">
