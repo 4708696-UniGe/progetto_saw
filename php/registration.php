@@ -8,13 +8,13 @@
 	<link rel="stylesheet" href="../css/form.css">
     <link rel="icon" href="../images/icon.png">
     </head>
+    <script>var flag=0;</script>
 
     <body>
 
           <?php
     if(isset($_POST['firstname'])) {
-        header('Location: database.php');
-        exit;
+        include('../database/database.php');
     }
     ?>
 
@@ -26,7 +26,8 @@
           <input type="text" name="firstname" placeholder="Nome">
           </br></br>
           <input type="text" name="lastname" placeholder="Cognome">
-          </br></br>
+          </br>
+          <p id="flag_email" style="color:red"></p>
           <input type="email" name="email" placeholder="Email">
           </br></br>
           <input type="password" name="pass" placeholder="Password">
@@ -36,6 +37,16 @@
           <input type="submit" name="submit" value="Invia">
       </form>
       </div>
+
+      <script> 
+        window.onload = flag_email();
+        function flag_email(){
+            if(flag==1){
+              document.getElementById("flag_email").innerHTML = "Questa email esiste gia'.";
+            }
+        }
+      </script>
+
     </body>
 
     <footer> <?php include 'footer.php'; ?> </footer>
