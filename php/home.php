@@ -3,7 +3,7 @@
 	<head>
 	<meta charset="UTF-8">
 	<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
-	<title> System Hospital </title>
+	<title> System Hospital - Home </title>
 	<link rel="stylesheet" href="../css/home.css">
 	<link rel="stylesheet" href="../css/navbar_footer.css">
 	<link rel="icon" href="../images/icon.png">
@@ -36,6 +36,7 @@
 			<div class="text" id="block">Trova la tua tra le nostre <a id="inline_link" href="platform_list.php">piattaforme supportate.</a> </div>
 		</div>
 	</div>
-		<footer> <?php include 'footer.php'; ?> </footer>
 	</body>
+	<footer> <?php include 'footer.php'; ?> </footer>
+
 </html>
