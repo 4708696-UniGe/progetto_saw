@@ -24,6 +24,7 @@
 	}else {
 	echo "Error creating table: " . mysqli_error($conn) . '\n';
 	}
+
 	if(isset($_POST['firstname']) && isset($_POST['lastname']) && isset($_POST['email']) && isset($_POST['pass'])){
 		$firstname = mysqli_real_escape_string($conn, $_POST['firstname']);
 		$lastname = mysqli_real_escape_string($conn, $_POST['lastname']);
@@ -48,7 +49,6 @@
 			} else {
 			    if (mysqli_affected_rows($conn) != 1) {
 					echo "balza";
-
 			        exit();
 			    } else {
 			        header("Location: ../php/home.php");

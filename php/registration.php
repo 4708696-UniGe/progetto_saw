@@ -14,7 +14,7 @@
 
           <?php
     if(isset($_POST['firstname'])) {
-        include('../database/database.php');
+        include('../database/database_reg.php');
     }
     ?>
 
@@ -50,7 +50,5 @@
     </body>
 
     <footer> <?php include 'footer.php'; ?> </footer>
-
-
 
 </html>
