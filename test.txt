@@ -1,2 +1,0 @@
-test correct working of rider id and github integration.
-test 2
