@@ -1,11 +1,13 @@
 <?php ?>
+<link rel="stylesheet" href="fontawesome/css/all.css">
+<link rel="stylesheet" href="../css/footer.css">
 <div class="logo">
 <a title="Home" href="home.php">
   <img id="logo" src="../images/logo.png" alt="Logo azienda"></a>
   </div>
 
 
-	<link rel="stylesheet" href="fontawesome/css/all.css">
+	
     <ul class="social_footer">
       <li><a href="under_construction.php"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
       <li><a href="under_construction.php"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>

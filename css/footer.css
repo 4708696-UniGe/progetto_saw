@@ -1,0 +1,619 @@
+/* Mobile view */
+
+@media (max-width: 576px) {
+    body {
+        background-color: #edf6f9;
+    }
+
+    footer {
+
+        margin-top: 4vw;
+        padding-bottom: 1px;
+        background-color: #2D3142;
+        font-family: 'coolveticaregular', Arial, sans-serif;
+        font-size: 1vw;
+        color: #FBFFF4;
+    }
+
+    footer li {
+        display: inline;
+        margin: 0;
+    }
+
+    div.logo{
+        display: block;
+        text-align: center;
+    }
+
+    #logo {
+        position: relative;
+        top: 0.6vw;
+        margin-bottom: -3.5vw;
+        width: 10%;
+        height: auto;
+    }
+
+    #email,
+    #phone {
+        float: left;
+        padding-right: 1vw;
+    }
+
+    #email a:link,
+    #email a:visited {
+        color: #FBFFF4;
+        text-decoration: none;
+    }
+
+    #email a:hover {
+        text-decoration: underline;
+        text-decoration-color: #fbfff4;
+    }
+
+    #piva {
+        text-align: center;
+    }
+
+    #nome_azienda,
+    #copyright {
+        float: right;
+        padding-right: 1vw;
+    }
+
+    .social_footer li:last-of-type {
+        margin-right: 0;
+    }
+
+    .social_footer .fab {
+        font-size: 1.2vw;
+        color: #fefefe;
+    }
+
+    .social_footer .fab:hover,
+    .social_footer .fab:visited {
+        color: #ffffff;
+        transition: color 0.3s ease-in;
+    }
+
+}
+
+@media (max-width: 768px) {
+    body {
+        background-color: #edf6f9;
+    }
+
+    footer {
+
+        margin-top: 4vw;
+        padding-bottom: 1px;
+        background-color: #2D3142;
+        font-family: 'coolveticaregular', Arial, sans-serif;
+        font-size: 1vw;
+        color: #FBFFF4;
+    }
+
+    footer li {
+        display: inline;
+        margin: 0;
+    }
+
+    div.logo{
+        display: block;
+        text-align: center;
+    }
+
+    #logo {
+        position: relative;
+        top: 0.6vw;
+        margin-bottom: -3.5vw;
+        width: 10%;
+        height: auto;
+    }
+
+    #email,
+    #phone {
+        float: left;
+        padding-right: 1vw;
+    }
+
+    #email a:link,
+    #email a:visited {
+        color: #FBFFF4;
+        text-decoration: none;
+    }
+
+    #email a:hover {
+        text-decoration: underline;
+        text-decoration-color: #fbfff4;
+    }
+
+    #piva {
+        text-align: center;
+    }
+
+    #nome_azienda,
+    #copyright {
+        float: right;
+        padding-right: 1vw;
+    }
+
+    .social_footer li:last-of-type {
+        margin-right: 0;
+    }
+
+    .social_footer .fab {
+        font-size: 1.2vw;
+        color: #fefefe;
+    }
+
+    .social_footer .fab:hover,
+    .social_footer .fab:visited {
+        color: #ffffff;
+        transition: color 0.3s ease-in;
+    }
+
+}
+
+@media (max-width: 992px) {
+    body {
+        background-color: #edf6f9;
+    }
+
+    footer {
+
+        margin-top: 4vw;
+        margin-bottom: 10vw;
+        background-color: #2D3142;
+        font-family: 'coolveticaregular', Arial, sans-serif;
+        font-size: 5vw;
+        color: #FBFFF4;
+    }
+
+    footer li {
+        display: block;
+        margin: -11px;
+    }
+
+    div.logo{
+        text-align: center;
+    }
+
+    #logo {
+        position: relative;
+        top: 0.6vw;
+        margin-bottom: -3.5vw;
+        width: 20%;
+        height: auto;
+    }
+
+    #email,
+    #phone {
+        float: left;
+        padding-right: 1vw;
+    }
+
+    #email a:link,
+    #email a:visited {
+        color: #FBFFF4;
+        text-decoration: none;
+    }
+
+    #email a:hover {
+        text-decoration: underline;
+        text-decoration-color: #fbfff4;
+    }
+
+    #piva {
+        
+    }
+
+    #nome_azienda,
+    #copyright {
+        float: right;
+        padding-right: 1vw;
+    }
+
+    .social_footer li:last-of-type {
+        margin-right: 0;
+    }
+
+    .social_footer .fab {
+        display: inline;
+        font-size: 5vw;
+        color: #fefefe;
+    }
+
+    .social_footer .fab:hover,
+    .social_footer .fab:visited {
+        color: #ffffff;
+        transition: color 0.3s ease-in;
+    }
+
+}
+
+@media (min-width: 576px) {
+    body {
+        background-color: #edf6f9;
+    }
+
+    footer {
+
+        margin-top: 4vw;
+        padding-bottom: 1px;
+        background-color: #2D3142;
+        font-family: 'coolveticaregular', Arial, sans-serif;
+        font-size: 1vw;
+        color: #FBFFF4;
+    }
+
+    footer li {
+        display: inline;
+        margin: 0;
+    }
+
+    div.logo{
+        display: block;
+        text-align: center;
+    }
+
+    #logo {
+        position: relative;
+        top: 0.6vw;
+        margin-bottom: -3.5vw;
+        width: 10%;
+        height: auto;
+    }
+
+    #email,
+    #phone {
+        float: left;
+        padding-right: 1vw;
+    }
+
+    #email a:link,
+    #email a:visited {
+        color: #FBFFF4;
+        text-decoration: none;
+    }
+
+    #email a:hover {
+        text-decoration: underline;
+        text-decoration-color: #fbfff4;
+    }
+
+    #piva {
+        text-align: center;
+    }
+
+    #nome_azienda,
+    #copyright {
+        float: right;
+        padding-right: 1vw;
+    }
+
+    .social_footer li:last-of-type {
+        margin-right: 0;
+    }
+
+    .social_footer .fab {
+        font-size: 1.2vw;
+        color: #fefefe;
+    }
+
+    .social_footer .fab:hover,
+    .social_footer .fab:visited {
+        color: #ffffff;
+        transition: color 0.3s ease-in;
+    }
+
+}
+
+@media (min-width: 768px) {
+    body {
+        background-color: #edf6f9;
+    }
+
+    footer {
+
+        margin-top: 4vw;
+        padding-bottom: 1px;
+        background-color: #2D3142;
+        font-family: 'coolveticaregular', Arial, sans-serif;
+        font-size: 1vw;
+        color: #FBFFF4;
+    }
+
+    footer li {
+        display: inline;
+        margin: 0;
+    }
+
+    div.logo{
+        display: block;
+        text-align: center;
+    }
+
+    #logo {
+        position: relative;
+        top: 0.6vw;
+        margin-bottom: -3.5vw;
+        width: 10%;
+        height: auto;
+    }
+
+    #email,
+    #phone {
+        float: left;
+        padding-right: 1vw;
+    }
+
+    #email a:link,
+    #email a:visited {
+        color: #FBFFF4;
+        text-decoration: none;
+    }
+
+    #email a:hover {
+        text-decoration: underline;
+        text-decoration-color: #fbfff4;
+    }
+
+    #piva {
+        text-align: center;
+    }
+
+    #nome_azienda,
+    #copyright {
+        float: right;
+        padding-right: 1vw;
+    }
+
+    .social_footer li:last-of-type {
+        margin-right: 0;
+    }
+
+    .social_footer .fab {
+        font-size: 1.2vw;
+        color: #fefefe;
+    }
+
+    .social_footer .fab:hover,
+    .social_footer .fab:visited {
+        color: #ffffff;
+        transition: color 0.3s ease-in;
+    }
+
+}
+
+/* Desktop view */
+
+@media (min-width: 992px) {
+    body {
+        background-color: #edf6f9;
+    }
+
+    footer {
+
+        margin-top: 4vw;
+        padding-bottom: 1px;
+        background-color: #2D3142;
+        font-family: 'coolveticaregular', Arial, sans-serif;
+        font-size: 1vw;
+        color: #FBFFF4;
+    }
+
+    footer li {
+        display: inline;
+        margin: 0;
+    }
+
+    div.logo{
+        display: block;
+        text-align: center;
+    }
+
+    #logo {
+        position: relative;
+        top: 0.6vw;
+        margin-bottom: -3.5vw;
+        width: 10%;
+        height: auto;
+    }
+
+    #email,
+    #phone {
+        float: left;
+        padding-right: 1vw;
+    }
+
+    #email a:link,
+    #email a:visited {
+        color: #FBFFF4;
+        text-decoration: none;
+    }
+
+    #email a:hover {
+        text-decoration: underline;
+        text-decoration-color: #fbfff4;
+    }
+
+    #piva {
+        text-align: center;
+    }
+
+    #nome_azienda,
+    #copyright {
+        float: right;
+        padding-right: 1vw;
+    }
+
+    .social_footer li:last-of-type {
+        margin-right: 0;
+    }
+
+    .social_footer .fab {
+        font-size: 1.2vw;
+        color: #fefefe;
+    }
+
+    .social_footer .fab:hover,
+    .social_footer .fab:visited {
+        color: #ffffff;
+        transition: color 0.3s ease-in;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    body {
+        background-color: #edf6f9;
+    }
+
+    footer {
+
+        margin-top: 4vw;
+        padding-bottom: 1px;
+        background-color: #2D3142;
+        font-family: 'coolveticaregular', Arial, sans-serif;
+        font-size: 1vw;
+        color: #FBFFF4;
+    }
+
+    footer li {
+        display: inline;
+        margin: 0;
+    }
+
+    div.logo{
+        display: block;
+        text-align: center;
+    }
+
+    #logo {
+        position: relative;
+        top: 0.6vw;
+        margin-bottom: -3.5vw;
+        width: 10%;
+        height: auto;
+    }
+
+    #email,
+    #phone {
+        float: left;
+        padding-right: 1vw;
+    }
+
+    #email a:link,
+    #email a:visited {
+        color: #FBFFF4;
+        text-decoration: none;
+    }
+
+    #email a:hover {
+        text-decoration: underline;
+        text-decoration-color: #fbfff4;
+    }
+
+    #piva {
+        text-align: center;
+    }
+
+    #nome_azienda,
+    #copyright {
+        float: right;
+        padding-right: 1vw;
+    }
+
+    .social_footer li:last-of-type {
+        margin-right: 0;
+    }
+
+    .social_footer .fab {
+        font-size: 1.2vw;
+        color: #fefefe;
+    }
+
+    .social_footer .fab:hover,
+    .social_footer .fab:visited {
+        color: #ffffff;
+        transition: color 0.3s ease-in;
+    }
+
+}
+
+@media (min-width: 1400px) {
+    body {
+        background-color: #edf6f9;
+    }
+
+    footer {
+
+        margin-top: 4vw;
+        padding-bottom: 1px;
+        background-color: #2D3142;
+        font-family: 'coolveticaregular', Arial, sans-serif;
+        font-size: 0.8vw;
+        color: #FBFFF4;
+    }
+
+    footer li {
+        display: inline;
+        margin: 0;
+    }
+
+    div.logo{
+        display: block;
+        text-align: center;
+    }
+
+    #logo {
+        position: relative;
+        top: 0.6vw;
+        margin-bottom: -3.5vw;
+        width: 10%;
+        height: auto;
+    }
+
+    #email,
+    #phone {
+        float: left;
+        padding-right: 1vw;
+    }
+
+    #email a:link,
+    #email a:visited {
+        color: #FBFFF4;
+        text-decoration: none;
+    }
+
+    #email a:hover {
+        text-decoration: underline;
+        text-decoration-color: #fbfff4;
+    }
+
+    #piva {
+        text-align: center;
+    }
+
+    #nome_azienda,
+    #copyright {
+        float: right;
+        padding-right: 1vw;
+    }
+
+    .social_footer li:last-of-type {
+        margin-right: 0;
+    }
+
+    .social_footer .fab {
+        font-size: 1.2vw;
+        color: #fefefe;
+    }
+
+    .social_footer .fab:hover,
+    .social_footer .fab:visited {
+        color: #ffffff;
+        transition: color 0.3s ease-in;
+    }
+
+}
