@@ -6,10 +6,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title> System Hospital - Home </title>
 	<link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+	<link rel="icon" href="../images/icon.png">
 	
 	<?php /*<link rel="stylesheet" href="../css/home.css">
 	<link rel="stylesheet" href="../css/navbar_footer.css">
-	<link rel="icon" href="../images/icon.png">*/ ?>
+	*/ ?>
 	
 	</head>
 

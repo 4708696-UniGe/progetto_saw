@@ -1,0 +1,370 @@
+/* Mobile view */
+
+@media (max-width: 576px) {
+    #logotop {
+        width: auto;
+        height: 8vw;
+        position: relative;
+        left: 0.8vw;
+        top: 0.2vw;
+    }
+
+    .btn-secondary{
+        visibility: hidden !important;
+        position: relative !important;
+        right: auto !important;
+        left: 86vw !important;
+        color: #FBFFF4 !important;
+        background-color: #EF8354 !important;
+        border-color: #EF8354 !important;
+    }
+
+    .dropdown-menu {
+        position: absolute !important;
+        right: auto !important;
+        left: 83vw !important;
+        top: 3vw !important;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+        background-color: #FBFFF4 !important;
+    }
+
+    .search {
+        display: none !important;
+    }
+
+    .search_mobile {
+        position: center;
+        width: 28vw;
+        top: 2.8vw;
+        
+    }
+
+}
+
+@media (max-width: 768px) {
+    #logotop {
+        width: auto;
+        height: 8vw;
+        position: relative;
+        left: 0.8vw;
+        top: 0.2vw;
+    }
+
+    .btn-secondary{
+        visibility: hidden !important;
+        position: relative !important;
+        right: auto !important;
+        left: 86vw !important;
+        color: #FBFFF4 !important;
+        background-color: #EF8354 !important;
+        border-color: #EF8354 !important;
+    }
+
+    .dropdown-menu {
+        position: absolute !important;
+        right: auto !important;
+        left: 83vw !important;
+        top: 3vw !important;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+        background-color: #FBFFF4 !important;
+    }
+
+    .search {
+        display: none !important;
+    }
+
+
+    .search_mobile {
+        position: absolute;
+        left:30vw;
+        width: 28vw;
+        top: 2.8vw;
+    }
+
+    .btn-outline-success {
+        position: absolute;
+        left: 10vw;
+        top: 0;
+    }
+
+}
+
+@media (max-width: 992px) {
+    #logotop {
+        width: auto;
+        height: 8vw;
+        position: relative;
+        left: 0.8vw;
+        top: 0.2vw;
+    }
+
+    .btn-secondary{
+        visibility: hidden !important;
+        position: relative !important;
+        right: auto !important;
+        left: 86vw !important;
+        color: #FBFFF4 !important;
+        background-color: #EF8354 !important;
+        border-color: #EF8354 !important;
+    }
+
+    .dropdown-menu {
+        position: absolute !important;
+        right: auto !important;
+        left: 83vw !important;
+        top: 3vw !important;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+        background-color: #FBFFF4 !important;
+    }
+
+    .search {
+        display: none !important;
+    }
+
+
+    .search_mobile {
+        position: absolute;
+        left:30vw;
+        top: 2.3vw;
+    }
+    
+    .btn-outline-success {
+        position: absolute;
+        left: 29vw;
+        top: 0;
+    }
+
+    .mobile_menu {
+        position: center !important;
+        text-align: center;
+        margin-bottom: -8vw;
+        
+    }
+
+}
+
+@media (min-width: 576px) {
+    #logotop {
+        width: auto;
+        height: 5vw;
+        position: relative;
+        left: 0.8vw;
+        top: 0.2vw;
+    }
+
+    .btn-secondary{
+        position: relative !important;
+        right: auto !important;
+        left: 86vw !important;
+        color: #FBFFF4 !important;
+        background-color: #EF8354 !important;
+        border-color: #EF8354 !important;
+    }
+
+    .dropdown-menu {
+        position: absolute !important;
+        right: auto !important;
+        left: 83vw !important;
+        top: 3vw !important;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+        background-color: #FBFFF4 !important;
+    }
+
+    .search_mobile {
+        position: center;
+    }
+
+    .mobile_menu {
+        position: center !important;
+        text-align: center;
+        margin-bottom: -7vw;
+    }
+
+}
+
+@media (min-width: 768px) {
+    #logotop {
+        width: auto;
+        height: 4vw;
+        position: relative;
+        left: 0.8vw;
+        top: 0.2vw;
+    }
+
+    .btn-secondary {
+        position: relative !important;
+        right: auto !important;
+        left: 86vw !important;
+        color: #FBFFF4 !important;
+        background-color: #EF8354 !important;
+        border-color: #EF8354 !important;
+    }
+
+    .dropdown-menu {
+        position: absolute !important;
+        right: auto !important;
+        left: 83vw !important;
+        top: 3vw !important;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+        background-color: #FBFFF4 !important;
+    }
+    
+    .search_mobile {
+        position: center;
+        top: 1.4vw;
+    }
+
+    .mobile_menu {
+        position: center !important;
+        text-align: center;
+        margin-bottom: -4.5vw;
+    }
+
+}
+
+/* Desktop view */
+
+@media (min-width: 992px) {
+    #logotop {
+        width: auto;
+        height: 3vw;
+        position: relative;
+        left: 0.8vw;
+        top: 0.2vw;
+    }
+
+    .btn-secondary{
+        position: relative !important;
+        right: auto !important;
+        left: 78vw !important;
+        color: #FBFFF4 !important;
+        background-color: #EF8354 !important;
+        border-color: #EF8354 !important;
+    }
+
+    .dropdown-menu {
+        position: absolute !important;
+        right: auto !important;
+        left: 73vw !important;
+        top: 4.5vw !important;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+        background-color: #FBFFF4 !important;
+    }
+
+    .search {
+        position: absolute !important;
+        right: 300px !important;
+    }
+
+    .search_mobile {
+        display: none;
+    }
+
+    .mobile_menu {
+        display: none;
+    }
+
+}
+
+
+
+@media (min-width: 1200px) {
+    #logotop {
+        width: auto;
+        height: 2vw;
+        position: relative;
+        left: 0.8vw;
+        top: 0.2vw;
+    }
+
+    .btn-secondary{
+        position: relative !important;
+        right: auto !important;
+        left: 84vw !important;
+        color: #FBFFF4 !important;
+        background-color: #EF8354 !important;
+        border-color: #EF8354 !important;
+    }
+
+    .dropdown-menu {
+        position: absolute !important;
+        right: auto !important;
+        left: 77.7vw !important;
+        top: 3.5vw !important;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+        background-color: #FBFFF4 !important;
+    }
+
+    .search {
+        position: absolute !important;
+        right: 300px !important;
+    }
+
+    .search_mobile {
+        display: none;
+    }
+
+    .mobile_menu {
+        display: none;
+    }
+
+}
+
+@media (min-width: 1400px) {
+    #logotop {
+        width: auto;
+        height: 2vw;
+        position: relative;
+        left: 0.8vw;
+        top: 0.2vw;
+    }
+
+    .btn-secondary{
+        position: relative !important;
+        right: auto !important;
+        left: 86vw !important;
+        color: #FBFFF4 !important;
+        background-color: #EF8354 !important;
+        border-color: #EF8354 !important;
+    }
+
+    .dropdown-menu {
+        position: absolute !important;
+        right: auto !important;
+        left: 83vw !important;
+        top: 3vw !important;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+        background-color: #FBFFF4 !important;
+    }
+
+    .search {
+        position: absolute !important;
+        right: 300px !important;
+    }
+
+    .search_mobile {
+        display: none;
+    }
+
+    .mobile_menu {
+        display: none;
+    }
+}
+
+.navbar {
+    background-color: #2D3142 !important;
+}
+
+
+
+.btn-primary {
+    color: #FBFFF4 !important;
+    background-color: #EF8354 !important;
+    border-color: #EF8354 !important;
+}
+
+
+
+
+
+
