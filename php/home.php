@@ -3,10 +3,14 @@
 	<head>
 	<meta charset="UTF-8">
 	<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title> System Hospital - Home </title>
-	<link rel="stylesheet" href="../css/home.css">
+	<link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+	
+	<?php /*<link rel="stylesheet" href="../css/home.css">
 	<link rel="stylesheet" href="../css/navbar_footer.css">
-	<link rel="icon" href="../images/icon.png">
+	<link rel="icon" href="../images/icon.png">*/ ?>
+	
 	</head>
 
 	<body>
@@ -36,6 +40,9 @@
 			<div class="text" id="block">Trova la tua tra le nostre <a id="inline_link" href="platform_list.php">piattaforme supportate.</a> </div>
 		</div>
 	</div>
+	
+	<script src="../bootstrap/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+	
 	</body>
 	<footer> <?php include 'footer.php'; ?> </footer>
 
