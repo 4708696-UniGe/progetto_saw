@@ -7,7 +7,6 @@
 	<title> System Hospital - Home </title>
 	<link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 	<link rel="icon" href="../images/icon.png">
-	
 	<link rel="stylesheet" href="../css/home.css">
 	
 	

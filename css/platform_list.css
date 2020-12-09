@@ -1,0 +1,17 @@
+.offset-1 {
+    margin-right: 2.3333333333%;
+    margin-top: 3.3333333333%;
+    
+}
+
+.card {
+    height: 20vw !important;
+    width: 18vw !important;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+    background-color: #FBFFF4;
+    border-color: #EF8354;
+}
+
+.card-img-top {
+    padding-top: 0.8vw;
+}
