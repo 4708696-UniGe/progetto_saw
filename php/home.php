@@ -26,7 +26,7 @@
             </div>
             <div class="flip-card-back">
               <h1>Chi siamo?</h1>
-              <div class="text-mobile" id="block">Il nostro obiettivo è offrire assistenza <br> informatica professionale ad imprese. <br> <a title="Scopri di più" href="about.php">Scopri di più</a></div>
+              <div class="text-mobile" id="block">Il nostro obiettivo è offrire assistenza <br> informatica professionale ad imprese. <br> <a class="btn btn-info" title="Scopri di più" href="about.php" role="button" aria-pressed="true">Scopri di più</a></div>
             </div>
           </div>
         </div>
@@ -37,7 +37,7 @@
             </div>
             <div class="flip-card-back">
               <h1>Cosa offriamo?</h1>
-              <div class="text-mobile">Scopri i nostri <a id="inline_link" href="products.php">prodotti.</a></div>
+              <div class="text-mobile">Scopri i nostri <a class="btn btn-info" id="inline_link" href="products.php" role="button" aria-pressed="true">prodotti.</a></div>
             </div>
           </div>
         </div>
@@ -48,7 +48,7 @@
             </div>
             <div class="flip-card-back">
               <h1>Su quale piattaforma lavori?</h1>
-              <div class="text-mobile">Trova la tua tra le nostre <a id="inline_link" href="platform_list.php">piattaforme supportate.</a></div>
+              <div class="text-mobile">Trova la tua tra le nostre <br><a class="btn btn-info" id="inline_link" href="platform_list.php" role="button" aria-pressed="true">piattaforme supportate</a></div>
             </div>
           </div>
         </div>
