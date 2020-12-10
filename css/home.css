@@ -211,6 +211,20 @@
     .container_right{
         display: none;
     }
+
+
+    .icon-bar,
+    .icon-bar a,
+    .icon-bar a:hover,
+    .facebook,
+    .twitter,
+    .google,
+    .linkedin,
+    .youtube,
+    .content {
+        display: none;
+    }
+    
 }
 
 
