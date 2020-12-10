@@ -594,7 +594,7 @@
         padding-bottom: 2.2vw;
         background-color: #2D3142;
         font-family: 'coolveticaregular', Arial, sans-serif;
-        font-size: 0.8vw;
+        font-size: 0.7vw;
         color: #FBFFF4;
     }
 
@@ -667,11 +667,14 @@
         font-size: 1.0vw;
         color: #fefefe;
     }
-
+    
+    .social_footer .fab:link,
     .social_footer .fab:hover,
     .social_footer .fab:visited {
         color: #ffffff;
         transition: color 0.3s ease-in;
+        visibility: hidden;
+        
     }
 
 }
