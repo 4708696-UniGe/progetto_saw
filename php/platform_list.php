@@ -15,6 +15,7 @@
     	<body>
 	        <nav> <?php include 'navbar.php'; ?></nav>
 	        
+	    <?php /* Mobile page */ ?>
 	    
 	        <div class "mobile">
 	            <div class"windows">
@@ -50,23 +51,10 @@
 	                    <p id="mobile-text">Adoriamo i Raspberry Pi e li abbiamo studiati a fondo, ed il passaggio da Raspian OS non ci spaventa anzi, ne siamo entusiasti. <br>
                             Hai installato un sistema operativo differente? Parlacene e proveremo ad aiutarti</p>
                 </div>
-                
-            
-                
             </div>
+            
+        <?php /* Desktop page */ ?>
         
- 
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	        
 	        <div class="row row-cols-1 row-cols-md-3 g-3 offset-1">
               <div class="col">
                 <div class="card">
@@ -78,6 +66,7 @@
                   </div>
                 </div>
               </div>
+              
               <div class="col">
                 <div class="card">
                   <img src="../images/linux.jpg" class="card-img-top" alt="...">
@@ -88,6 +77,7 @@
                   </div>
                 </div>
               </div>
+              
               <div class="col">
                 <div class="card">
                   <img src="../images/macos.jpg" class="card-img-top" alt="...">
@@ -97,6 +87,7 @@
                   </div>
                 </div>
               </div>
+              
               <div class="col">
                 <div class="card">
                   <img src="../images/android.png" class="card-img-top" alt="...">
@@ -107,6 +98,7 @@
                   </div>
                 </div>
               </div>
+              
               <div class="col">
                 <div class="card">
                   <img src="../images/aosp.jpeg" class="card-img-top" alt="...">
@@ -116,6 +108,7 @@
                   </div>
                  </div>
                </div>
+               
                <div class="col">
                  <div class="card">
                    <img src="../images/raspberrypi.png" class="card-img-top" alt="...">
@@ -126,7 +119,6 @@
                    </div>
                   </div>
                 </div>
-              
                 
             </div>
 	
