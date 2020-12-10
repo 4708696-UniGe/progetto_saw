@@ -33,13 +33,13 @@
                 
                 <div class"windows">
 	                <h1 id="mobile-title-text">mac OS</h1>
-	                    <p id="mobile-text">Sicuramente non potremo fare molto nel caso di un dispositivo basanto sull&#39;architettura PowerPC ma, battute a parte, ti sorprenderà scoprire quanto in realte vi si possa operare con un&#39;approccio non troppo distante da quello di Linux</p>
+	                    <p id="mobile-text">Sicuramente non potremo fare molto nel caso di un dispositivo basanto sull&#39;architettura PowerPC ma, battute a parte, ti sorprenderà scoprire quanto in realtà vi si possa operare con un&#39;approccio non troppo distante da quello di Linux</p>
                 </div>
                 
                 <div class"windows">
 	                <h1 id="mobile-title-text">Android</h1>
 	                    <p id="mobile-text">A causa di importanti modifiche nella gestione della cache e delle partizioni di sistema, sono supportate le versioni dalla 4.4 (KitKat) in avanti. <br>
-                            Il tuo dispositivo possiede una versione più datata? Potrebbe essere disponibile una versione di Android AOSP più recente, in ogni caso ti consigliamo di acquistare un dispositivo più recente ma ti forniremo comunque supporto</p>
+                            Il tuo dispositivo possiede una versione più datata? Potrebbe essere disponibile una versione di Android più recente attraverso AOSP, in ogni caso ti consigliamo di acquistare un dispositivo più recente ma ti forniremo comunque supporto</p>
                 </div>
                 
                 <div class"windows">
