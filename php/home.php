@@ -37,7 +37,7 @@
             </div>
             <div class="flip-card-back">
               <h1>Cosa offriamo?</h1>
-              <div class="text-mobile">Scopri i nostri <a class="btn btn-info" id="inline_link" href="products.php" role="button" aria-pressed="true">prodotti.</a></div>
+              <div class="text-mobile">Scopri i nostri <a class="btn btn-info" id="inline_link" href="products.php" role="button" aria-pressed="true">prodotti</a></div>
             </div>
           </div>
         </div>
