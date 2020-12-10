@@ -590,7 +590,6 @@
     }
 
     footer {
-
         margin-top: 4vw;
         padding-bottom: 2.2vw;
         background-color: #2D3142;
@@ -642,8 +641,8 @@
     #piva {
         position: relative;
         top: 1vw;
-        left: 24.5vw;
-        font-size: 0.7vw;
+        left: 24.8vw;
+        font-size: 0.6vw;
         text-align: center;
     }
 
@@ -651,7 +650,7 @@
     #copyright {
         position: relative;
         top: 2.7vw;
-        left: 9.2vw;
+        left: 9.8vw;
         font-size: 0.7vw;
         float: right;
         padding-right: 1vw;
