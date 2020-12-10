@@ -14,7 +14,7 @@
 
           <?php
     if(isset($_POST['firstname'])) {
-        header('Location: database.php');
+        header('Location: ../database/database.php');
         exit;
     }
     ?>
