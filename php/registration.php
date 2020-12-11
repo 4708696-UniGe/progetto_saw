@@ -9,13 +9,14 @@
 	<link rel="stylesheet" href="../css/registration.css">
     <link rel="icon" href="../images/icon.png">
     </head>
+    
+    <script> var flag=0; </script>
 
     <body>
 
           <?php
     if(isset($_POST['firstname'])) {
-        header('Location: ../database/database.php');
-        exit;
+        include ('../database/database_reg.php');
     }
     ?>
 
@@ -28,7 +29,8 @@
               <input type="text" name="firstname" placeholder="Nome">
               </br></br>
               <input type="text" name="lastname" placeholder="Cognome">
-              </br></br>
+              </br>
+              <p id="flag_email"></p>
               <input type="email" name="email" placeholder="Email">
               </br></br>
               <input type="password" name="pass" placeholder="Password">
@@ -49,7 +51,8 @@
               <input type="text" name="firstname" placeholder="Nome">
               </br></br>
               <input type="text" name="lastname" placeholder="Cognome">
-              </br></br>
+              </br>
+              <p id="flag_email"></p>
               <input type="email" name="email" placeholder="Email">
               </br></br>
               <input type="password" name="pass" placeholder="Password">
@@ -59,6 +62,15 @@
               <input class="submit" type="submit" name="submit" value="Invia">
           </form>
          </div>
+      
+      <script> 
+        window.onload = flag_email();
+        function flag_email() {
+            if(flag == 1) {
+            document.getElementById("flag_email").innerHTML = "Questa email esiste già.";
+            }
+        }
+      </script>
       
       <script src="../bootstrap/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     </body>
