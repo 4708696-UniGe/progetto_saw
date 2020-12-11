@@ -5,7 +5,7 @@
 	<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title> System Hospital - Home </title>
-	<link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+	<link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet"  crossorigin="anonymous">
 	<link rel="icon" href="../images/icon.png">
 	<link rel="stylesheet" href="../css/home.css">
 	<link rel="stylesheet" href="../css/scrollbar.css">
@@ -81,7 +81,7 @@
 		    </div>
 	    </div>
 	
-	    <script src="../bootstrap/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+	    <script src="../bootstrap/js/bootstrap.bundle.min.js"  crossorigin="anonymous"></script>
 	
 	</body>
 	<footer> <?php include 'footer.php'; ?> </footer>

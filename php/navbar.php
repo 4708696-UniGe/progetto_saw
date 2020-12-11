@@ -16,7 +16,7 @@
        <span class="navbar-toggler-icon"></span>
      </button>
      <form class="search_mobile">
-      <input class="form-control me-2" type="search" placeholder="Cerca nel sito" aria-label="Search">
+      <input class="form-control me-2" type="search" placeholder="Cerca" aria-label="Search">
       <button class="btn btn-outline-success" type="submit">Cerca</button>
      </form>
      <div class="collapse navbar-collapse" id="navbarSupportedContent">
