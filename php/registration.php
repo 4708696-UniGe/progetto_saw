@@ -5,7 +5,7 @@
 	<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title> System Hospital - Registration </title>
-	<link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+	<link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 	<link rel="stylesheet" href="../css/registration.css">
     <link rel="icon" href="../images/icon.png">
     </head>
@@ -52,7 +52,7 @@
               </br></br>
               <input type="text" name="lastname" placeholder="Cognome">
               </br>
-              <p id="flag_email"></p>
+              <p class="alert alert-danger" role="alert"></p>
               <input type="email" name="email" placeholder="Email">
               </br></br>
               <input type="password" name="pass" placeholder="Password">
@@ -67,12 +67,12 @@
         window.onload = flag_email();
         function flag_email() {
             if(flag == 1) {
-            document.getElementById("flag_email").innerHTML = "Questa email esiste già.";
+            document.getElementByClassName("alert").innerHTML = "Questa email esiste già.";
             }
         }
       </script>
       
-      <script src="../bootstrap/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+      <script src="../bootstrap/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
     </body>
 
     <footer> <?php include 'footer.php'; ?> </footer>
