@@ -45,7 +45,7 @@
 			$res = mysqli_query($conn, $sql);
 
 			if (mysqli_affected_rows($conn) != 1) {
-				echo "Attenzione c'è stato un problema nell'inserimento, controlla i dati. ".mysqli_error($conn);
+				echo "Attenzione c'Ã¨ stato un problema nell'inserimento, controlla i dati. ".mysqli_error($conn);
 			} else {
 			    if (mysqli_affected_rows($conn) != 1) {
 					echo "balza";
