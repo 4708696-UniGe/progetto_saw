@@ -1,7 +1,8 @@
- <footer  style="background-color: #2c292f">
+ <link rel="stylesheet" href="../css/footer.css">
+ <footer  style="background-color: #2D3142">
             <div class="container">
                 <div class="row ">
-                    <div class="col-md-4 text-center text-md-left ">
+                    <div class="col-md-3 text-center text-md-left ">
                         
                         <div class="py-0">
                             <h3 class="my-4 text-white">About<span class="mx-2 font-italic text-warning ">Eduonix</span></h3>
@@ -19,7 +20,7 @@
                         </div>
                     </div>
                     
-                    <div class="col-md-4 text-white text-center text-md-left ">
+                    <div class="col-md-5 text-white text-center text-md-left ">
                         <div class="py-2 my-4">
                             <div>
                                 <p class="text-white"> <i class="fa fa-map-marker mx-2 "></i>
@@ -37,7 +38,7 @@
                         </div>  
                     </div>
                     
-                    <div class="col-md-4 text-white my-4 text-center text-md-left ">
+                    <div class="col-md-4  text-white my-4 text-center text-md-left ">
                         <span class=" font-weight-bold ">About the Company</span>
     					<p class="text-warning my-2" >We offer training and skill building courses across Technology, Design, Management, Science and Humanities.</p>
                         <div class="py-2">

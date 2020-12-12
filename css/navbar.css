@@ -361,8 +361,27 @@
     border-color: #EF8354 !important;
 }
 
+/* Animation */
 
+nav {
+    animation: fadein 1s;
+}
 
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
 
+    to {
+        opacity: 1;
+    }
+}
 
+#logotop:hover {
+    left: 1.3vw;
+    transition: left 0.3s ease;
+}
 
+#logotop {
+    transition: left 0.3s ease;
+}

@@ -1,9 +1,11 @@
+/* Desktop view */
+
 @media (min-width: 992px) {
     .container {
         max-height: 100% !important;
         max-width: 100% !important;
         margin-right: 0;
-        margin-left: 0vw;
+        margin-left: 0;
         padding-left: 0;
         padding-right: 0;
     }
@@ -11,24 +13,18 @@
     .price {
         padding-left: 29vw;
     }
-
-
     
     
     .mob {
         display: none;
     }
-
-    footer {
-        margin-left: 0;
-        padding-left: 0;
-        padding-right: 0;
-        margin-right: 0;
-        position: absolute;
-        bottom:0;
-        min-width: 100%;
+    
+    .price-title-mobile {
+        display: none;
     }
 }
+
+/* Mobile view */
 
 @media (max-width: 992px) {
     .container {
@@ -65,9 +61,51 @@
     .content {
         display: none;
     }
+
+    .price-title-desktop {
+        display: none;
+    }
 }
 
 .row {
-    margin-right: 0vw;
+    margin-right: 0;
 }
 
+.card {
+    border-radius: 1.5rem;
+}
+
+.card-header {
+    color: white;
+    background-color: #EF8354;
+}
+
+.card-body {
+    background-color: #FBFFF4;
+    border: inherit;
+    border-radius: 0 0 1.5rem 1.5rem ;
+}
+
+.card-header:first-child {
+    border-radius: 1.5rem 1.5rem 0 0;
+}
+
+.btn-outline-primary {
+    color: #EF8354 !important;
+    border-color: #EF8354 !important;
+    border: none;
+}
+
+.dropdown-toggle,
+.show,
+.btn{
+    box-shadow: none;
+    border: none;
+    border-color: white;
+}
+
+.btn-outline-primary:hover {
+    color: white !important;
+    background-color: #EF8354;
+    border: none;
+}

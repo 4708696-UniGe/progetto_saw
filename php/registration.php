@@ -52,7 +52,7 @@
               </br></br>
               <input type="text" name="lastname" placeholder="Cognome">
               </br>
-              <p id="flag_email"></p>
+              <p class="alert alert-danger" role="alert"></p>
               <input type="email" name="email" placeholder="Email">
               </br></br>
               <input type="password" name="pass" placeholder="Password">
@@ -67,12 +67,12 @@
         window.onload = flag_email();
         function flag_email() {
             if(flag == 1) {
-            document.getElementById("flag_email").innerHTML = "Questa email esiste già.";
+            document.getElementsByClassName("alert").innerHTML = "Questa email esiste già.";
             }
         }
       </script>
       
-      <script src="../bootstrap/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+      <script src="../bootstrap/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
     </body>
 
     <footer> <?php include 'footer.php'; ?> </footer>
