@@ -90,22 +90,19 @@
     border-radius: 1.5rem 1.5rem 0 0;
 }
 
-.btn-outline-primary {
-    color: #EF8354 !important;
-    border-color: #EF8354 !important;
-    border: none;
+
+.btn-check:focus + .btn-primary, .btn-primary:focus {
+    box-shadow: none;
 }
 
-.dropdown-toggle,
-.show,
-.btn{
-    box-shadow: none;
-    border: none;
-    border-color: white;
+.btn-check:checked + .btn-primary:focus, .btn-check:active + .btn-primary:focus, .btn-primary:active:focus, .btn-primary.active:focus, .show > .btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.25rem #EF8354;
+}
+
+.btn-outline-primary {
+    
 }
 
 .btn-outline-primary:hover {
-    color: white !important;
-    background-color: #EF8354;
-    border: none;
+    
 }

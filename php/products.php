@@ -24,7 +24,7 @@
         <main class="container">
           <div class="price-title-desktop">
           <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-            <h1 class="display-4">Pricing</h1>
+            <h1 class="display-4">Pacchetti Singoli</h1>
             <p class="lead">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It’s built with default Bootstrap components and utilities with little customization.</p>
           </div>
           </div>
@@ -34,51 +34,51 @@
                 <div class="col">
                   <div class="card mb-4 shadow-sm">
                   <div class="card-header">
-                    <h4 class="my-0 fw-normal">Free</h4>
+                    <h4 class="my-0 fw-normal">Bronze</h4>
                   </div>
                   <div class="card-body">
-                    <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1>
+                    <h1 class="card-title pricing-card-title">5€</h1>
                     <ul class="list-unstyled mt-3 mb-4">
                       <li>10 users included</li>
                       <li>2 GB of storage</li>
                       <li>Email support</li>
                       <li>Help center access</li>
                     </ul>
-                    <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button>
+                    <a  class="w-100 btn btn-lg btn-primary" href="chart.php" role="button">Acquista</a>
                   </div>
                 </div>
                 </div>
                 <div class="col">
                   <div class="card mb-4 shadow-sm">
                   <div class="card-header">
-                    <h4 class="my-0 fw-normal">Pro</h4>
+                    <h4 class="my-0 fw-normal">Silver</h4>
                   </div>
                   <div class="card-body">
-                    <h1 class="card-title pricing-card-title">$15 <small class="text-muted">/ mo</small></h1>
+                    <h1 class="card-title pricing-card-title">10€</h1>
                     <ul class="list-unstyled mt-3 mb-4">
                       <li>20 users included</li>
                       <li>10 GB of storage</li>
                       <li>Priority email support</li>
                       <li>Help center access</li>
                     </ul>
-                    <button type="button" class="w-100 btn btn-lg btn-outline-primary">Get started</button>
+                    <a  class="w-100 btn btn-lg btn-primary" href="chart.php" role="button">Acquista</a>
                   </div>
                 </div>
                 </div>
                 <div class="col">
                   <div class="card mb-4 shadow-sm">
                   <div class="card-header">
-                    <h4 class="my-0 fw-normal">Enterprise</h4>
+                    <h4 class="my-0 fw-normal">Gold</h4>
                   </div>
                   <div class="card-body">
-                    <h1 class="card-title pricing-card-title">$29 <small class="text-muted">/ mo</small></h1>
+                    <h1 class="card-title pricing-card-title">30€</h1>
                     <ul class="list-unstyled mt-3 mb-4">
                       <li>30 users included</li>
                       <li>15 GB of storage</li>
                       <li>Phone and email support</li>
                       <li>Help center access</li>
                     </ul>
-                    <button type="button" class="w-100 btn btn-lg btn-outline-primary">Contact us</button>
+                    <a  class="w-100 btn btn-lg btn-primary" href="chart.php" role="button">Acquista</a>
                   </div>
                 </div>
                 </div>
@@ -86,7 +86,7 @@
           </div>
           <div class="price-title-desktop">
           <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-            <h1 class="display-4">Pricing</h1>
+            <h1 class="display-4">Abbonamenti</h1>
             <p class="lead">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It’s built with default Bootstrap components and utilities with little customization.</p>
           </div>
           </div>
@@ -96,51 +96,51 @@
                 <div class="col">
                   <div class="card mb-4 shadow-sm">
                   <div class="card-header">
-                    <h4 class="my-0 fw-normal">Free</h4>
+                    <h4 class="my-0 fw-normal">Bronze</h4>
                   </div>
                   <div class="card-body">
-                    <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1>
+                    <h1 class="card-title pricing-card-title">5€ <small class="text-muted">/ mese</small></h1>
                     <ul class="list-unstyled mt-3 mb-4">
                       <li>10 users included</li>
                       <li>2 GB of storage</li>
                       <li>Email support</li>
                       <li>Help center access</li>
                     </ul>
-                    <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button>
+                    <a  class="w-100 btn btn-lg btn-primary" href="chart.php" role="button">Acquista</a>
                   </div>
                 </div>
                 </div>
                 <div class="col">
                   <div class="card mb-4 shadow-sm">
                   <div class="card-header">
-                    <h4 class="my-0 fw-normal">Pro</h4>
+                    <h4 class="my-0 fw-normal">Silver</h4>
                   </div>
                   <div class="card-body">
-                    <h1 class="card-title pricing-card-title">$15 <small class="text-muted">/ mo</small></h1>
+                    <h1 class="card-title pricing-card-title">10€ <small class="text-muted">/ mese</small></h1>
                     <ul class="list-unstyled mt-3 mb-4">
                       <li>20 users included</li>
                       <li>10 GB of storage</li>
                       <li>Priority email support</li>
                       <li>Help center access</li>
                     </ul>
-                    <button type="button" class="w-100 btn btn-lg btn-outline-primary">Get started</button>
+                    <a  class="w-100 btn btn-lg btn-primary" href="chart.php" role="button">Acquista</a>
                   </div>
                 </div>
                 </div>
                 <div class="col">
                   <div class="card mb-4 shadow-sm">
                   <div class="card-header">
-                    <h4 class="my-0 fw-normal">Enterprise</h4>
+                    <h4 class="my-0 fw-normal">Gold</h4>
                   </div>
                   <div class="card-body">
-                    <h1 class="card-title pricing-card-title">$29 <small class="text-muted">/ mo</small></h1>
+                    <h1 class="card-title pricing-card-title">15€ <small class="text-muted">/ mese</small></h1>
                     <ul class="list-unstyled mt-3 mb-4">
                       <li>30 users included</li>
                       <li>15 GB of storage</li>
                       <li>Phone and email support</li>
                       <li>Help center access</li>
                     </ul>
-                    <button type="button" class="w-100 btn btn-lg btn-outline-primary">Contact us</button>
+                     <a  class="w-100 btn btn-lg btn-primary" href="chart.php" role="button">Acquista</a>
                   </div>
                 </div>
                 </div>
@@ -151,7 +151,7 @@
           
           <div class="price-title-mobile">
           <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-            <h1 class="display-4">Pricing</h1>
+            <h1 class="display-4">Pacchetti Singoli</h1>
             <p class="lead">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It’s built with default Bootstrap components and utilities with little customization.</p>
           </div>
           </div>
@@ -161,51 +161,51 @@
                 <div class="col">
                   <div class="card mb-4 shadow-sm">
                   <div class="card-header">
-                    <h4 class="my-0 fw-normal">Free</h4>
+                    <h4 class="my-0 fw-normal">Bronze</h4>
                   </div>
                   <div class="card-body">
-                    <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1>
+                    <h1 class="card-title pricing-card-title">5€</h1>
                     <ul class="list-unstyled mt-3 mb-4">
                       <li>10 users included</li>
                       <li>2 GB of storage</li>
                       <li>Email support</li>
                       <li>Help center access</li>
                     </ul>
-                    <button type="button" class="w-80 btn btn-lg btn-outline-primary">Acquista</button>
+                    <a class="w-80 btn btn-lg btn-primary" href="chart.php" role="button">Acquista</a>
                   </div>
                 </div>
                 </div>
                 <div class="col">
                   <div class="card mb-4 shadow-sm">
                   <div class="card-header">
-                    <h4 class="my-0 fw-normal">Pro</h4>
+                    <h4 class="my-0 fw-normal">Silver</h4>
                   </div>
                   <div class="card-body">
-                    <h1 class="card-title pricing-card-title">$15 <small class="text-muted">/ mo</small></h1>
+                    <h1 class="card-title pricing-card-title">10€</h1>
                     <ul class="list-unstyled mt-3 mb-4">
                       <li>20 users included</li>
                       <li>10 GB of storage</li>
                       <li>Priority email support</li>
                       <li>Help center access</li>
                     </ul>
-                    <button type="button" class="w-80 btn btn-lg btn-outline-primary">Acquista</button>
+                     <a class="w-80 btn btn-lg btn-primary" href="chart.php" role="button">Acquista</a>
                   </div>
                 </div>
                 </div>
                 <div class="col">
                   <div class="card mb-4 shadow-sm">
                   <div class="card-header">
-                    <h4 class="my-0 fw-normal">Enterprise</h4>
+                    <h4 class="my-0 fw-normal">Gold</h4>
                   </div>
                   <div class="card-body">
-                    <h1 class="card-title pricing-card-title">$29 <small class="text-muted">/ mo</small></h1>
+                    <h1 class="card-title pricing-card-title">30€</h1>
                     <ul class="list-unstyled mt-3 mb-4">
                       <li>30 users included</li>
                       <li>15 GB of storage</li>
                       <li>Phone and email support</li>
                       <li>Help center access</li>
                     </ul>
-                    <button type="button" class="w-80 btn btn-lg btn-outline-primary">Acquista</button>
+                     <a class="w-80 btn btn-lg btn-primary" href="chart.php" role="button">Acquista</a>
                   </div>
                 </div>
                 </div>
@@ -214,7 +214,7 @@
           
           <div class="price-title-mobile">
           <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-            <h1 class="display-4">Pricing</h1>
+            <h1 class="display-4">Abbonamenti</h1>
             <p class="lead">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It’s built with default Bootstrap components and utilities with little customization.</p>
           </div>
           </div>
@@ -224,51 +224,51 @@
                 <div class="col">
                   <div class="card mb-4 shadow-sm">
                   <div class="card-header">
-                    <h4 class="my-0 fw-normal">Free</h4>
+                    <h4 class="my-0 fw-normal">Bronze</h4>
                   </div>
                   <div class="card-body">
-                    <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1>
+                    <h1 class="card-title pricing-card-title">5€ <small class="text-muted">/ mese</small></h1>
                     <ul class="list-unstyled mt-3 mb-4">
                       <li>10 users included</li>
                       <li>2 GB of storage</li>
                       <li>Email support</li>
                       <li>Help center access</li>
                     </ul>
-                    <button type="button" class="w-80 btn btn-lg btn-outline-primary">Acquista</button>
+                     <a class="w-80 btn btn-lg btn-primary" href="chart.php" role="button">Acquista</a>
                   </div>
                 </div>
                 </div>
                 <div class="col">
                   <div class="card mb-4 shadow-sm">
                   <div class="card-header">
-                    <h4 class="my-0 fw-normal">Pro</h4>
+                    <h4 class="my-0 fw-normal">Silver</h4>
                   </div>
                   <div class="card-body">
-                    <h1 class="card-title pricing-card-title">$15 <small class="text-muted">/ mo</small></h1>
+                    <h1 class="card-title pricing-card-title">10€ <small class="text-muted">/ mese</small></h1>
                     <ul class="list-unstyled mt-3 mb-4">
                       <li>20 users included</li>
                       <li>10 GB of storage</li>
                       <li>Priority email support</li>
                       <li>Help center access</li>
                     </ul>
-                    <button type="button" class="w-80 btn btn-lg btn-outline-primary">Acquista</button>
+                     <a class="w-80 btn btn-lg btn-primary" href="chart.php" role="button">Acquista</a>
                   </div>
                 </div>
                 </div>
                 <div class="col">
                   <div class="card mb-4 shadow-sm">
                   <div class="card-header">
-                    <h4 class="my-0 fw-normal">Enterprise</h4>
+                    <h4 class="my-0 fw-normal">Gold</h4>
                   </div>
                   <div class="card-body">
-                    <h1 class="card-title pricing-card-title">$29 <small class="text-muted">/ mo</small></h1>
+                    <h1 class="card-title pricing-card-title">15€ <small class="text-muted">/ mese</small></h1>
                     <ul class="list-unstyled mt-3 mb-4">
                       <li>30 users included</li>
                       <li>15 GB of storage</li>
                       <li>Phone and email support</li>
                       <li>Help center access</li>
                     </ul>
-                    <button type="button" class="w-80 btn btn-lg btn-outline-primary">Acquista</button>
+                     <a class="w-80 btn btn-lg btn-primary" href="chart.php" role="button">Acquista</a>
                   </div>
                 </div>
                 </div>
