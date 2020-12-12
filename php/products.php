@@ -98,10 +98,8 @@
                   <div class="card-body">
                     <h1 class="card-title pricing-card-title">5€ <small class="text-muted">/ mese</small></h1>
                     <ul class="list-unstyled mt-3 mb-4">
-                      <li>- 10 users included</li>
-                      <li>- 2 GB of storage</li>
-                      <li>- Email support</li>
-                      <li>- Help center access</li>
+                      <li>- 1 Dispositivo per ticket</li>
+                      <li>- Assistenza telefonica</li>
                     </ul>
                     <a  class="w-100 btn btn-lg btn-primary" href="chart.php" role="button">Acquista</a>
                   </div>
@@ -113,12 +111,11 @@
                     <h4 class="my-0 fw-normal">Silver</h4>
                   </div>
                   <div class="card-body">
-                    <h1 class="card-title pricing-card-title">10€ <small class="text-muted">/ mese</small></h1>
+                    <h1 class="card-title pricing-card-title">20€ <small class="text-muted">/ mese</small></h1>
                     <ul class="list-unstyled mt-3 mb-4">
-                      <li>- 20 users included</li>
-                      <li>- 10 GB of storage</li>
-                      <li>- Priority email support</li>
-                      <li>- Help center access</li>
+                      <li>- 2 Dispositivi per ticket</li>
+                      <li>- Assistenza con accesso remoto per un dispositivo contemporaneamente</li>
+                      <li>- Spazio cloud riservato da 5GB</li>
                     </ul>
                     <a  class="w-100 btn btn-lg btn-primary" href="chart.php" role="button">Acquista</a>
                   </div>
@@ -130,12 +127,12 @@
                     <h4 class="my-0 fw-normal">Gold</h4>
                   </div>
                   <div class="card-body">
-                    <h1 class="card-title pricing-card-title">15€ <small class="text-muted">/ mese</small></h1>
+                    <h1 class="card-title pricing-card-title">60€ <small class="text-muted">/ mese</small></h1>
                     <ul class="list-unstyled mt-3 mb-4">
-                      <li>- 30 users included</li>
-                      <li>- 15 GB of storage</li>
-                      <li>- Phone and email support</li>
-                      <li>- Help center access</li>
+                      <li>- 5 Dispositivi per ticket</li>
+                      <li>- Assistenza con accesso remoto per un dispositivo contemporaneamente</li>
+                      <li>- Spazio cloud riservato da 50 GB</li>
+                      <li>- Servizio "Computer di cortesia" con accesso da remoto</li>
                     </ul>
                      <a  class="w-100 btn btn-lg btn-primary" href="chart.php" role="button">Acquista</a>
                   </div>
@@ -223,10 +220,8 @@
                   <div class="card-body">
                     <h1 class="card-title pricing-card-title">5€ <small class="text-muted">/ mese</small></h1>
                     <ul class="list-unstyled mt-3 mb-4">
-                      <li>- 10 users included</li>
-                      <li>- 2 GB of storage</li>
-                      <li>- Email support</li>
-                      <li>- Help center access</li>
+                      <li>- 1 Dispositivo per ticket</li>
+                      <li>- Assistenza telefonica</li>
                     </ul>
                      <a class="w-80 btn btn-lg btn-primary" href="chart.php" role="button">Acquista</a>
                   </div>
@@ -238,12 +233,11 @@
                     <h4 class="my-0 fw-normal">Silver</h4>
                   </div>
                   <div class="card-body">
-                    <h1 class="card-title pricing-card-title">10€ <small class="text-muted">/ mese</small></h1>
+                    <h1 class="card-title pricing-card-title">20€ <small class="text-muted">/ mese</small></h1>
                     <ul class="list-unstyled mt-3 mb-4">
-                      <li>- 20 users included</li>
-                      <li>- 10 GB of storage</li>
-                      <li>- Priority email support</li>
-                      <li>- Help center access</li>
+                      <li>- 2 Dispositivi per ticket</li>
+                      <li>- Assistenza con accesso remoto per un dispositivo contemporaneamente</li>
+                      <li>- Spazio cloud riservato da 5GB</li>
                     </ul>
                      <a class="w-80 btn btn-lg btn-primary" href="chart.php" role="button">Acquista</a>
                   </div>
@@ -255,12 +249,12 @@
                     <h4 class="my-0 fw-normal">Gold</h4>
                   </div>
                   <div class="card-body">
-                    <h1 class="card-title pricing-card-title">15€ <small class="text-muted">/ mese</small></h1>
+                    <h1 class="card-title pricing-card-title">60€ <small class="text-muted">/ mese</small></h1>
                     <ul class="list-unstyled mt-3 mb-4">
-                      <li>- 30 users included</li>
-                      <li>- 15 GB of storage</li>
-                      <li>- Phone and email support</li>
-                      <li>- Help center access</li>
+                      <li>- 5 Dispositivi per ticket</li>
+                      <li>- Assistenza con accesso remoto per un dispositivo contemporaneamente</li>
+                      <li>- Spazio cloud riservato da 50 GB</li>
+                      <li>- Servizio "Computer di cortesia" con accesso da remoto</li>
                     </ul>
                      <a class="w-80 btn btn-lg btn-primary" href="chart.php" role="button">Acquista</a>
                   </div>
