@@ -67,7 +67,7 @@
         window.onload = flag_email();
         function flag_email() {
             if(flag == 1) {
-            document.getElementByClassName("alert").innerHTML = "Questa email esiste già.";
+            document.getElementsByClassName("alert").innerHTML = "Questa email esiste già.";
             }
         }
       </script>

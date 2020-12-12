@@ -244,6 +244,34 @@
     
 }
 
+.container_left {
+    animation: moveLeft 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
 
+.container_right {
+    animation: moveRight 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
 
+@keyframes moveLeft {
+    0% {
+        left: 5vw;
+    }
 
+    100% {
+        left: 7vw;
+    }
+}
+
+@keyframes moveRight {
+    0% {
+        left: 60vw;
+    }
+
+    100% {
+        left: 58vw;
+    }
+}
