@@ -1,4 +1,6 @@
-﻿@media (min-width: 992px) {
+﻿/* Desktop view */ 
+
+@media (min-width: 992px) {
     .container_left {
         margin-top: 6vw;
         margin-bottom: 6vw;
@@ -122,6 +124,8 @@
     
 }
 
+/* Mobile view */
+
 @media (max-width: 992px) {
     /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
     .flip-card {
@@ -221,7 +225,7 @@
         top: 4px;
         background-color: #FBFFF4 !important;
         border: none;
-        box-shadow: 0px 0px 0px 0px #FBFFF4;
+        box-shadow: 0 0 0 0 #FBFFF4;
     }
 
     .container_left,
@@ -244,34 +248,64 @@
     
 }
 
+
+/* Animation */
+
 .container_left {
-    animation: moveLeft 1s;
-    animation-delay: 0.5s;
+    animation: moveLeft_container 1s;
     animation-fill-mode: forwards;
 }
 
 .container_right {
-    animation: moveRight 1s;
-    animation-delay: 0.5s;
+    animation: moveRight_container 1s;
     animation-fill-mode: forwards;
 }
 
-@keyframes moveLeft {
+
+.icon-bar,
+.icon-bar a,
+.icon-bar a:hover,
+.facebook,
+.twitter,
+.google,
+.linkedin,
+.youtube,
+.content {
+    animation: moveLeft_socialbar 1s;
+}
+
+@keyframes moveLeft_container {
     0% {
         left: 5vw;
+        opacity: 0;
     }
 
     100% {
         left: 7vw;
+        opacity: 1;
     }
 }
 
-@keyframes moveRight {
+@keyframes moveRight_container {
     0% {
         left: 60vw;
+        opacity: 0;
     }
 
     100% {
         left: 58vw;
+        opacity: 1;
+    }
+}
+
+@keyframes moveLeft_socialbar {
+    0% {
+        left: -2vw;
+        opacity: 0;
+    }
+
+    100% {
+        left: 0;
+        opacity: 1;
     }
 }
