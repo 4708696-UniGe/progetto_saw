@@ -24,8 +24,8 @@
         <main class="container">
           <div class="price-title-desktop">
           <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-            <h1 class="display-4">Pacchetti Singoli</h1>
-            <p class="lead">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It’s built with default Bootstrap components and utilities with little customization.</p>
+            <h1 class="display-4" id="product-list-category">Pacchetti Singoli</h1>
+            <p class="lead" id="product-list-description">Non hai necessità di un servizio continuativo? Acquista uno dei nostri pacchetti ad uso singolo</p>
           </div>
           </div>
 
@@ -37,12 +37,10 @@
                     <h4 class="my-0 fw-normal">Bronze</h4>
                   </div>
                   <div class="card-body">
-                    <h1 class="card-title pricing-card-title">5€</h1>
+                    <h1 class="card-title pricing-card-title">15€</h1>
                     <ul class="list-unstyled mt-3 mb-4">
-                      <li>10 users included</li>
-                      <li>2 GB of storage</li>
-                      <li>Email support</li>
-                      <li>Help center access</li>
+                      <li>1 Dispositivo</li>
+                      <li>Assistenza telefonica</li>
                     </ul>
                     <a  class="w-100 btn btn-lg btn-primary" href="chart.php" role="button">Acquista</a>
                   </div>
@@ -54,12 +52,11 @@
                     <h4 class="my-0 fw-normal">Silver</h4>
                   </div>
                   <div class="card-body">
-                    <h1 class="card-title pricing-card-title">10€</h1>
+                    <h1 class="card-title pricing-card-title">35€</h1>
                     <ul class="list-unstyled mt-3 mb-4">
-                      <li>20 users included</li>
-                      <li>10 GB of storage</li>
-                      <li>Priority email support</li>
-                      <li>Help center access</li>
+                      <li>2 Dispositivi</li>
+                      <li>Assistenza con accesso remoto per 1 dispositivo contemporaneamente</li>
+                      <li>Spazio cloud riservato da 5GB</li>
                     </ul>
                     <a  class="w-100 btn btn-lg btn-primary" href="chart.php" role="button">Acquista</a>
                   </div>
@@ -71,12 +68,12 @@
                     <h4 class="my-0 fw-normal">Gold</h4>
                   </div>
                   <div class="card-body">
-                    <h1 class="card-title pricing-card-title">30€</h1>
+                    <h1 class="card-title pricing-card-title">80€</h1>
                     <ul class="list-unstyled mt-3 mb-4">
-                      <li>30 users included</li>
-                      <li>15 GB of storage</li>
-                      <li>Phone and email support</li>
-                      <li>Help center access</li>
+                      <li>5 Dispositivi</li>
+                      <li>Assistenza con accesso remoto per 3 dispositivi contemporaneamente</li>
+                      <li>Spazio cloud riservato da 50GB</li>
+                      <li>Servizio "Computer di cortesia" con accesso da remoto</li>
                     </ul>
                     <a  class="w-100 btn btn-lg btn-primary" href="chart.php" role="button">Acquista</a>
                   </div>
@@ -86,8 +83,8 @@
           </div>
           <div class="price-title-desktop">
           <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-            <h1 class="display-4">Abbonamenti</h1>
-            <p class="lead">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It’s built with default Bootstrap components and utilities with little customization.</p>
+            <h1 class="display-4" id="product-list-category">Abbonamenti</h1>
+            <p class="lead" id="product-list-description">Cerchi un servizio su lunga durata? I nostri abbonamenti sono la scelta migliore</p>
           </div>
           </div>
 
@@ -152,7 +149,7 @@
           <div class="price-title-mobile">
           <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
             <h1 class="display-4">Pacchetti Singoli</h1>
-            <p class="lead">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It’s built with default Bootstrap components and utilities with little customization.</p>
+            <p class="lead">Non hai necessità di un servizio continuativo? Acquista uno dei nostri pacchetti ad uso singolo</p>
           </div>
           </div>
              
@@ -164,12 +161,10 @@
                     <h4 class="my-0 fw-normal">Bronze</h4>
                   </div>
                   <div class="card-body">
-                    <h1 class="card-title pricing-card-title">5€</h1>
+                    <h1 class="card-title pricing-card-title">15€</h1>
                     <ul class="list-unstyled mt-3 mb-4">
-                      <li>10 users included</li>
-                      <li>2 GB of storage</li>
-                      <li>Email support</li>
-                      <li>Help center access</li>
+                      <li>1 Dispositivo</li>
+                      <li>Assistenza telefonica</li>
                     </ul>
                     <a class="w-80 btn btn-lg btn-primary" href="chart.php" role="button">Acquista</a>
                   </div>
@@ -181,12 +176,11 @@
                     <h4 class="my-0 fw-normal">Silver</h4>
                   </div>
                   <div class="card-body">
-                    <h1 class="card-title pricing-card-title">10€</h1>
+                    <h1 class="card-title pricing-card-title">35€</h1>
                     <ul class="list-unstyled mt-3 mb-4">
-                      <li>20 users included</li>
-                      <li>10 GB of storage</li>
-                      <li>Priority email support</li>
-                      <li>Help center access</li>
+                      <li>2 Dispositivi</li>
+                      <li>Assistenza con accesso remoto per 1 dispositivo contemporaneamente</li>
+                      <li>Spazio cloud riservato da 5GB</li>
                     </ul>
                      <a class="w-80 btn btn-lg btn-primary" href="chart.php" role="button">Acquista</a>
                   </div>
@@ -198,12 +192,12 @@
                     <h4 class="my-0 fw-normal">Gold</h4>
                   </div>
                   <div class="card-body">
-                    <h1 class="card-title pricing-card-title">30€</h1>
+                    <h1 class="card-title pricing-card-title">80€</h1>
                     <ul class="list-unstyled mt-3 mb-4">
-                      <li>30 users included</li>
-                      <li>15 GB of storage</li>
-                      <li>Phone and email support</li>
-                      <li>Help center access</li>
+                      <li>5 Dispositivi</li>
+                      <li>Assistenza con accesso remoto per 3 dispositivi contemporaneamente</li>
+                      <li>Spazio cloud riservato da 50GB</li>
+                      <li>Servizio "Computer di cortesia" con accesso da remoto</li>
                     </ul>
                      <a class="w-80 btn btn-lg btn-primary" href="chart.php" role="button">Acquista</a>
                   </div>
@@ -215,7 +209,7 @@
           <div class="price-title-mobile">
           <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
             <h1 class="display-4">Abbonamenti</h1>
-            <p class="lead">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It’s built with default Bootstrap components and utilities with little customization.</p>
+            <p class="lead">Cerchi un servizio su lunga durata? I nostri abbonamenti sono la scelta migliore</p>
           </div>
           </div>
           
