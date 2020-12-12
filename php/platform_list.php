@@ -55,7 +55,7 @@
             </div>
             
         <?php /* Desktop page */ ?>
-        
+           
 	        <div class="row row-cols-1 row-cols-md-3 g-3 offset-1">
               <div class="col">
                 <div class="card">
@@ -120,7 +120,6 @@
                    </div>
                   </div>
                 </div>
-                
             </div>
 	
 	
