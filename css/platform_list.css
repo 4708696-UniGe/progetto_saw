@@ -19,7 +19,7 @@
 
 
 @media (max-width: 992px) {
-    .row {
+    .col {
         display: none;
     }
     
@@ -35,6 +35,18 @@
     #mobile-text {
         padding: 1.4vw 4vw 1.4vw 4vw;
         font-size: 4vw;
+    }
+
+    .icon-bar,
+    .icon-bar a,
+    .icon-bar a:hover,
+    .facebook,
+    .twitter,
+    .google,
+    .linkedin,
+    .youtube,
+    .content {
+        display: none;
     }
 }
 
