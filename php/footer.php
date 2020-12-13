@@ -5,10 +5,11 @@
                     <div class="col-md-3 text-center text-md-left ">
                         
                         <div class="py-0">
-                            <h3 class="my-4 text-white">About<span class="mx-2 font-italic text-warning ">Eduonix</span></h3>
+                            <a title="Home" href="home.php">
+                            <img id = "logo" src="../images/logo.png" alt="Logo azienda"></a>
     
                             <p class="footer-links font-weight-bold">
-                                <a class="text-white" href="#">Home</a>
+                                <a class="text-white" href="home.php">Home</a>
                                 |
                                 <a class="text-white" href="#">Blog</a>
                                 |
@@ -16,7 +17,7 @@
                                 |
                                 <a class="text-white" href="#">Contact</a>
                             </p>
-                            <p class="text-light py-4 mb-4">&copy;2019 Eduonix Learning Solutions Pvt. Ltd.</p>
+                            <p class="text-light py-4 mb-4">&copy;2020 System Hospital S.r.l.</p>
                         </div>
                     </div>
                     

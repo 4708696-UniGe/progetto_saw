@@ -96,12 +96,9 @@
     border: none;
 }
 
-.dropdown-toggle,
-.show,
-.btn{
+.btn:focus, .btn:active {
+    outline: none !important;
     box-shadow: none;
-    border: none;
-    border-color: white;
 }
 
 .btn-outline-primary:hover {

@@ -311,10 +311,10 @@
 @media (min-width: 1400px) {
     #logotop {
         width: auto;
-        height: 2vw;
+        height: 2.5vw;
         position: relative;
         left: 0.8vw;
-        top: 0.2vw;
+        top: 0.1vw;
     }
 
     .btn-secondary{
@@ -350,7 +350,7 @@
 }
 
 .navbar {
-    background-color: #2D3142 !important;
+    background-color: transparent !important;
 }
 
 

@@ -1,0 +1,90 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+
+
+
+.box {
+    position: absolute;
+    opacity: 0;
+    background-color: rgba(0,0,0, 0.5);
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    animation: fadein 1s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+.bg {
+    background-image: url("../images/assi.jpg");
+    background-color: #cccccc;
+    height: 45.5vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    animation: fadein 2s;
+}
+
+.textimg {
+    padding: 25vw 0;
+    position: absolute;
+    margin: 0;
+    width: 100%;
+    margin-bottom: 0;
+    color: #f1f1f1;
+    text-align: center;
+    animation: fadein 1s;
+    animation-delay: 2s;
+}
+
+.blank {
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    height: 10%;
+    padding-bottom: 4vw;
+}
+
+.textimg2 {
+    margin-left: 0;
+    padding: 13vw 0;
+    position: absolute;
+    width: 100%;
+    color: black;
+}
+
+.img{
+    margin-top: 5vw;
+    background-image: url(../images/seconda.jpg);
+    background-size:cover;
+    width: 30vw;
+    height: 20vw;
+    float: right;
+    margin-right: 10vw;
+    border: 2px solid black;
+    box-shadow: 10px -10px 10px black;
+}
+
+#text{
+    margin-left: 10vw;
+}
+
+.footer {
+    margin-top: 30vw;
+    height: 50px;
+}
+
+    @keyframes fadein {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
