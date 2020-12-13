@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="../css/home2.css">
 	<link rel="stylesheet" href="../css/scrollbar.css">
 	 
-	 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	 <link rel="stylesheet" href="../aos/aos.css" />
 	
 	
 	</head>
@@ -119,7 +119,7 @@
 
 
 	<script src="../bootstrap/js/bootstrap.bundle.min.js"  crossorigin="anonymous"></script>
-	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script src="../aos/aos.js"></script>
 	<script>
 		AOS.init();
 	</script>
