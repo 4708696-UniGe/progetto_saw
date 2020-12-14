@@ -101,7 +101,8 @@
 
 		<div class ="blank">
 			<div data-aos="fade-right" class="textimg2">
-				<h1 id="text">Cosa offriamo?<br></h1>
+                <img id="waves" src="../images/waves.png">
+				<h1 id="text-title">Cosa offriamo?<br></h1>
 				<p id="text">Scopri i nostri <a id="inline_link" href="products.php">prodotti.</a> </p>
 			</div>
 			<div data-aos="flip-right" class="img"></div>
@@ -111,7 +112,8 @@
 		<div class ="blank2">
 		
 			<div data-aos="fade-right" class="textimg2">
-				<h1 id="text">Su quale piattaforma lavori?<br></h1>
+                <img id="waves" src="../images/waves.png">
+				<h1 id="text-title">Su quale piattaforma lavori?<br></h1>
 			    <p id="text">Trova la tua tra le nostre <a id="inline_link" href="platform_list.php">piattaforme supportate.</a> </p>
 			</div>
 			
