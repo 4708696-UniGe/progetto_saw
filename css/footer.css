@@ -10,19 +10,15 @@
         padding-right: 0;
 
     }
-    
+
     .row {
         margin-right: 0;
     }
 
-    footer {
-
-    }
-
     #logo {
-        margin-top: 1vw;
-        width: 10vw !important;
-        height: auto !important;
+        height: auto;
+        width: 12vw;
+        padding-top: 1vw;
     }
 }
 
@@ -30,9 +26,37 @@
 
 @media (max-width: 992px) {
     #logo {
-        margin-top: 1vw;
-        width: 10vw !important;
-        height: auto !important;
+        height: auto;
+        width: 40vw;
+        padding-top: 6vw;
+        padding-bottom: 3vw;
     }
-    
 }
+
+footer {
+    background-color: #2D3142 !important;
+}
+
+.fa-facebook {
+    color: #4267B2 !important;
+}
+
+.fa-instagram {
+    color: #C13584 !important;
+}
+
+.fa-linkedin-in {
+    color: #2867B2 !important;
+}
+
+.fa-twitter {
+    color: #1DA1F2 !important;
+}
+
+.fa-youtube {
+    color: #FF0000 !important;
+}
+
+
+
+
