@@ -34,15 +34,15 @@
         <div class="col-md-4 text-white text-right text-md-left ">
             <div class="py-2 my-4">
                 <div>
-                    <p class="text-white"> <i><img src="../images/geo.svg" alt="" width="30" height="30" title="Posizione"></i>
+                    <p class="text-white"> <i><img src="../images/geo.png" alt="" width="30" height="30" title="Posizione"></i>
                         Via All&#39;opera Pia 15 - Genova - 16145 - GE</p>
                 </div>
 
                 <div>
-                    <p><i><img src="../images/phone.svg" alt="" width="30" height="30" title="Telefono"></i> +39 3479620471</p>
+                    <p><i><img src="../images/phone.png" alt="" width="30" height="30" title="Telefono"></i> +39 3479620471</p>
                 </div>
                 <div>
-                    <p><i><img src="../images/mailbox2.svg" alt="" width="30" height="30" title="E-mail"></i><a href="mailto:s4708696@studenti.unige.it">s4708696@studenti.unige.it</a></p>
+                    <p><i><img src="../images/mailbox2.png" alt="" width="30" height="30" title="E-mail" ></i><a id="email-icon" href="mailto:s4708696@studenti.unige.it"> s4708696@studenti.unige.it</a></p>
                 </div>
             </div>
         </div>

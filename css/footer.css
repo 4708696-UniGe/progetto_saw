@@ -33,6 +33,17 @@
     }
 }
 
+#email-icon,
+#email-icon:visited,
+#email-icon:link{
+    text-decoration: none;
+    color: white;
+}
+
+#email-icon:hover{
+    text-decoration:underline;
+}
+
 footer {
     background-color: #2D3142 !important;
 }
