@@ -60,7 +60,7 @@ h1{
     background-color: #f4f1de;
     border-top: 2px solid #a5a58d;
     width: 100%;
-    height: 60%;
+    height: 20vw;
     padding: 3vw 0;
 }
 
@@ -69,7 +69,7 @@ h1{
     background-color: #81b29a;
     border-top: 2px solid #a5a58d;
     width: 100%;
-    height: 50%;
+    height: 20vw;
     padding: 3vw 0vw 0vw 0vw;
 }
 
@@ -83,12 +83,13 @@ h1{
     position: absolute;
     top: -3vw;
     width: 100%;
+    height: 10vw;
     color: black;
     margin: 0;
 }
 
 .img {
-    margin-top: 2vw;
+    margin-top: -2vw;
     background-image: url(../images/seconda.jpg);
     background-size:cover;
     width: 24vw;
@@ -108,8 +109,8 @@ h1{
     margin-top: 1vw;
     background-image: url(../images/terza.jpg);
     background-size: cover;
-    width: 24vw;
-    height: 18vw;
+    width: 18vw;
+    height: 14vw;
     float: right;
     margin-right: 10vw;
     border: 2px solid black;
