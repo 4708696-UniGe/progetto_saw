@@ -1,4 +1,6 @@
 <link rel="stylesheet" href="../css/footer.css">
+<link rel="stylesheet" href="fontawesome/css/all.css">
+
 <div class="container">
     <div class="row ">
 
