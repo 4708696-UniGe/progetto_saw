@@ -8,7 +8,7 @@
 	<link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet"  crossorigin="anonymous">
 	<link rel="icon" href="../images/icon.png">
 	<link rel="stylesheet" href="../css/home2.css">
-        <link rel="stylesheet" href="../css/scrollbar.css">
+    <link rel="stylesheet" href="../css/scrollbar.css">
 	
 	 
 	 <link rel="stylesheet" href="../aos/aos.css" />
@@ -114,8 +114,8 @@
 		
 			<div data-aos="fade-right" class="textimg2">
 
-				<h1 id="text-title-2">Su quale piattaforma lavori?<br></h1>
-			    <p id="text-2">Trova la tua tra le nostre <a id="inline_link" href="platform_list.php">piattaforme supportate.</a> </p>
+				<h1 id="text-title">Su quale piattaforma lavori?<br></h1>
+			    <p id="text">Trova la tua tra le nostre <a id="inline_link" href="platform_list.php">piattaforme supportate.</a> </p>
 			</div>
 			
 			<div data-aos="flip-left" class="img2"></div>
