@@ -1,0 +1,21 @@
+.container-about {
+	display: flex;
+	flex-direction: row;
+}
+
+.about {
+	position: absolute;
+	margin: 9vw 60vw 2vw 2vw;
+	font-size: 1vw;
+}
+
+.work-place {
+	width: auto;
+	height: 9vw;
+	margin: 9vw 2vw 2vw 2vw;
+}
+footer {
+	position: absolute;
+	bottom: 0;
+	min-width: 100%;
+}
