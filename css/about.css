@@ -5,11 +5,14 @@
 
 .about {
 	position: absolute;
+	left: 0;
 	margin: 9vw 60vw 2vw 2vw;
 	font-size: 1vw;
 }
 
 .work-place {
+	position: absolute;
+	right: 0;
 	width: auto;
 	height: 9vw;
 	margin: 9vw 2vw 2vw 2vw;
