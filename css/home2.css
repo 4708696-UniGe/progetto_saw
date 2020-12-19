@@ -54,7 +54,7 @@
 
     .blank {
         position: relative;
-        background-image: linear-gradient(to right,#d6ae7b,#eacda3);
+        background-image: linear-gradient(to right,#c2e59c,#64b3f4);
         border-top: 1px solid black;
         width: 100%;
         height: 40vw;
@@ -63,7 +63,7 @@
 
     .blank2 {
         position: relative;
-        background-image: linear-gradient(to right,#d6ae7b,#eacda3);
+        background-image: linear-gradient(to right,#c2e59c,#64b3f4);
         border-bottom: 1px solid black;
         width: 100%;
         height: 40vw;
@@ -169,7 +169,7 @@
     .blank {
         border-top: 1px solid black;
         position: relative;
-        background-image: linear-gradient(to right,#d6ae7b,#eacda3);
+        background-image: linear-gradient(to right,#c2e59c,#64b3f4);
         width: 100%;
         height: 18vw;
         padding: 3vw 0;
@@ -178,7 +178,7 @@
     .blank2 {
         border-bottom: 1px solid black;
         position: relative;
-        background-image: linear-gradient(to right,#d6ae7b,#eacda3);
+        background-image: linear-gradient(to right,#c2e59c,#64b3f4);
         width: 100%;
         height: 18vw;
         padding: 3vw 0vw 0vw 0vw;
