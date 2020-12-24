@@ -1,4 +1,5 @@
-<?php /*<?php  ?>
+<?php
+/*<?php  ?>
 <a title="Home" href="home.php"><img id="logotop" src="../images/logo.png" alt="Logo azienda"> </a>
  <ul id="nav">
   <li id="about"><a href="about.php">About</a> </li>
@@ -22,7 +23,17 @@
      <div class="collapse navbar-collapse" id="navbarSupportedContent">
        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
          <div class="mobile_menu">
-         <li class="nav-item active">
+         <?php
+         if(isset($_COOKIE['FIRSTNAME'])){
+              echo ('
+            <li class="nav-item active">
+                <a class="nav-link" href="profile.php">Profilo <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="about.php">About <span class="sr-only">(current)</span></a>
+            </li>');
+         }else{
+        echo(' <li class="nav-item active">
             <a class="nav-link" href="login.php">Accedi <span class="sr-only">(current)</span></a>
          </li>
          <li class="nav-item active">
@@ -31,6 +42,8 @@
          <li class="nav-item active">
             <a class="nav-link" href="about.php">About <span class="sr-only">(current)</span></a>
          </li>
+         ');
+         }?>
          </div>
          <div class="search">
             <form class="d-flex">
@@ -38,34 +51,61 @@
               <button class="btn btn-outline-success" type="submit">Cerca</button>
             </form>
          </div>
-         <div class="profile"<
-         <li class="nav-item dropdown ">
-           <button class="btn btn-secondary dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-             Profilo
-           </button>
-           <div class="dropdown-menu dropdown-menu-right">
-             <form class="px-4 py-3" action="login.php" method="POST">
-               <div class="form-group">
-                 <label for="exampleDropdownFormEmail1">Indirizzo Email</label>
-                 <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="Email">
-               </div>
-               <div class="form-group">
-                 <label for="exampleDropdownFormPassword1">Password</label>
-                 <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
-               </div>
-               <div class="form-check">
-                 <input type="checkbox" class="form-check-input" id="dropdownCheck">
-                 <label class="form-check-label" for="dropdownCheck">
-                   Ricordami
-                 </label>
-               </div>
-               <button type="submit" class="btn btn-primary">Entra</button>
-             </form>
-             <div class="dropdown-divider"></div>
-             <a class="dropdown-item" href="registration.php">Non hai un profilo? Registrati</a>
-             <a class="dropdown-item" href="forgot_password.php">Password dimenticata?</a>
-           </div>
-         </li>
+         <div class="profile">
+         <?php
+
+         if(isset($_COOKIE['FIRSTNAME']) && isset($_COOKIE['LASTNAME']) && isset($_COOKIE['ID_USER'])){
+              echo ('
+                    <li class="nav-item dropdown">
+                <button class="btn btn-secondary dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                   '.$_COOKIE['FIRSTNAME'].'
+                </button>
+                <div class="dropdown-menu dropdown-menu-left logged">
+                <div class="px-4 py-3" >
+                <div class="form-group py-2">
+                    <a href="profile.php">Visualizza il profilo</a>
+                </div>
+                <div class="form-group " >
+                    <a href="profile_mod.php">Modifica il profilo</a>
+                </div>
+                <div class="form-group py-2">
+                    <a href="cart.php">Carrello</a>
+                </div>
+                <a class="btn btn-primary" href="logout.php" role="button">Esci</a>
+                </div>
+            </li>
+                    ');
+         }else{
+          echo ('
+                <li class="nav-item dropdown ">
+                <button class="btn btn-secondary dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                   Profilo
+                </button>
+                <div class="dropdown-menu dropdown-menu-left ">
+                <form class="px-4 py-3" action="login.php" method="post">
+                <div class="form-group">
+                    <label for="exampleDropdownFormEmail1">Indirizzo Email</label>
+                    <input type="email" name="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <label for="exampleDropdownFormPassword1">Password</label>
+                    <input type="password" name="pass" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                    <label class="form-check-label" for="dropdownCheck">
+                    Ricordami
+                    </label>
+                </div>
+                <button type="submit" name="submit" class="btn btn-primary">Entra</button>
+                </form>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="registration.php">Non hai un profilo? Registrati</a>
+                <a class="dropdown-item" href="forgot_password.php">Password dimenticata?</a>
+            </li>');
+            }
+            ?>
+       </div>
        </ul>
        
      </div>
