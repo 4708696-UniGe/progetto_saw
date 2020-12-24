@@ -56,11 +56,11 @@
 
          if(isset($_COOKIE['FIRSTNAME']) && isset($_COOKIE['LASTNAME']) && isset($_COOKIE['ID_USER'])){
               echo ('
-                    <li class="nav-item dropdown ">
+                    <li class="nav-item dropdown">
                 <button class="btn btn-secondary dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                    '.$_COOKIE['FIRSTNAME'].'
                 </button>
-                <div class="dropdown-menu dropdown-menu-left">
+                <div class="dropdown-menu dropdown-menu-left logged">
                 <div class="px-4 py-3" >
                 <div class="form-group py-2">
                     <a href="profile.php">Visualizza il profilo</a>
@@ -81,7 +81,7 @@
                 <button class="btn btn-secondary dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                    Profilo
                 </button>
-                <div class="dropdown-menu dropdown-menu-left">
+                <div class="dropdown-menu dropdown-menu-left ">
                 <form class="px-4 py-3" action="login.php" method="post">
                 <div class="form-group">
                     <label for="exampleDropdownFormEmail1">Indirizzo Email</label>
