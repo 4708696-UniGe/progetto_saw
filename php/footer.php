@@ -18,7 +18,7 @@
         <div class="col-md-4 text-center text-md-left ">
 
             <div class="py-3">
-                <img id="logo" src="../images/logo.png" alt="Logo azienda"></a>
+                <img id="logo" src="../images/logo.png" alt="Logo azienda">
 
                 <p class="footer-links font-weight-bold">
                     <a class="text-white" href="home.php">Home</a>

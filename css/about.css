@@ -28,7 +28,8 @@
 		right: 3vw;
 		width: 30vw;
 		height: auto;
-		border: 10px solid black;
+		border: 1px solid black;
+		border-radius: 2px;
 	}
 
 	footer {
@@ -69,8 +70,10 @@
 		right:  -60%;
 		width: 90vw;
 		height: auto;
-		border: 10px solid black;
+		border: 0px solid black;
 		margin-top: 40px;
 		margin-right: 18px;
+		border-radius: 3px;
+		box-shadow: 2px 2px 2px 2px;
 	}
 }

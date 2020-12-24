@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="it-IT">
 	<head>
 	<meta charset="UTF-8">
 	<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
@@ -14,18 +14,18 @@
 	</head>
 
 	<body>
-	    <?php include '../database/database_cart.php'; ?>
+	
 	    <nav> <?php include 'navbar.php'; ?></nav>
         		<?php include 'socialbar.php'; ?>
 	    
 	    
 	    <?php /* Desktop view*/ ?>
 	    
-        <main class="container">
+        <div class="container">
           <div class="price-title-desktop">
           <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-            <h1 class="display-4">Pricing</h1>
-            <p class="lead">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It’s built with default Bootstrap components and utilities with little customization.</p>
+            <h1 class="display-4" id="product-list-category">Pacchetti Singoli</h1>
+            <p class="lead" id="product-list-description">Non hai necessità di un servizio continuativo? Acquista uno dei nostri pacchetti ad uso singolo</p>
           </div>
           </div>
 
@@ -34,52 +34,48 @@
                 <div class="col">
                   <div class="card mb-4 shadow-sm">
                   <div class="card-header">
-                    <h4 class="my-0 fw-normal">Free</h4>
+                    <h4 class="my-0 fw-normal">Bronze</h4>
                   </div>
                   <div class="card-body">
-                    <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1>
+                    <h1 class="card-title pricing-card-title">15€</h1>
                     <ul class="list-unstyled mt-3 mb-4">
-                      <li>10 users included</li>
-                      <li>2 GB of storage</li>
-                      <li>Email support</li>
-                      <li>Help center access</li>
+                      <li>- 1 Dispositivo</li>
+                      <li>- Assistenza telefonica</li>
                     </ul>
-                    <a href = "products.php">
-                    <button type="submit" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button></a>
+                    <a  class="w-100 btn btn-lg btn-primary" href="cart.php" role="button">Acquista</a>
                   </div>
                 </div>
                 </div>
                 <div class="col">
                   <div class="card mb-4 shadow-sm">
                   <div class="card-header">
-                    <h4 class="my-0 fw-normal">Pro</h4>
+                    <h4 class="my-0 fw-normal">Silver</h4>
                   </div>
                   <div class="card-body">
-                    <h1 class="card-title pricing-card-title">$15 <small class="text-muted">/ mo</small></h1>
+                    <h1 class="card-title pricing-card-title">35€</h1>
                     <ul class="list-unstyled mt-3 mb-4">
-                      <li>20 users included</li>
-                      <li>10 GB of storage</li>
-                      <li>Priority email support</li>
-                      <li>Help center access</li>
+                      <li>- 2 Dispositivi</li>
+                      <li>- Assistenza con accesso remoto per 1 dispositivo contemporaneamente</li>
+                      <li>- Spazio cloud riservato da 5GB</li>
                     </ul>
-                    <button type="button" class="w-100 btn btn-lg btn-outline-primary">Get started</button>
+                    <a  class="w-100 btn btn-lg btn-primary" href="cart.php" role="button">Acquista</a>
                   </div>
                 </div>
                 </div>
                 <div class="col">
                   <div class="card mb-4 shadow-sm">
                   <div class="card-header">
-                    <h4 class="my-0 fw-normal">Enterprise</h4>
+                    <h4 class="my-0 fw-normal">Gold</h4>
                   </div>
                   <div class="card-body">
-                    <h1 class="card-title pricing-card-title">$29 <small class="text-muted">/ mo</small></h1>
+                    <h1 class="card-title pricing-card-title">80€</h1>
                     <ul class="list-unstyled mt-3 mb-4">
-                      <li>30 users included</li>
-                      <li>15 GB of storage</li>
-                      <li>Phone and email support</li>
-                      <li>Help center access</li>
+                      <li>- 5 Dispositivi</li>
+                      <li>- Assistenza con accesso remoto per 3 dispositivi contemporaneamente</li>
+                      <li>- Spazio cloud riservato da 50GB</li>
+                      <li>- Servizio "Computer di cortesia" con accesso da remoto</li>
                     </ul>
-                    <button type="button" class="w-100 btn btn-lg btn-outline-primary">Contact us</button>
+                    <a  class="w-100 btn btn-lg btn-primary" href="cart.php" role="button">Acquista</a>
                   </div>
                 </div>
                 </div>
@@ -87,8 +83,8 @@
           </div>
           <div class="price-title-desktop">
           <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-            <h1 class="display-4">Pricing</h1>
-            <p class="lead">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It’s built with default Bootstrap components and utilities with little customization.</p>
+            <h1 class="display-4" id="product-list-category">Abbonamenti</h1>
+            <p class="lead" id="product-list-description">Cerchi un servizio su lunga durata? I nostri abbonamenti sono la scelta migliore</p>
           </div>
           </div>
 
@@ -97,51 +93,48 @@
                 <div class="col">
                   <div class="card mb-4 shadow-sm">
                   <div class="card-header">
-                    <h4 class="my-0 fw-normal">Free</h4>
+                    <h4 class="my-0 fw-normal">Bronze</h4>
                   </div>
                   <div class="card-body">
-                    <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1>
+                    <h1 class="card-title pricing-card-title">5€ <small class="text-muted">/ mese</small></h1>
                     <ul class="list-unstyled mt-3 mb-4">
-                      <li>10 users included</li>
-                      <li>2 GB of storage</li>
-                      <li>Email support</li>
-                      <li>Help center access</li>
+                      <li>- 1 Dispositivo per ticket</li>
+                      <li>- Assistenza telefonica</li>
                     </ul>
-                    <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button>
+                    <a  class="w-100 btn btn-lg btn-primary" href="cart.php" role="button">Acquista</a>
                   </div>
                 </div>
                 </div>
                 <div class="col">
                   <div class="card mb-4 shadow-sm">
                   <div class="card-header">
-                    <h4 class="my-0 fw-normal">Pro</h4>
+                    <h4 class="my-0 fw-normal">Silver</h4>
                   </div>
                   <div class="card-body">
-                    <h1 class="card-title pricing-card-title">$15 <small class="text-muted">/ mo</small></h1>
+                    <h1 class="card-title pricing-card-title">20€ <small class="text-muted">/ mese</small></h1>
                     <ul class="list-unstyled mt-3 mb-4">
-                      <li>20 users included</li>
-                      <li>10 GB of storage</li>
-                      <li>Priority email support</li>
-                      <li>Help center access</li>
+                      <li>- 2 Dispositivi per ticket</li>
+                      <li>- Assistenza con accesso remoto per un dispositivo contemporaneamente</li>
+                      <li>- Spazio cloud riservato da 5GB</li>
                     </ul>
-                    <button type="button" class="w-100 btn btn-lg btn-outline-primary">Get started</button>
+                    <a  class="w-100 btn btn-lg btn-primary" href="cart.php" role="button">Acquista</a>
                   </div>
                 </div>
                 </div>
                 <div class="col">
                   <div class="card mb-4 shadow-sm">
                   <div class="card-header">
-                    <h4 class="my-0 fw-normal">Enterprise</h4>
+                    <h4 class="my-0 fw-normal">Gold</h4>
                   </div>
                   <div class="card-body">
-                    <h1 class="card-title pricing-card-title">$29 <small class="text-muted">/ mo</small></h1>
+                    <h1 class="card-title pricing-card-title">60€ <small class="text-muted">/ mese</small></h1>
                     <ul class="list-unstyled mt-3 mb-4">
-                      <li>30 users included</li>
-                      <li>15 GB of storage</li>
-                      <li>Phone and email support</li>
-                      <li>Help center access</li>
+                      <li>- 5 Dispositivi per ticket</li>
+                      <li>- Assistenza con accesso remoto per un dispositivo contemporaneamente</li>
+                      <li>- Spazio cloud riservato da 50 GB</li>
+                      <li>- Servizio "Computer di cortesia" con accesso da remoto</li>
                     </ul>
-                    <button type="button" class="w-100 btn btn-lg btn-outline-primary">Contact us</button>
+                     <a  class="w-100 btn btn-lg btn-primary" href="cart.php" role="button">Acquista</a>
                   </div>
                 </div>
                 </div>
@@ -152,8 +145,8 @@
           
           <div class="price-title-mobile">
           <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-            <h1 class="display-4">Pricing</h1>
-            <p class="lead">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It’s built with default Bootstrap components and utilities with little customization.</p>
+            <h1 class="display-4">Pacchetti Singoli</h1>
+            <p class="lead">Non hai necessità di un servizio continuativo? Acquista uno dei nostri pacchetti ad uso singolo</p>
           </div>
           </div>
              
@@ -162,61 +155,58 @@
                 <div class="col">
                   <div class="card mb-4 shadow-sm">
                   <div class="card-header">
-                    <h4 class="my-0 fw-normal">Free</h4>
+                    <h4 class="my-0 fw-normal">Bronze</h4>
                   </div>
                   <div class="card-body">
-                    <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1>
+                    <h1 class="card-title pricing-card-title">15€</h1>
                     <ul class="list-unstyled mt-3 mb-4">
-                      <li>10 users included</li>
-                      <li>2 GB of storage</li>
-                      <li>Email support</li>
-                      <li>Help center access</li>
+                      <li>- 1 Dispositivo</li>
+                      <li>- Assistenza telefonica</li>
                     </ul>
-                    <button type="button" class="w-80 btn btn-lg btn-outline-primary">Acquista</button>
+                    <a class="w-80 btn btn-lg btn-primary" href="cart.php" role="button">Acquista</a>
                   </div>
                 </div>
                 </div>
                 <div class="col">
                   <div class="card mb-4 shadow-sm">
                   <div class="card-header">
-                    <h4 class="my-0 fw-normal">Pro</h4>
+                    <h4 class="my-0 fw-normal">Silver</h4>
                   </div>
                   <div class="card-body">
-                    <h1 class="card-title pricing-card-title">$15 <small class="text-muted">/ mo</small></h1>
+                    <h1 class="card-title pricing-card-title">35€</h1>
                     <ul class="list-unstyled mt-3 mb-4">
-                      <li>20 users included</li>
-                      <li>10 GB of storage</li>
-                      <li>Priority email support</li>
-                      <li>Help center access</li>
+                      <li>- 2 Dispositivi</li>
+                      <li>- Assistenza con accesso remoto per 1 dispositivo contemporaneamente</li>
+                      <li>- Spazio cloud riservato da 5GB</li>
                     </ul>
-                    <button type="button" class="w-80 btn btn-lg btn-outline-primary">Acquista</button>
+                     <a class="w-80 btn btn-lg btn-primary" href="cart.php" role="button">Acquista</a>
                   </div>
                 </div>
                 </div>
                 <div class="col">
                   <div class="card mb-4 shadow-sm">
                   <div class="card-header">
-                    <h4 class="my-0 fw-normal">Enterprise</h4>
+                    <h4 class="my-0 fw-normal">Gold</h4>
                   </div>
                   <div class="card-body">
-                    <h1 class="card-title pricing-card-title">$29 <small class="text-muted">/ mo</small></h1>
+                    <h1 class="card-title pricing-card-title">80€</h1>
                     <ul class="list-unstyled mt-3 mb-4">
-                      <li>30 users included</li>
-                      <li>15 GB of storage</li>
-                      <li>Phone and email support</li>
-                      <li>Help center access</li>
+                      <li>- 5 Dispositivi</li>
+                      <li>- Assistenza con accesso remoto per 3 dispositivi contemporaneamente</li>
+                      <li>- Spazio cloud riservato da 50GB</li>
+                      <li>- Servizio "Computer di cortesia" con accesso da remoto</li>
                     </ul>
-                    <button type="button" class="w-80 btn btn-lg btn-outline-primary">Acquista</button>
+                     <a class="w-80 btn btn-lg btn-primary" href="cart.php" role="button">Acquista</a>
                   </div>
                 </div>
                 </div>
               </div>
-          </div>
+          </>
           
           <div class="price-title-mobile">
           <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-            <h1 class="display-4">Pricing</h1>
-            <p class="lead">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It’s built with default Bootstrap components and utilities with little customization.</p>
+            <h1 class="display-4">Abbonamenti</h1>
+            <p class="lead">Cerchi un servizio su lunga durata? I nostri abbonamenti sono la scelta migliore</p>
           </div>
           </div>
           
@@ -225,57 +215,52 @@
                 <div class="col">
                   <div class="card mb-4 shadow-sm">
                   <div class="card-header">
-                    <h4 class="my-0 fw-normal">Free</h4>
+                    <h4 class="my-0 fw-normal">Bronze</h4>
                   </div>
                   <div class="card-body">
-                    <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1>
+                    <h1 class="card-title pricing-card-title">5€ <small class="text-muted">/ mese</small></h1>
                     <ul class="list-unstyled mt-3 mb-4">
-                      <li>10 users included</li>
-                      <li>2 GB of storage</li>
-                      <li>Email support</li>
-                      <li>Help center access</li>
+                      <li>- 1 Dispositivo per ticket</li>
+                      <li>- Assistenza telefonica</li>
                     </ul>
-                    <button type="button" class="w-80 btn btn-lg btn-outline-primary">Acquista</button>
+                     <a class="w-80 btn btn-lg btn-primary" href="cart.php" role="button">Acquista</a>
                   </div>
                 </div>
                 </div>
                 <div class="col">
                   <div class="card mb-4 shadow-sm">
                   <div class="card-header">
-                    <h4 class="my-0 fw-normal">Pro</h4>
+                    <h4 class="my-0 fw-normal">Silver</h4>
                   </div>
                   <div class="card-body">
-                    <h1 class="card-title pricing-card-title">$15 <small class="text-muted">/ mo</small></h1>
+                    <h1 class="card-title pricing-card-title">20€ <small class="text-muted">/ mese</small></h1>
                     <ul class="list-unstyled mt-3 mb-4">
-                      <li>20 users included</li>
-                      <li>10 GB of storage</li>
-                      <li>Priority email support</li>
-                      <li>Help center access</li>
+                      <li>- 2 Dispositivi per ticket</li>
+                      <li>- Assistenza con accesso remoto per un dispositivo contemporaneamente</li>
+                      <li>- Spazio cloud riservato da 5GB</li>
                     </ul>
-                    <button type="button" class="w-80 btn btn-lg btn-outline-primary">Acquista</button>
+                     <a class="w-80 btn btn-lg btn-primary" href="cart.php" role="button">Acquista</a>
                   </div>
                 </div>
                 </div>
                 <div class="col">
                   <div class="card mb-4 shadow-sm">
                   <div class="card-header">
-                    <h4 class="my-0 fw-normal">Enterprise</h4>
+                    <h4 class="my-0 fw-normal">Gold</h4>
                   </div>
                   <div class="card-body">
-                    <h1 class="card-title pricing-card-title">$29 <small class="text-muted">/ mo</small></h1>
+                    <h1 class="card-title pricing-card-title">60€ <small class="text-muted">/ mese</small></h1>
                     <ul class="list-unstyled mt-3 mb-4">
-                      <li>30 users included</li>
-                      <li>15 GB of storage</li>
-                      <li>Phone and email support</li>
-                      <li>Help center access</li>
+                      <li>- 5 Dispositivi per ticket</li>
+                      <li>- Assistenza con accesso remoto per un dispositivo contemporaneamente</li>
+                      <li>- Spazio cloud riservato da 50 GB</li>
+                      <li>- Servizio "Computer di cortesia" con accesso da remoto</li>
                     </ul>
-                    <button type="button" class="w-80 btn btn-lg btn-outline-primary">Acquista</button>
+                     <a class="w-80 btn btn-lg btn-primary" href="cart.php" role="button">Acquista</a>
                   </div>
                 </div>
                 </div>
               </div>
-          </div>
-        </div>
 	
 	    <script src="../bootstrap/js/bootstrap.bundle.min.js"  crossorigin="anonymous"></script>
 	    

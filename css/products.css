@@ -47,7 +47,7 @@
     }
     
     .row {
-       padding: 0vw 6vw 0vw 9vw; 
+       padding: 0 6vw 0 9vw;
     }
 
     .icon-bar,
@@ -90,19 +90,27 @@
     border-radius: 1.5rem 1.5rem 0 0;
 }
 
-.btn-outline-primary {
-    color: #EF8354 !important;
-    border-color: #EF8354 !important;
-    border: none;
-}
 
-.btn:focus, .btn:active {
-    outline: none !important;
+.btn-check:focus + .btn-primary, .btn-primary:focus {
     box-shadow: none;
 }
 
+.btn-check:checked + .btn-primary:focus, .btn-check:active + .btn-primary:focus, .btn-primary:active:focus, .btn-primary.active:focus, .show > .btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.25rem #EF8354;
+}
+
+.btn-outline-primary {
+    
+}
+
 .btn-outline-primary:hover {
-    color: white !important;
-    background-color: #EF8354;
-    border: none;
+    
+}
+
+#product-list-category {
+    font-family: -apple-system;
+}
+
+#product-list-description {
+    font-family: -apple-system;
 }
