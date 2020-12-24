@@ -1,0 +1,100 @@
+/* Desktop view */
+
+@media (min-width: 992px) {
+    .container {
+        max-height: 100% !important;
+        max-width: 100% !important;
+        margin-right: 0;
+        margin-left: 0;
+        padding-left: 0;
+        padding-right: 0;
+
+    }
+
+    .row {
+        margin-right: 0;
+    }
+
+    #logo {
+        height: auto;
+        width: 12vw;
+        padding-top: 1vw;
+    }
+}
+
+/* Mobile view */
+
+@media (max-width: 992px) {
+	
+    #logo {
+        height: auto;
+        width: 30vw;
+        padding-top: 6vw;
+        padding-bottom: 3vw;
+    }
+
+    .md-4 {
+	margin-top: 0.5rem !important;
+	margin-bottom: 0.5rem !important;
+    }
+
+    .py-5 {
+	padding-top: 0.5rem !important;
+	padding-bottom: 0.5rem !important;
+    }
+    .py-3 {
+	padding-top: 0.5rem !important;
+	padding-bottom: 0.5rem !important;
+    }
+
+    .py-2 {
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
+    }
+
+    .my-4 {
+	margin-bottom: 0rem !important;
+    }
+
+    .container {
+    }
+}
+
+#email-icon,
+#email-icon:visited,
+#email-icon:link{
+    text-decoration: none;
+    color: white;
+}
+
+#email-icon:hover{
+    text-decoration:underline;
+}
+
+footer {
+    background-color: #2D3142 !important;
+}
+
+.fa-facebook {
+    color: #4267B2 !important;
+}
+
+.fa-instagram {
+    color: #C13584 !important;
+}
+
+.fa-linkedin-in {
+    color: #2867B2 !important;
+}
+
+.fa-twitter {
+    color: #1DA1F2 !important;
+}
+
+.fa-youtube {
+    color: #FF0000 !important;
+}
+
+
+
+
