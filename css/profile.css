@@ -1,8 +1,17 @@
 body {
-    margin-top: 20px;
+    margin-top: 0;
     color: #1a202c;
     text-align: left;
     background-color: #e2e8f0;
+    height: 100%;
+}
+
+//da finire
+footer {
+    clear: both;
+    position: relative;
+    height: 200px;
+    margin-top: 220px;
 }
 
 .main-body {
