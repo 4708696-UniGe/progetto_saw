@@ -333,6 +333,11 @@
         top: 3vw !important;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
         background-color: #FBFFF4 !important;
+        margin: 0.125rem -8rem 0 !important;
+    }
+
+    .logged {
+        width: 10vw;
     }
 
     .search {
@@ -350,10 +355,8 @@
 }
 
 .navbar {
-    background-color: transparent !important;
+    background-color: #2D3142 !important;
 }
-
-
 
 .btn-primary {
     color: #FBFFF4 !important;
