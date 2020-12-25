@@ -67,8 +67,8 @@
 
       <main class="form-signin">
     <form action="registration.php" method="post">
-        <a href="home.php"><img class="mb-4" src="../images/logo.png" alt="Logo" width="100%"></a>
-        <h1 class="h1 mb-2 fw-small">Registrati</h1>
+        <a href="home.php"><img class="mb-2" src="../images/logo.png" alt="Logo" width="100%"></a>
+        <h1 class="h1 mb-3 fw-small">Registrati</h1>
         <p id="flag_reg" class="alert alert-danger devisible" role="alert"></p>
         <input type="text" name="firstname" placeholder="Nome" class="form-control">
         <input type="text" name="lastname" placeholder="Cognome" class="form-control">

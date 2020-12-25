@@ -39,6 +39,10 @@
         
     }
 
+    .profile {
+        visibility: hidden;
+    }
+
 }
 
 @media (max-width: 768px) {
@@ -85,6 +89,10 @@
         position: absolute;
         left: 10vw;
         top: 0;
+    }
+
+    .profile {
+        visibility: hidden;
     }
 
 }
@@ -141,86 +149,13 @@
         
     }
 
-}
-
-@media (min-width: 576px) {
-    #logotop {
-        width: auto;
-        height: 5vw;
-        position: relative;
-        left: 0.8vw;
-        top: 0.2vw;
-    }
-
-    .btn-secondary{
-        position: relative !important;
-        right: auto !important;
-        left: 86vw !important;
-        color: #FBFFF4 !important;
-        background-color: #EF8354 !important;
-        border-color: #EF8354 !important;
-    }
-
-    .dropdown-menu {
-        position: absolute !important;
-        right: auto !important;
-        left: 83vw !important;
-        top: 3vw !important;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
-        background-color: #FBFFF4 !important;
-    }
-
-    .search_mobile {
-        position: center;
-    }
-
-    .mobile_menu {
-        position: center !important;
-        text-align: center;
-        margin-bottom: -7vw;
+    .profile {
+        visibility: hidden;
     }
 
 }
 
-@media (min-width: 768px) {
-    #logotop {
-        width: auto;
-        height: 3vw;
-        position: relative;
-        left: 0.8vw;
-        top: 0.2vw;
-    }
 
-    .btn-secondary {
-        position: relative !important;
-        right: auto !important;
-        left: 86vw !important;
-        color: #FBFFF4 !important;
-        background-color: #EF8354 !important;
-        border-color: #EF8354 !important;
-    }
-
-    .dropdown-menu {
-        position: absolute !important;
-        right: auto !important;
-        left: 83vw !important;
-        top: 3vw !important;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
-        background-color: #FBFFF4 !important;
-    }
-    
-    .search_mobile {
-        position: center;
-        top: 1.4vw;
-    }
-
-    .mobile_menu {
-        position: center !important;
-        text-align: center;
-        margin-bottom: -4.5vw;
-    }
-
-}
 
 /* Desktop view */
 
