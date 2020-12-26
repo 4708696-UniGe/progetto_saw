@@ -12,6 +12,7 @@
 
 	if(isset($_POST['email']) && isset($_POST['pass'])) {
 		$email = mysqli_real_escape_string($conn, $_POST['email']);
+		SettaCookie("EMAIL", $email, 72000);
 		$psw = mysqli_real_escape_string($conn, $_POST['pass']);
 
 		$sql="SELECT pass, firstname, lastname, id FROM users WHERE email='$email'";
