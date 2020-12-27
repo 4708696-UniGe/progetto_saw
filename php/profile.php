@@ -30,8 +30,8 @@
                    
                         <div class="mt-3">
                           <h4> <?php echo $_COOKIE['FIRSTNAME']." ".$_COOKIE['LASTNAME']; ?> </h4>
-                          <p class="text-secondary mb-1">Full Stack Developer</p>
-                          <p class="text-muted font-size-sm">Bay Area, San Francisco, CA</p>
+                          <p class="text-secondary mb-1">Direttore</p>
+                          <p class="text-muted font-size-sm">Ansaldo</p>
                           <form action="profile_mod.php">
                           <button class="btn btn-primary">Modifica profilo</button>
                           </form>
@@ -83,10 +83,10 @@
                       <hr>
                       <div class="row">
                         <div class="col-sm-3">
-                          <h6 class="mb-0">Abbonamento</h6>
+                          <h6 class="mb-0">Tipo di abbonamento</h6>
                         </div>
                         <div class="col-sm-9 text-secondary">
-                          Tipo di abbonamento
+                          --
                         </div>
                       </div>
                     </div>
@@ -95,14 +95,16 @@
                   </div>
                 </div>
               </div>
-            </div>
         </div>
 
-        
-<div class="footer">
-	<footer> <?php include 'footer.php'; ?> </footer>
-	</div>		
+        <div class="footer">
+        <footer><?php include 'footer.php'; ?></footer>
+        </div>
 
+    </div>
+
+        
 	<script src="../bootstrap/js/bootstrap.bundle.min.js"  crossorigin="anonymous"></script>
 	</body>
+
 </html>
