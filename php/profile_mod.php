@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="it-IT">
 	<head>
 	<meta charset="UTF-8">
 	<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title> System Hospital - Home </title>
+	<title> Modifica Profilo </title>
 	<link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet"  crossorigin="anonymous">
 	<link rel="icon" href="../images/icon.png">
 	<link rel="stylesheet" href="../css/profile_mod.css">
@@ -17,6 +17,12 @@
 	</head>
 
 <body>
+
+
+    <?php
+           include ('../database/database_user_mod.php');
+    ?>
+
     <nav> <?php include 'navbar.php'; ?></nav>
 	<div class="container">
 	<div class="row gutters">
@@ -28,8 +34,8 @@
 							<div class="user-avatar">
 								<img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="Maxwell Admin">
 							</div>
-							<h5 class="user-name">Yuki Hayashi</h5>
-							<h6 class="user-email">yuki@Maxwell.com</h6>
+                            <?php echo ('<h5 class="user-name">  '.$_COOKIE['FIRSTNAME'].' </h5> 
+							<h6 class="user-email"> '.$email.' </h6>    '); ?>
 						</div>
 						<div class="about">
 							<h5 class="mb-2 text-primary">About</h5>
@@ -103,8 +109,8 @@
 					<div class="row gutters">
 						<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
 							<div class="text-right">
-								<button type="button" id="submit" name="submit" class="btn btn-secondary">Cancel</button>
-								<button type="button" id="submit" name="submit" class="btn btn-primary">Update</button>
+								<button type="button" id="submit" name="submit" class="btn btn-warning mod_button_s">Cancel</button>
+								<button type="button" id="submit" name="submit" class="btn btn-success mod_button_p">Update</button>
 							</div>
 						</div>
 					</div>
