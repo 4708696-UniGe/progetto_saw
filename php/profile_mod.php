@@ -20,7 +20,7 @@
 
 
     <?php
-           include ('../database/database_user_mod.php');
+           include ('../database/database_user_mod_read.php');
     ?>
 
     <nav> <?php include 'navbar.php'; ?></nav>
@@ -34,12 +34,12 @@
 							<div class="user-avatar">
 								<img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="Maxwell Admin">
 							</div>
-                            <?php echo ('<h5 class="user-name">  '.$_COOKIE['FIRSTNAME'].' </h5> 
+                            <?php echo ('<h5 class="user-name">  '.$firstname.' </h5> 
 							<h6 class="user-email"> '.$email.' </h6>    '); ?>
 						</div>
 						<div class="about">
 							<h5 class="mb-2 text-primary">About</h5>
-							<p>I'm Yuki. Full Stack Designer I enjoy creating user-centric, delightful and human experiences.</p>
+						<?php echo ('	<p> '.$about.' </p> ') ?>
 						</div>
 					</div>
 				</div>
@@ -54,43 +54,43 @@
 						</div>
 						<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
 							<div class="form-group">
-								<label for="fullName">Full Name</label>
-								<input type="text" class="form-control" id="fullName" placeholder="Enter full name">
+								<label for="fullName">First Name</label>
+							<?php echo (' <input type="text" class="form-control" id="fullName" placeholder="'.$firstname.'"> ') ?>
 							</div>
 						</div>
 						<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
 							<div class="form-group">
 								<label for="eMail">Email</label>
-								<input type="email" class="form-control" id="eMail" placeholder="Enter email ID">
+							<?php echo ('	<input type="email" class="form-control" id="eMail" placeholder="'.$email.'"> ') ?>
 							</div>
 						</div>
 						<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
 							<div class="form-group">
 								<label for="phone">Phone</label>
-								<input type="text" class="form-control" id="phone" placeholder="Enter phone number">
+							<?php echo ('	<input type="text" class="form-control" id="phone" placeholder="'.$phone.'"> ') ?>
 							</div>
 						</div>
 						<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
 							<div class="form-group">
-								<label for="website">Website URL</label>
-								<input type="url" class="form-control" id="website" placeholder="Website url">
+								<label for="website">Company Name</label>
+							<?php echo ('	<input type="url" class="form-control" id="website" placeholder="'.$company_name.'"> ') ?>
 							</div>
 						</div>
 					</div>
 					<div class="row gutters">
 						<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-							<h6 class="mb-3 text-primary">Address</h6>
+							<h6 class="mb-3 text-primary">Informazioni sui dispositivi utilizzati</h6>
 						</div>
 						<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
 							<div class="form-group">
-								<label for="Street">Street</label>
-								<input type="name" class="form-control" id="Street" placeholder="Enter Street">
+								<label for="Street">Sistema operativo usato sulla workstation</label>
+							<?php echo ('	<input type="name" class="form-control" id="Street" placeholder="'.$workstation_os.'"> ') ?>
 							</div>
 						</div>
 						<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
 							<div class="form-group">
-								<label for="ciTy">City</label>
-								<input type="name" class="form-control" id="ciTy" placeholder="Enter City">
+								<label for="ciTy">Sistema operativo usato sul dispositivo mobile</label>
+							<?php echo ('	<input type="name" class="form-control" id="ciTy" placeholder="'.$mobile_os.'"> ') ?>
 							</div>
 						</div>
 						<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">

@@ -1,26 +1,10 @@
 <?php
-	session_start();
-	$servername = "localhost";
-	$username = "root";
-	$password = "";
-	$dbname = "test";
-	
-	$conn = mysqli_connect($servername, $username, $password, $dbname);
 
-	if (!$conn) {
-		die("Connessione fallita: " . mysqli_connect_error());
-	}
+    session_start();
+    include 'database_connect.php';
 
-	$sql = "CREATE TABLE IF NOT EXISTS users (
-	id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-	firstname VARCHAR(50) NOT NULL,
-	lastname VARCHAR(50) NOT NULL,
-	email VARCHAR(50),
-	pass VARCHAR(256),
-	reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
-	)";
 
-	if (mysqli_query($conn, $sql) === TRUE) {
+	if (mysqli_query($conn, $sql_user) === TRUE) {
 	}else {
 	echo "Error creating table: " . mysqli_error($conn) . '\n';
 	}
@@ -39,10 +23,10 @@
 			echo "<script> var flag = 1; </script>";
 		}
 		else{
-			$sql = "INSERT INTO users (firstname, lastname, email, pass)
+			$sql_reg = "INSERT INTO users (firstname, lastname, email, pass)
 			VALUES ('".$firstname."', '".$lastname."', '".$email."', '".$psw."');";
 
-			$res = mysqli_query($conn, $sql);
+			$res = mysqli_query($conn, $sql_reg);
 
 			if (mysqli_affected_rows($conn) != 1) {
 				echo "Attenzione c'è stato un problema nell'inserimento, controlla i dati. ".mysqli_error($conn);

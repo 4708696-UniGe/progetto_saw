@@ -1,10 +1,6 @@
 <?php
-	$servername = "localhost";
-	$username = "root";
-	$password = "";
-	$dbname = "test";
-	
-	$conn = mysqli_connect($servername, $username, $password, $dbname);
+
+    include 'database_connect.php';
 
 	if (!$conn) {
 		die("Connessione fallita: " . mysqli_connect_error());
