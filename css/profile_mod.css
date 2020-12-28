@@ -1,7 +1,7 @@
 body {
 	margin-top: 20px;
-	color: #bcd0f7;
-	background: #1A233A;
+	color: #000000;
+	background: #FBFFF4;
 }
 
 .account-settings .user-profile {
@@ -39,11 +39,11 @@ body {
 }
 
 .card {
-	background: #272E48;
+	border: 0;
+	background: #E5E5E5;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
-	border: 0;
 	margin-bottom: 1rem;
 }
 
@@ -53,6 +53,104 @@ body {
 	-moz-border-radius: 2px;
 	border-radius: 2px;
 	font-size: .825rem;
-	background: #1A233A;
+	background: #FFFFFF;
 	color: #bcd0f7;
+}
+/* Desktop view */
+@media (min-width: 992px){
+	nav {
+		position: absolute;
+		top: 0;
+		min-width: 100%;
+		z-index: 1;
+	}
+
+	.logged {
+		position: absolute !important;
+	}
+
+	.dropdown-menu {
+		position: absolute !important;
+		left: 20vw !important;
+		right: 20vw !important;
+	}
+
+	.card {
+		border: 3px solid #14213D;
+		position: relative;
+		left: 15rem;
+		margin-top: 8rem;
+		margin-left: 0.8rem;
+		margin-bottom: -4rem;
+	}
+
+	.left_card {
+		margin-top: 2vw;
+		margin-bottom: -2vw;
+	}
+
+	#avatar {
+		width: 10rem;
+		height: auto;
+	}
+
+	.user-name {
+		font-size: 1.5rem;
+	}
+
+	.user-email {
+		font-size: 1rem !important;
+	}
+
+	.ab {
+		margin-top: 2rem;
+	}
+
+	#about {
+		width: 40%;
+		height: auto;
+	}
+
+	footer {
+		margin-top: 16.5rem;
+		min-width: 100%;
+	}
+
+	.buttonmod {
+		position: absolute;
+		right: 1.5vw;
+		bottom: 1vw;
+	}
+}
+
+/* Mobile view */
+@media (max-width: 992px){
+	nav {
+		position: absolute;
+		top: 0;
+		min-width: 100%;
+		z-index: 1;
+	}
+
+	.container {
+		margin-top: 4rem;
+		margin-bottom: 1rem !important;
+	}
+
+
+	.right_card {
+		margin-top: -3rem;
+		margin-bottom: 2rem;
+	}
+
+	.buttonmod {
+		position: absolute;
+		right: 4vw;
+		bottom: 3vw;
+	}
+
+	footer {
+		position: absolute;
+		min-width: 100%;
+	}
 }

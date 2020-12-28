@@ -28,90 +28,80 @@
 	<div class="row gutters">
 		<div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
 			<div class="card h-100">
-				<div class="card-body">
+				<div class="card-body left_card">
 					<div class="account-settings">
 						<div class="user-profile">
 							<div class="user-avatar">
-								<img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="Maxwell Admin">
+								<img id="avatar" src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="Maxwell Admin">
 							</div>
                             <?php echo ('<h5 class="user-name">  '.$firstname.' </h5> 
 							<h6 class="user-email"> '.$email.' </h6>    '); ?>
-						</div>
-						<div class="about">
-							<h5 class="mb-2 text-primary">About</h5>
-						<?php echo ('	<p> '.$about.' </p> ') ?>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12">
+		<div class="col-xl-6 col-lg-9 col-md-12 col-sm-12 col-12">
 			<div class="card h-100">
                 <form action="../database/database_user_mod_write.php" method="post">
-                        <div class="card-body">
+                        <div class="card-body right_card">
                             <div class="row gutters">
-                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                                    <h6 class="mb-3 text-primary">Personal Details</h6>
-                                </div>
-                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12">
                                     <div class="form-group">
-                                        <label for="fullName">First Name</label>
+                                        <label for="fullName">Nome</label>
                                     <?php echo (' <input type="text" class="form-control" id="firstname" placeholder="'.$firstname.'"> ') ?>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <div class="form-group">
+                                        <label for="fullName">Cognome</label>
+                                    <?php echo (' <input type="text" class="form-control" id="lastname" placeholder="'.$lastname.'"> ') ?>
                                     </div>
                                 </div>
                                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                                     <div class="form-group">
                                         <label for="eMail">Email</label>
-                                    <?php echo ('	<input type="email" class="form-control" id="email" placeholder="'.$email.'"> ') ?>
+                                    <?php echo (' <input type="email" class="form-control" id="email" placeholder="'.$email.'"> ') ?>
                                     </div>
                                 </div>
                                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                                     <div class="form-group">
-                                        <label for="phone">Phone</label>
-                                    <?php echo ('	<input type="text" class="form-control" id="phone" placeholder="'.$phone.'"> ') ?>
+                                        <label for="phone">Numero di telefono</label>
+                                    <?php echo (' <input type="text" class="form-control" id="phone" placeholder="'.$phone.'"> ') ?>
                                     </div>
                                 </div>
                                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                                     <div class="form-group">
-                                        <label for="website">Company Name</label>
-                                    <?php echo ('	<input type="url" class="form-control" id="company_name" placeholder="'.$company_name.'"> ') ?>
+                                        <label for="website">Nome Azienda</label>
+                                    <?php echo (' <input type="text" class="form-control" id="company_name" placeholder="'.$company_name.'"> ') ?>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row gutters">
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <div class="form-group">
+                                        <label for="Street">Sistema operativo principale usato sulla workstation</label>
+                                    <?php echo (' <input type="name" class="form-control" id="workstation_os" placeholder="'.$workstation_os.'"> ') ?>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <div class="form-group">
+                                        <label for="ciTy">Sistema operativo principale usato sul dispositivo mobile</label>
+                                    <?php echo (' <input type="name" class="form-control" id="mobile_os" placeholder="'.$mobile_os.'"> ') ?>
+                                    </div>
+                                </div>
+                                <div class="col-xl-12 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <div class="form-group ab">
+                                        <label for="sTate">Su di me</label>
+                                    <?php echo (' <textarea  class="form-control" id="about" placeholder="'.$about.'"></textarea> ') ?>
                                     </div>
                                 </div>
                             </div>
                             <div class="row gutters">
                                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                                    <h6 class="mb-3 text-primary">Informazioni sui dispositivi utilizzati</h6>
-                                </div>
-                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                                    <div class="form-group">
-                                        <label for="Street">Sistema operativo usato sulla workstation</label>
-                                    <?php echo ('	<input type="name" class="form-control" id="workstation_os" placeholder="'.$workstation_os.'"> ') ?>
-                                    </div>
-                                </div>
-                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                                    <div class="form-group">
-                                        <label for="ciTy">Sistema operativo usato sul dispositivo mobile</label>
-                                    <?php echo ('	<input type="name" class="form-control" id="mobile_os" placeholder="'.$mobile_os.'"> ') ?>
-                                    </div>
-                                </div>
-                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                                    <div class="form-group">
-                                        <label for="sTate">State</label>
-                                        <input type="text" class="form-control" id="sTate" placeholder="Enter State">
-                                    </div>
-                                </div>
-                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                                    <div class="form-group">
-                                        <label for="zIp">Zip Code</label>
-                                        <input type="text" class="form-control" id="zIp" placeholder="Zip Code">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row gutters">
-                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                                    <div class="text-right">
-                                        <button type="button" id="submit" name="submit" class="btn btn-warning mod_button_s">Cancel</button>
-                                        <button type="button" id="submit" name="submit" class="btn btn-success mod_button_p">Update</button>
+                                    <div class="text-right buttonmod">
+                                        <button type="submit" id="submit" name="submit" class="btn btn-danger mod_button_s">Cancel</button>
+                                        <button type="submit" id="submit" name="submit" class="btn btn-success mod_button_p">Update</button>
                                     </div>
                                 </div>
                             </div>

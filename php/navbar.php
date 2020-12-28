@@ -69,7 +69,7 @@
                     <a href="profile_mod.php">Modifica il profilo</a>
                 </div>
                 <div class="form-group py-2">
-                    <a href="cart.php">Carrello</a>
+                    <a href="chart.php">Carrello</a>
                 </div>
                 <a class="btn btn-primary" href="logout.php" role="button">Esci</a>
                 </div>
