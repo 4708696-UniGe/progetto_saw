@@ -1,7 +1,7 @@
 body {
 	margin-top: 20px;
 	color: #000000;
-	background: #FBFFF4;
+	background: #e2e8f0;
 }
 
 .account-settings .user-profile {
@@ -40,7 +40,7 @@ body {
 
 .card {
 	border: 0;
-	background: #E5E5E5;
+	background: #FFFFFF;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
@@ -56,6 +56,7 @@ body {
 	background: #FFFFFF;
 	color: #bcd0f7;
 }
+
 /* Desktop view */
 @media (min-width: 992px){
 	nav {
@@ -75,23 +76,24 @@ body {
 		right: 20vw !important;
 	}
 
+	.riga_1 {
+		position: relative;
+		right: -0.8rem;
+		width: 97.2%;
+	}
+
 	.card {
-		border: 3px solid #14213D;
 		position: relative;
 		left: 15rem;
 		margin-top: 8rem;
 		margin-left: 0.8rem;
 		margin-bottom: -4rem;
+		box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06);
 	}
 
 	.left_card {
 		margin-top: 2vw;
 		margin-bottom: -2vw;
-	}
-
-	#avatar {
-		width: 10rem;
-		height: auto;
 	}
 
 	.user-name {
@@ -107,13 +109,26 @@ body {
 	}
 
 	#about {
-		width: 40%;
+		position: relative;
+		top: 1rem;
+		left: 5rem;
+		width: 60%;
 		height: 4rem;
 		resize:none;
 	}
 
+	.mod_button_left {
+		position: relative;
+		top: 2rem;
+
+	}
+
+	.separatebox {
+		margin-bottom: 1rem;
+	}
+
 	footer {
-		margin-top: 15.75rem;
+		margin-top: 19rem;
 	}
 
 	.buttonmod {

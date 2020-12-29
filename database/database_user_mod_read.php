@@ -6,7 +6,7 @@
 
     $fname = $_COOKIE['FIRSTNAME'];
 
-    $sql = "SELECT firstname, lastname, email, phone, company_name, workstation_os, mobile_os, about FROM users WHERE firstname = 'pino'";
+    $sql = "SELECT firstname, lastname, email, phone, company_name, workstation_os, mobile_os, about FROM users WHERE firstname = 'utente'";
     $res = mysqli_query($conn, $sql);
 
     if (mysqli_affected_rows($conn) != 1) {

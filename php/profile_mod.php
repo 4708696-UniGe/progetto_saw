@@ -39,11 +39,17 @@
 				<div class="card-body left_card">
 					<div class="account-settings">
 						<div class="user-profile">
-							<div class="user-avatar">
-								<img id="avatar" src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="Maxwell Admin">
-							</div>
                             <?php echo ('<h5 class="user-name">  '.$firstname.' </h5> 
 							<h6 class="user-email"> '.$email.' </h6>    '); ?>
+                            <form action="../database/database_user_mod_write.php" method="post">
+                                <div class="col-xl-12 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <div class="form-group ab">
+                                        <label for="sTate">Su di me</label>
+                                        <?php echo (' <textarea  class="form-control" name="about" id="about" placeholder="'.$about.'"></textarea> ') ?>
+                                        <button type="submit" id="submit" name="submit" class="btn btn-success mod_button_left">Update</button>
+                                    </div>
+                                </div>
+                            </form>
 						</div>
 					</div>
 				</div>
@@ -67,11 +73,12 @@
                                     </div>
                                 </div>
                                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                                    <div class="form-group">
+                                    <div class="form-group separatebox">
                                         <label for="eMail">Email</label>
                                     <?php echo (' <input type="email" class="form-control" name="email" placeholder="'.$email.'"> ') ?>
                                     </div>
                                 </div>
+                                <hr class="riga_1">
                                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                                     <div class="form-group">
                                         <label for="phone">Numero di telefono</label>
@@ -79,11 +86,12 @@
                                     </div>
                                 </div>
                                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                                    <div class="form-group">
+                                    <div class="form-group separatebox">
                                         <label for="website">Nome Azienda</label>
                                     <?php echo (' <input type="text" class="form-control" name="company_name" placeholder="'.$company_name.'"> ') ?>
                                     </div>
                                 </div>
+                                <hr class="riga_1">
                             </div>
                             <div class="row gutters">
                                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
@@ -98,17 +106,11 @@
                                     <?php echo (' <input type="name" class="form-control" name="mobile_os" placeholder="'.$mobile_os.'"> ') ?>
                                     </div>
                                 </div>
-                                <div class="col-xl-12 col-lg-6 col-md-6 col-sm-6 col-12">
-                                    <div class="form-group ab">
-                                        <label for="sTate">Su di me</label>
-                                    <?php echo (' <textarea  class="form-control" name="about" placeholder="'.$about.'"></textarea> ') ?>
-                                    </div>
-                                </div>
                             </div>
                             <div class="row gutters">
                                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                                     <div class="text-right buttonmod">
-                                        
+                                        <a href="profile.php" class="btn btn-danger mod_button_d">Cancel</a>
                                         <button type="submit" id="submit" name="submit" class="btn btn-success mod_button_p">Update</button>
                                     </div>
                                 </div>

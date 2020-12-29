@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title> System Hospital - Home </title>
+	<title> Profilo </title>
 	<link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet"  crossorigin="anonymous">
 	<link rel="icon" href="../images/icon.png">
 	<link rel="stylesheet" href="../css/profile.css">
@@ -25,7 +25,7 @@
                 
                 <div class="col-md-4 mb-3">
                   <div class="card">
-                    <div class="card-body">
+                    <div class="card-body left_card">
                       <div class="d-flex flex-column align-items-center text-center">
                    
                         <div class="mt-3">
@@ -69,15 +69,6 @@
                         </div>
                         <div class="col-sm-9 text-secondary">
                           <?php echo $email = $_COOKIE['EMAIL']; ?>
-                        </div>
-                      </div>
-                      <hr>
-                      <div class="row">
-                        <div class="col-sm-3">
-                          <h6 class="mb-0">Id</h6>
-                        </div>
-                        <div class="col-sm-9 text-secondary">
-                          <?php echo $id = $_COOKIE['ID_USER']; ?>
                         </div>
                       </div>
                       <hr>
