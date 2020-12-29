@@ -20,7 +20,15 @@
 
 
     <?php
-           include ('../database/database_user_mod_read.php');
+        $firstname = null;
+        $lastname = null;
+        $email = null;
+        $phone = null;
+        $company_name = null;
+        $workstation_os = null;
+        $mobile_os = null;
+        $about = null;
+        include ("../database/database_user_mod_read.php");
     ?>
 
     <nav> <?php include 'navbar.php'; ?></nav>
@@ -49,31 +57,31 @@
                                 <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12">
                                     <div class="form-group">
                                         <label for="fullName">Nome</label>
-                                    <?php echo (' <input type="text" class="form-control" id="firstname" placeholder="'.$firstname.'"> ') ?>
+                                    <?php echo (' <input type="text" class="form-control" name="firstname" placeholder="'.$firstname.'"> ') ?>
                                     </div>
                                 </div>
                                 <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12">
                                     <div class="form-group">
                                         <label for="fullName">Cognome</label>
-                                    <?php echo (' <input type="text" class="form-control" id="lastname" placeholder="'.$lastname.'"> ') ?>
+                                    <?php echo (' <input type="text" class="form-control" name="lastname" placeholder="'.$lastname.'"> ') ?>
                                     </div>
                                 </div>
                                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                                     <div class="form-group">
                                         <label for="eMail">Email</label>
-                                    <?php echo (' <input type="email" class="form-control" id="email" placeholder="'.$email.'"> ') ?>
+                                    <?php echo (' <input type="email" class="form-control" name="email" placeholder="'.$email.'"> ') ?>
                                     </div>
                                 </div>
                                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                                     <div class="form-group">
                                         <label for="phone">Numero di telefono</label>
-                                    <?php echo (' <input type="text" class="form-control" id="phone" placeholder="'.$phone.'"> ') ?>
+                                    <?php echo (' <input type="text" class="form-control" name="phone" placeholder="'.$phone.'"> ') ?>
                                     </div>
                                 </div>
                                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                                     <div class="form-group">
                                         <label for="website">Nome Azienda</label>
-                                    <?php echo (' <input type="text" class="form-control" id="company_name" placeholder="'.$company_name.'"> ') ?>
+                                    <?php echo (' <input type="text" class="form-control" name="company_name" placeholder="'.$company_name.'"> ') ?>
                                     </div>
                                 </div>
                             </div>
@@ -81,26 +89,26 @@
                                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                                     <div class="form-group">
                                         <label for="Street">Sistema operativo principale usato sulla workstation</label>
-                                    <?php echo (' <input type="name" class="form-control" id="workstation_os" placeholder="'.$workstation_os.'"> ') ?>
+                                    <?php echo (' <input type="name" class="form-control" name="workstation_os" placeholder="'.$workstation_os.'"> ') ?>
                                     </div>
                                 </div>
                                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                                     <div class="form-group">
                                         <label for="ciTy">Sistema operativo principale usato sul dispositivo mobile</label>
-                                    <?php echo (' <input type="name" class="form-control" id="mobile_os" placeholder="'.$mobile_os.'"> ') ?>
+                                    <?php echo (' <input type="name" class="form-control" name="mobile_os" placeholder="'.$mobile_os.'"> ') ?>
                                     </div>
                                 </div>
                                 <div class="col-xl-12 col-lg-6 col-md-6 col-sm-6 col-12">
                                     <div class="form-group ab">
                                         <label for="sTate">Su di me</label>
-                                    <?php echo (' <textarea  class="form-control" id="about" placeholder="'.$about.'"></textarea> ') ?>
+                                    <?php echo (' <textarea  class="form-control" name="about" placeholder="'.$about.'"></textarea> ') ?>
                                     </div>
                                 </div>
                             </div>
                             <div class="row gutters">
                                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                                     <div class="text-right buttonmod">
-                                        <button type="submit" id="submit" name="submit" class="btn btn-danger mod_button_s">Cancel</button>
+                                        
                                         <button type="submit" id="submit" name="submit" class="btn btn-success mod_button_p">Update</button>
                                     </div>
                                 </div>

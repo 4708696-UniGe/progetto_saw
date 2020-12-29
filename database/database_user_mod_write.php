@@ -2,11 +2,8 @@
 
     include 'database_connect.php';
 
-    if (!$conn) {
-        die("Connessione fallita: " . mysqli_connect_error());
-    }
 
-    $fname = 'utente';
+    $fname = 'pino';
     echo "test";
     if(isset($_POST)){
         $firstname = mysqli_real_escape_string($conn, $_POST['firstname']);
@@ -18,7 +15,7 @@
         $mobile_os = mysqli_real_escape_string($conn, $_POST['mobile_os']);
         $about = mysqli_real_escape_string($conn, $_POST['about']);
 
-        $sql_e = "SELECT email FROM users WHERE firstname = '".$fname."'";
+        $sql_e = "SELECT email FROM users WHERE firstname = 'pino'";
         $res_e = mysqli_query($conn, $sql_e);
         echo mysqli_affected_rows($conn) ;
         if (mysqli_affected_rows($conn) != 1) {
@@ -32,14 +29,14 @@
         }
 
             $sql_updt = "UPDATE users SET firstname='".$firstname."',
-                 lastname= '".$lastname."',
-                 email= '".$emailn."',
-                 phone= ".$phone.",
-                 company_name= '".$company_name."',
-                 workstation_os= '".$workstation_os."',
-                 mobile_os= '".$mobile_os."',
-                 about= '".$about."' 
-                 WHERE email = '".$email."'";
+                 lastname='".$lastname."',
+                 email='".$emailn."',
+                 phone='".$phone."',
+                 company_name='".$company_name."',
+                 workstation_os='".$workstation_os."',
+                 mobile_os='".$mobile_os."',
+                 about='".$about."'
+                 WHERE email='".$email."'";
 
         $res = mysqli_query($conn, $sql_updt);
 

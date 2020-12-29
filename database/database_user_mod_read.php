@@ -2,13 +2,11 @@
 
     include 'database_connect.php';
 
-    if (!$conn) {
-        die("Connessione fallita: " . mysqli_connect_error());
-    }
+
 
     $fname = $_COOKIE['FIRSTNAME'];
 
-    $sql = "SELECT firstname, lastname, email, phone, company_name, workstation_os, mobile_os, about FROM users WHERE firstname = 'utente'";
+    $sql = "SELECT firstname, lastname, email, phone, company_name, workstation_os, mobile_os, about FROM users WHERE firstname = 'pino'";
     $res = mysqli_query($conn, $sql);
 
     if (mysqli_affected_rows($conn) != 1) {
