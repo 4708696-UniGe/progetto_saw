@@ -67,6 +67,10 @@
     }
 }
 
+.devisible {
+    display: none;
+}
+
 .row {
     margin-right: 0;
 }
