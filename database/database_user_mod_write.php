@@ -7,7 +7,7 @@
     }
 
     $fname = 'utente';
-
+    echo "test";
     if(isset($_POST)){
         $firstname = mysqli_real_escape_string($conn, $_POST['firstname']);
         $lastname = mysqli_real_escape_string($conn, $_POST['lastname']);
@@ -31,7 +31,15 @@
 
         }
 
-            $sql_updt = "UPDATE users SET firstname='$firstname', lastname= '".$lastname."', email= '".$emailn."', phone= ".$phone.", company_name= '".$company_name."', workstation_os= '".$workstation_os."', mobile_os= '".$mobile_os."', about= '".$about."' WHERE email = '".$email."'";
+            $sql_updt = "UPDATE users SET firstname='".$firstname."',
+                 lastname= '".$lastname."',
+                 email= '".$emailn."',
+                 phone= ".$phone.",
+                 company_name= '".$company_name."',
+                 workstation_os= '".$workstation_os."',
+                 mobile_os= '".$mobile_os."',
+                 about= '".$about."' 
+                 WHERE email = '".$email."'";
 
         $res = mysqli_query($conn, $sql_updt);
 
