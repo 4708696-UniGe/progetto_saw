@@ -11,6 +11,15 @@ body {
     background-color: #f5f5f5;
 }
 
+.boxcont {
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    animation: shadow 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+}
+
 .form-signin {
     width: 100%;
     max-width: 400px;
@@ -77,6 +86,13 @@ h1:after {
     border-color: #EF8354 !important;
 }
 
+@keyframes shadow {
+    to {
+        box-shadow: 5px 10px 10px grey;
+        /*background-color: lightgrey;*/
+    }
+}
+
 @keyframes undLine {
     from{
         opacity:0;
@@ -96,5 +112,164 @@ h1:after {
     }
     to{
         opacity:1;
+    }
+}
+
+.border-animation {
+    --border-width: 3px;
+    --animation-speed: 2s;
+    --color: black;
+    color: var(--color);
+    position: relative;
+    display: inline-block;
+    border: var(--border-width) solid transparent;
+}
+
+    .border-animation:before, .border-animation:after {
+        content: "";
+        position: absolute;
+        background: var(--color);
+    }
+
+    .border-animation:focus:before, .border-animation:before {
+        animation: beforeBorders var(--animation-speed) forwards;
+    }
+
+    .border-animation:focus:after, .border-animation:after {
+        animation: afterBorders var(--animation-speed) forwards;
+    }
+
+    .border-animation:focus, .border-animation {
+        animation: borderColors var(--animation-speed) steps(1) forwards;
+        outline: none;
+    }
+
+@keyframes beforeBorders {
+    0% {
+        top: calc(var(--border-width) * -1);
+        left: 50%;
+        bottom: auto;
+        right: auto;
+        width: 0;
+        height: var(--border-width);
+    }
+
+    33% {
+        top: calc(var(--border-width) * -1);
+        left: calc(var(--border-width) * -1);
+        bottom: auto;
+        right: auto;
+        width: calc(var(--border-width) + 50%);
+        height: var(--border-width);
+    }
+
+    33.1% {
+        width: var(--border-width);
+    }
+
+    66% {
+        top: calc(var(--border-width) * -1);
+        left: calc(var(--border-width) * -1);
+        bottom: auto;
+        right: auto;
+        width: var(--border-width);
+        height: calc((var(--border-width) * 2) + 100%);
+    }
+
+    66.1% {
+        top: auto;
+        left: calc(var(--border-width) * -1);
+        bottom: calc(var(--border-width) * -1);
+        right: auto;
+        height: var(--border-width);
+    }
+
+    100% {
+        top: auto;
+        left: calc(var(--border-width) * -1);
+        bottom: calc(var(--border-width) * -1);
+        right: auto;
+        width: calc(var(--border-width) + 50%);
+        height: var(--border-width);
+    }
+}
+
+@keyframes afterBorders {
+    0% {
+        top: calc(var(--border-width) * -1);
+        left: auto;
+        bottom: auto;
+        right: 50%;
+        width: 0;
+        height: var(--border-width);
+    }
+
+    33% {
+        top: calc(var(--border-width) * -1);
+        left: auto;
+        bottom: auto;
+        right: calc(var(--border-width) * -1);
+        width: calc(var(--border-width) + 50%);
+        height: var(--border-width);
+    }
+
+    33.1% {
+        width: var(--border-width);
+    }
+
+    66% {
+        top: calc(var(--border-width) * -1);
+        left: auto;
+        bottom: auto;
+        right: calc(var(--border-width) * -1);
+        width: var(--border-width);
+        height: calc((var(--border-width) * 1) + 100%);
+    }
+
+    66.1% {
+        top: auto;
+        left: auto;
+        bottom: calc(var(--border-width) * -1);
+        right: calc(var(--border-width) * -1);
+        height: var(--border-width);
+    }
+
+    100% {
+        top: auto;
+        left: auto;
+        bottom: calc(var(--border-width) * -1);
+        right: calc(var(--border-width) * -1);
+        width: calc(var(--border-width) + 50%);
+        height: var(--border-width);
+    }
+}
+
+@keyframes borderColors {
+    0% {
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+
+    33% {
+        border-top-color: var(--color);
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+
+    66% {
+        border-top-color: var(--color);
+        border-right-color: var(--color);
+        border-bottom-color: transparent;
+        border-left-color: var(--color);
+    }
+
+    100% {
+        border-top-color: var(--color);
+        border-right-color: var(--color);
+        border-bottom-color: var(--color);
+        border-left-color: var(--color);
     }
 }
