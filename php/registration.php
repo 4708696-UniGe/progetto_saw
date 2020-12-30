@@ -64,8 +64,8 @@
           </form>
          </div>
       -->
-
-      <main class="form-signin">
+      <div class="boxcont">
+      <div class="form-signin border-animation">
     <form action="registration.php" method="post">
         <a href="home.php"><img class="mb-2" src="../images/logo.png" alt="Logo" width="100%"></a>
         <h1 class="h1 mb-3 fw-small">Registrati</h1>
@@ -78,7 +78,8 @@
         <button class="w-100 btn btn-lg btn-primary" type="submit">Registrati</button>
         <p class="mt-5 mb-3 text-muted">&#169; 2017-2020</p>
     </form>
-    </main>
+    </div>
+    </div>
 </body>
 
       <script> 
