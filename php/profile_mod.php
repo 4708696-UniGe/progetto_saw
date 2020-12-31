@@ -42,6 +42,7 @@
                             <?php echo ('<h5 class="user-name">  '.$firstname.' </h5> 
 							<h6 class="user-email"> '.$email.' </h6>    '); ?>
                             <form action="../database/database_user_mod_write.php" method="post">
+                                <hr class="riga_left">
                                 <div class="col-xl-12 col-lg-6 col-md-6 col-sm-6 col-12">
                                     <div class="form-group ab">
                                         <label for="sTate">Su di me</label>
@@ -106,6 +107,7 @@
                                     <?php echo (' <input type="name" class="form-control" name="mobile_os" placeholder="'.$mobile_os.'"> ') ?>
                                     </div>
                                 </div>
+                                <hr class="riga_2">
                             </div>
                             <div class="row gutters">
                                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">

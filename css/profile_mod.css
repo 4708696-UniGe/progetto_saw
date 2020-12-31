@@ -76,10 +76,24 @@ body {
 		right: 20vw !important;
 	}
 
+	.riga_left{
+		position: relative;
+		right: -0.8rem;
+		width: 97.2%;
+		margin-top: 1.5rem;
+	}
+
 	.riga_1 {
 		position: relative;
 		right: -0.8rem;
 		width: 97.2%;
+	}
+
+	.riga_2 {
+		position: relative;
+		right: -0.8rem;
+		width: 97.2%;
+		margin-top: 1rem;
 	}
 
 	.card {
@@ -92,8 +106,9 @@ body {
 	}
 
 	.left_card {
-		margin-top: 2vw;
+		margin-top: 1vw;
 		margin-bottom: -2vw;
+		padding-top: -1vw;
 	}
 
 	.user-name {
@@ -119,7 +134,7 @@ body {
 
 	.mod_button_left {
 		position: relative;
-		top: 2rem;
+		top: 3rem;
 
 	}
 
@@ -128,7 +143,7 @@ body {
 	}
 
 	footer {
-		margin-top: 19rem;
+		margin-top: 17.47rem;
 	}
 
 	.buttonmod {
