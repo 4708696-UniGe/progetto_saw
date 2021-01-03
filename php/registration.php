@@ -14,7 +14,7 @@
 
     <body>
 
-          <?php
+    <?php
     if(isset($_POST['firstname'])) {
         include ('../database/database_reg.php');
     }

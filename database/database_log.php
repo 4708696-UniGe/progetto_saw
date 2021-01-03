@@ -13,6 +13,7 @@
 	if(isset($_POST['email']) && isset($_POST['pass'])) {
 		$email = mysqli_real_escape_string($conn, $_POST['email']);
 		SettaCookie("EMAIL", $email, 72000);
+		$_SESSION["EMAIL"] = $email;
 		$psw = mysqli_real_escape_string($conn, $_POST['pass']);
 
 		$sql="SELECT pass, firstname, lastname, id FROM users WHERE email='$email'";
@@ -23,7 +24,9 @@
 		else{
 				$rows = mysqli_fetch_array($res);
 				if(password_verify($psw, $rows[0])) {
+					$_SESSION["FIRSTNAME"] = $rows[1];
 					SettaCookie("FIRSTNAME", $rows[1], 72000);
+					$_SESSION["LASTNAME"] = $rows[2];
 					SettaCookie("LASTNAME", $rows[2], 72000);
 					SettaCookie("ID_USER", $rows[3], 72000);
 					header("Location: ../php/home.php");
