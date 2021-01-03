@@ -28,6 +28,7 @@
 					SettaCookie("FIRSTNAME", $rows[1], 72000);
 					$_SESSION["LASTNAME"] = $rows[2];
 					SettaCookie("LASTNAME", $rows[2], 72000);
+					$_SESSION["ID_USER"] = $rows[3];
 					SettaCookie("ID_USER", $rows[3], 72000);
 					header("Location: ../php/home.php");
 			}
