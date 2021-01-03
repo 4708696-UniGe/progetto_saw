@@ -1,13 +1,9 @@
 <?php
-/*<?php  ?>
-<a title="Home" href="home.php"><img id="logotop" src="../images/logo.png" alt="Logo azienda"> </a>
- <ul id="nav">
-  <li id="about"><a href="about.php">About</a> </li>
-  <li id="signup"><a href="registration.php">Sign-Up</a> </li>
-  <li id="login"><a href="login.php">Login</a> </li>
-  </a> </li>
- </ul> */ ?>
- 
+    if (!isset($_SESSION)) {
+        session_start();
+    }
+?>
+
 <link rel="stylesheet" href="../css/navbar.css">
 
  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -24,7 +20,7 @@
        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
          <div class="mobile_menu">
          <?php
-         if(isset($_COOKIE['FIRSTNAME'])){
+         if(isset($_SESSION["FIRSTNAME"])){
               echo ('
             <li class="nav-item active">
                 <a class="nav-link" href="profile.php">Profilo <span class="sr-only">(current)</span></a>
@@ -53,12 +49,11 @@
          </div>
          <div class="profile">
          <?php
-
-         if(isset($_COOKIE['FIRSTNAME']) && isset($_COOKIE['LASTNAME']) && isset($_COOKIE['ID_USER'])){
+         if(isset($_SESSION["FIRSTNAME"])){
               echo ('
                     <li class="nav-item dropdown">
                 <button class="btn btn-secondary dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                   '.$_COOKIE['FIRSTNAME'].'
+                   '.$_SESSION["FIRSTNAME"].'
                 </button>
                 <div class="dropdown-menu dropdown-menu-left logged">
                 <div class="px-4 py-3" >

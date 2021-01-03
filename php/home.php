@@ -19,6 +19,9 @@
 
 	<body>
 
+
+
+
 		
 		<nav> <?php include 'navbar.php'; ?></nav>
 			<!--<?php include 'socialbar.php'; ?>-->
@@ -87,6 +90,9 @@
 			    <div class="text" id="block">Trova la tua tra le nostre <a id="inline_link" href="platform_list.php">piattaforme supportate.</a> </div>
 		    </div>
 	    </div>-->
+
+
+
 		<div class="franco">
 			<div class="bg">
 				<div class = "box">

@@ -3,7 +3,7 @@
     include 'database_connect.php';
 
 
-    $fname = 'pino';
+    $fname = 'utente';
     echo "test";
     if(isset($_POST)){
         $firstname = mysqli_real_escape_string($conn, $_POST['firstname']);
@@ -15,7 +15,7 @@
         $mobile_os = mysqli_real_escape_string($conn, $_POST['mobile_os']);
         $about = mysqli_real_escape_string($conn, $_POST['about']);
 
-        $sql_e = "SELECT email FROM users WHERE firstname = 'pino'";
+        $sql_e = "SELECT email FROM users WHERE firstname = 'utente'";
         $res_e = mysqli_query($conn, $sql_e);
         echo mysqli_affected_rows($conn) ;
         if (mysqli_affected_rows($conn) != 1) {

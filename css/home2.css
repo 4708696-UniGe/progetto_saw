@@ -117,6 +117,7 @@
 }
 
 @media(min-width: 992px) {
+
     .bg {
         background-position-y: 0;
         background-attachment: local !important;

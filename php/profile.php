@@ -17,6 +17,19 @@
 	</head>
 
 <body>
+
+    <?php
+    if (!isset($_SESSION)) {
+        session_start();
+    }
+    if ($_SESSION["LOGGED"]==1) {
+        $ver = 1;
+    }
+    if (!isset($ver)) {
+        header("Location:login.php?message=Devi effettuare il login");
+    }
+    ?>
+
     <nav> <?php include 'navbar.php'; ?></nav>
 
     <div class="container">
@@ -29,7 +42,7 @@
                       <div class="d-flex flex-column align-items-center text-center">
                    
                         <div class="mt-3">
-                          <h4> <?php echo $_COOKIE['FIRSTNAME']." ".$_COOKIE['LASTNAME']; ?> </h4>
+                          <h4> <?php echo $_SESSION['FIRSTNAME']." ".$_SESSION['LASTNAME']; ?> </h4>
                           <p class="text-secondary mb-1">Direttore</p>
                           <p class="text-muted font-size-sm">Ansaldo</p>
                           <form action="profile_mod.php">
@@ -50,7 +63,7 @@
                           <h6 class="mb-0">Nome</h6>
                         </div>
                         <div class="col-sm-9 text-secondary">
-                             <?php echo $_COOKIE['FIRSTNAME']; ?>
+                             <?php echo $_SESSION['FIRSTNAME']; ?>
                         </div>
                       </div>
                       <hr>
@@ -59,7 +72,7 @@
                           <h6 class="mb-0">Cognome</h6>
                         </div>
                         <div class="col-sm-9 text-secondary">
-                          <?php echo $_COOKIE['LASTNAME']; ?>
+                          <?php echo $_SESSION['LASTNAME']; ?>
                         </div>
                       </div>
                       <hr>
@@ -68,7 +81,7 @@
                           <h6 class="mb-0">Email</h6>
                         </div>
                         <div class="col-sm-9 text-secondary">
-                          <?php echo $email = $_COOKIE['EMAIL']; ?>
+                          <?php echo $_SESSION['EMAIL']; ?>
                         </div>
                       </div>
                       <hr>
