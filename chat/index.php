@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-include('database_connection.php');
+include('database_chat.php');
 if(!isset($_SESSION['user_id']))
 {
 	header("location:login.php");

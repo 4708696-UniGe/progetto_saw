@@ -1,6 +1,6 @@
 <?php
 session_start();
-include('database_connection.php');
+include('database_chat.php');
 $message = '';
 if(isset($_SESSION['user_id']))
 {
@@ -13,7 +13,7 @@ if(isset($_POST['login']))
 		SELECT * FROM login 
   		WHERE username = :username
 	";
-	$statement = $connect->prepare($query);
+	$statement = $conn->prepare($query);
 	$statement->execute(
 		array(
 			':username' => $_POST["username"]
@@ -34,9 +34,9 @@ if(isset($_POST['login']))
 	     		(user_id) 
 	     		VALUES ('".$row['user_id']."')
 				";
-				$statement = $connect->prepare($sub_query);
+				$statement = $conn->prepare($sub_query);
 				$statement->execute();
-				$_SESSION['login_details_id'] = $connect->lastInsertId();
+				$_SESSION['login_details_id'] = $conn->lastInsertId();
 				header('location:index.php');
 			}
 			else
@@ -66,7 +66,7 @@ if(isset($_POST['login']))
         <div class="container">
 			<br />
 			
-			<h3 align="center">Tutorial - <a href="https://www.webslesson.info/2018/07/live-chat-system-in-php-using-ajax-jquery.html">Chat Application using PHP Ajax Jquery</a></h3><br />
+			<h3 align="center">Chat Application using PHP Ajax Jquery</h3><br />
 			<br />
 			<div class="panel panel-default">
   				<div class="panel-heading">Chat Application Login</div>
@@ -87,25 +87,14 @@ if(isset($_POST['login']))
 					</form>
 					<br />
 					<br />
-					<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-					<!-- webslesson_mainblogsec_Blog1_1x1_as -->
-					<ins class="adsbygoogle"
-						 style="display:block"
-						 data-ad-client="ca-pub-4529508631166774"
-						 data-ad-host="ca-host-pub-1556223355139109"
-						 data-ad-host-channel="L0007"
-						 data-ad-slot="6573078845"
-						 data-ad-format="auto"></ins>
-					<script>
-					(adsbygoogle = window.adsbygoogle || []).push({});
-					</script>
+					
 					<br />
 					<br />
 					<p><b>User 1</b></p>
-					<p><b>Username</b> - ross<br /><b>Password</b> - password</p>
-					<p><b>Username</b> - joey<br /><b>Password</b> - password</p>
-					<p><b>Username</b> - monica<br /><b>Password</b> - password</p>
-					<p><b>Username</b> - rechael<br /><b>Password</b> - password</p>
+
+					<p><b> Utenti che possono loggarsi: quelli che sono nella tabella login del database test</b></p>
+					<p><b>Username</b> - johnsmith<br /><b>Password</b> - password</p>
+					<p><b>Username</b> - peterParkery<br /><b>Password</b> - password</p>
 					<br />
 					<br />
 				</div>
