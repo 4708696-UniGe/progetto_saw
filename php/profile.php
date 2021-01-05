@@ -43,8 +43,8 @@
                    
                         <div class="mt-3">
                           <h4> <?php echo $_SESSION['FIRSTNAME']." ".$_SESSION['LASTNAME']; ?> </h4>
-                          <p class="text-secondary mb-1">Direttore</p>
-                          <p class="text-muted font-size-sm">Ansaldo</p>
+                          <p class="text-secondary mb-1">Mi sento</p>
+                          <p class="text-muted font-size-sm">sto cazzo</p>
                           <form action="profile_mod.php">
                           <button class="btn btn-primary">Modifica profilo</button>
                           </form>

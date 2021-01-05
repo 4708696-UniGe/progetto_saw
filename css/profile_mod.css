@@ -1,5 +1,4 @@
 body {
-	margin-top: 20px;
 	color: #000000;
 	background: #e2e8f0;
 }
@@ -99,7 +98,7 @@ body {
 	.card {
 		position: relative;
 		left: 15rem;
-		margin-top: 8rem;
+		margin-top: 10rem;
 		margin-left: 0.8rem;
 		margin-bottom: -4rem;
 		box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06);
@@ -143,7 +142,7 @@ body {
 	}
 
 	footer {
-		margin-top: 17.47rem;
+		margin-top: 16.72rem;
 	}
 
 	.buttonmod {
@@ -162,21 +161,64 @@ body {
 		z-index: 1;
 	}
 
-	.container {
-		margin-top: 4rem;
-		margin-bottom: 1rem !important;
+	.ab {
+		margin-top: 0rem;
 	}
 
+	#about {
+		height: 4rem;
+		resize:none;
+	}
+
+	.container_card {
+		margin-left: 0rem;
+		margin-bottom: 8rem;
+	}
+
+	.card {
+		margin-top: 5rem;
+		margin-bottom: 0rem !important;
+	}
+
+	.left_card {
+		margin-top: 3rem;
+		margin-bottom: 0vw;
+		padding-top: 0vw;
+	}
 
 	.right_card {
-		margin-top: -3rem;
-		margin-bottom: 2rem;
+		margin-top: -8rem;
+		margin-bottom: -3rem;
+	}
+
+	.riga_left{
+		position: relative;
+		right: -0.7rem;
+		width: 93%;
+		margin-top: 1.5rem;
+	}
+
+	.riga_1 {
+		position: relative;
+		right: -0.8rem;
+		width: 93%;
+		margin-top: 1.5rem;
+	}
+
+	.riga_2 {
+		position: relative;
+		right: -0.8rem;
+		width: 93%;
+		margin-top: 1.5rem;
 	}
 
 	.buttonmod {
 		position: absolute;
 		right: 4vw;
-		bottom: 3vw;
+	}
+
+	.mod_button_left {
+		margin-top: 1rem;
 	}
 
 	footer {

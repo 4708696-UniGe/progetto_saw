@@ -7,7 +7,7 @@
 	<title> System Hospital - Home </title>
 	<link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet"  crossorigin="anonymous">
 	<link rel="icon" href="../images/icon.png">
-	<link rel="stylesheet" href="../css/home2.css">
+	<link rel="stylesheet" href="../css/home.css">
     <link rel="stylesheet" href="../css/scrollbar.css">
 	
 	 
@@ -24,7 +24,7 @@
 
 		
 		<nav> <?php include 'navbar.php'; ?></nav>
-			<!--<?php include 'socialbar.php'; ?>-->
+
 
 		
 		

@@ -32,7 +32,7 @@
     ?>
 
     <nav> <?php include 'navbar.php'; ?></nav>
-	<div class="container">
+	<div class="container container_card">
 	<div class="row gutters">
 		<div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
 			<div class="card h-100">
@@ -47,7 +47,7 @@
                                     <div class="form-group ab">
                                         <label for="sTate">Su di me</label>
                                         <?php echo (' <textarea  class="form-control" name="about" id="about" placeholder="'.$_SESSION["ABOUT"].'"></textarea> ') ?>
-                                        <button type="submit" id="submit" name="submit" class="btn btn-success mod_button_left">Update</button>
+                                        <button type="submit" id="submit" name="submit" class="btn btn-success mod_button_left">Salva</button>
                                     </div>
                                 </div>
                             </form>
@@ -112,8 +112,8 @@
                             <div class="row gutters">
                                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                                     <div class="text-right buttonmod">
-                                        <a href="profile.php" class="btn btn-danger mod_button_d">Cancel</a>
-                                        <button type="submit" id="submit" name="submit" class="btn btn-success mod_button_p">Update</button>
+                                        <a href="profile.php" class="btn btn-danger mod_button_d">Annulla</a>
+                                        <button type="submit" id="submit" name="submit" class="btn btn-success mod_button_p">Salva</button>
                                     </div>
                                 </div>
                             </div>
@@ -125,7 +125,7 @@
 	</div>
 	<div class="footer">
 		<footer> <?php include 'footer.php'; ?> </footer>
-	</div>		
+	</div>
 
 	<script src="../bootstrap/js/bootstrap.bundle.min.js"  crossorigin="anonymous"></script>
 	</body>
