@@ -1,4 +1,5 @@
 <?php
+
     include 'database_connect.php';
 
 	if (!$conn) {

@@ -36,73 +36,9 @@
 
         <div class="messages-box">
           <div class="list-group rounded-0">
-            <a class="list-group-item list-group-item-action active text-white rounded-0">
-             <div class="media"><img src="https://res.cloudinary.com/mhmd/image/upload/v1564960395/avatar_usae7z.svg" alt="user" width="50" class="rounded-circle">
-                <div class="media-body ml-4">
-                  <div class="d-flex align-items-center justify-content-between mb-1">
-                    <h6 class="mb-0">' .$_COOKIE['FIRSTNAME']. " " .$_COOKIE['LASTNAME'].'</h6><small class="small font-weight-bold">Data ultimo messaggio</small>
-                  </div>
-                  <p class="font-italic mb-0 text-small"> Anteprima messaggio </p>
-                </div>
-              </div>
-            </a>
-           
-
-            <a href="#" class="list-group-item list-group-item-action list-group-item-light rounded-0">
-              <div class="media"><img src="https://res.cloudinary.com/mhmd/image/upload/v1564960395/avatar_usae7z.svg" alt="user" width="50" class="rounded-circle">
-                <div class="media-body ml-4">
-                  <div class="d-flex align-items-center justify-content-between mb-1">
-                    <h6 class="mb-0"> Nome Cognome</h6><small class="small font-weight-bold">Data ultimo messaggio</small>
-                  </div>
-                  <p class="font-italic mb-0 text-small"> Anteprima messaggio </p>
-                </div>
-              </div>
-            </a>
-
-            <a href="#" class="list-group-item list-group-item-action list-group-item-light rounded-0">
-              <div class="media"><img src="https://res.cloudinary.com/mhmd/image/upload/v1564960395/avatar_usae7z.svg" alt="user" width="50" class="rounded-circle">
-                <div class="media-body ml-4">
-                  <div class="d-flex align-items-center justify-content-between mb-1">
-                    <h6 class="mb-0"> Nome Cognome</h6><small class="small font-weight-bold">Data ultimo messaggio</small>
-                  </div>
-                  <p class="font-italic mb-0 text-small"> Anteprima messaggio </p>
-                </div>
-              </div>
-            </a>
-
-            <a href="#" class="list-group-item list-group-item-action list-group-item-light rounded-0">
-              <div class="media"><img src="https://res.cloudinary.com/mhmd/image/upload/v1564960395/avatar_usae7z.svg" alt="user" width="50" class="rounded-circle">
-                <div class="media-body ml-4">
-                  <div class="d-flex align-items-center justify-content-between mb-1">
-                    <h6 class="mb-0"> Nome Cognome</h6><small class="small font-weight-bold">Data ultimo messaggio</small>
-                  </div>
-                  <p class="font-italic mb-0 text-small"> Anteprima messaggio </p>
-                </div>
-              </div>
-            </a>
-
-            <a href="#" class="list-group-item list-group-item-action list-group-item-light rounded-0">
-              <div class="media"><img src="https://res.cloudinary.com/mhmd/image/upload/v1564960395/avatar_usae7z.svg" alt="user" width="50" class="rounded-circle">
-                <div class="media-body ml-4">
-                  <div class="d-flex align-items-center justify-content-between mb-1">
-                    <h6 class="mb-0"> Nome Cognome</h6><small class="small font-weight-bold">Data ultimo messaggio</small>
-                  </div>
-                  <p class="font-italic mb-0 text-small"> Anteprima messaggio </p>
-                </div>
-              </div>
-            </a>
-
-            <a href="#" class="list-group-item list-group-item-action list-group-item-light rounded-0">
-              <div class="media"><img src="https://res.cloudinary.com/mhmd/image/upload/v1564960395/avatar_usae7z.svg" alt="user" width="50" class="rounded-circle">
-                <div class="media-body ml-4">
-                  <div class="d-flex align-items-center justify-content-between mb-1">
-                    <h6 class="mb-0"> Nome Cognome</h6><small class="small font-weight-bold">Data ultimo messaggio</small>
-                  </div>
-                  <p class="font-italic mb-0 text-small"> Anteprima messaggio </p>
-                </div>
-              </div>
-            </a>
-
+          
+          <!-- includo il file che permette di visualizzare tutti gli utenti a cui si può mandare un messaggio -->
+          <?php include '../database/database_fetch_user.php'; ?>
 
           </div>
         </div>
@@ -197,3 +133,12 @@
 
   </body>
 </html>
+
+
+<script type="text/javascript">
+    
+    function _element() {
+        return ducument.getElementById(element);
+    }
+
+</script>
