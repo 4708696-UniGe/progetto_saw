@@ -1,5 +1,11 @@
 <?php
-	session_start();
+
+    if (!isset($_SESSION)) {
+        session_start();
+    }
+
+	$_SESSION=array();
+
 	session_destroy();
 	setcookie('FIRSTNAME', null, -1);
 	setcookie('LASTNAME', null, -1);

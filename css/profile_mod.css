@@ -1,7 +1,6 @@
 body {
-	margin-top: 20px;
-	color: #bcd0f7;
-	background: #1A233A;
+	color: #000000;
+	background: #e2e8f0;
 }
 
 .account-settings .user-profile {
@@ -39,11 +38,11 @@ body {
 }
 
 .card {
-	background: #272E48;
+	border: 0;
+	background: #FFFFFF;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
-	border: 0;
 	margin-bottom: 1rem;
 }
 
@@ -53,6 +52,177 @@ body {
 	-moz-border-radius: 2px;
 	border-radius: 2px;
 	font-size: .825rem;
-	background: #1A233A;
+	background: #FFFFFF;
 	color: #bcd0f7;
+}
+
+/* Desktop view */
+@media (min-width: 992px){
+	nav {
+		position: absolute;
+		top: 0;
+		min-width: 100%;
+		z-index: 1;
+	}
+
+	.logged {
+		position: absolute !important;
+	}
+
+	.dropdown-menu {
+		position: absolute !important;
+		left: 20vw !important;
+		right: 20vw !important;
+	}
+
+	.riga_left{
+		position: relative;
+		right: -0.8rem;
+		width: 97.2%;
+		margin-top: 1.5rem;
+	}
+
+	.riga_1 {
+		position: relative;
+		right: -0.8rem;
+		width: 97.2%;
+	}
+
+	.riga_2 {
+		position: relative;
+		right: -0.8rem;
+		width: 97.2%;
+		margin-top: 1rem;
+	}
+
+	.card {
+		position: relative;
+		left: 15rem;
+		margin-top: 10rem;
+		margin-left: 0.8rem;
+		margin-bottom: -4rem;
+		box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06);
+	}
+
+	.left_card {
+		margin-top: 1vw;
+		margin-bottom: -2vw;
+		padding-top: -1vw;
+	}
+
+	.user-name {
+		font-size: 1.5rem;
+	}
+
+	.user-email {
+		font-size: 1rem !important;
+	}
+
+	.ab {
+		margin-top: 2rem;
+	}
+
+	#about {
+		position: relative;
+		top: 1rem;
+		left: 5rem;
+		width: 60%;
+		height: 4rem;
+		resize:none;
+	}
+
+	.mod_button_left {
+		position: relative;
+		top: 3rem;
+
+	}
+
+	.separatebox {
+		margin-bottom: 1rem;
+	}
+
+	footer {
+		margin-top: 16.72rem;
+	}
+
+	.buttonmod {
+		position: absolute;
+		right: 1.5vw;
+		bottom: 1vw;
+	}
+}
+
+/* Mobile view */
+@media (max-width: 992px){
+	nav {
+		position: absolute;
+		top: 0;
+		min-width: 100%;
+		z-index: 1;
+	}
+
+	.ab {
+		margin-top: 0rem;
+	}
+
+	#about {
+		height: 4rem;
+		resize:none;
+	}
+
+	.container_card {
+		margin-left: 0rem;
+		margin-bottom: 8rem;
+	}
+
+	.card {
+		margin-top: 5rem;
+		margin-bottom: 0rem !important;
+	}
+
+	.left_card {
+		margin-top: 3rem;
+		margin-bottom: 0vw;
+		padding-top: 0vw;
+	}
+
+	.right_card {
+		margin-top: -8rem;
+		margin-bottom: -3rem;
+	}
+
+	.riga_left{
+		position: relative;
+		right: -0.7rem;
+		width: 93%;
+		margin-top: 1.5rem;
+	}
+
+	.riga_1 {
+		position: relative;
+		right: -0.8rem;
+		width: 93%;
+		margin-top: 1.5rem;
+	}
+
+	.riga_2 {
+		position: relative;
+		right: -0.8rem;
+		width: 93%;
+		margin-top: 1.5rem;
+	}
+
+	.buttonmod {
+		position: absolute;
+		right: 4vw;
+	}
+
+	.mod_button_left {
+		margin-top: 1rem;
+	}
+
+	footer {
+		position: absolute;
+		min-width: 100%;
+	}
 }

@@ -4,8 +4,12 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title> System Hospital - Home </title>
-	<link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet"  crossorigin="anonymous">	
+	<title> Profilo </title>
+	<link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet"  crossorigin="anonymous">
+	<link rel="icon" href="../images/icon.png">
+	<link rel="stylesheet" href="../css/profile.css">
+    <link rel="stylesheet" href="../css/scrollbar.css">
+	
 	 
 	 <link rel="stylesheet" href="../aos/aos.css" />
 	
@@ -13,6 +17,19 @@
 	</head>
 
 <body>
+
+    <?php
+    if (!isset($_SESSION)) {
+        session_start();
+    }
+    if ($_SESSION["LOGGED"]==1) {
+        $ver = 1;
+    }
+    if (!isset($ver)) {
+        header("Location:login.php?message=Devi effettuare il login");
+    }
+    ?>
+
     <nav> <?php include 'navbar.php'; ?></nav>
 
     <div class="container">
@@ -21,13 +38,13 @@
                 
                 <div class="col-md-4 mb-3">
                   <div class="card">
-                    <div class="card-body">
+                    <div class="card-body left_card">
                       <div class="d-flex flex-column align-items-center text-center">
                    
                         <div class="mt-3">
-                          <h4> <?php echo $_COOKIE['FIRSTNAME']." ".$_COOKIE['LASTNAME']; ?> </h4>
-                          <p class="text-secondary mb-1">Direttore</p>
-                          <p class="text-muted font-size-sm">Ansaldo</p>
+                          <h4> <?php echo $_SESSION['FIRSTNAME']." ".$_SESSION['LASTNAME']; ?> </h4>
+                          <p class="text-secondary mb-1">Mi sento</p>
+                          <p class="text-muted font-size-sm">sto cazzo</p>
                           <form action="profile_mod.php">
                           <button class="btn btn-primary">Modifica profilo</button>
                           </form>
@@ -46,7 +63,7 @@
                           <h6 class="mb-0">Nome</h6>
                         </div>
                         <div class="col-sm-9 text-secondary">
-                             <?php echo $_COOKIE['FIRSTNAME']; ?>
+                             <?php echo $_SESSION['FIRSTNAME']; ?>
                         </div>
                       </div>
                       <hr>
@@ -55,7 +72,7 @@
                           <h6 class="mb-0">Cognome</h6>
                         </div>
                         <div class="col-sm-9 text-secondary">
-                          <?php echo $_COOKIE['LASTNAME']; ?>
+                          <?php echo $_SESSION['LASTNAME']; ?>
                         </div>
                       </div>
                       <hr>
@@ -64,16 +81,7 @@
                           <h6 class="mb-0">Email</h6>
                         </div>
                         <div class="col-sm-9 text-secondary">
-                          <?php echo $email = $_COOKIE['EMAIL']; ?>
-                        </div>
-                      </div>
-                      <hr>
-                      <div class="row">
-                        <div class="col-sm-3">
-                          <h6 class="mb-0">Id</h6>
-                        </div>
-                        <div class="col-sm-9 text-secondary">
-                          <?php echo $id = $_COOKIE['ID_USER']; ?>
+                          <?php echo $_SESSION['EMAIL']; ?>
                         </div>
                       </div>
                       <hr>
