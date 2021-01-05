@@ -1,6 +1,7 @@
 <?php
-$connect = new PDO("mysql:host=localhost;dbname=test;charset=utf8mb4", "root", "");
-date_default_timezone_set('Asia/Kolkata');
+
+include ('database_connect.php';)
+
 function fetch_user_last_activity($user_id, $connect)
 {
 	$query = "
