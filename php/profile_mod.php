@@ -46,7 +46,7 @@
                                 <div class="col-xl-12 col-lg-6 col-md-6 col-sm-6 col-12">
                                     <div class="form-group ab">
                                         <label for="sTate">Su di me</label>
-                                        <?php echo (' <textarea  class="form-control" name="about" id="about" placeholder="'.$_SESSION["ABOUT"].'"></textarea> ') ?>
+                                        <?php echo (' <textarea class="form-control" name="about" id="about" placeholder="'.$_SESSION["ABOUT"].'"></textarea> ') ?>
                                         <button type="submit" id="submit" name="submit" class="btn btn-success mod_button_left">Salva</button>
                                     </div>
                                 </div>
@@ -58,7 +58,7 @@
 		</div>
 		<div class="col-xl-6 col-lg-9 col-md-12 col-sm-12 col-12">
 			<div class="card h-100">
-                <form action="../database/database_user_mod_write.php" method="post">
+                <form name="right-form" action="../database/database_user_mod_write.php" method="post">
                         <div class="card-body right_card">
                             <div class="row gutters">
                                 <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12">
@@ -126,6 +126,7 @@
 	<div class="footer">
 		<footer> <?php include 'footer.php'; ?> </footer>
 	</div>
+
 
 	<script src="../bootstrap/js/bootstrap.bundle.min.js"  crossorigin="anonymous"></script>
 	</body>

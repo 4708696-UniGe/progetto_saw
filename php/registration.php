@@ -70,13 +70,13 @@
         <a href="home.php"><img class="mb-2" src="../images/logo.png" alt="Logo" width="100%"></a>
         <h1 class="h1 mb-3 fw-small">Registrati</h1>
         <p id="flag_reg" class="alert alert-danger devisible" role="alert"></p>
-        <input type="text" name="firstname" placeholder="Nome" class="form-control">
-        <input type="text" name="lastname" placeholder="Cognome" class="form-control">
-        <input type="email" id="inputEmail" name="email" class="form-control" placeholder="Indirizzo email">
-        <input type="password" id="inputPassword" name="pass" class="form-control" placeholder="Password">
-        <input type="password" id="inputPassword" name="confirm" class="form-control" placeholder="Conferma Password">
+        <input type="text" name="firstname" placeholder="Nome" required="required" class="form-control">
+        <input type="text" name="lastname" placeholder="Cognome" required="required" class="form-control">
+        <input type="email" id="inputEmail" name="email" required="required" class="form-control" placeholder="Indirizzo email">
+        <input type="password" id="inputPassword" name="pass" required="required" class="form-control" placeholder="Password">
+        <input type="password" id="inputPassword" name="confirm" required="required" class="form-control" placeholder="Conferma Password">
         <button class="w-100 btn btn-lg btn-primary" type="submit">Registrati</button>
-        <p class="mt-5 mb-3 text-muted">&#169; 2017-2020</p>
+        <p class="mt-5 mb-3 text-muted">&#169; 2020-2021</p>
     </form>
     </div>
     </div>

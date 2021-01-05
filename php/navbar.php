@@ -80,11 +80,11 @@
                 <form class="px-4 py-3" action="login.php" method="post">
                 <div class="form-group">
                     <label for="exampleDropdownFormEmail1">Indirizzo Email</label>
-                    <input type="email" name="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="Email">
+                    <input type="email" name="email" required="required" class="form-control" id="exampleDropdownFormEmail1" placeholder="Email">
                 </div>
                 <div class="form-group">
                     <label for="exampleDropdownFormPassword1">Password</label>
-                    <input type="password" name="pass" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+                    <input type="password" name="pass" required="required" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
                 </div>
                 <div class="form-check">
                     <input type="checkbox" class="form-check-input" id="dropdownCheck">
