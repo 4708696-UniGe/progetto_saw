@@ -1,3 +1,5 @@
+
+/* Mobile view: */
 @media(max-width: 992px) {
 
     h1{
@@ -21,7 +23,7 @@
     }
 
     #title2 {
-        margin-top: -6vw;
+        margin-top: -17vw;
         font-size: 8vw;
     }
     #title-desc {
@@ -116,6 +118,8 @@
 
 }
 
+
+/* Desktop view: */
 @media(min-width: 992px) {
 
     .bg {
