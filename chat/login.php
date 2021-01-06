@@ -1,5 +1,24 @@
+<!-- Se metto questa parte di codice quando clicco su "contatta l'assistenza" mi rimanda direttamente a index.php
+controllando che esista la variabile di sessione associata al login del nostro sito
 <?php
+	
+		session_start();
+		include('database_chat.php');
+		$message = '';
+		if(isset($_SESSION['ID_USER']))
+		{
+			header('location:index.php');
+		}else{
+			header('location: ../php/login.php');
+		}
 
+	?>
+	-->
+
+
+
+<!-- Se lascio questo codice quando clicco su contatta l'assistenza mi rimanda al login della chat -->
+<?php
 session_start();
 include('database_chat.php');
 $message = '';
@@ -114,4 +133,9 @@ if(isset($_POST['login']))
 		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   </head>
--->
+  	-->
+
+
+
+
+
