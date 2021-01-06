@@ -2,7 +2,7 @@
 
 //update_is_type_status.php
 
-include('database_connection.php');
+include('database_chat.php');
 
 session_start();
 

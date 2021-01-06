@@ -7,23 +7,30 @@ if(!isset($_SESSION['user_id']))
 	header("location:login.php");
 }
 ?>
+
+
 <html>  
+
     <head>
 
-		<meta http-equiv="content-type" content="text/html; charset=utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta charset="UTF-8">
+		<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>Chat Application using PHP Ajax Jquery</title>  
 		<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://cdn.rawgit.com/mervick/emojionearea/master/dist/emojionearea.min.css">
+        <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet"  crossorigin="anonymous">
+        
 		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  		<script src="https://cdn.rawgit.com/mervick/emojionearea/master/dist/emojionearea.min.js"></script>
+  		
   		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.js"></script>
 
-		<title>Chat PHP Ajax Jquery</title>  
+		<title>Chat PHP Ajax Jquery</title> 
+		
     </head>  
+
+
     <body>  
         <div class="container">
 			<br />
@@ -39,7 +46,7 @@ if(!isset($_SESSION['user_id']))
 					<input type="hidden" id="is_active_group_chat_window" value="no" />
 				</div>
 				<div class="col-md-2 col-sm-3">
-					<p align="right">Benvenuto <?php echo $_SESSION['username']; ?> - <a href="logout.php">Logout</a></p>
+					<p align="right">Benvenuto <?php echo $_SESSION['username']; ?> - <a href="../php/logout.php">Logout</a></p>
 				</div>
 			</div>
 			<div class="table-responsive">
@@ -67,32 +74,6 @@ if(!isset($_SESSION['user_id']))
 	background-color: #FFF;
     border: 1px solid #CCC;
     border-radius: 3px;
-}
-
-#group_chat_message
-{
-	width: 100%;
-	height: auto;
-	min-height: 80px;
-	overflow: auto;
-	padding:6px 24px 6px 12px;
-}
-
-.image_upload
-{
-	position: absolute;
-	top:3px;
-	right:3px;
-}
-.image_upload > form > input
-{
-    display: none;
-}
-
-.image_upload img
-{
-    width: 24px;
-    cursor: pointer;
 }
 
 </style>  
