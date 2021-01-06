@@ -32,6 +32,11 @@ if(!isset($_SESSION['user_id']))
 
 
     <body>  
+
+		<!-- Includere navbar -->
+		<!-- <nav> <?php include '../php/navbar.php'; ?></nav> -->
+
+		<div class="box">
         <div class="container">
 			<br />
 			
@@ -60,27 +65,42 @@ if(!isset($_SESSION['user_id']))
 			<br />
 			<br />
 		</div>
+		</div>
 
-    </body>  
+		
+	
+		</body>  
+
+		<!-- Includere footer -->
+		<!--
+			<div class"footer">
+			<footer> <?php include '../php/footer.php'; ?> </footer>
+			</div>
+		-->
+
 </html>
 
 <style>
 
-.chat_message_area
-{
-	position: relative;
-	width: 100%;
-	height: auto;
-	background-color: #FFF;
-    border: 1px solid #CCC;
-    border-radius: 3px;
-}
+
+	.chat_message_area
+	{
+		position: relative;
+		width: 100%;
+		height: auto;
+		background-color: #FFF;
+		border: 1px solid #CCC;
+		border-radius: 3px;
+	}
 
 </style>  
 
 
 
 <script>  
+
+// $(document).ready  Verifica se il documento (la pagina) è pronta per essere manipolata in modo sicuro. Fino a che non è verificata questa 
+// condizione non si inizia a leggere la parte di javascript. 
 $(document).ready(function(){
 
 	fetch_user();
@@ -89,7 +109,6 @@ $(document).ready(function(){
 		update_last_activity();
 		fetch_user();
 		update_chat_history_data();
-		fetch_group_chat_history();
 	}, 5000);
 
 	function fetch_user()
@@ -136,10 +155,7 @@ $(document).ready(function(){
 			width:400
 		});
 		$('#user_dialog_'+to_user_id).dialog('open');
-		$('#chat_message_'+to_user_id).emojioneArea({
-			pickerPosition:"top",
-			toneStyle: "bullet"
-		});
+
 	});
 
 	$(document).on('click', '.send_chat', function(){
@@ -152,8 +168,7 @@ $(document).ready(function(){
 			success:function(data)
 			{
 				//$('#chat_message_'+to_user_id).val('');
-				var element = $('#chat_message_'+to_user_id).emojioneArea();
-				element[0].emojioneArea.setText('');
+				
 				$('#chat_history_'+to_user_id).html(data);
 			}
 		})

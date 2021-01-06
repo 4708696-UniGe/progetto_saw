@@ -129,17 +129,13 @@
 		
 
 
-	<div class="footer">
-	<footer> <?php include 'footer.php'; ?> </footer>
-	</div>		
-
-
-
-
 	<script src="../bootstrap/js/bootstrap.bundle.min.js"  crossorigin="anonymous"></script>
 	<script src="../aos/aos.js"></script>
 	<script>
 		AOS.init();
 	</script>
 	</body>
+
+	<footer> <?php include 'footer.php'; ?> </footer>
+
 </html>
