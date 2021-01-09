@@ -26,7 +26,7 @@
     if ($_SESSION["LOGGED"]==1) {
         $ver = 1;
     }
-        if (!isset($ver)) {
+        if (!isset($ver) && $ver == 1) {
             header("Location:login.php?message=Devi effettuare il login");
         }
     ?>

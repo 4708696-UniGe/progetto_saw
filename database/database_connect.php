@@ -21,7 +21,7 @@
         id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
         firstname VARCHAR(50) NOT NULL,
         lastname VARCHAR(50) NOT NULL,
-        email VARCHAR(50),
+        email VARCHAR(50) UNIQUE,
         pass VARCHAR(256),
         reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
         phone BIGINT,
