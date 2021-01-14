@@ -1,4 +1,153 @@
-/* Desktop view */
+/* Mobile view */
+
+@media (max-width: 576px) {
+
+    #logo {
+        height: auto;
+        width: 30vw;
+        padding-top: 6vw;
+        padding-bottom: 3vw;
+    }
+
+    .md-4 {
+        margin-top: 0.5rem !important;
+        margin-bottom: 0.5rem !important;
+    }
+
+    .py-5 {
+        padding-top: 0.5rem !important;
+        padding-bottom: 0.5rem !important;
+    }
+    .py-3 {
+        padding-top: 0.5rem !important;
+        padding-bottom: 0.5rem !important;
+    }
+
+    .py-2 {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+
+    .my-4 {
+        margin-bottom: 0 !important;
+    }
+
+    .container {
+        max-width: 100%;
+    }
+
+    .contacts {
+        text-align: center !important;
+    }
+}
+
+@media (max-width: 768px) {
+
+    #logo {
+        height: auto;
+        width: 30vw;
+        padding-top: 6vw;
+        padding-bottom: 3vw;
+    }
+
+    .md-4 {
+        margin-top: 0.5rem !important;
+        margin-bottom: 0.5rem !important;
+    }
+
+    .py-5 {
+        padding-top: 0.5rem !important;
+        padding-bottom: 0.5rem !important;
+    }
+    .py-3 {
+        padding-top: 0.5rem !important;
+        padding-bottom: 0.5rem !important;
+    }
+
+    .py-2 {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+
+    .my-4 {
+        margin-bottom: 0 !important;
+    }
+
+    .container {
+        max-width: 100%;
+    }
+
+    .contacts {
+        text-align: center !important;
+    }
+}
+
+
+/* Tablet view */
+
+@media (min-width: 768px) and (orientation: portrait) {
+
+    #logo {
+        height: auto;
+        width: 24vw;
+        padding-top: 2vw;
+        padding-bottom: 3vw;
+    }
+
+    .footer-links {
+        font-size: 1.5vw;
+    }
+
+    .md-4 {
+        margin-top: 0.5rem !important;
+        margin-bottom: 0rem !important;
+    }
+
+    .py-5 {
+        padding-top: 0.5rem !important;
+        padding-bottom: 0.5rem !important;
+    }
+    .py-3 {
+        padding-top: 0.5rem !important;
+        padding-bottom: 0.5rem !important;
+    }
+
+    .py-2 {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+
+    .my-4 {
+        margin-bottom: 0 !important;
+    }
+
+    .container {
+        min-width: 100%;
+    }
+
+    .row {
+        max-width: 100%;
+    }
+
+    .social-link {
+        font-size: 1.5vw;
+        padding-top: 7vw;
+        padding-left: 0;
+    }
+
+    #socialicon {
+        margin-right: 0 !important;
+    }
+
+    .contacts {
+        font-size: 1.3vw;
+        text-align: right !important;
+        margin-right: 0vw !important;
+        padding-top: 3vw;
+        padding-right: 0vw !important;
+    }
+
+}
 
 @media (min-width: 992px) {
     .container {
@@ -8,7 +157,6 @@
         margin-left: 0;
         padding-left: 0;
         padding-right: 0;
-
     }
 
     .social-link {
@@ -27,10 +175,21 @@
     }
 
     .contacts {
-        padding-top: 1.5rem;
-        padding-right: 12rem;
+        font-size: 1.5vw;
+        padding-top: 0rem;
+        padding-left: 0vw !important;
+        padding-right: 1rem;
+        padding-bottom: 0rem !important;
+    }
+
+
+
+    #socialicon {
+        font-size: 2.5vw;
     }
 }
+
+/* Desktop view */
 
 @media (min-width: 1200px) {
     .container {
@@ -48,6 +207,45 @@
         padding-top: 3rem;
     }
 
+
+    .row {
+        max-width: 100%;
+    }
+
+
+    #logo {
+        height: auto;
+        width: 12vw;
+        padding-top: 1vw;
+    }
+
+    .contacts {
+        font-size: 1vw;
+        padding-top: 1.5rem;
+        padding-right: 6vw;
+    }
+
+    #socialicon {
+        font-size: 2vw;
+    }
+}
+
+@media (min-width: 1900px) {
+    .container {
+        max-height: 100% !important;
+        max-width: 100% !important;
+        margin-right: 0;
+        margin-left: 0;
+        padding-left: 0;
+        padding-right: 0;
+
+    }
+
+    .social-link {
+        position: relative;
+        padding-top: 3rem;
+    }
+
     .row {
         margin-right: 0;
     }
@@ -59,52 +257,17 @@
     }
 
     .contacts {
+        font-size: 1vw;
         padding-top: 1.5rem;
-        padding-right: 12rem;
+        padding-right: 6vw;
+    }
+
+    #socialicon {
+        font-size: 2vw;
     }
 }
 
-/* Mobile view */
 
-@media (max-width: 992px) {
-	
-    #logo {
-        height: auto;
-        width: 30vw;
-        padding-top: 6vw;
-        padding-bottom: 3vw;
-    }
-
-    .md-4 {
-	margin-top: 0.5rem !important;
-	margin-bottom: 0.5rem !important;
-    }
-
-    .py-5 {
-	padding-top: 0.5rem !important;
-	padding-bottom: 0.5rem !important;
-    }
-    .py-3 {
-	padding-top: 0.5rem !important;
-	padding-bottom: 0.5rem !important;
-    }
-
-    .py-2 {
-	padding-top: 0 !important;
-	padding-bottom: 0 !important;
-    }
-
-    .my-4 {
-	margin-bottom: 0 !important;
-    }
-
-    .container {
-    }
-
-    .contacts {
-        text-align: center !important;
-    }
-}
 
 #email-icon,
 #email-icon:visited,

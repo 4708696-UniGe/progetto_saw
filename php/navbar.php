@@ -13,7 +13,7 @@
        <span class="navbar-toggler-icon"></span>
      </button>
      <form class="search_mobile">
-      <input class="form-control me-2" type="search" placeholder="Cerca" aria-label="Search">
+      <input class="form-control " type="search" placeholder="Cerca" aria-label="Search">
       <button class="btn btn-outline-success" type="submit">Cerca</button>
      </form>
      <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -26,7 +26,7 @@
                 <a class="nav-link" href="profile.php">Profilo <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="about.php">About <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="logout.php">Esci <span class="sr-only">(current)</span></a>
             </li>');
          }else{
         echo(' <li class="nav-item active">
@@ -52,19 +52,19 @@
          if(isset($_SESSION["FIRSTNAME"])){
               echo ('
                     <li class="nav-item dropdown">
-                <button class="btn btn-secondary dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <button class="btn btn-secondary dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                    '.$_SESSION["FIRSTNAME"].'
                 </button>
                 <div class="dropdown-menu dropdown-menu-left logged">
                 <div class="px-4 py-3" >
                 <div class="form-group py-2">
-                    <a href="profile.php">Visualizza il profilo</a>
+                    <a class="dropdown-item" href="profile.php">Visualizza il profilo</a>
                 </div>
                 <div class="form-group " >
-                    <a href="profile_mod.php">Modifica il profilo</a>
+                    <a class="dropdown-item" href="profile_mod.php">Modifica il profilo</a>
                 </div>
                 <div class="form-group py-2">
-                    <a href="chart.php">Carrello</a>
+                    <a class="dropdown-item" href="chart.php">Carrello</a>
                 </div>
                 <a class="btn btn-primary" href="logout.php" role="button">Esci</a>
                 </div>
@@ -73,7 +73,7 @@
          }else{
           echo ('
                 <li class="nav-item dropdown ">
-                <button class="btn btn-secondary dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <button class="btn btn-secondary dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                    Profilo
                 </button>
                 <div class="dropdown-menu dropdown-menu-left ">

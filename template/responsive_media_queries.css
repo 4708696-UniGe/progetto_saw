@@ -1,0 +1,35 @@
+/* Mobile View */
+
+@media (max-width: 576px) {
+
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 768px) and (orientation: landscape) {
+
+}
+
+
+/* Tablet View */
+
+@media (min-width: 768px) and (orientation: portrait) {
+
+}
+
+@media (min-width: 992px) {
+
+}
+
+/* Desktop view */
+
+@media (min-width: 1200px) {
+
+}
+
+@media (min-width: 1900px) {
+
+}
+

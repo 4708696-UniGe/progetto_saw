@@ -45,8 +45,8 @@
                                 <hr class="riga_left">
                                 <div class="col-xl-12 col-lg-6 col-md-6 col-sm-6 col-12">
                                     <div class="form-group ab">
-                                        <label for="sTate">Su di me</label>
-                                        <?php echo (' <textarea class="form-control" name="about" id="about" placeholder="'.$_SESSION["ABOUT"].'"></textarea> ') ?>
+                                        <label for="sTate" id="about-text">Su di me</label>
+                                        <?php echo (' <textarea class="form-control profile-setting-input" name="about" id="about" placeholder="'.$_SESSION["ABOUT"].'"></textarea> ') ?>
                                         <button type="submit" id="submit" name="submit" class="btn btn-success mod_button_left">Salva</button>
                                     </div>
                                 </div>
@@ -64,32 +64,32 @@
                                 <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12">
                                     <div class="form-group">
                                         <label for="fullName">Nome</label>
-                                    <?php echo (' <input type="text" class="form-control" name="firstname" placeholder="'.$_SESSION["FIRSTNAME"].'"> ') ?>
+                                    <?php echo (' <input type="text" class="form-control profile-setting-input" name="firstname" placeholder="'.$_SESSION["FIRSTNAME"].'"> ') ?>
                                     </div>
                                 </div>
                                 <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12">
                                     <div class="form-group">
                                         <label for="fullName">Cognome</label>
-                                    <?php echo (' <input type="text" class="form-control" name="lastname" placeholder="'.$_SESSION["LASTNAME"].'"> ') ?>
+                                    <?php echo (' <input type="text" class="form-control profile-setting-input" name="lastname" placeholder="'.$_SESSION["LASTNAME"].'"> ') ?>
                                     </div>
                                 </div>
                                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                                     <div class="form-group separatebox">
                                         <label for="eMail">Email</label>
-                                    <?php echo (' <input type="email" class="form-control" name="email" placeholder="'.$_SESSION["EMAIL"].'"> ') ?>
+                                    <?php echo (' <input type="email" class="form-control profile-setting-input" name="email" placeholder="'.$_SESSION["EMAIL"].'"> ') ?>
                                     </div>
                                 </div>
                                 <hr class="riga_1">
                                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                                     <div class="form-group">
                                         <label for="phone">Numero di telefono</label>
-                                    <?php echo (' <input type="text" class="form-control" name="phone" placeholder="'.$_SESSION["PHONE"].'"> ') ?>
+                                    <?php echo (' <input type="text" class="form-control profile-setting-input" name="phone" placeholder="'.$_SESSION["PHONE"].'"> ') ?>
                                     </div>
                                 </div>
                                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                                     <div class="form-group separatebox">
                                         <label for="website">Nome Azienda</label>
-                                    <?php echo (' <input type="text" class="form-control" name="company_name" placeholder="'.$_SESSION["COMPANY_NAME"].'"> ') ?>
+                                    <?php echo (' <input type="text" class="form-control profile-setting-input" name="company_name" placeholder="'.$_SESSION["COMPANY_NAME"].'"> ') ?>
                                     </div>
                                 </div>
                                 <hr class="riga_1">
@@ -98,13 +98,13 @@
                                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                                     <div class="form-group">
                                         <label for="Street">Sistema operativo principale usato sulla workstation</label>
-                                    <?php echo (' <input type="name" class="form-control" name="workstation_os" placeholder="'.$_SESSION["WORKSTATION_OS"].'"> ') ?>
+                                    <?php echo (' <input type="name" class="form-control profile-setting-input" name="workstation_os" placeholder="'.$_SESSION["WORKSTATION_OS"].'"> ') ?>
                                     </div>
                                 </div>
                                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                                     <div class="form-group">
                                         <label for="ciTy">Sistema operativo principale usato sul dispositivo mobile</label>
-                                    <?php echo (' <input type="name" class="form-control" name="mobile_os" placeholder="'.$_SESSION["MOBILE_OS"].'"> ') ?>
+                                    <?php echo (' <input type="name" class="form-control profile-setting-input" name="mobile_os" placeholder="'.$_SESSION["MOBILE_OS"].'"> ') ?>
                                     </div>
                                 </div>
                                 <hr class="riga_2">
