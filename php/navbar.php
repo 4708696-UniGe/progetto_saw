@@ -23,7 +23,7 @@
          if(isset($_SESSION["FIRSTNAME"])){
               echo ('
             <li class="nav-item active">
-                <a class="nav-link" href="profile.php">Profilo <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="show_profile.php">Profilo <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
                 <a class="nav-link" href="logout.php">Esci <span class="sr-only">(current)</span></a>
@@ -53,15 +53,15 @@
               echo ('
                     <li class="nav-item dropdown">
                 <button class="btn btn-secondary dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                   '.$_SESSION["FIRSTNAME"].'
+                   '.$_SESSION["FIRSTNAME"]. '
                 </button>
                 <div class="dropdown-menu dropdown-menu-left logged">
                 <div class="px-4 py-3" >
                 <div class="form-group py-2">
-                    <a class="dropdown-item" href="profile.php">Visualizza il profilo</a>
+                    <a class="dropdown-item" href="show_profile.php">Visualizza il profilo</a>
                 </div>
                 <div class="form-group " >
-                    <a class="dropdown-item" href="profile_mod.php">Modifica il profilo</a>
+                    <a class="dropdown-item" href="mod_profile.php">Modifica il profilo</a>
                 </div>
                 <div class="form-group py-2">
                     <a class="dropdown-item" href="chart.php">Carrello</a>

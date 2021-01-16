@@ -1,6 +1,6 @@
 <?php
 
-    include 'database_connect.php';
+    include '../database/database_connect.php';
 
 
     if(isset($_POST)) {
@@ -59,12 +59,12 @@
             $res = mysqli_query($conn, $sql_updt);
 
             if (mysqli_affected_rows($conn) != 1) {
-                echo "Attenzione c'è stato un problema nell'aggiornamento delle firstname, contattare il servio clienti " . mysqli_error($conn);
+                echo "Attenzione c'è stato un problema nell'aggiornamento delle informazioni, contattare il servizio clienti " . mysqli_error($conn);
             }
         }
 
 
-        header("Location: ../php/profile.php");
+        header("Location: show_profile.php");
         exit();
     }
 
