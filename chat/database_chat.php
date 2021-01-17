@@ -38,6 +38,8 @@ $conn = new PDO("mysql:host=localhost;dbname=test;charset=utf8mb4", "root", "");
 
 
 
+
+
 function fetch_user_last_activity($user_id, $conn)
 {
 	$query = "

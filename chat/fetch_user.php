@@ -6,8 +6,8 @@ include('database_chat.php');
 session_start();
 
 $query = "
-SELECT * FROM login 
-WHERE user_id != '".$_SESSION['user_id']."' 
+SELECT * FROM users
+WHERE id != '".$_SESSION['ID_USER']."' 
 ";
 
 $statement = $conn->prepare($query);
