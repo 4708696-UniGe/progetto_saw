@@ -2,9 +2,9 @@
 session_start();
 
 include('database_chat.php');
-if(!isset($_SESSION['user_id']))
+if(!isset($_SESSION['ID_USER']))
 {
-	header("location:login.php");
+	header("location: ../php/login.php");
 }
 ?>
 

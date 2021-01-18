@@ -99,7 +99,7 @@
 					<div class="textimg">
 						<h1 id="title2">Chi siamo?<br></h1>
 						<p id="title-desc">Il nostro obiettivo è offrire assistenza informatica professionale ad imprese. <br> <a id="home_link" title="Scopri di più" href="about.php">Scopri di più</a>  </p>
-						<p id="title-desc">Ti serve aiuto? <br> <a id="home_link" title="Assistenza" href="../chat/login.php">Contatta l'assistenza</a> </p>
+						<p id="title-desc">Ti serve aiuto? <br> <a id="home_link" title="Assistenza" href="../chat/index.php">Contatta l'assistenza</a> </p>
 					</div>
 				</div>
 			</div>

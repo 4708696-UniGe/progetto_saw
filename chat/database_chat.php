@@ -3,8 +3,8 @@
 $conn = new PDO("mysql:host=localhost;dbname=test;charset=utf8mb4", "root", "");
 
 // CREO LE TABELLE PER LA CHAT:
-	// Tabella chat_table:
-	$sql_chat_table = "CREATE TABLE IF NOT EXISTS `chat_table` (
+	// Tabella chat_message:
+	$sql_chat_message = "CREATE TABLE IF NOT EXISTS `chat_message` (
 		`chat_message_id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
 		`to_user_id` int(11) NOT NULL,
 		`from_user_id` int(11) NOT NULL,
@@ -12,8 +12,7 @@ $conn = new PDO("mysql:host=localhost;dbname=test;charset=utf8mb4", "root", "");
 		`timestamp` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
 		`status` int(1) NOT NULL
 	)";
-	$result = $conn->query($sql_chat_table);
-
+	$result = $conn->query($sql_chat_message);
 
 
 	// Tabella login:
@@ -107,13 +106,13 @@ function fetch_user_chat_history($from_user_id, $to_user_id, $conn)
 
 function get_user_name($user_id, $conn)
 {
-	$query = "SELECT username FROM login WHERE user_id = '$user_id'";
+	$query = "SELECT firstname FROM users WHERE id = '$user_id'";
 	$statement = $conn->prepare($query);
 	$statement->execute();
 	$result = $statement->fetchAll();
 	foreach($result as $row)
 	{
-		return $row['username'];
+		return $row['firstname'];
 	}
 }
 

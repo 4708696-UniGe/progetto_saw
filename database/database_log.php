@@ -35,6 +35,18 @@
                     $_SESSION["MOBILE_OS"]=$rows[8];
                     $_SESSION["ABOUT"]=$rows[9];
                     $_SESSION["LOGGED"]=1;
+
+					$sub_query = "
+					INSERT INTO login_details 
+	     			(user_id) 
+	     			VALUES ('".$rows[0]."')
+					";
+					$statement = $conn->prepare($sub_query);
+					$statement->execute();
+					$_SESSION['login_details_id'] = $conn->insert_id;
+
+
+
 					header("Location: ../php/home.php");
 			}
 		}
