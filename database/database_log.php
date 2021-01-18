@@ -45,7 +45,7 @@
 					$statement->execute();
 					$_SESSION['login_details_id'] = $conn->insert_id;
 
-
+					include 'check_admin.php';
 
 					header("Location: ../php/home.php");
 			}

@@ -103,6 +103,8 @@ $(document).ready(function(){
 
 	fetch_user();
 
+
+
 	// setInterval utilizza le funzioni che sono definite sotto di lei
 	setInterval(function(){
 		update_last_activity();
@@ -204,30 +206,6 @@ $(document).ready(function(){
 		$('#is_active_group_chat_window').val('no');
 	});
 
-	$(document).on('focus', '.chat_message', function(){
-		var is_type = 'yes';
-		$.ajax({
-			url:"update_is_type_status.php",
-			method:"POST",
-			data:{is_type:is_type},
-			success:function()
-			{
 
-			}
-		})
-	});
-
-	$(document).on('blur', '.chat_message', function(){
-		var is_type = 'no';
-		$.ajax({
-			url:"update_is_type_status.php",
-			method:"POST",
-			data:{is_type:is_type},
-			success:function()
-			{
-				
-			}
-		})
-	});	
 });  
 </script>

@@ -5,16 +5,28 @@
 include('database_chat.php');
 session_start();
 
-$query = "
-SELECT * FROM users
-WHERE id != '".$_SESSION['ID_USER']."' 
-";
+if( $_SESSION["USER_TYPE"] == 1){
 
-$statement = $conn->prepare($query);
+	$query = "
+	SELECT * FROM admin
+	WHERE email != '".$_SESSION['EMAIL']."' 
+	";
 
-$statement->execute();
+} else if ($_SESSION["USER_TYPE"] == 0){
+	
+	$query = "
+	SELECT * FROM admin
+	WHERE email != '".$_SESSION['EMAIL']."' 
+	";  
 
-$result = $statement->fetchAll();
+}
+
+	$statement = $conn->prepare($query);
+
+	$statement->execute();
+
+	$result = $statement->fetchAll();
+
 
 
 $output = '
@@ -29,7 +41,7 @@ $output = '
 foreach($result as $row)
 {
 	$status = '';
-	$current_timestamp = strtotime(date("Y-m-d H:i:s") . '- 10 second');
+	$current_timestamp = strtotime(date("Y-m-d H:i:s") . '- 10 second'); // Formato data: 2001-03-10 17:16:18
 	$current_timestamp = date('Y-m-d H:i:s', $current_timestamp);
 	$user_last_activity = fetch_user_last_activity($row['id'], $conn);
 	if($user_last_activity > $current_timestamp)
@@ -42,13 +54,12 @@ foreach($result as $row)
 	}
 	$output .= '
 	<tr>
-		<td>'.$row['firstname'].' '.$row['lastname'].' '.count_unseen_message($row['id'], $_SESSION['ID_USER'], $conn).' '.fetch_is_type_status($row['id'], $conn).'</td>
+		<td>'.$row['email'].' '.count_unseen_message($row['id'], $_SESSION['ID_USER'], $conn).' </td>
 		<td>'.$status.'</td>
-		<td><button type="button" class="btn btn-info btn-xs start_chat" data-touserid="'.$row['id'].'" data-tousername="'.$row['firstname'].'">Start Chat</button></td>
+		<td><button type="button" class="btn btn-info btn-xs start_chat" data-touserid="'.$row['id'].'" data-tousername="'.$row['email'].'">Start Chat</button></td>
 	</tr>
 	';
 }
-
 $output .= '</table>';
 
 echo $output;
