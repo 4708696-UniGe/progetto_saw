@@ -25,7 +25,7 @@ if(!isset($_SESSION['ID_USER']))
 		<script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
   		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   		
-  		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.js"></script>
+
 		
     </head>  
 
@@ -33,7 +33,7 @@ if(!isset($_SESSION['ID_USER']))
     <body>  
 
 		<!-- Includere navbar -->
-		<!-- <nav> <?php include '../php/navbar.php'; ?></nav> -->
+		<?php include '../php/navbar.php'; ?>
 
 		<div class="box">
         <div class="container">

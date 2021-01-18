@@ -120,7 +120,7 @@ function count_unseen_message($from_user_id, $to_user_id, $conn)
 	$output = '';
 	if($count > 0)
 	{
-		$output = '<span class="label label-success">'.$count.'</span>';
+		$output = '<span class="label label-success" style="color:red;"><b>'.$count.'</b></span>';
 	}
 	return $output;
 }
