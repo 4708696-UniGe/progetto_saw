@@ -17,17 +17,15 @@ if(!isset($_SESSION['ID_USER']))
 		<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Chat Application using PHP Ajax Jquery</title>  
+        <title> Chat </title>  
 		<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
         <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet"  crossorigin="anonymous">
         
-		<!-- Funziona anche con la versione aggiornata di jquery-->
+		<!-- versione aggiornata di jquery-->
 		<script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
   		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   		
   		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.js"></script>
-
-		<title>Chat PHP Ajax Jquery</title> 
 		
     </head>  
 
@@ -49,7 +47,6 @@ if(!isset($_SESSION['ID_USER']))
 					<h4>Online User</h4>
 				</div>
 				<div class="col-md-2 col-sm-3">
-					<input type="hidden" id="is_active_group_chat_window" value="no" />
 				</div>
 				<div class="col-md-2 col-sm-3">
 					<p align="right">Benvenuto <?php echo $_SESSION['FIRSTNAME']; ?> - <a href="../php/logout.php">Logout</a></p>
@@ -106,11 +103,12 @@ $(document).ready(function(){
 
 	fetch_user();
 
+	// setInterval utilizza le funzioni che sono definite sotto di lei
 	setInterval(function(){
 		update_last_activity();
 		fetch_user();
 		update_chat_history_data();
-	}, 5000);
+	}, 2000);
 
 	function fetch_user()
 	{
