@@ -19,8 +19,7 @@ $conn = new PDO("mysql:host=localhost;dbname=test;charset=utf8mb4", "root", "");
 	$sql_login_details = "CREATE TABLE IF NOT EXISTS `login_details` (
 		  `login_details_id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
 		  `user_id` int(11) NOT NULL,
-		  `last_activity` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
-		  `is_type` enum('no','yes') NOT NULL
+		  `last_activity` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 	)";
 	$result = $conn->query($sql_login_details);
 
