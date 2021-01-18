@@ -21,14 +21,27 @@
         id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
         firstname VARCHAR(50) NOT NULL,
         lastname VARCHAR(50) NOT NULL,
-        email VARCHAR(50),
+        email VARCHAR(50) UNIQUE,
         pass VARCHAR(256),
-        reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-        phone BIGINT,
+        reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+        phone BIGINT DEFAULT 0,
         company_name VARCHAR(50),
         workstation_os VARCHAR(50),
         mobile_os VARCHAR(20),
         about TEXT
+        )";
+
+    $sql_ticket = "CREATE TABLE IF NOT EXISTS ticket (
+        email VARCHAR(50) PRIMARY KEY ,
+        opening_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+        device VARCHAR(50),
+        os VARCHAR(50),
+        description TEXT
+        )";
+
+    $sql_admin = "CREATE TABLE IF NOT EXISTS admin (
+        id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+        email VARCHAR(50) UNIQUE
         )";
 
 

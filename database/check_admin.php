@@ -1,6 +1,11 @@
 <?php
-session_start();
-if($_SESSION["user"] == TRUE){
-	$result = mysqli_query($con,"SELECT 'admin' FROM 'users' WHERE 'id'='".$_SESSION["id"]."'");
-	echo $result;
-}
+
+    $sql_check = "SELECT email FROM admin WHERE email='{$_SESSION["EMAIL"]}'";
+
+	$result = mysqli_query($conn,$sql_check);
+    if (mysqli_affected_rows($conn) != 1) {
+        $_SESSION["USER_TYPE"] = 0;
+    }
+    else{
+        $_SESSION["USER_TYPE"] = 1;
+    }
