@@ -35,6 +35,8 @@
                     $_SESSION["MOBILE_OS"]=$rows[8];
                     $_SESSION["ABOUT"]=$rows[9];
                     $_SESSION["LOGGED"]=1;
+
+                    include 'check_admin.php';
 					header("Location: ../php/home.php");
 			}
 		}

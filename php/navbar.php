@@ -25,6 +25,11 @@
             <li class="nav-item active">
                 <a class="nav-link" href="show_profile.php">Profilo <span class="sr-only">(current)</span></a>
             </li>
+            <li class="nav-item active"> ');
+               if($_SESSION["USER_TYPE"] == 0) { echo ('<a class="nav-link" href="control_panel_user.php">Pannello di controllo <span class="sr-only">(current)</span></a> '); }
+               if($_SESSION["USER_TYPE"] == 1) { echo ('<a class="nav-link" href="control_panel.php">Pannello di controllo <span class="sr-only">(current)</span></a> '); }
+               echo ('
+            </li>
             <li class="nav-item active">
                 <a class="nav-link" href="logout.php">Esci <span class="sr-only">(current)</span></a>
             </li>');
@@ -57,14 +62,20 @@
                 </button>
                 <div class="dropdown-menu dropdown-menu-left logged">
                 <div class="px-4 py-3" >
-                <div class="form-group py-2">
+                <div class="form-group">
                     <a class="dropdown-item" href="show_profile.php">Visualizza il profilo</a>
                 </div>
-                <div class="form-group " >
+                <div class="form-group" >
                     <a class="dropdown-item" href="mod_profile.php">Modifica il profilo</a>
                 </div>
-                <div class="form-group py-2">
+                <div class="form-group">
                     <a class="dropdown-item" href="chart.php">Carrello</a>
+                </div>
+                <div class="form-group py-2">
+                    ');
+             if($_SESSION["USER_TYPE"] == 0) { echo ('<a class="dropdown-item" href="control_panel_user.php">Pannello di controllo</a> '); }
+             if($_SESSION["USER_TYPE"] == 1) { echo ('<a class="dropdown-item" href="control_panel.php">Pannello di controllo</a> '); }
+             echo ('
                 </div>
                 <a class="btn btn-primary" href="logout.php" role="button">Esci</a>
                 </div>
