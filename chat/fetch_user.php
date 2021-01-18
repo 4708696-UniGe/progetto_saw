@@ -5,6 +5,7 @@
 include('database_chat.php');
 session_start();
 
+/*
 if( $_SESSION["USER_TYPE"] == 1){
 
 	$query = "
@@ -19,7 +20,12 @@ if( $_SESSION["USER_TYPE"] == 1){
 	WHERE email != '".$_SESSION['EMAIL']."' 
 	";  
 
-}
+}*/
+	$query = "
+	SELECT * FROM users
+	WHERE id != '".$_SESSION['ID_USER']."' 
+	";
+
 
 	$statement = $conn->prepare($query);
 
