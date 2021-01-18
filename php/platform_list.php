@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title> System Hospital - Home </title>
+	<title> Piattaforme Supportate </title>
 	<link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 	<link rel="icon" href="../images/icon.png">
 	<link rel="stylesheet" href="../css/platform_list.css">
@@ -19,6 +19,7 @@
 	    <?php /* Mobile page */ ?>
 	    
 	        <div class "mobile">
+
 	            <div class"windows">
 	                <h1 id="mobile-title-text">Windows</h1>
 	                    <p id="mobile-text">Viene fornito supporto per le versioni da windows 7 fino al recente Windows 10, da Windows Server 2012 per sistemi server. <br> 

@@ -1,370 +1,734 @@
-﻿/* Desktop view */ 
+/* Mobile vie */
 
+@media(max-width: 576px) {
 
-@media (min-width: 992px) {
-    .container_left {
-        margin-top: 6vw;
-        margin-bottom: 6vw;
-        position: relative;
-        left: 5vw;
-        width: 30vw;
-    }
-
-
-    .image {
-        display: block;
-        width: 100%;
-        height: auto;
-        border-radius: 1vw 1vw 1vw 1vw;
-        box-sizing: border-box;
-        border: 4px solid #2D3142;
-        box-shadow: -5px 10px 18px black;
-    }
-    
-    .overlay_left {
-        position: absolute;
-        bottom: 20%;
-        left: 100%;
-        background-color: #EF8354;
-        overflow: hidden;
-        width: 0;
-        height: 60%;
-        transition: 1s ease;
-        border-radius: 0 1vw 1vw 0;
-        box-shadow: 5px 10px 18px black;
-    }
-    
-    .container_left:hover .overlay_left {
-        width: 100%;
-    }
-    
-    
-    .container_right {
-        position: relative;
-        left: 60vw;
-        width: 35vw;
-    }
-    
-    .overlay_right {
-        position: absolute;
-        bottom: 20%;
-        left: 0;
-        right: 0;
-        background-color: #EF8354;
-        overflow: hidden;
-        width: 0;
-        height: 60%;
-        transition: 1s ease;
-        border-radius: 1vw 0 0 1vw;
-        box-shadow: -5px 10px 18px #888888;
-    }
-    
-    .container_right:hover .overlay_right {
-        width: 100%;
-        left: -100%;
-    }
-    
-    .text {
-        color: white;
-        font-family: system-ui;
-        font-size: 1.0vw;
-        padding: 5px;
-        position: absolute;
-        top: 40%;
-        left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        white-space: nowrap;
-    }
-    
-    h1 {
-        font-family: 'bebas_neueregular', Arial, sans-serif;
-        font-weight: normal;
-        font-style: normal;
-    }
-    
-    #title{
-        top: 15%;
+    h1{
         font-size: 2vw;
     }
-    
-    #block {
-        top: 55%;
-    }
-    
-    #inline_link {
-        display: inline;
-    }
-    
-    
-    .text a:link,
-    .text a:visited {
-        color: #2D3142;
-        text-decoration: none;
-        text-align: center;
-        display: block;
-    }
-    
-    .text a:hover {
-        text-decoration: underline;
-        text-decoration-color: #2D3142;
-    }
-    
-    .flip-card {
-        display: none;
-    }
-    
-    .go {
-        border: 8px solid #2D3142;
-        border-radius: 0.8vw 0.8vw 0.8vw 0.8vw;
-        background-color: #2D3142;
-        font-size: 5vw;
-        color: white;
-    }
-    
-    
-}
 
-/* Mobile view */
-
-@media (max-width: 992px) {
-    /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
-    .flip-card {
-        margin: 4vw 10vw 1vw 10vw;
-        background-color: transparent;
-        width: 300px;
-        height: 200px;
-        border: 1px solid #f1f1f1;
-        border-radius: 0 1vw 1vw 0;
-        perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    .franco {
+        width: 100%;
+        height: 50vw;
     }
 
-    /* This container is needed to position the front and back side */
-    .flip-card-inner {
+    .box {
+        margin: 0;
+        opacity: 0;
+        background-color: rgba(0,0,0, 0.5);
+        width: 100%;
+        height: 100%;
+        animation: fadein 1s;
+        animation-delay: 2s;
+        animation-fill-mode: forwards;
+    }
+
+    #title2 {
+        margin-top: -6vw;
+        font-size: 8vw;
+    }
+    #title-desc {
+        font-size: 4vw;
+    }
+
+    .bg {
+        margin: 0;
+        height: 100%;
+        background-image: url("../images/call.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-position-y: -20vw;
         position: relative;
-        width: 100%;
-        height: 100%;
-        text-align: center;
-        transition: transform 0.8s;
-        transform-style: preserve-3d;
-        
+        animation: fadein 2s;
     }
 
-    /* Do an horizontal flip when you move the mouse over the flip box container */
-    .flip-card:hover .flip-card-inner {
-        transform: rotateY(180deg);
-        
-    }
-
-    /* Position the front and back side */
-    .flip-card-front, .flip-card-back {
+    .textimg {
+        font-size: 1.5vw;
+        padding: 20vw 0;
         position: absolute;
+        margin-right: 0;
         width: 100%;
-        height: 100%;
-        -webkit-backface-visibility: hidden; /* Safari */
-        backface-visibility: hidden;
-        
+        color: #f1f1f1;
+        text-align: center;
+        animation: fadein 1s;
+        animation-delay: 2s;
     }
 
-    /* Style the front side (fallback if image is missing) */
-    .flip-card-front {
-        background-color: #bbb;
+    .blank {
+        position: relative;
+        background-image: linear-gradient(to right,#c2e59c,#64b3f4);
+        border-top: 1px solid black;
+        width: 100%;
+        height: 40vw;
+        padding: 3vw 0;
+    }
+
+    .blank2 {
+        position: relative;
+        background-image: linear-gradient(to right,#c2e59c,#64b3f4);
+        border-bottom: 1px solid black;
+        width: 100%;
+        height: 40vw;
+        padding: 3vw 0vw 0vw 0vw;
+    }
+
+    .textimg2 {
+        font-size: 1.5vw;
+        position: absolute;
+        top: 10vw;
+        width: 100%;
+        height: auto;
         color: black;
     }
 
-    /* Style the back side */
-    .flip-card-back {
-        border: 4px solid #2D3142;
-        border-radius: 3vw 3vw 3vw 3vw;
-        background-color: #EF8354;
-        color: white;
-        transform: rotateY(180deg);
+    .img {
+        margin-top: 6vw;
+        background-image: url(../images/seconda.jpg);
+        background-size:cover;
+        width: 15vw;
+        height: 12vw;
+        float: right;
+        margin-right: 10vw;
+        border: 2px solid black;
+        box-shadow: 10px -10px 10px black;
     }
 
-    .image-mobile {
-        display: block;
+    #text-title {
+        margin-left: 10vw;
+        font-size: 5vw;
+    }
+
+    #text {
+        margin-left: 10vw;
+        font-size: 3vw;
+    }
+
+
+    .img2 {
+        margin-top: 6vw;
+        background-image: url(../images/terza.jpg);
+        background-size: cover;
+        width: 15vw;
+        height: 12vw;
+        float: right;
+        margin-right: 10vw;
+        border: 2px solid black;
+        box-shadow: 10px -10px 10px black;
+    }
+
+}
+
+@media(max-width: 768px) {
+
+    h1{
+        font-size: 2vw;
+    }
+
+    .franco {
+        width: 100%;
+        height: 50vw;
+    }
+
+    .box {
+        margin: 0;
+        opacity: 0;
+        background-color: rgba(0,0,0, 0.5);
         width: 100%;
         height: 100%;
-        border-radius: 1vw 1vw 1vw 1vw;
-        box-sizing: border-box;
-        border: 4px solid #2D3142;
+        animation: fadein 1s;
+        animation-delay: 2s;
+        animation-fill-mode: forwards;
     }
 
-    .text-mobile {
-        color: white;
-        font-family: system-ui;
+    #title2 {
+        margin-top: -6vw;
+        font-size: 8vw;
+    }
+    #title-desc {
         font-size: 4vw;
-        left: 18vw;
-        margin: 13vw 5vw 5px 20vw;
-        position: absolute;
-        -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        white-space: nowrap;
     }
 
-    #inline_link {
-        
-        
-    }
-
-    .text-mobile a:link,
-    .text-mobile a:visited {
-        color: #2D3142;
-        text-decoration: none;
+    .bg {
+        margin: 0;
+        height: 100%;
+        background-image: url("../images/call.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-position-y: -20vw;
         position: relative;
+        animation: fadein 2s;
+    }
+
+    .textimg {
+        font-size: 1.5vw;
+        padding: 20vw 0;
+        position: absolute;
+        margin-right: 0;
+        width: 100%;
+        color: #f1f1f1;
         text-align: center;
-        display: block;
+        animation: fadein 1s;
+        animation-delay: 2s;
     }
 
-    .text-mobile a:hover {
-        text-decoration: underline;
-        text-decoration-color: #2D3142;
+    .blank {
+        position: relative;
+        background-image: linear-gradient(to right,#c2e59c,#64b3f4);
+        border-top: 1px solid black;
+        width: 100%;
+        height: 40vw;
+        padding: 3vw 0;
     }
 
-    .btn-info {
-        top: 4px;
-        background-color: #FBFFF4 !important;
-        border: none;
-        box-shadow: 0 0 0 0 #FBFFF4;
+    .blank2 {
+        position: relative;
+        background-image: linear-gradient(to right,#c2e59c,#64b3f4);
+        border-bottom: 1px solid black;
+        width: 100%;
+        height: 40vw;
+        padding: 3vw 0vw 0vw 0vw;
     }
 
-    .container_left,
-    .container_right{
-        display: none;
+    .textimg2 {
+        font-size: 1.5vw;
+        position: absolute;
+        top: 10vw;
+        width: 100%;
+        height: auto;
+        color: black;
+    }
+
+    .img {
+        margin-top: 6vw;
+        background-image: url(../images/seconda.jpg);
+        background-size:cover;
+        width: 15vw;
+        height: 12vw;
+        float: right;
+        margin-right: 10vw;
+        border: 2px solid black;
+        box-shadow: 10px -10px 10px black;
+    }
+
+    #text-title {
+        margin-left: 10vw;
+        font-size: 5vw;
+    }
+
+    #text {
+        margin-left: 10vw;
+        font-size: 3vw;
     }
 
 
-    .icon-bar,
-    .icon-bar a,
-    .icon-bar a:hover,
-    .facebook,
-    .twitter,
-    .google,
-    .linkedin,
-    .youtube,
-    .content {
-        display: none;
+    .img2 {
+        margin-top: 6vw;
+        background-image: url(../images/terza.jpg);
+        background-size: cover;
+        width: 15vw;
+        height: 12vw;
+        float: right;
+        margin-right: 10vw;
+        border: 2px solid black;
+        box-shadow: 10px -10px 10px black;
     }
-    
+
 }
 
-/*body {
-    background: url(../images/assi.jpg) fixed;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}*/
 
-.container {
-    margin: auto;
+
+/* Tablet view */
+
+@media(min-width: 768px) and (orientation: portrait) {
+
+    h1{
+        font-size: 2vw;
+    }
+
+    .franco {
+        width: 100%;
+        height: 50vw;
+    }
+
+    .box {
+        margin: 0;
+        opacity: 0;
+        background-color: rgba(0,0,0, 0.5);
+        width: 100%;
+        height: 100%;
+        animation: fadein 1s;
+        animation-delay: 2s;
+        animation-fill-mode: forwards;
+    }
+
+    #title2 {
+        margin-top: -6vw;
+        font-size: 8vw;
+    }
+    #title-desc {
+        font-size: 4vw;
+    }
+
+    .bg {
+        margin: 0;
+        height: 100%;
+        background-image: url("../images/call.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-position-y: -20vw;
+        position: relative;
+        animation: fadein 2s;
+    }
+
+    .textimg {
+        font-size: 1.5vw;
+        padding: 20vw 0;
+        position: absolute;
+        margin-right: 0;
+        width: 100%;
+        color: #f1f1f1;
+        text-align: center;
+        animation: fadein 1s;
+        animation-delay: 2s;
+    }
+
+    .blank {
+        position: relative;
+        background-image: linear-gradient(to right,#c2e59c,#64b3f4);
+        border-top: 1px solid black;
+        width: 100%;
+        height: 40vw;
+        padding: 3vw 0;
+    }
+
+    .blank2 {
+        position: relative;
+        background-image: linear-gradient(to right,#c2e59c,#64b3f4);
+        border-bottom: 1px solid black;
+        width: 100%;
+        height: 40vw;
+        padding: 3vw 0vw 0vw 0vw;
+    }
+
+    .textimg2 {
+        font-size: 1.5vw;
+        position: absolute;
+        top: 10vw;
+        width: 100%;
+        height: auto;
+        color: black;
+    }
+
+    .img {
+        margin-top: 6vw;
+        background-image: url(../images/seconda.jpg);
+        background-size:cover;
+        width: 15vw;
+        height: 12vw;
+        float: right;
+        margin-right: 10vw;
+        border: 2px solid black;
+        box-shadow: 10px -10px 10px black;
+    }
+
+    #text-title {
+        margin-left: 10vw;
+        font-size: 5vw;
+    }
+
+    #text {
+        margin-left: 10vw;
+        font-size: 3vw;
+    }
+
+
+    .img2 {
+        margin-top: 6vw;
+        background-image: url(../images/terza.jpg);
+        background-size: cover;
+        width: 15vw;
+        height: 12vw;
+        float: right;
+        margin-right: 10vw;
+        border: 2px solid black;
+        box-shadow: 10px -10px 10px black;
+    }
+
 }
 
-.box {
-    position: absolute;
-    opacity: 0;
-    background-color: rgba(0,0,0, 0.5);
-    width: 100%;
-    height: 114.7%;
-    margin: 0;
-    animation: fadein 1s;
-    animation-delay: 2s;
-    animation-fill-mode: forwards;
+@media(min-width: 992px) {
+
+    .bg {
+        background-position-y: 0;
+        background-attachment: local !important;
+    }
+
+    h1{
+        font-size: 2vw;
+    }
+
+    .franco {
+        width: 100%;
+        height: 50vw;
+    }
+
+    .box {
+        margin: 0;
+        opacity: 0;
+        background-color: rgba(0,0,0, 0.5);
+        width: 100%;
+        height: 100%;
+        animation: fadein 1s;
+        animation-delay: 2s;
+        animation-fill-mode: forwards;
+    }
+
+    .bg {
+        margin: 0;
+        height: 100%;
+        background-image: url("../images/call.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-position-y: -20vw;
+        position: relative;
+        animation: fadein 2s;
+    }
+
+    .textimg {
+        font-size: 1.5vw;
+        padding: 20vw 0;
+        position: absolute;
+        margin-right: 0;
+        width: 100%;
+        color: #f1f1f1;
+        text-align: center;
+        animation: fadein 1s;
+        animation-delay: 2s;
+    }
+
+    .blank {
+        border-top: 1px solid black;
+        position: relative;
+        background-image: linear-gradient(to right,#c2e59c,#64b3f4);
+        width: 100%;
+        height: 18vw;
+        padding: 3vw 0;
+    }
+
+    .blank2 {
+        border-bottom: 1px solid black;
+        position: relative;
+        background-image: linear-gradient(to right,#c2e59c,#64b3f4);
+        width: 100%;
+        height: 18vw;
+        padding: 3vw 0vw 0vw 0vw;
+    }
+
+    .textimg2 {
+        font-size: 1.5vw;
+        position: absolute;
+        top: 10vw;
+        width: 100%;
+        height: auto;
+        color: black;
+    }
+
+
+    .img {
+        margin-top: 0vw;
+        background-image: url(../images/seconda.jpg);
+        background-size:cover;
+        width: 15vw;
+        height: 12vw;
+        float: right;
+        margin-right: 10vw;
+        border: 2px solid black;
+        box-shadow: 10px -10px 10px black;
+    }
+
+    #text-title {
+        margin-left: 10vw;
+        margin-top: -4vw;
+        color: black;
+    }
+
+    #text {
+        margin-left: 10vw;
+        margin-bottom: 3vw;
+        color: black;
+    }
+
+
+    .img2 {
+        margin-top: 0vw;
+        background-image: url(../images/terza.jpg);
+        background-size: cover;
+        width: 15vw;
+        height: 12vw;
+        float: right;
+        margin-right: 10vw;
+        border: 2px solid black;
+        box-shadow: 10px -10px 10px black;
+    }
+
 }
 
-.bg {
-    background-image: url(../images/assi.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    width: 100%;
+/* Desktop view */
+
+@media(min-width: 1200px) {
+
+    .bg {
+        background-position-y: 0;
+        background-attachment: local !important;
+    }
+
+    h1{
+        font-size: 2vw;
+    }
+
+    .franco {
+        width: 100%;
+        height: 50vw;
+    }
+
+    .box {
+        margin: 0;
+        opacity: 0;
+        background-color: rgba(0,0,0, 0.5);
+        width: 100%;
+        height: 100%;
+        animation: fadein 1s;
+        animation-delay: 2s;
+        animation-fill-mode: forwards;
+    }
+
+    .bg {
+        margin: 0;
+        height: 100%;
+        background-image: url("../images/call.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-position-y: -20vw;
+        position: relative;
+        animation: fadein 2s;
+    }
+
+    .textimg {
+        font-size: 1.5vw;
+        padding: 20vw 0;
+        position: absolute;
+        margin-right: 0;
+        width: 100%;
+        color: #f1f1f1;
+        text-align: center;
+        animation: fadein 1s;
+        animation-delay: 2s;
+    }
+
+    .blank {
+        border-top: 1px solid black;
+        position: relative;
+        background-image: linear-gradient(to right,#c2e59c,#64b3f4);
+        width: 100%;
+        height: 18vw;
+        padding: 3vw 0;
+    }
+
+    .blank2 {
+        border-bottom: 1px solid black;
+        position: relative;
+        background-image: linear-gradient(to right,#c2e59c,#64b3f4);
+        width: 100%;
+        height: 18vw;
+        padding: 3vw 0vw 0vw 0vw;
+    }
+
+    .textimg2 {
+        font-size: 1.5vw;
+        position: absolute;
+        top: 10vw;
+        width: 100%;
+        height: auto;
+        color: black;
+    }
+
+
+    .img {
+        margin-top: 0vw;
+        background-image: url(../images/seconda.jpg);
+        background-size:cover;
+        width: 15vw;
+        height: 12vw;
+        float: right;
+        margin-right: 10vw;
+        border: 2px solid black;
+        box-shadow: 10px -10px 10px black;
+    }
+
+    #text-title {
+        margin-left: 10vw;
+        margin-top: -4vw;
+        color: black;
+    }
+
+    #text {
+        margin-left: 10vw;
+        margin-bottom: 3vw;
+        color: black;
+    }
+
+
+    .img2 {
+        margin-top: 0vw;
+        background-image: url(../images/terza.jpg);
+        background-size: cover;
+        width: 15vw;
+        height: 12vw;
+        float: right;
+        margin-right: 10vw;
+        border: 2px solid black;
+        box-shadow: 10px -10px 10px black;
+    }
+
+}
+
+@media(min-width: 1900px) {
+
+    .bg {
+        background-position-y: 0;
+        background-attachment: local !important;
+    }
+
+    h1{
+        font-size: 2vw;
+    }
+
+    .franco {
+        width: 100%;
+        height: 50vw;
+    }
+
+    .box {
+        margin: 0;
+        opacity: 0;
+        background-color: rgba(0,0,0, 0.5);
+        width: 100%;
+        height: 100%;
+        animation: fadein 1s;
+        animation-delay: 2s;
+        animation-fill-mode: forwards;
+    }
+
+    .bg {
+        margin: 0;
+        height: 100%;
+        background-image: url("../images/call.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-position-y: -20vw;
+        position: relative;
+        animation: fadein 2s;
+    }
+
+    .textimg {
+        font-size: 1.5vw;
+        padding: 20vw 0;
+        position: absolute;
+        margin-right: 0;
+        width: 100%;
+        color: #f1f1f1;
+        text-align: center;
+        animation: fadein 1s;
+        animation-delay: 2s;
+    }
+
+    .blank {
+        border-top: 1px solid black;
+        position: relative;
+        background-image: linear-gradient(to right,#c2e59c,#64b3f4);
+        width: 100%;
+        height: 18vw;
+        padding: 3vw 0;
+    }
+
+    .blank2 {
+        border-bottom: 1px solid black;
+        position: relative;
+        background-image: linear-gradient(to right,#c2e59c,#64b3f4);
+        width: 100%;
+        height: 18vw;
+        padding: 3vw 0vw 0vw 0vw;
+    }
+
+    .textimg2 {
+        font-size: 1.5vw;
+        position: absolute;
+        top: 10vw;
+        width: 100%;
+        height: auto;
+        color: black;
+    }
+
+
+    .img {
+        margin-top: 0vw;
+        background-image: url(../images/seconda.jpg);
+        background-size:cover;
+        width: 15vw;
+        height: 12vw;
+        float: right;
+        margin-right: 10vw;
+        border: 2px solid black;
+        box-shadow: 10px -10px 10px black;
+    }
+
+    #text-title {
+        margin-left: 10vw;
+        margin-top: -4vw;
+        color: black;
+    }
+
+    #text {
+        margin-left: 10vw;
+        margin-bottom: 3vw;
+        color: black;
+    }
+
+
+    .img2 {
+        margin-top: 0vw;
+        background-image: url(../images/terza.jpg);
+        background-size: cover;
+        width: 15vw;
+        height: 12vw;
+        float: right;
+        margin-right: 10vw;
+        border: 2px solid black;
+        box-shadow: 10px -10px 10px black;
+    }
+
+}
+
+
+html, body {
     height: 100%;
-}
-
-.textimg {
-    padding: 25vw 0;
-    position: absolute;
     margin: 0;
-    width: 100%;
-    color: #f1f1f1;
-    text-align: center;
-    animation: fadein 1s;
-    animation-delay: 2s;
-}
-
-/* Animation */
-
-.container_left {
-    opacity: 0;
-    animation: moveLeft_container 1s;
-    animation-fill-mode: forwards;
-    animation-delay: 2s;
-}
-
-.container_right {
-    opacity: 0;
-    animation: moveRight_container 1s;
-    animation-fill-mode: forwards;
-    animation-delay: 2s;
 }
 
 
-.icon-bar,
-.icon-bar a,
-.icon-bar a:hover,
-.facebook,
-.twitter,
-.google,
-.linkedin,
-.youtube,
-.content {
-    animation: moveLeft_socialbar 1s;
-}
 
-@keyframes moveLeft_container {
-    0% {
-        left: 5vw;
-        opacity: 0;
+
+    @keyframes fadein {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
     }
-
-    100% {
-        left: 7vw;
-        opacity: 1;
-    }
-}
-
-@keyframes moveRight_container {
-    0% {
-        left: 60vw;
-        opacity: 0;
-    }
-
-    100% {
-        left: 58vw;
-        opacity: 1;
-    }
-}
-
-@keyframes moveLeft_socialbar {
-    0% {
-        left: -2vw;
-        opacity: 0;
-    }
-
-    100% {
-        left: 0;
-        opacity: 1;
-    }
-}
-
-
-@keyframes fadein{
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}

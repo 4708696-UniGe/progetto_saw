@@ -1,4 +1,10 @@
- <link rel="stylesheet" href="../css/navbar.css">
+<?php
+    if (!isset($_SESSION)) {
+        session_start();
+    }
+?>
+
+<link rel="stylesheet" href="../css/navbar.css">
 
  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
    <div class="container-fluid">
@@ -7,20 +13,25 @@
        <span class="navbar-toggler-icon"></span>
      </button>
      <form class="search_mobile">
-      <input class="form-control me-2" type="search" placeholder="Cerca" aria-label="Search">
+      <input class="form-control " type="search" placeholder="Cerca" aria-label="Search">
       <button class="btn btn-outline-success" type="submit">Cerca</button>
      </form>
      <div class="collapse navbar-collapse" id="navbarSupportedContent">
        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
          <div class="mobile_menu">
          <?php
-         if(isset($_COOKIE['FIRSTNAME'])){
+         if(isset($_SESSION["FIRSTNAME"])){
               echo ('
             <li class="nav-item active">
-                <a class="nav-link" href="profile.php">Profilo <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="show_profile.php">Profilo <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active"> ');
+               if($_SESSION["USER_TYPE"] == 0) { echo ('<a class="nav-link" href="control_panel_user.php">Pannello di controllo <span class="sr-only">(current)</span></a> '); }
+               if($_SESSION["USER_TYPE"] == 1) { echo ('<a class="nav-link" href="control_panel.php">Pannello di controllo <span class="sr-only">(current)</span></a> '); }
+               echo ('
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="about.php">About <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="logout.php">Esci <span class="sr-only">(current)</span></a>
             </li>');
          }else{
         echo(' <li class="nav-item active">
@@ -43,23 +54,28 @@
          </div>
          <div class="profile">
          <?php
-
-         if(isset($_COOKIE['FIRSTNAME']) && isset($_COOKIE['LASTNAME']) && isset($_COOKIE['ID_USER'])){
+         if(isset($_SESSION["FIRSTNAME"])){
               echo ('
                     <li class="nav-item dropdown">
-                <button class="btn btn-secondary dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                   '.$_COOKIE['FIRSTNAME'].'
+                <button class="btn btn-secondary dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                   '.$_SESSION["FIRSTNAME"]. '
                 </button>
                 <div class="dropdown-menu dropdown-menu-left logged">
                 <div class="px-4 py-3" >
-                <div class="form-group py-2">
-                    <a href="profile.php">Visualizza il profilo</a>
+                <div class="form-group">
+                    <a class="dropdown-item" href="show_profile.php">Visualizza il profilo</a>
                 </div>
-                <div class="form-group " >
-                    <a href="profile_mod.php">Modifica il profilo</a>
+                <div class="form-group" >
+                    <a class="dropdown-item" href="mod_profile.php">Modifica il profilo</a>
+                </div>
+                <div class="form-group">
+                    <a class="dropdown-item" href="chart.php">Carrello</a>
                 </div>
                 <div class="form-group py-2">
-                    <a href="cart.php">Carrello</a>
+                    ');
+             if($_SESSION["USER_TYPE"] == 0) { echo ('<a class="dropdown-item" href="control_panel_user.php">Pannello di controllo</a> '); }
+             if($_SESSION["USER_TYPE"] == 1) { echo ('<a class="dropdown-item" href="control_panel.php">Pannello di controllo</a> '); }
+             echo ('
                 </div>
                 <a class="btn btn-primary" href="logout.php" role="button">Esci</a>
                 </div>
@@ -68,18 +84,18 @@
          }else{
           echo ('
                 <li class="nav-item dropdown ">
-                <button class="btn btn-secondary dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <button class="btn btn-secondary dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                    Profilo
                 </button>
                 <div class="dropdown-menu dropdown-menu-left ">
                 <form class="px-4 py-3" action="login.php" method="post">
                 <div class="form-group">
                     <label for="exampleDropdownFormEmail1">Indirizzo Email</label>
-                    <input type="email" name="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="Email">
+                    <input type="email" name="email" required="required" class="form-control" id="exampleDropdownFormEmail1" placeholder="Email">
                 </div>
                 <div class="form-group">
                     <label for="exampleDropdownFormPassword1">Password</label>
-                    <input type="password" name="pass" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+                    <input type="password" name="pass" required="required" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
                 </div>
                 <div class="form-check">
                     <input type="checkbox" class="form-check-input" id="dropdownCheck">

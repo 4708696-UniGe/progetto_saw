@@ -7,7 +7,7 @@
 	<title> System Hospital - Home </title>
 	<link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet"  crossorigin="anonymous">
 	<link rel="icon" href="../images/icon.png">
-	<link rel="stylesheet" href="../css/home2.css">
+	<link rel="stylesheet" href="../css/home.css">
     <link rel="stylesheet" href="../css/scrollbar.css">
 	
 	 
@@ -19,9 +19,12 @@
 
 	<body>
 
+
+
+
 		
 		<nav> <?php include 'navbar.php'; ?></nav>
-			<!--<?php include 'socialbar.php'; ?>-->
+
 
 		
 		
@@ -87,6 +90,9 @@
 			    <div class="text" id="block">Trova la tua tra le nostre <a id="inline_link" href="platform_list.php">piattaforme supportate.</a> </div>
 		    </div>
 	    </div>-->
+
+
+
 		<div class="franco">
 			<div class="bg">
 				<div class = "box">

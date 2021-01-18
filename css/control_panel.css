@@ -1,0 +1,32 @@
+.sidebar-color-head,
+.sidebar-color-entry {
+    background-color: #1a1e21 !important;
+}
+
+.sidebar-color-head {
+    color: #fff3cd;
+}
+
+.sidebar-color-entry {
+    color: #FFFFFF ;
+}
+
+nav {
+    max-height: 3vw;
+}
+
+.navbar {
+    background-color: #2D3142 !important;
+
+}
+
+.nav-link {
+    color: #FFFFFF !important;
+}
+
+#menu-toggle {
+    background-color: #EF8354 !important;
+    border-color: #EF8354 !important;
+    max-height: 2.5vw;
+    margin-left: 0.5vw;
+}

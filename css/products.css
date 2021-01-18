@@ -1,4 +1,120 @@
-/* Desktop view */
+/* Mobile view */
+
+@media (max-width: 576px) {
+    .container {
+        max-height: 100% !important;
+        max-width: 90% !important;
+        margin-right: 0 !important;
+        margin-left: 0;
+        padding-left: 0;
+        padding-right: 0;
+
+    }
+
+    .mobile-price {
+
+    }
+
+    .price {
+        display: none;
+    }
+
+    .col {
+        min-width: 24% !important;
+        position: relative;
+        left: 1vw !important;
+    }
+
+    .price-title-desktop {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-height: 100% !important;
+        max-width: 100% !important;
+        margin-right: 0 !important;
+        margin-left: 0;
+        padding-left: 0;
+        padding-right: 0;
+
+    }
+
+    .mob {
+        max-width: 97% !important;
+    }
+
+    .price {
+        display: none;
+    }
+
+    .col {
+        min-width: 24% !important;
+        position: relative;
+        left: 4vw !important;
+    }
+
+    .price-title-desktop {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) and (orientation: landscape) {
+    .container {
+        max-height: 100% !important;
+        max-width: 100% !important;
+        margin-right: 0;
+        margin-left: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .col {
+        min-width: 55% !important;
+        position: relative !important;
+        left: 23vw !important;
+    }
+
+    .price {
+        display: none;
+    }
+
+
+    .price-title-desktop {
+        display: none;
+    }
+
+}
+
+/* Tablet view */
+
+@media (min-width: 768px) and (orientation: portrait) {
+    .container {
+        max-height: 100% !important;
+        max-width: 100% !important;
+        margin-right: 0;
+        margin-left: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .col {
+        min-width: 28%;
+        position: relative;
+        left: 9vw;
+    }
+
+    .price {
+        display: none;
+    }
+
+
+    .price-title-desktop {
+        display: none;
+    }
+
+}
 
 @media (min-width: 992px) {
     .container {
@@ -11,58 +127,82 @@
     }
 
     .price {
-        padding-left: 29vw;
+        margin-left: 0vw;
     }
-    
-    
+
+    .col {
+        min-width: 22%;
+        position: relative;
+        left: 18vw;
+    }
+
     .mob {
         display: none;
     }
-    
+
     .price-title-mobile {
         display: none;
     }
 }
 
-/* Mobile view */
+/* Desktop view */
 
-@media (max-width: 992px) {
+@media (min-width: 1200px) {
     .container {
         max-height: 100% !important;
         max-width: 100% !important;
-        margin-right: 0 !important;
+        margin-right: 0;
         margin-left: 0;
         padding-left: 0;
         padding-right: 0;
-        
     }
-    
 
-    .mobile-price {
-        
-    }
-    
     .price {
-        display: none;
-    }
-    
-    .row {
-       padding: 0 6vw 0 9vw;
+        margin-left: 0vw;
+        padding-left: 29vw;
     }
 
-    .icon-bar,
-    .icon-bar a,
-    .icon-bar a:hover,
-    .facebook,
-    .twitter,
-    .google,
-    .linkedin,
-    .youtube,
-    .content {
+    .col {
+        min-width: 22%;
+        position: relative;
+        left: 0vw;
+    }
+
+    .mob {
         display: none;
     }
 
-    .price-title-desktop {
+    .price-title-mobile {
+        display: none;
+    }
+}
+
+@media (min-width: 1900px) {
+    .container {
+        max-height: 100% !important;
+        max-width: 100% !important;
+        margin-right: 0;
+        margin-left: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .price {
+        margin-left: 0vw;
+        padding-left: 29vw;
+    }
+
+    .col {
+        min-width: 22%;
+        position: relative;
+        left: 0vw;
+    }
+
+    .mob {
+        display: none;
+    }
+
+    .price-title-mobile {
         display: none;
     }
 }

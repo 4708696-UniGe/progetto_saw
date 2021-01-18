@@ -15,7 +15,7 @@
 	<body>
 	
 	    <nav> <?php include 'navbar.php'; ?></nav>
-        		<?php include 'socialbar.php'; ?>
+
 	    
 	    
 	    <?php /* Desktop view*/ ?>
