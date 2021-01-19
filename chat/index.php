@@ -65,16 +65,12 @@ if(!isset($_SESSION['ID_USER']))
 		</div>
 		</div>
 
-		
+		<script src="../bootstrap/js/bootstrap.bundle.min.js"  crossorigin="anonymous"></script>
 	
 		</body>  
 
 		<!-- Includere footer -->
-		<!--
-			<div class"footer">
-			<footer> <?php include '../php/footer.php'; ?> </footer>
-			</div>
-		-->
+		<footer> <?php include '../php/footer.php'; ?> </footer>
 
 </html>
 

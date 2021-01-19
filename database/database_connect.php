@@ -28,7 +28,8 @@
         company_name VARCHAR(50),
         workstation_os VARCHAR(50),
         mobile_os VARCHAR(20),
-        about TEXT
+        about TEXT,
+        admin boolean default 0 null
         )";
 
     $sql_ticket = "CREATE TABLE IF NOT EXISTS ticket (

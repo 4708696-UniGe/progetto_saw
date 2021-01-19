@@ -21,11 +21,11 @@
                 <img id="logo" src="../images/logo.png" alt="Logo azienda">
 
                 <p class="footer-links font-weight-bold">
-                    <a class="text-white" href="home.php">Home</a>
+                    <a class="text-white" href="../php/home.php">Home</a>
                     |
                     <a class="text-white" href="#">Blog</a>
                     |
-                    <a class="text-white" href="about.php">Chi siamo</a>
+                    <a class="text-white" href="../php/about.php">Chi siamo</a>
                     |
                     <a class="text-white" href="#">Contattaci</a>
                 </p>

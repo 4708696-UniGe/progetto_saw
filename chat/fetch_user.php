@@ -5,33 +5,37 @@
 include('database_chat.php');
 session_start();
 
-/*
-if( $_SESSION["USER_TYPE"] == 1){
+
+if( $_SESSION["USER_TYPE"] == 1 ){
 
 	$query = "
-	SELECT * FROM admin
-	WHERE email != '".$_SESSION['EMAIL']."' 
+	SELECT * FROM users
+	WHERE email != '".$_SESSION['EMAIL']."' AND admin != 1
 	";
 
 } else if ($_SESSION["USER_TYPE"] == 0){
 	
 	$query = "
-	SELECT * FROM admin
-	WHERE email != '".$_SESSION['EMAIL']."' 
+	SELECT * FROM users
+	WHERE email != '".$_SESSION['EMAIL']."' AND admin != 0
 	";  
 
-}*/
+}
+
+$statement = $conn->prepare($query);
+
+$statement->execute();
+
+$result = $statement->fetchAll();
+
+/*
 	$query = "
 	SELECT * FROM users
 	WHERE id != '".$_SESSION['ID_USER']."' 
 	";
+	*/
 
 
-	$statement = $conn->prepare($query);
-
-	$statement->execute();
-
-	$result = $statement->fetchAll();
 
 
 
