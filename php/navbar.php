@@ -69,7 +69,7 @@
                     <a class="dropdown-item" href="mod_profile.php">Modifica il profilo</a>
                 </div>
                 <div class="form-group">
-                    <a class="dropdown-item" href="cart.php">Carrello</a>
+                    <a class="dropdown-item" href="chart.php">Carrello</a>
                 </div>
                 <div class="form-group py-2">
                     ');

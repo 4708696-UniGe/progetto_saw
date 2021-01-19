@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="../css/products.css">
 	<link rel="stylesheet" href="../css/scrollbar.css">
 	
+	
 	</head>
 
 	<body>
@@ -20,10 +21,7 @@
 	    
 	    <?php /* Desktop view*/ ?>
 	    
-        
-
         <div class="container">
-        <p id="flag_prod" class="alert alert-danger devisible" role="alert"></p>
           <div class="price-title-desktop">
           <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
             <h1 class="display-4" id="product-list-category">Pacchetti Singoli</h1>
@@ -44,7 +42,7 @@
                       <li>- 1 Dispositivo</li>
                       <li>- Assistenza telefonica</li>
                     </ul>
-                    <a  class="w-100 btn btn-lg btn-primary" id="btn" role="button">Acquista</a>
+                    <a  class="w-100 btn btn-lg btn-primary" href="cart.php" role="button">Acquista</a>
                   </div>
                 </div>
                 </div>
@@ -145,10 +143,7 @@
           
           <?php /* Mobile view*/ ?>
           
-          
-
           <div class="price-title-mobile">
-          <p id="flag_prod" class="alert alert-danger devisible" role="alert"></p>
           <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
             <h1 class="display-4">Pacchetti Singoli</h1>
             <p class="lead">Non hai necessità di un servizio continuativo? Acquista uno dei nostri pacchetti ad uso singolo</p>
@@ -266,25 +261,8 @@
                 </div>
                 </div>
               </div>
-
-
-
-        <script>
-            document.getElementById("btn").addEventListener("click", flag, false);
-            function flag(){
-                var c = document.cookie;
-                document.write(c);
-                if(c != null){
-                    //window.location = "cart.php";
-                }
-                else{
-                    document.getElementById('flag_prod').className = 'alert alert-danger';
-                    document.getElementById('flag_prod').innerHTML = 'Devi accedere o registrarti prima di poter acquistare.';
-                }
-            }
-            </script>
-
-	    <script src="../bootstrap/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+	
+	    <script src="../bootstrap/js/bootstrap.bundle.min.js"  crossorigin="anonymous"></script>
 	    
 	</body>
 	 <footer> <?php include 'footer.php'; ?> </footer>
