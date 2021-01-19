@@ -114,12 +114,14 @@ if (!isset($ver) && $ver == 1) {
                 $.ajax({
                     type: 'POST',
                     url: "../database/database_show_ticket_admin.php",
+                    method: "POST";
                     data: $('#search_user').serialize(),
                     success: function () {
                         alert('form was submitted');
+                        $("#ticket_box").load("cp_menu_entry.php #search_user");
                     }
 
-            }); $("#ticket_box").load("cp_menu_entry.php #search_user");
+            });
             });
         });
     </script>
