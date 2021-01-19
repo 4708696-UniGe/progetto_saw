@@ -22,6 +22,7 @@ if(!isset($_SESSION['ID_USER']))
         <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet"  crossorigin="anonymous">
 
         <link rel="stylesheet" href="../css/fetch_user.css">
+        <link rel="stylesheet" href="../css/scrollbar.css">
 
 		<!-- versione aggiornata di jquery-->
 		<script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
@@ -97,9 +98,18 @@ $(document).ready(function(){
 	// setInterval utilizza le funzioni che sono definite sotto di lei
 	setInterval(function(){
 		update_last_activity();
-		fetch_user();
 		update_chat_history_data();
+
 	}, 2000);
+
+	setInterval(function(){
+		var scrollTarget = $("#chat_table");
+		var pos = scrollTarget.scrollTop();
+	    fetch_user();
+        scrollTarget.load('fetch_user.php', function() {
+            $('#chat_table').scrollTop(pos);
+        });
+	}, 1000000);
 
 	function fetch_user()
 	{

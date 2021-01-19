@@ -29,15 +29,24 @@
 @media (min-width: 1200px) {
     .chat_table {
         position: relative;
-        left: 27vw;
-        max-width: 50%;
+        left: 20vw;
+        max-width: 60%;
+        height: 41.4%;
+        overflow-y: auto;
     }
+
 
 
     .start_chat {
         /* color: #FFFFFF;
         background-color: #FFFFFF;
         border-color: #FFFFFF; */
+    }
+
+    footer {
+        position: absolute;
+        bottom:0;
+        min-width: 100%;
     }
 }
 

@@ -40,12 +40,15 @@ $result = $statement->fetchAll();
 
 
 $output = '
-<table class="table table-hover chat_table">
+<div id="chat_table" class="chat_table">
+<table class="table">
+    <thead class="thead-dark">
 	<tr>
-		<th width="70%">Username</td>
-		<th width="20%">Status</td>
-		<th width="10%">Action</td>
+		<th width="70%">Username</th>
+		<th width="20%">Status</th>
+		<th width="10%">Action</th>
 	</tr>
+	</thead>
 ';
 
 foreach($result as $row)
@@ -70,7 +73,7 @@ foreach($result as $row)
 	</tr>
 	';
 }
-$output .= '</table>';
+$output .= '</table> </div>';
 
 echo $output;
 
