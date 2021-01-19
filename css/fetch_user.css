@@ -31,7 +31,13 @@
         position: relative;
         left: 27vw;
         max-width: 50%;
-        margin-bottom: 3.6vw;
+    }
+
+
+    .start_chat {
+        /* color: #FFFFFF;
+        background-color: #FFFFFF;
+        border-color: #FFFFFF; */
     }
 }
 
