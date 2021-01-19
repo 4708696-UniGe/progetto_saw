@@ -40,7 +40,7 @@ $result = $statement->fetchAll();
 
 
 $output = '
-<table class="table table-bordered table-striped">
+<table class="table table-bordered table-striped chat_table">
 	<tr>
 		<th width="70%">Username</td>
 		<th width="20%">Status</td>

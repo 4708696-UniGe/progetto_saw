@@ -20,7 +20,9 @@ if(!isset($_SESSION['ID_USER']))
         <title> Chat </title>  
 		<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
         <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet"  crossorigin="anonymous">
-        
+
+        <link rel="stylesheet" href="../css/fetch_user.css">
+
 		<!-- versione aggiornata di jquery-->
 		<script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
   		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
@@ -93,7 +95,7 @@ if(!isset($_SESSION['ID_USER']))
 
 <script>  
 
-// $(document).ready  Verifica se il documento (la pagina) è pronta per essere manipolata in modo sicuro. Fino a che non è verificata questa 
+// $(document).ready  Verifica se il documento (la pagina) ï¿½ pronta per essere manipolata in modo sicuro. Fino a che non ï¿½ verificata questa 
 // condizione non si inizia a leggere la parte di javascript. 
 $(document).ready(function(){
 

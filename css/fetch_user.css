@@ -1,0 +1,46 @@
+
+/* Mobile View */
+
+@media (max-width: 576px) {
+
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 768px) and (orientation: landscape) {
+
+}
+
+
+/* Tablet View */
+
+@media (min-width: 768px) and (orientation: portrait) {
+
+}
+
+@media (min-width: 992px) {
+
+}
+
+/* Desktop view */
+
+@media (min-width: 1200px) {
+    .chat_table {
+        position: relative;
+        left: 27vw;
+        max-width: 50%;
+        margin-bottom: 3.6vw;
+    }
+}
+
+@media (min-width: 1900px) {
+    .chat_table {
+        position: relative;
+        left: 27vw;
+        max-width: 50%;
+        margin-bottom: 5vw;
+    }
+
+}
