@@ -99,6 +99,7 @@ $(document).ready(function(){
 	setInterval(function(){
 		update_last_activity();
 		update_chat_history_data();
+		fetch_user();
 
 	}, 2000);
 
