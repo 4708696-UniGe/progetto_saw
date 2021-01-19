@@ -69,7 +69,7 @@ foreach($result as $row)
 	<tr>
 		<td>'.$row['email'].' '.count_unseen_message($row['id'], $_SESSION['ID_USER'], $conn).' </td>
 		<td>'.$status.'</td>
-		<td><button type="button" class="btn btn-outline-success btn-sm start_chat" data-touserid="'.$row['id'].'" data-tousername="'.$row['email'].'">Start Chat</button></td>
+		<td><button type="button" class="btn btn-outline-success btn-sm start_chat" data-touserid="'.$row['id'].'" data-tousername="'.$row['email'].'">Chat</button></td>
 	</tr>
 	';
 }
