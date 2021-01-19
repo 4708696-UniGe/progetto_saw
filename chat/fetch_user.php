@@ -44,9 +44,9 @@ $output = '
 <table class="table">
     <thead class="thead-dark">
 	<tr>
-		<th width="70%">Username</th>
-		<th width="20%">Status</th>
-		<th width="10%">Action</th>
+		<th width="70%">Utente</th>
+		<th width="20%">Stato</th>
+		<th width="10%">Contatta</th>
 	</tr>
 	</thead>
 ';

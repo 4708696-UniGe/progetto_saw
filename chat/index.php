@@ -35,14 +35,14 @@ if(!isset($_SESSION['ID_USER']))
 
     <body>  
 
-		<!-- Includere navbar -->
+		<!-- navbar -->
 		<?php include '../php/navbar.php'; ?>
 
 		<div class="box">
         <div class="container">
 			<br />
 			
-			<h3 align="center"> Live Chat </a></h3><br />
+			<h3 align="center"> Chat </a></h3><br />
 			<br />
 
 			
@@ -63,7 +63,7 @@ if(!isset($_SESSION['ID_USER']))
 	
 		</body>  
 
-		<!-- Includere footer -->
+		<!-- footer -->
 		<footer> <?php include '../php/footer.php'; ?> </footer>
 
 </html>
