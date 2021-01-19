@@ -7,11 +7,11 @@
         <div class="col-md-4 text-white my-3 text-center text-md-left social-link">
             <span class="font-weight-bold ">I nostri canali social</span>
             <div class="py-3">
-                <a href="under_construction.php"><i class="fab fa-facebook fa-2x text-primary mx-3"></i></a>
-                <a href="under_construction.php"><i class="fab fa-instagram fa-2x text-danger mx-3"></i></a>
-                <a href="under_construction.php"><i class="fab fa-linkedin-in fa-2x text-info mx-3"></i></a>
-                <a href="under_construction.php"><i class="fab fa-twitter fa-2x text- mx-3"></i></a>
-                <a href="under_construction.php"><i class="fab fa-youtube fa-2x text-danger mx-3"></i></a>
+                <a href="under_construction.php"><i id="socialicon" class="fab fa-facebook fa-2x text-primary mx-3"></i></a>
+                <a href="under_construction.php"><i id="socialicon" class="fab fa-instagram fa-2x text-danger mx-3"></i></a>
+                <a href="under_construction.php"><i id="socialicon" class="fab fa-linkedin-in fa-2x text-info mx-3"></i></a>
+                <a href="under_construction.php"><i id="socialicon" class="fab fa-twitter fa-2x text- mx-3"></i></a>
+                <a href="under_construction.php"><i id="socialicon" class="fab fa-youtube fa-2x text-danger mx-3"></i></a>
             </div>
         </div>
 
@@ -20,12 +20,12 @@
             <div class="py-3">
                 <img id="logo" src="../images/logo.png" alt="Logo azienda">
 
-                <p class="footer-links font-weight-bold">
-                    <a class="text-white" href="../php/home.php">Home</a>
+                <p class=" font-weight-bold">
+                    <a class="text-white" href="home.php">Home</a>
                     |
                     <a class="text-white" href="#">Blog</a>
                     |
-                    <a class="text-white" href="../php/about.php">Chi siamo</a>
+                    <a class="text-white" href="about.php">Chi siamo</a>
                     |
                     <a class="text-white" href="#">Contattaci</a>
                 </p>
@@ -36,14 +36,14 @@
         <div class="col-md-4 text-white text-md-end contacts ">
             <div class="py-2 my-4">
                 <div>
-                    <p class="text-white"> Via All&#39;opera Pia 15 - Genova - 16145 - GE <i><img src="../images/geo.png" alt="" width="30" height="30" title="Posizione"></i></p>
+                    <p class="text-white location"> Via All&#39;opera Pia 15 - Genova - 16145 - GE <i><img src="../images/geo.png" alt="Location" width="30" height="30" title="Posizione"></i></p>
                 </div>
 
                 <div>
-                    <p>+39 3479620471 <i><img src="../images/phone.png" alt="" width="30" height="30" title="Telefono"></i></p>
+                    <p>+39 3479620471 <i><img src="../images/phone.png" alt="Cellular" width="30" height="30" title="Telefono"></i></p>
                 </div>
                 <div>
-                    <p><a id="email-icon" href="mailto:s4708696@studenti.unige.it"> s4708696@studenti.unige.it</a> <i><img src="../images/mailbox2.png" alt="" width="30" height="30" title="E-mail" ></i></p>
+                    <p><a id="email-icon" href="mailto:s4708696@studenti.unige.it"> s4708696@studenti.unige.it</a> <i><img src="../images/mailbox2.png" alt="Mail" width="30" height="30" title="E-mail" ></i></p>
                 </div>
             </div>
         </div>

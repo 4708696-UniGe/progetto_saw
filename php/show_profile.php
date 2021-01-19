@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="it-IT">
 	<head>
 	<meta charset="UTF-8">
 	<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
@@ -7,7 +7,7 @@
 	<title> Profilo </title>
 	<link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet"  crossorigin="anonymous">
 	<link rel="icon" href="../images/icon.png">
-	<link rel="stylesheet" href="../css/profile.css">
+	<link rel="stylesheet" href="../css/show_profile.css">
     <link rel="stylesheet" href="../css/scrollbar.css">
 	
 	 
@@ -43,9 +43,9 @@
                    
                         <div class="mt-3">
                           <h4> <?php echo $_SESSION['FIRSTNAME']." ".$_SESSION['LASTNAME']; ?> </h4>
-                          <p class="text-secondary mb-1">Mi sento</p>
-                          <p class="text-muted font-size-sm">sto cazzo</p>
-                          <form action="profile_mod.php">
+                          <p class="text-secondary mb-1">Utente</p>
+                          <p class="text-muted font-size-sm"></p>
+                          <form action="mod_profile.php">
                           <button class="btn btn-primary">Modifica profilo</button>
                           </form>
                         </div>
