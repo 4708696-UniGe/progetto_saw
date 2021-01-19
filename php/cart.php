@@ -1,137 +1,91 @@
 <?php
 session_start();
+echo "<script>var flag_item= 0</script>";
 include ("../database/database_cart.php");
-if(!empty($_GET["action"])) {
-	switch($_GET["action"]) {
-		case "add":
-			if(!empty($_POST["quantity"])) {
-				$result = mysqli_query($con, "SELECT * FROM products WHERE code='" . $_GET["code"] . "'");
-				while($row = mysqli_fetch_assoc($result)){
-					$productByCode[] = $row;
+?>
+<!DOCTYPE html>
+<html lang="it">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title> System Hospital - Carrello </title>
+		<link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+		<link rel="stylesheet" href="../css/cart.css">
+		<link rel="icon" href="../images/icon.png">
+	</head>
+	
+	<nav> <?php include 'navbar.php'; ?></nav>
+	
+	<div id="shopping-cart">
+		<p id="flag_cart" class="alert alert-danger devisible" role="alert"></p>
+		<a id="btnEmpty" href="cart.php?action=empty">Svuota il carrello</a>
+	<?php
+		if(isset($_SESSION["cart_item"])){
+			$total_price = 0;
+	?>
+
+	
+	<body>
+	<table class="table">
+	<thead>
+		<tr>
+			<th scope = "col">Nome</th>
+			<th scope = "col">Codice</th>
+			<th scope = "col">Prezzo</th>
+			<th scope = "col" style="text-align:center;">Rimuovi</th>
+		</tr>
+	</thead>
+	<tbody>
+		<?php		
+			foreach ($_SESSION["cart_item"] as $item){
+				$item_price =$item["price"];
+				?>
+						<tr>
+							<td><?php echo $item["name"]; ?></td>
+							<td><?php echo $item["code"]; ?></td>
+							<?php if($item["code"] == "bronze2" || $item["code"] == "silver2" || $item["code"] == "gold2"){
+								echo "<td>&euro;".number_format($item_price,2)." / MESE</td>";
+							} else if ($item["code"] == "bronze1" || $item["code"] == "silver1" || $item["code"] == "gold1"){
+								echo "<td>&euro;".number_format($item_price,2)."</td>";
+							}
+							?>
+							<td style="text-align:center;"><a href="cart.php?action=remove&code=<?php echo $item["code"]; ?>" class="btnRemoveAction"><img src="../images/icon-delete.png" alt="Rimuovi Oggetto" /></a></td>
+						</tr>
+						<?php
+						$total_price += ($item["price"]);
 				}
-				$itemArray = array($productByCode[0]["code"]=>array('name'=>$productByCode[0]["name"], 'code'=>$productByCode[0]["code"], 'quantity'=>$_POST["quantity"], 'price'=>$productByCode[0]["price"], 'image'=>"../".$productByCode[0]["image"]));
-		
-				if(!empty($_SESSION["cart_item"])) {
-					if(in_array($productByCode[0]["code"],array_keys($_SESSION["cart_item"]))) {
-						foreach($_SESSION["cart_item"] as $k => $v) {
-								if($productByCode[0]["code"] == $k) {
-									if(empty($_SESSION["cart_item"][$k]["quantity"])) {
-										$_SESSION["cart_item"][$k]["quantity"] = 0;
-									}
-									$_SESSION["cart_item"][$k]["quantity"] += $_POST["quantity"];
-								}
-						}
-					} else {
-						$_SESSION["cart_item"] = array_merge($_SESSION["cart_item"],$itemArray);
-					}
-				} else {
-					$_SESSION["cart_item"] = $itemArray;
+				?>
+
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td style="text-align:center;">Total: <strong><?php echo "&euro; ".number_format($total_price, 2); ?></strong></td>
+		</tr>
+	</tbody>
+	</table>		
+	  <?php
+	} else {
+	?>
+	<div class="empty_cart">
+		<div class="no-records">Il carrello &egrave; vuoto.</div>
+		<a id="btnbuy" class="w-80 btn btn-lg btn-primary" href="products.php" role="button">Acquista prodotti</a>
+	</div>
+	<?php 
+	}
+	?>
+	</div>
+	</div>
+	<script src="../bootstrap/js/bootstrap.bundle.min.js"  crossorigin="anonymous"></script>
+	<script> 
+			window.onload = flag_cart();
+			function flag_cart() {
+				if(flag_item == 1) {
+				document.getElementById("flag_cart").className = "alert alert-danger box";
+				document.getElementById("flag_cart").innerHTML = "Prodotto gi&agrave; presente nel carrello.";
 				}
 			}
-			break;
-
-		case "remove":
-		if(!empty($_SESSION["cart_item"])) {
-			foreach($_SESSION["cart_item"] as $k => $v) {
-				if($_GET["code"] == $k)
-					unset($_SESSION["cart_item"][$k]);				
-				if(empty($_SESSION["cart_item"]))
-					unset($_SESSION["cart_item"]);
-			}	
-		}
-		break;
-
-		case "empty":
-			unset($_SESSION["cart_item"]);
-			break;
-	}
-}
-?>
-
-<link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet"  crossorigin="anonymous">
-<link rel="stylesheet" href="../css/cart.css">
-<nav> <?php include 'navbar.php'; ?></nav>
-<div id="shopping-cart">
-<div class="txt-heading">Shopping Cart</div>
-
-
-<a id="btnEmpty" href="cart.php?action=empty">Empty Cart</a>
-<?php
-if(isset($_SESSION["cart_item"])){
-    $total_quantity = 0;
-    $total_price = 0;
-?>	
-<table class="tbl-cart" cellpadding="10" cellspacing="1">
-<body>
-<tr>
-<th style="text-align:left;">Name</th>
-<th style="text-align:left;">Code</th>
-<th style="text-align:right;" width="5%">Quantity</th>
-<th style="text-align:right;" width="10%">Unit Price</th>
-<th style="text-align:right;" width="10%">Price</th>
-<th style="text-align:center;" width="5%">Remove</th>
-</tr>	
-<?php		
-    foreach ($_SESSION["cart_item"] as $item){
-        $item_price = $item["quantity"]*$item["price"];
-		?>
-				<tr>
-				<td><img src="<?php echo "../product_images/".$item["image"]; ?>" class="cart-item-image" /><?php echo $item["name"]; ?></td>
-				<td><?php echo $item["code"]; ?></td>
-				<td style="text-align:right;"><?php echo $item["quantity"]; ?></td>
-				<td  style="text-align:right;"><?php echo "$ ".$item["price"]; ?></td>
-				<td  style="text-align:right;"><?php echo "$ ". number_format($item_price,2); ?></td>
-				<td style="text-align:center;"><a href="cart.php?action=remove&code=<?php echo $item["code"]; ?>" class="btnRemoveAction"><img src="../images/icon-delete.png" alt="Remove Item" /></a></td>
-				</tr>
-				<?php
-				$total_quantity += $item["quantity"];
-				$total_price += ($item["price"]*$item["quantity"]);
-		}
-		?>
-
-<tr>
-<td colspan="2" align="right">Total:</td>
-<td align="right"><?php echo $total_quantity; ?></td>
-<td align="right" colspan="2"><strong><?php echo "$ ".number_format($total_price, 2); ?></strong></td>
-<td></td>
-</tr>
-
-</table>		
-  <?php
-} else {
-?>
-<div class="no-records">Your Cart is Empty</div>
-<?php 
-}
-?>
-</div>
-
-<div id="product-grid">
-	<div class="txt-heading">Products</div>
-	<?php
-	$query = "SELECT * FROM products ORDER BY id ASC";
-	$result = mysqli_query($con, $query);
-	$product_array = array();
-	while ($row = mysqli_fetch_assoc($result)) {
-		$product_array[] = $row;
-	}
-	if (!empty($product_array)) { 
-		foreach($product_array as $key=>$value){
-	?>
-		<div class="product-item">
-			<form method="post" action="cart.php?action=add&code=<?php echo $product_array[$key]['code']; ?>">
-			<div class="product-image"><img src="<?php echo "../".$product_array[$key]["image"]; ?>"></div>
-			<div class="product-tile-footer">
-			<div class="product-title"><?php echo $product_array[$key]["name"]; ?></div>
-			<div class="product-price"><?php echo "$".$product_array[$key]["price"]; ?></div>
-			<div class="cart-action"><input type="text" class="product-quantity" name="quantity" value="1" size="2" /><input type="submit" value="Add to Cart" class="btnAddAction" /></div>
-			</div>
-			</form>
-		</div>
-	<?php
-		}
-	}
-	?>
-</div>
-<script src="../bootstrap/js/bootstrap.bundle.min.js"  crossorigin="anonymous"></script>
-</body>
+	</script>
+	</body>
+</html>
