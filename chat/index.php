@@ -44,16 +44,7 @@ if(!isset($_SESSION['ID_USER']))
 			<h3 align="center"> Live Chat </a></h3><br />
 			<br />
 
-			<div class="row">
-				<div class="col-md-8 col-sm-6">
-					<h4>Online User</h4>
-				</div>
-				<div class="col-md-2 col-sm-3">
-				</div>
-				<div class="col-md-2 col-sm-3">
-					<p align="right">Benvenuto <?php echo $_SESSION['FIRSTNAME']; ?> - <a href="../php/logout.php">Logout</a></p>
-				</div>
-			</div>
+			
 			<div class="table-responsive">
 				
 				<div id="user_details"></div>
