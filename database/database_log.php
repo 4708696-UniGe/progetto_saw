@@ -42,9 +42,21 @@
 	     			(user_id) 
 	     			VALUES ('".$rows[0]."')
 					";
+
+                    $res = mysqli_query($conn, $sub_query);
+
+                    $sql_last_id = "SELECT login_detail_id FROM login_details WHERE user_id = '{$_SESSION["ID_USER"]}'";
+
+                    $res = mysqli_query($conn, $sql_last_id);
+                    $rows = mysqli_fetch_array($res);
+                    $_SESSION['login_details_id'] = $rows[0];
+
+
+
+					/*
 					$statement = $conn->prepare($sub_query);
 					$statement->execute();
-					$_SESSION['login_details_id'] = $conn->insert_id;
+					$_SESSION['login_details_id'] = $conn->lastInsertId(); */
 
 					//include 'check_admin.php';
 

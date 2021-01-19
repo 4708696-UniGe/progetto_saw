@@ -1,6 +1,7 @@
 <?php
 
-$conn = new PDO("mysql:host=localhost;dbname=test;charset=utf8mb4", "root", "");
+
+    $conn = new PDO("mysql:host=localhost;dbname=S4708696;charset=latin1", "S4708696", "46394394678610");
 
 // CREO LE TABELLE PER LA CHAT:
 	// Tabella chat_message:
@@ -114,9 +115,11 @@ function count_unseen_message($from_user_id, $to_user_id, $conn)
 	AND to_user_id = '$to_user_id' 
 	AND status = '1'
 	";
+
 	$statement = $conn->prepare($query);
 	$statement->execute();
 	$count = $statement->rowCount();
+
 	$output = '';
 	if($count > 0)
 	{

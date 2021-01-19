@@ -38,8 +38,8 @@ else { echo('
             <div class="card-body">
                 <h5 class="card-title">Windows</h5>
                 <p class="card-text">Selezionare la versione in base al proprio hardware.</p>
-                <a class="btn btn-primary" href="../dummy" download="proposed_file_name">x64</a>
-                <a class="btn btn-primary" href="../dummy" download="proposed_file_name">ARM</a>
+                <a class="btn btn-primary" href="../dummy" download="dummy">x64</a>
+                <a class="btn btn-primary" href="../dummy" download="dummy">ARM</a>
             </div>
         </div>
     </div>
@@ -48,8 +48,8 @@ else { echo('
             <div class="card-body">
                 <h5 class="card-title">Linux</h5>
                 <p class="card-text">Selezionare la versione in base al proprio hardware.</p>
-                <a class="btn btn-primary" href="../dummy" download="proposed_file_name">x64</a>
-                <a class="btn btn-primary" href="../dummy" download="proposed_file_name">ARM</a>
+                <a class="btn btn-primary" href="../dummy" download="dummy">x64</a>
+                <a class="btn btn-primary" href="../dummy" download="dummy">ARM</a>
             </div>
         </div>
     </div>
@@ -58,8 +58,8 @@ else { echo('
             <div class="card-body">
                 <h5 class="card-title">mac OS</h5>
                 <p class="card-text">Selezionare la versione in base al proprio hardware.</p>
-                <a class="btn btn-primary" href="../dummy" download="proposed_file_name">Intel</a>
-                <a class="btn btn-primary" href="../dummy" download="proposed_file_name">M1</a>
+                <a class="btn btn-primary" href="../dummy" download="dummy">Intel</a>
+                <a class="btn btn-primary" href="../dummy" download="dummy">M1</a>
             </div>
         </div>
     </div>
@@ -68,7 +68,7 @@ else { echo('
             <div class="card-body">
                 <h5 class="card-title">Android</h5>
                 <p class="card-text">Selezionare la versione in base al proprio hardware.</p>
-                <a class="btn btn-primary" href="../dummy" download="proposed_file_name">Download</a>
+                <a class="btn btn-primary" href="../dummy" download="dummy">Download</a>
             </div>
         </div>
     </div>
@@ -77,7 +77,7 @@ else { echo('
             <div class="card-body">
                 <h5 class="card-title">iOS</h5>
                 <p class="card-text">Selezionare la versione in base al proprio hardware.</p>
-                <a class="btn btn-primary" href="../dummy" download="proposed_file_name">Download</a>
+                <a class="btn btn-primary" href="../dummy" download="dummy">Download</a>
             </div>
         </div>
     </div>

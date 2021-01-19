@@ -25,7 +25,7 @@ if(!isset($_SESSION['ID_USER']))
         <link rel="stylesheet" href="../css/scrollbar.css">
 
 		<!-- versione aggiornata di jquery-->
-		<script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
+		<script src="../jQuery/jquery-3.5.1.min.js"></script>
   		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   		
 
@@ -99,17 +99,16 @@ $(document).ready(function(){
 	setInterval(function(){
 		update_last_activity();
 		update_chat_history_data();
-
+        fetch_user();
 	}, 2000);
 
-	setInterval(function(){
+	/* setInterval(function(){
 		var scrollTarget = $("#chat_table");
 		var pos = scrollTarget.scrollTop();
-	    fetch_user();
         scrollTarget.load('fetch_user.php', function() {
             $('#chat_table').scrollTop(pos);
         });
-	}, 1000000);
+	}, 10000); */
 
 	function fetch_user()
 	{

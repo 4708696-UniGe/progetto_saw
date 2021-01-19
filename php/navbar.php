@@ -31,7 +31,7 @@
                echo ('
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="logout.php">Esci <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="../php/logout.php">Esci <span class="sr-only">(current)</span></a>
             </li>');
          }else{
         echo(' <li class="nav-item active">
