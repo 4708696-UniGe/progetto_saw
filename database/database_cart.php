@@ -76,14 +76,17 @@ if (mysqli_affected_rows($con) != 0) {
 	foreach($array as $value){
 		$qry = "SELECT * FROM products WHERE code = '".$value[0]."'";
 		$result2 = mysqli_query($con, $qry);
-		if(mysqli_affected_rows($con) != 1){
+		$count = mysqli_affected_rows($con);
+		if($count != 1){
 			echo "problema";
 		}else{
 			while($row = mysqli_fetch_assoc($result2)){
 				$productByCode[] = $row;
 			}
-			$itemArray = array($productByCode[0]["code"]=>array('name'=>$productByCode[0]["name"], 'code'=>$productByCode[0]["code"],  'price'=>$productByCode[0]["price"]));
+			for($i = 0; $i < $count; $i++){
+			$itemArray = array($productByCode[i]["code"]=>array('name'=>$productByCode[i]["name"], 'code'=>$productByCode[i]["code"],  'price'=>$productByCode[i]["price"]));
 			$_SESSION["cart_item"] = $itemArray;
+			}
 		}
 	}
 	
