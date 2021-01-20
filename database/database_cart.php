@@ -25,18 +25,33 @@ $con = mysqli_connect("localhost","root","","test");
 						}
 					} else {
 						$_SESSION["cart_item"] = array_merge($_SESSION["cart_item"],$itemArray);
-						$query = "INSERT TO cart "
+						$query = "INSERT INTO cart (email, product_code) VALUES ('{$_SESSION["EMAIL"]}','{$_GET["code"]}');";
+						mysqli_query($con, $query);
+						if (mysqli_affected_rows($con) != 1) {
+							echo "Attenzione c'è stato un problema nell'inserimento, controlla i dati. ".mysqli_error($con);
+						}
 					}
 				} else {
 					$_SESSION["cart_item"] = $itemArray;
+					$query = "INSERT INTO cart (email, product_code) VALUES ('{$_SESSION["EMAIL"]}','{$_GET["code"]}');";
+					mysqli_query($con, $query);
+					if (mysqli_affected_rows($con) != 1) {
+						echo "Attenzione c'è stato un problema nell'inserimento, controlla i dati. ".mysqli_error($con);
+					}
 				}
 			break;
 
 		case "remove":
 		if(!empty($_SESSION["cart_item"])) {
 			foreach($_SESSION["cart_item"] as $k => $v) {
-				if($_GET["code"] == $k)
-					unset($_SESSION["cart_item"][$k]);				
+				if($_GET["code"] == $k){
+					$query = "DELETE FROM cart WHERE email = '{$_SESSION["EMAIL"]}' AND WHERE product_code = '{$_SESSION["cart_item"][$k]}'";
+					mysqli_query($con, $query);
+					if (mysqli_affected_rows($con) != 1) {
+						echo "Attenzione c'è stato un problema nell'inserimento, controlla i dati. ".mysqli_error($con);
+					}
+					unset($_SESSION["cart_item"][$k]);
+				}
 				if(empty($_SESSION["cart_item"]))
 					unset($_SESSION["cart_item"]);
 			}	
@@ -44,8 +59,33 @@ $con = mysqli_connect("localhost","root","","test");
 		break;
 
 		case "empty":
+			$query = "DELETE FROM cart WHERE email = '{$_SESSION["EMAIL"]}'";
+			mysqli_query($con, $query);
+			if (mysqli_affected_rows($con) == 0) {
+				echo "Attenzione c'è stato un problema nell'inserimento, controlla i dati. ".mysqli_error($con);
+			}
 			unset($_SESSION["cart_item"]);
 			break;
 	}
+}
+
+$query = "SELECT product_code FROM cart WHERE email = '{$_SESSION["EMAIL"]}'";
+$result = mysqli_query($con, $query);
+$array = mysqli_fetch_all($result);
+if (mysqli_affected_rows($con) != 0) {
+	foreach($array as $value){
+		$qry = "SELECT * FROM products WHERE code = '".$value[0]."'";
+		$result2 = mysqli_query($con, $qry);
+		if(mysqli_affected_rows($con) != 1){
+			echo "problema";
+		}else{
+			while($row = mysqli_fetch_assoc($result2)){
+				$productByCode[] = $row;
+			}
+			$itemArray = array($productByCode[0]["code"]=>array('name'=>$productByCode[0]["name"], 'code'=>$productByCode[0]["code"],  'price'=>$productByCode[0]["price"]));
+			$_SESSION["cart_item"] = $itemArray;
+		}
+	}
+	
 }
 ?>
