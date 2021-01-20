@@ -31,8 +31,8 @@
         about TEXT
     )";
 
-    if (mysqli_query($conn, $sql_user) === TRUE) {
-    printf("Table myCity successfully created.\n");
+    if (!mysqli_query($conn, $sql_user)) {
+    printf("Errore, tabella non creata.\n");
     }
 
     $sql_ticket = "CREATE TABLE IF NOT EXISTS ticket (
@@ -43,8 +43,8 @@
         description TEXT
     )";
 
-    if (mysqli_query($conn, $sql_ticket) === TRUE) {
-    printf("Table myCity successfully created.\n");
+    if (!mysqli_query($conn, $sql_ticket)) {
+    printf("Errore, tabella non creata.\n");
     }
 
    
