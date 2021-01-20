@@ -29,7 +29,8 @@
         workstation_os VARCHAR(50),
         mobile_os VARCHAR(20),
         about TEXT,
-        admin boolean default 0 null
+        admin BOOLEAN DEFAULT 0 NULL,
+        subscription VARCHAR(10) DEFAULT '--'
         )";
 
     $sql_ticket = "CREATE TABLE IF NOT EXISTS ticket (
@@ -38,24 +39,6 @@
         device VARCHAR(50),
         os VARCHAR(50),
         description TEXT
-        )";
-
-    $sql_admin = "CREATE TABLE IF NOT EXISTS admin (
-        id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-        email VARCHAR(50) UNIQUE
-        )";
-
-    $sql_ticket = "CREATE TABLE IF NOT EXISTS ticket (
-        email VARCHAR(50) PRIMARY KEY ,
-        opening_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-        device VARCHAR(50),
-        os VARCHAR(50),
-        description TEXT
-        )";
-
-    $sql_admin = "CREATE TABLE IF NOT EXISTS admin (
-        id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-        email VARCHAR(50) UNIQUE
         )";
 
 

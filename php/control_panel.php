@@ -85,8 +85,8 @@ if (!isset($ver) && $ver == 1) {
     <script>
         $(document).ready(function(){
             $("#ticket").click(function(){
-                <?php unset($_SESSION["TICKET_DESC"]); ?>
-                <?php unset($_SESSION["CUSTOMER_EMAIL"]); ?>
+                <?php// unset($_SESSION["TICKET_DESC"]); ?>
+                <?php// unset($_SESSION["CUSTOMER_EMAIL"]); ?>
                 $("#content_box").load("cp_menu_entry.php #search_user");
 
             });
@@ -95,6 +95,8 @@ if (!isset($ver) && $ver == 1) {
     <script>
         $(document).ready(function(){
             $("#operate").click(function(){
+                <?php// unset($_SESSION["TICKET_DESC"]); ?>
+                <?php// unset($_SESSION["CUSTOMER_EMAIL"]); ?>
                 $("#content_box").load("cp_menu_entry.php #download");
 
             });
@@ -107,23 +109,57 @@ if (!isset($ver) && $ver == 1) {
              return false;
          }); */
 
-        $(function () {
+        /* $(document).ready(function () {
             $('#button-search').bind('click', function (event) {
                 // using this page stop being refreshing
                 event.preventDefault();
-                $.ajax({
-                    type: 'POST',
-                    url: "../database/database_show_ticket_admin.php",
-                    method: "POST";
-                    data: $('#search_user').serialize(),
+                $("#search_user").ajaxForm({
+                    url: '../database/database_show_ticket_admin.php',
+                    type: 'post'
                     success: function () {
                         alert('form was submitted');
                         $("#ticket_box").load("cp_menu_entry.php #search_user");
                     }
+                });
+            });
+        }); */
+        $(document).ready(function () {
+            /*$("#button-search").click(function() {
+                // using this page stop being refreshing
+                //event.preventDefault();
+               // var search = document.querySelector('#user_email');
+                //search_ticket_for_this_user(search);
 
-            });
-            });
-        });
+            }
+
+
+            /* function search_ticket_for_this_user(user_mail)
+            {
+                $.ajax({
+                    url:"../database/database_show_ticket_admin.php",
+                    method:"POST",
+                    data:{user_mail:user_mail},
+                    success:function(){
+                        alert('form was submitted');
+                        $("#ticket_box").load("cp_menu_entry.php #search_user");
+                    }
+                })
+            } */
+
+            function sendform() {
+                var search = document.getElementById('#user_email');
+                $.ajax({
+                    url:"../database/database_show_ticket_admin.php",
+                    method:"POST",
+                    data:{user_mail:user_mail},
+                    success:function(){
+                        alert('form was submitted');
+                        $("#ticket_box").load("cp_menu_entry.php #search_user");
+                    }
+                })
+            }
+        }
+
     </script>
 
 </body>

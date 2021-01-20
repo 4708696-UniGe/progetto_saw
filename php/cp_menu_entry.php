@@ -8,7 +8,7 @@ session_start();
         <form method="post" id="search_user">
         <div class="input-group mb-3">
             <input type="email" name="email" id="user_email" class="form-control" placeholder="Inserire email utente" aria-label="Recipient username" aria-describedby="button-addon2">
-            <button class="btn btn-outline-secondary" type="submit" id="button-addon2">Cerca</button>
+            <button class="btn btn-outline-secondary" type="submit" id="button-search onclick="sendform()">Cerca</button>
         </div>
         </form>
         </div> '); echo $_SESSION["TICKET_DESC"]; }
