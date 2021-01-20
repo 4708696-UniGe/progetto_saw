@@ -64,7 +64,10 @@ if (!isset($ver) && $ver == 1) {
         <?php if (!isset($_SESSION["TICKET_DESC"]) && !isset($_SESSION["CUSTOMER_EMAIL"])) { echo ('
         <div id="content_box">
         
-        </div> '); echo $_SESSION["TICKET_DESC"]; }
+        </div> '); }
+        else {
+            
+        }
         ?>
         <!-- /#page-content-wrapper -->
 
@@ -107,7 +110,8 @@ if (!isset($ver) && $ver == 1) {
              return false;
          }); */
 
-        $(function () {
+         /*
+        $(document).ready(function () {
             $('#button-search').bind('click', function (event) {
                 // using this page stop being refreshing
                 event.preventDefault();
@@ -122,6 +126,16 @@ if (!isset($ver) && $ver == 1) {
             }); $("#ticket_box").load("cp_menu_entry.php #search_user");
             });
         });
+        */
+
+        $(document).ready(function(){
+        $("#operate").click(function(){
+            $("#content_box").load("cp_menu_entry.php #download");
+
+        });
+    });
+
+
     </script>
 
 </body>
