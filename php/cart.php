@@ -19,9 +19,10 @@ include ("../database/database_cart.php");
 	
 	<div id="shopping-cart">
 		<p id="flag_cart" class="alert alert-danger devisible" role="alert"></p>
-		<a id="btnEmpty" href="cart.php?action=empty">Svuota il carrello</a>
+		
 	<?php
 		if(isset($_SESSION["cart_item"])){
+			echo "<a id='btnEmpty' href='cart.php?action=empty'>Svuota il carrello</a>";
 			$total_price = 0;
 	?>
 
