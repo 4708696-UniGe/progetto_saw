@@ -85,3 +85,53 @@ else { echo('
         </div>
     </div>
 </div>
+
+<script>
+    $(document).ready(function(){
+
+        $(document).on('click','#button-addon2',function(e){
+            // this will prevent form and reload page on submit.
+            e.preventDefault();
+
+            // here you will get Post ID
+            my_post_id=$(this).attr('data-postId');
+            var User_id = $('.id_data').attr('value');
+            var textdata = $('textarea#content').val();
+            alert(textdata);
+
+            // Add your Ajax call here.
+        });
+    })
+
+
+
+
+    $(document).ready(function(){
+        load_data();
+        function load_data(query)
+        {
+            $.ajax({
+                url:"fetch.php",
+                method:"post",
+                data:{query:query},
+                success:function(data)
+                {
+                    $('#result').html(data);
+                }
+            });
+        }
+
+        $('#search_text').keyup(function(){
+            var search = $(this).val();
+            if(search != '')
+            {
+                load_data(search);
+            }
+            else
+            {
+                load_data();
+            }
+        });
+    });
+
+</script>
