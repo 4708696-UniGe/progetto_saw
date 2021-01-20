@@ -1,6 +1,6 @@
 <?php
 
-    $sql_check = "SELECT email FROM admin WHERE email='{$_SESSION["EMAIL"]}'";
+    $sql_check = "SELECT email FROM users WHERE admin='{$_SESSION["EMAIL"]}'";
 
 	$result = mysqli_query($conn,$sql_check);
     if (mysqli_affected_rows($conn) != 1) {
