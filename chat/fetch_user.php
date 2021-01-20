@@ -54,7 +54,7 @@ $output = '
 foreach($result as $row)
 {
 	$status = '';
-	$current_timestamp = strtotime(date("Y-m-d H:i:s") . '- 10 second'); // Formato data: 2001-03-10 17:16:18
+	$current_timestamp = strtotime(date("Y-m-d H:i:s") . '- 20 second'); // Formato data: 2001-03-10 17:16:18
 	$current_timestamp = date('Y-m-d H:i:s', $current_timestamp);
 	$user_last_activity = fetch_user_last_activity($row['id'], $conn);
 	if($user_last_activity > $current_timestamp)
