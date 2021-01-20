@@ -22,6 +22,7 @@ if(!isset($_SESSION['ID_USER']))
         <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet"  crossorigin="anonymous">
 
         <link rel="stylesheet" href="../css/fetch_user.css">
+        <link rel="stylesheet" href="../css/chat_box.css">
         <link rel="stylesheet" href="../css/scrollbar.css">
 
 		<!-- versione aggiornata di jquery-->
@@ -102,13 +103,14 @@ $(document).ready(function(){
         fetch_user();
 	}, 2000);
 
+
 	/* setInterval(function(){
-		var scrollTarget = $("#chat_table");
-		var pos = scrollTarget.scrollTop();
+        var scrollTarget = $("#chat_table");
+        var pos = scrollTarget.scrollTop();
         scrollTarget.load('fetch_user.php', function() {
             $('#chat_table').scrollTop(pos);
         });
-	}, 10000); */
+	}, 2000); */
 
 	function fetch_user()
 	{
@@ -135,13 +137,13 @@ $(document).ready(function(){
 	function make_chat_dialog_box(to_user_id, to_user_name)
 	{
 		var modal_content = '<div id="user_dialog_'+to_user_id+'" class="user_dialog" title="'+to_user_name+'">';
-		modal_content += '<div style="height:400px; border:1px solid #ccc; overflow-y: scroll; margin-bottom:24px; padding:16px;" class="chat_history" data-touserid="'+to_user_id+'" id="chat_history_'+to_user_id+'">';
+		modal_content += '<div class="chat_history" data-touserid="'+to_user_id+'" id="chat_history_'+to_user_id+'">';
 		modal_content += fetch_user_chat_history(to_user_id);
 		modal_content += '</div>';
 		modal_content += '<div class="form-group">';
-		modal_content += '<textarea name="chat_message_'+to_user_id+'" id="chat_message_'+to_user_id+'" class="form-control chat_message"></textarea>';
+		modal_content += '<textarea style="resize:none; margin-bottom:6px;" name="chat_message_'+to_user_id+'" id="chat_message_'+to_user_id+'" class="form-control chat_message"></textarea>';
 		modal_content += '</div><div class="form-group" align="right">';
-		modal_content+= '<button type="button" name="send_chat" id="'+to_user_id+'" class="btn btn-info send_chat">Invia</button></div></div>';
+		modal_content+= '<button type="button" name="send_chat" id="'+to_user_id+'" class="btn btn-primary send_chat">Invia</button></div></div>';
 		$('#user_model_details').html(modal_content);
 	}
 
@@ -151,7 +153,8 @@ $(document).ready(function(){
 		make_chat_dialog_box(to_user_id, to_user_name);
 		$("#user_dialog_"+to_user_id).dialog({
 			autoOpen:false,
-			width:400
+			width:400,
+            resizable: false
 		});
 		$('#user_dialog_'+to_user_id).dialog('open');
 
