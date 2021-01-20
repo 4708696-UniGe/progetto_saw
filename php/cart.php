@@ -18,11 +18,13 @@ include ("../database/database_cart.php");
 	<nav> <?php include 'navbar.php'; ?></nav>
 	
 	<div id="shopping-cart">
-		<p id="flag_cart" class="alert alert-danger devisible" role="alert"></p>
+		<div class = "cart_alert">
+			<p id="flag_cart" class="alert alert-danger devisible" role="alert"></p>
+		</div>
 		
 	<?php
 		if(isset($_SESSION["cart_item"])){
-			echo "<a id='btnEmpty' href='cart.php?action=empty'>Svuota il carrello</a>";
+			echo "<a class='btn btn-dark buymore' href='products.php'>Compra altro</a>";
 			$total_price = 0;
 	?>
 
@@ -65,7 +67,11 @@ include ("../database/database_cart.php");
 			<td style="text-align:center;">Total: <strong><?php echo "&euro; ".number_format($total_price, 2); ?></strong></td>
 		</tr>
 	</tbody>
-	</table>		
+	</table>
+	<div class="cart_button">
+		<a class="btn btn-danger" href='cart.php?action=empty'>Svuota il carrello</a>
+		<a class="btn btn-success" href='under_construction.php'>Procedi all'acquisto</a>
+	</div>
 	  <?php
 	} else {
 	?>
