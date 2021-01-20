@@ -31,9 +31,6 @@
         about TEXT
     )";
 
-    if (!mysqli_query($conn, $sql_user)) {
-    printf("Errore, tabella non creata.\n");
-    }
 
     $sql_ticket = "CREATE TABLE IF NOT EXISTS ticket (
         email VARCHAR(50) PRIMARY KEY ,
@@ -42,10 +39,6 @@
         os VARCHAR(50),
         description TEXT
     )";
-
-    if (!mysqli_query($conn, $sql_ticket)) {
-    printf("Errore, tabella non creata.\n");
-    }
 
    
 
