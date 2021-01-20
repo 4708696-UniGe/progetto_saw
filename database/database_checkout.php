@@ -15,6 +15,7 @@
 					echo "Attenzione c'è stato un problema nell'inserimento, controlla i dati. ".mysqli_error($con);
 				}
 				unset($_SESSION["cart_item"]);
+				$_SESSION["SUB"] = $item["code"];
 				header("Location: ../php/show_profile.php");
 				exit();
 			}

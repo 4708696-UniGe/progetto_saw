@@ -94,13 +94,7 @@
                           <h6 class="mb-0">Abbonamento</h6>
                         </div>
                         <div class="col-sm-9 text-secondary">
-                          <?php
-                          include("../database/database_connect.php");
-                          $query = "SELECT subscription FROM users WHERE email = '".$_SESSION["EMAIL"]."'";
-                          $result = mysqli_query($conn, $query);
-                          $row = mysqli_fetch_array($result);
-                          echo $row[0];
-                          ?>
+                            <?php echo $_SESSION['SUB']; ?>
                         </div>
                       </div>
                     </div>
