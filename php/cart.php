@@ -24,7 +24,7 @@ include ("../database/database_cart.php");
 		
 	<?php
 		if(isset($_SESSION["cart_item"])){
-			echo "<a class='btn btn-dark buymore' href='products.php'>Compra altro</a>";
+			echo "<a class='btn btn-dark buymore' href='products.php'>Torna ai prodotti</a>";
 			$total_price = 0;
 	?>
 
@@ -70,7 +70,7 @@ include ("../database/database_cart.php");
 	</table>
 	<div class="cart_button">
 		<a class="btn btn-danger" href='cart.php?action=empty'>Svuota il carrello</a>
-		<a class="btn btn-success" href='under_construction.php'>Procedi all'acquisto</a>
+		<a class="btn btn-success" href='../database/database_checkout.php'>Procedi all'acquisto</a>
 	</div>
 	  <?php
 	} else {
@@ -91,6 +91,10 @@ include ("../database/database_cart.php");
 				if(flag_item == 1) {
 				document.getElementById("flag_cart").className = "alert alert-danger box";
 				document.getElementById("flag_cart").innerHTML = "Prodotto gi&agrave; presente nel carrello.";
+				}
+				else if(flag_item == 2) {
+				document.getElementById("flag_cart").className = "alert alert-danger box";
+				document.getElementById("flag_cart").innerHTML = "Puoi acquistare un solo abbonamento/pacchetto.";
 				}
 			}
 	</script>

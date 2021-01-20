@@ -31,6 +31,9 @@
                echo ('
             </li>
             <li class="nav-item active">
+                <a class="nav-link" href="cart.php">Carrello<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
                 <a class="nav-link" href="logout.php">Esci <span class="sr-only">(current)</span></a>
             </li>');
          }else{

@@ -10,35 +10,34 @@ $con = mysqli_connect("localhost","root","","test");
  if(!empty($_GET["action"])) {
 	switch($_GET["action"]) {
 		case "add":
-				$result = mysqli_query($con, "SELECT * FROM products WHERE code='" . $_GET["code"] . "'");
-				while($row = mysqli_fetch_assoc($result)){
-					$productByCode[] = $row;
-				}
-				$itemArray = array($productByCode[0]["code"]=>array('name'=>$productByCode[0]["name"], 'code'=>$productByCode[0]["code"],  'price'=>$productByCode[0]["price"]));
 		
-				if(!empty($_SESSION["cart_item"])) {
-					if(in_array($productByCode[0]["code"],array_keys($_SESSION["cart_item"]))) {
-						foreach($_SESSION["cart_item"] as $k => $v) {
-								if($productByCode[0]["code"] == $k) {
-									echo "<script>var flag_item= 1</script>";
-								}
-						}
-					} else {
-						$_SESSION["cart_item"] = array_merge($_SESSION["cart_item"],$itemArray);
-						$query = "INSERT INTO cart (email, product_code) VALUES ('{$_SESSION["EMAIL"]}','{$_GET["code"]}');";
-						mysqli_query($con, $query);
-						if (mysqli_affected_rows($con) != 1) {
-							echo "Attenzione c'è stato un problema nell'inserimento, controlla i dati. ".mysqli_error($con);
+			$result = mysqli_query($con, "SELECT * FROM products WHERE code='" . $_GET["code"] . "'");
+			while($row = mysqli_fetch_assoc($result)){
+				$productByCode[] = $row;
+			}
+			$itemArray = array($productByCode[0]["code"]=>array('name'=>$productByCode[0]["name"], 'code'=>$productByCode[0]["code"],  'price'=>$productByCode[0]["price"]));
+				
+				
+
+			if(!empty($_SESSION["cart_item"])) {
+				if(in_array($productByCode[0]["code"],array_keys($_SESSION["cart_item"]))) {
+					foreach($_SESSION["cart_item"] as $k => $v) {
+						if($productByCode[0]["code"] == $k) {
+							echo "<script>var flag_item= 1</script>";
+							break;
 						}
 					}
-				} else {
-					$_SESSION["cart_item"] = $itemArray;
-					$query = "INSERT INTO cart (email, product_code) VALUES ('{$_SESSION["EMAIL"]}','{$_GET["code"]}');";
-					mysqli_query($con, $query);
-					if (mysqli_affected_rows($con) != 1) {
-						echo "Attenzione c'è stato un problema nell'inserimento, controlla i dati. ".mysqli_error($con);
-					}
+				}else{
+					echo "<script>var flag_item = 2</script>";
 				}
+			} else {
+				$_SESSION["cart_item"] = $itemArray;
+				$query = "INSERT INTO cart (email, product_code) VALUES ('{$_SESSION["EMAIL"]}','{$_GET["code"]}');";
+				mysqli_query($con, $query);
+				if (mysqli_affected_rows($con) != 1) {
+					echo "Attenzione c'è stato un problema nell'inserimento, controlla i dati. ".mysqli_error($con);
+				}
+			}
 			break;
 
 		case "remove":
@@ -81,14 +80,14 @@ $query = "SELECT product_code FROM cart WHERE email = '{$_SESSION["EMAIL"]}'";
 				echo "problema";
 			}else{
 				while($row = mysqli_fetch_assoc($result2)){
-					$productByCode[] = $row;
+					$product[] = $row;
 				}
-				$itemArray = array($productByCode[$i]["code"]=>array('name'=>$productByCode[$i]["name"], 'code'=>$productByCode[$i]["code"],  'price'=>$productByCode[$i]["price"]));
+				$itemArray2 = array($product[$i]["code"]=>array('name'=>$product[$i]["name"], 'code'=>$product[$i]["code"],  'price'=>$product[$i]["price"]));
 				if(empty($_SESSION["cart_item"])) {
-					$_SESSION["cart_item"] = $itemArray;
+					$_SESSION["cart_item"] = $itemArray2;
 				}
 				else if (!empty($_SESSION["cart_item"])) {
-					$_SESSION["cart_item"] = array_merge($_SESSION["cart_item"], $itemArray);
+					$_SESSION["cart_item"] = array_merge($_SESSION["cart_item"], $itemArray2);
 				}
 			}
 			$i++;
