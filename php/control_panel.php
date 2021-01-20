@@ -146,7 +146,7 @@ if (!isset($ver) && $ver == 1) {
                 })
             } */
 
-            function sendform() {
+           /* function sendform() {
                 var search = document.getElementById('#user_email');
                 $.ajax({
                     url:"../database/database_show_ticket_admin.php",
@@ -157,7 +157,7 @@ if (!isset($ver) && $ver == 1) {
                         $("#ticket_box").load("cp_menu_entry.php #search_user");
                     }
                 })
-            }
+            } */
         }
 
     </script>
