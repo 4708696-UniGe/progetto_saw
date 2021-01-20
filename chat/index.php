@@ -104,13 +104,14 @@ $(document).ready(function(){
 	}, 2000);
 
 
-	/* setInterval(function(){
+	setInterval(function(){
         var scrollTarget = $("#chat_table");
         var pos = scrollTarget.scrollTop();
+        fetch_user();
         scrollTarget.load('fetch_user.php', function() {
             $('#chat_table').scrollTop(pos);
         });
-	}, 2000); */
+	}, 10000);
 
 	function fetch_user()
 	{
@@ -193,7 +194,9 @@ $(document).ready(function(){
 	{
 		$('.chat_history').each(function(){
 			var to_user_id = $(this).data('touserid');
-			fetch_user_chat_history(to_user_id);
+            if ($('#user_dialog').parents('.ui-dialog:visible').length) {
+                fetch_user_chat_history(to_user_id);
+            }
 		});
 	}
 
