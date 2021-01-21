@@ -113,6 +113,12 @@ $(document).ready(function(){
         });
 	}, 10000);
 
+
+	// metodo $.ajax: metodo statico che effetua una chiamata ajax alla quale vengono passati dei 
+	// parametri con notazione JSON.
+	// url: url della risorsa alla quale viene inviata la richiesta
+	// method: tipo di richiesta HTTP da effetuare 
+	// success: funzione che verrà eseguita al successo della chiamata dove data è l'oggetto della richiesta'
 	function fetch_user()
 	{
 		$.ajax({
