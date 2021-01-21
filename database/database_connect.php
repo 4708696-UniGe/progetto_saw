@@ -41,6 +41,40 @@
         description TEXT
         )";
 
+        // Tabella chat_message:
+	    $sql_chat_message = "CREATE TABLE IF NOT EXISTS `chat_message` (
+		`chat_message_id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+		`to_user_id` int(11) NOT NULL,
+		`from_user_id` int(11) NOT NULL,
+		`chat_message` text NOT NULL,
+		`timestamp` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+		`status` int(1) NOT NULL
+	)";
+
+
+
+	// Tabella login_details:
+	$sql_login_details = "CREATE TABLE IF NOT EXISTS `login_details` (
+		  `login_details_id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+		  `user_id` int(11) NOT NULL,
+		  `last_activity` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
+	)";
+
+	
+	if (mysqli_query($conn, $sql_chat_message) === TRUE) {
+	}else {
+	echo "Error creating table: " . mysqli_error($conn) . '\n';
+	}
+
+    
+	if (mysqli_query($conn, $sql_login_details) === TRUE) {
+	}else {
+	echo "Error creating table: " . mysqli_error($conn) . '\n';
+	}
+
+
+
+
 
 
 

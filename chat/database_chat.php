@@ -1,32 +1,7 @@
 <?php
 
-
-    $conn = new PDO("mysql:host=localhost;dbname=S4708696;charset=latin1", "S4708696", "46394394678610");
-
-// CREO LE TABELLE PER LA CHAT:
-	// Tabella chat_message:
-	$sql_chat_message = "CREATE TABLE IF NOT EXISTS `chat_message` (
-		`chat_message_id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
-		`to_user_id` int(11) NOT NULL,
-		`from_user_id` int(11) NOT NULL,
-		`chat_message` text NOT NULL,
-		`timestamp` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
-		`status` int(1) NOT NULL
-	)";
-	$result = $conn->query($sql_chat_message);
-
-
-	// Tabella login_details:
-	$sql_login_details = "CREATE TABLE IF NOT EXISTS `login_details` (
-		  `login_details_id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
-		  `user_id` int(11) NOT NULL,
-		  `last_activity` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
-	)";
-	$result = $conn->query($sql_login_details);
-
-
-
-
+	include '../database/database_connect.php';
+    $conn = new PDO("mysql:host=localhost;dbname=test;charset=latin1", "root", "");
 
 
 
