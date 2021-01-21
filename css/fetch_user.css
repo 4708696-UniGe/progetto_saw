@@ -59,3 +59,11 @@
     }
 
 }
+
+.table-dark {
+    --bs-table-bg: #2D3142 !important;
+}
+
+#row_table {
+    --bs-table-bg: #FBFFF4 !important;
+}

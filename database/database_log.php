@@ -37,14 +37,21 @@
                     $_SESSION["LOGGED"]=1;
 					$_SESSION["USER_TYPE"]=$rows[10];
 
-					$sub_query = "
+                    $sub_query = "
 					INSERT INTO login_details 
 	     			(user_id) 
 	     			VALUES ('".$rows[0]."')
 					";
+                    $statement = $conn->prepare($sub_query);
+                    $statement->execute();
+                    $_SESSION['login_details_id'] = $conn->insert_id;
+
+
+
+					/*
 					$statement = $conn->prepare($sub_query);
 					$statement->execute();
-					$_SESSION['login_details_id'] = $conn->insert_id;
+					$_SESSION['login_details_id'] = $conn->lastInsertId(); */
 
 					//include 'check_admin.php';
 

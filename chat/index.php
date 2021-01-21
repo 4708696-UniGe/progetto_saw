@@ -22,10 +22,11 @@ if(!isset($_SESSION['ID_USER']))
         <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet"  crossorigin="anonymous">
 
         <link rel="stylesheet" href="../css/fetch_user.css">
+        <link rel="stylesheet" href="../css/chat_box.css">
         <link rel="stylesheet" href="../css/scrollbar.css">
 
 		<!-- versione aggiornata di jquery-->
-		<script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
+		<script src="../jQuery/jquery-3.5.1.min.js"></script>
   		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   		
 
@@ -99,19 +100,25 @@ $(document).ready(function(){
 	setInterval(function(){
 		update_last_activity();
 		update_chat_history_data();
-		fetch_user();
-
+        fetch_user();
 	}, 2000);
 
+
 	setInterval(function(){
-		var scrollTarget = $("#chat_table");
-		var pos = scrollTarget.scrollTop();
-	    fetch_user();
+        var scrollTarget = $("#chat_table");
+        var pos = scrollTarget.scrollTop();
+        fetch_user();
         scrollTarget.load('fetch_user.php', function() {
             $('#chat_table').scrollTop(pos);
         });
-	}, 1000000);
+	}, 10000);
 
+
+	// metodo $.ajax: metodo statico che effetua una chiamata ajax alla quale vengono passati dei 
+	// parametri con notazione JSON.
+	// url: url della risorsa alla quale viene inviata la richiesta
+	// method: tipo di richiesta HTTP da effetuare 
+	// success: funzione che verrà eseguita al successo della chiamata dove data è l'oggetto della richiesta'
 	function fetch_user()
 	{
 		$.ajax({
@@ -137,13 +144,13 @@ $(document).ready(function(){
 	function make_chat_dialog_box(to_user_id, to_user_name)
 	{
 		var modal_content = '<div id="user_dialog_'+to_user_id+'" class="user_dialog" title="'+to_user_name+'">';
-		modal_content += '<div style="height:400px; border:1px solid #ccc; overflow-y: scroll; margin-bottom:24px; padding:16px;" class="chat_history" data-touserid="'+to_user_id+'" id="chat_history_'+to_user_id+'">';
+		modal_content += '<div class="chat_history" data-touserid="'+to_user_id+'" id="chat_history_'+to_user_id+'">';
 		modal_content += fetch_user_chat_history(to_user_id);
 		modal_content += '</div>';
 		modal_content += '<div class="form-group">';
-		modal_content += '<textarea name="chat_message_'+to_user_id+'" id="chat_message_'+to_user_id+'" class="form-control chat_message"></textarea>';
+		modal_content += '<textarea style="resize:none; margin-bottom:6px;" name="chat_message_'+to_user_id+'" id="chat_message_'+to_user_id+'" class="form-control chat_message"></textarea>';
 		modal_content += '</div><div class="form-group" align="right">';
-		modal_content+= '<button type="button" name="send_chat" id="'+to_user_id+'" class="btn btn-info send_chat">Invia</button></div></div>';
+		modal_content+= '<button type="button" name="send_chat" id="'+to_user_id+'" class="btn btn-primary send_chat">Invia</button></div></div>';
 		$('#user_model_details').html(modal_content);
 	}
 
@@ -153,7 +160,8 @@ $(document).ready(function(){
 		make_chat_dialog_box(to_user_id, to_user_name);
 		$("#user_dialog_"+to_user_id).dialog({
 			autoOpen:false,
-			width:400
+			width:400,
+            resizable: false
 		});
 		$('#user_dialog_'+to_user_id).dialog('open');
 
@@ -192,7 +200,9 @@ $(document).ready(function(){
 	{
 		$('.chat_history').each(function(){
 			var to_user_id = $(this).data('touserid');
-			fetch_user_chat_history(to_user_id);
+            if ($('#user_dialog').parents('.ui-dialog:visible').length) {
+                fetch_user_chat_history(to_user_id);
+            }
 		});
 	}
 
