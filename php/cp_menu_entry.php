@@ -3,20 +3,51 @@ session_start();
 } ?>
 
 
-<?php if (!isset($_SESSION["TICKET_DESC"]) && !isset($_SESSION["CUSTOMER_EMAIL"])) { echo ('
+<?php $output = '
         <div id="ticket_box">
         <div id="search_user">
-        <h2 align="center">Ajax Live Data Search using Jquery PHP MySql</h2><br />
+        <h2 align="center">Ricerca Utente</h2><br />
 			<div class="form-group">
 				<div class="input-group">
-					<span class="input-group-addon">Search</span>
-					<input type="text" name="search_text" id="search_text" placeholder="Search by Customer Details" class="form-control" />
+					<input type="text" name="search_text" id="search_text" placeholder="Inserire Nome Utente" class="form-control" onkeyup="showResult(this.value)" >
 				</div>
+				<div id="result" class="result_table">
+                    <table class="table">
+                        <thead class="table-dark">
+                            <tr>
+                                <th width="70%">Nome</th>
+                                <th width="20%">Cognome</th>
+                                <th width="10%">Email</th>
+                                <th width="10%">Data apertura ticket</th>
+                                <th width="10%">Dispositivo</th>
+                                <th width="10%">Sistema Operativo</th>
+                                <th width="10%">Descrizione</th>
+                            </tr>
+                        </thead> ';
+
+foreach($GLOBALS['customer_ticket'] as $row)
+{
+    $output .= '
+	<tr id="row_table">
+		<td>'.$row['firstname'].' </td>
+		<td>'.$row['lastname'].' </td>
+		<td>'.$row['email'].' </td>
+		<td>'.$row['opening_date'].' </td>
+		<td>'.$row['device'].' </td>
+		<td>'.$row['os'].' </td>
+		<td>'.$row['description'].' </td>
+		<td>test </td>
+	</tr>
+	';
+}
+$output .= '</table> </div>
 			</div>
         </div>
-        </div>'); echo $_SESSION["TICKET_DESC"]; }
+        </div>';
+echo $output;
+         echo $_SESSION["TICKET_DESC"]; /*} */
 
-else { echo('
+/*else { echo('
         <div id="ticket_box">
         <form id="search_user">
         <div class="input-group mb-3">
@@ -29,7 +60,7 @@ else { echo('
             <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
             <textarea readonly class="form-control-plaintext" id="issue_description" rows="3">'.$_SESSION["TICKET_DESC"].'</textarea>
         </div>
-    </div> '); } ?>
+    </div> '); } */?>
 
 
 
@@ -87,6 +118,7 @@ else { echo('
 </div>
 
 <script>
+    /*
     $(document).ready(function(){
 
         $(document).on('click','#button-addon2',function(e){
@@ -133,5 +165,5 @@ else { echo('
             }
         });
     });
-
+    */
 </script>

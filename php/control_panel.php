@@ -35,7 +35,6 @@ if (!isset($ver) && $ver == 1) {
         <div class="list-group list-group-flush">
             <a href="#" class="list-group-item list-group-item-action bg-light sidebar-color-entry" id="ticket">Visualizza Ticket</a>
             <a href="#" class="list-group-item list-group-item-action bg-light sidebar-color-entry" id="operate">Area Operativa</a>
-            <a href="#" class="list-group-item list-group-item-action bg-light sidebar-color-entry">Gestione Utenti</a>
         </div>
     </div>
     <!-- /#sidebar-wrapper -->
@@ -61,12 +60,11 @@ if (!isset($ver) && $ver == 1) {
                 </ul>
             </div>
         </nav>
-        <?php if (!isset($_SESSION["TICKET_DESC"]) && !isset($_SESSION["CUSTOMER_EMAIL"])) { echo ('
+
         <div id="content_box">
         
-        </div> '); echo $_SESSION["TICKET_DESC"]; }
-        ?>
-        <!-- /#page-content-wrapper -->
+        </div>
+        <?php echo $_SESSION["TICKET_DESC"]; ?>
 
     </div>
     <!-- /#wrapper -->
@@ -74,7 +72,9 @@ if (!isset($ver) && $ver == 1) {
     <script src="../bootstrap/js/bootstrap.bundle.min.js"  crossorigin="anonymous"></script>
     <script src="../bootstrap/jquery/jquery.min.js"></script>
     <script src="../ajax/jquery.min.js"></script>
+
     <!-- Menu Toggle Script -->
+
     <script>
         $("#menu-toggle").click(function(e) {
             e.preventDefault();
@@ -85,9 +85,8 @@ if (!isset($ver) && $ver == 1) {
     <script>
         $(document).ready(function(){
             $("#ticket").click(function(){
-                <?php// unset($_SESSION["TICKET_DESC"]); ?>
-                <?php// unset($_SESSION["CUSTOMER_EMAIL"]); ?>
-                $("#content_box").load("cp_menu_entry.php #search_user");
+
+                fetch_user_ticket();
 
             });
         });
@@ -95,8 +94,7 @@ if (!isset($ver) && $ver == 1) {
     <script>
         $(document).ready(function(){
             $("#operate").click(function(){
-                <?php// unset($_SESSION["TICKET_DESC"]); ?>
-                <?php// unset($_SESSION["CUSTOMER_EMAIL"]); ?>
+
                 $("#content_box").load("cp_menu_entry.php #download");
 
             });
@@ -104,6 +102,17 @@ if (!isset($ver) && $ver == 1) {
     </script>
 
     <script>
+
+        function fetch_user_ticket()
+        {
+            $.ajax({
+                url:"../database/database_show_ticket_admin.php",
+                method:"POST",
+                success:function(){
+                    $("#content_box").load("cp_menu_entry.php #ticket_box");
+                }
+            })
+        }
         /* $('#search_user').submit(function() {
              var email = $('#user_email').val();
              return false;
@@ -123,7 +132,7 @@ if (!isset($ver) && $ver == 1) {
                 });
             });
         }); */
-        $(document).ready(function () {
+        /*$(document).ready(function () {
             /*$("#button-search").click(function() {
                 // using this page stop being refreshing
                 //event.preventDefault();
@@ -157,8 +166,8 @@ if (!isset($ver) && $ver == 1) {
                         $("#ticket_box").load("cp_menu_entry.php #search_user");
                     }
                 })
-            } */
-        }
+            }
+        } */
 
     </script>
 
