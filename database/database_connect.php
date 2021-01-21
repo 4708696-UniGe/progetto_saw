@@ -39,7 +39,12 @@
         device VARCHAR(50),
         os VARCHAR(50),
         description TEXT
-        )";
+    )";
+
+    if (mysqli_query($conn, $sql_ticket) === TRUE) {
+	}else {
+	echo "Error creating table: " . mysqli_error($conn) . '\n';
+	}
 
         // Tabella chat_message:
 	    $sql_chat_message = "CREATE TABLE IF NOT EXISTS `chat_message` (

@@ -62,9 +62,25 @@ if (!isset($ver) && $ver == 1) {
             </div>
         </nav>
         <?php if (!isset($_SESSION["TICKET_DESC"]) && !isset($_SESSION["CUSTOMER_EMAIL"])) { echo ('
-        <div id="content_box">
         
-        </div> '); echo $_SESSION["TICKET_DESC"]; }
+    <div id="search_user">
+    	<div class="container">
+			<br />
+			<br />
+			<br />
+			<h2 align="center">Ajax Live Data Search using Jquery PHP MySql</h2><br />
+			<div class="form-group">
+				<div class="input-group">
+					<span class="input-group-addon">Search</span>
+					<input type="text" name="search_text" id="search_text" placeholder="Search by Customer Details" class="form-control" />
+				</div>
+			</div>
+			<br />
+			<div id="result"></div>
+		</div>
+		<div style="clear:both"></div>
+		<br />
+    </div> ');}
         ?>
         <!-- /#page-content-wrapper -->
 
@@ -72,37 +88,78 @@ if (!isset($ver) && $ver == 1) {
     <!-- /#wrapper -->
 
     <script src="../bootstrap/js/bootstrap.bundle.min.js"  crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="../bootstrap/jquery/jquery.min.js"></script>
     <script src="../ajax/jquery.min.js"></script>
+
+    </body>
+
+</html>
+
+
     <!-- Menu Toggle Script -->
     <script>
+    $(document).ready(function () {
+    
         $("#menu-toggle").click(function(e) {
             e.preventDefault();
             $("#wrapper").toggleClass("toggled");
         });
-    </script>
 
-    <script>
+
+
         $(document).ready(function(){
             $("#ticket").click(function(){
-                <?php// unset($_SESSION["TICKET_DESC"]); ?>
-                <?php// unset($_SESSION["CUSTOMER_EMAIL"]); ?>
-                $("#content_box").load("cp_menu_entry.php #search_user");
-
+            $("#content_box").load("cp_menu_entry.php #search_user");
             });
         });
-    </script>
-    <script>
+
+
         $(document).ready(function(){
             $("#operate").click(function(){
-                <?php// unset($_SESSION["TICKET_DESC"]); ?>
-                <?php// unset($_SESSION["CUSTOMER_EMAIL"]); ?>
-                $("#content_box").load("cp_menu_entry.php #download");
-
+            $("#content_box").load("cp_menu_entry.php #download");
             });
         });
+
+          
+  
+        load_data();
+        
+        function load_data(query)
+        {
+            $.ajax({
+                url:"fetch.php",
+                method:"POST",
+                data:{query:query},
+
+                success:function(data)
+                {
+                    $('#result').html(data);
+                }
+            });
+        }
+
+        $('#search_text').keyup(function(){
+            var search = $(this).val();
+            if(search != '')
+            {
+
+                load_data(search);
+                
+            }
+            else
+            {
+
+                load_data();
+            }
+        });
+
+    });
+
+
     </script>
 
+<!--
     <script>
         /* $('#search_user').submit(function() {
              var email = $('#user_email').val();
@@ -122,7 +179,7 @@ if (!isset($ver) && $ver == 1) {
                     }
                 });
             });
-        }); */
+        }); 
         $(document).ready(function () {
             /*$("#button-search").click(function() {
                 // using this page stop being refreshing
@@ -158,12 +215,5 @@ if (!isset($ver) && $ver == 1) {
                     }
                 })
             } */
-        }
+} -->
 
-    </script>
-
-</body>
-
-
-
-</html>
