@@ -35,6 +35,7 @@ if (!isset($ver) && $ver == 1) {
         <div class="list-group list-group-flush">
             <a href="#" class="list-group-item list-group-item-action bg-light sidebar-color-entry" id="ticket">Visualizza Ticket</a>
             <a href="#" class="list-group-item list-group-item-action bg-light sidebar-color-entry" id="operate">Area Operativa</a>
+            <a href="#" class="list-group-item list-group-item-action bg-light sidebar-color-entry">Gestione Utenti</a>
         </div>
     </div>
     <!-- /#sidebar-wrapper -->
@@ -60,59 +61,162 @@ if (!isset($ver) && $ver == 1) {
                 </ul>
             </div>
         </nav>
-
-        <div id="content_box">
+        <?php if (!isset($_SESSION["TICKET_DESC"]) && !isset($_SESSION["CUSTOMER_EMAIL"])) { echo ('
         
+    <div id="search_user">
+    	<div class="container">
+			<br />
+			<br />
+			<br />
+			<h2 align="center">Ticket Aperti</h2><br />
+			<div class="form-group">
+				<div class="input-group">
+					<input type="text" name="search_text" id="search_text" placeholder="Inserire Nome e Cognome" class="form-control" />
+				</div>
+			</div>
+			<br />
+			<div id="result"></div>
+		</div>
+		<div style="clear:both"></div>
+		<br />
+    </div> 
+    
+    <div class="row" id="download">
+    <h1>Scarica lapplicativo per fornire supporto</h1>
+    <div class="col-sm-6">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Windows</h5>
+                <p class="card-text">Selezionare la versione in base al proprio hardware.</p>
+                <a class="btn btn-primary" href="../dummy" download="dummy">x64</a>
+                <a class="btn btn-primary" href="../dummy" download="dummy">ARM</a>
+            </div>
         </div>
-        <?php echo $_SESSION["TICKET_DESC"]; ?>
+    </div>
+    <div class="col-sm-6">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Linux</h5>
+                <p class="card-text">Selezionare la versione in base al proprio hardware.</p>
+                <a class="btn btn-primary" href="../dummy" download="dummy">x64</a>
+                <a class="btn btn-primary" href="../dummy" download="dummy">ARM</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">mac OS</h5>
+                <p class="card-text">Selezionare la versione in base al proprio hardware.</p>
+                <a class="btn btn-primary" href="../dummy" download="dummy">Intel</a>
+                <a class="btn btn-primary" href="../dummy" download="dummy">M1</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Android</h5>
+                <p class="card-text">Selezionare la versione in base al proprio hardware.</p>
+                <a class="btn btn-primary" href="../dummy" download="dummy">Download</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">iOS</h5>
+                <p class="card-text">Selezionare la versione in base al proprio hardware.</p>
+                <a class="btn btn-primary" href="../dummy" download="dummy">Download</a>
+            </div>
+        </div>
+    </div>
+</div>
+    ');}
+        ?>
+        <!-- /#page-content-wrapper -->
 
     </div>
     <!-- /#wrapper -->
 
     <script src="../bootstrap/js/bootstrap.bundle.min.js"  crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="../bootstrap/jquery/jquery.min.js"></script>
     <script src="../ajax/jquery.min.js"></script>
 
-    <!-- Menu Toggle Script -->
+    </body>
 
+</html>
+
+
+    <!-- Menu Toggle Script -->
     <script>
+    $(document).ready(function () {
+    
         $("#menu-toggle").click(function(e) {
             e.preventDefault();
             $("#wrapper").toggleClass("toggled");
         });
-    </script>
 
-    <script>
+
+
         $(document).ready(function(){
             $("#ticket").click(function(){
-
-                fetch_user_ticket();
-
+                $(document).ready(function() {
+                    $('#search_user').css('display', 'initial');
+                    $('#download').css('display', 'none');
+                });
             });
         });
-    </script>
-    <script>
+
+
         $(document).ready(function(){
             $("#operate").click(function(){
-
-                $("#content_box").load("cp_menu_entry.php #download");
-
+                $('#search_user').css('display', 'none');
+                $('#download').css('display', 'initial');
             });
         });
-    </script>
 
-    <script>
-
-        function fetch_user_ticket()
+          
+  
+        load_data();
+        
+        function load_data(query)
         {
             $.ajax({
-                url:"../database/database_show_ticket_admin.php",
+                url:"fetch.php",
                 method:"POST",
-                success:function(){
-                    $("#content_box").load("cp_menu_entry.php #ticket_box");
+                data:{query:query},
+
+                success:function(data)
+                {
+                    $('#result').html(data);
                 }
-            })
+            });
         }
+
+        $('#search_text').keyup(function(){
+            var search = $(this).val();
+            if(search != '')
+            {
+
+                load_data(search);
+                
+            }
+            else
+            {
+
+                load_data();
+            }
+        });
+
+    });
+
+
+    </script>
+
+<!--
+    <script>
         /* $('#search_user').submit(function() {
              var email = $('#user_email').val();
              return false;
@@ -131,8 +235,8 @@ if (!isset($ver) && $ver == 1) {
                     }
                 });
             });
-        }); */
-        /*$(document).ready(function () {
+        }); 
+        $(document).ready(function () {
             /*$("#button-search").click(function() {
                 // using this page stop being refreshing
                 //event.preventDefault();
@@ -166,13 +270,6 @@ if (!isset($ver) && $ver == 1) {
                         $("#ticket_box").load("cp_menu_entry.php #search_user");
                     }
                 })
-            }
-        } */
+            } */
+} -->
 
-    </script>
-
-</body>
-
-
-
-</html>
