@@ -31,6 +31,9 @@
                echo ('
             </li>
             <li class="nav-item active">
+                <a class="nav-link" href="../php/cart.php">Carrello <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
                 <a class="nav-link" href="../php/logout.php">Esci <span class="sr-only">(current)</span></a>
             </li>');
          }else{
@@ -69,7 +72,7 @@
                     <a class="dropdown-item" href="../php/mod_profile.php">Modifica il profilo</a>
                 </div>
                 <div class="form-group">
-                    <a class="dropdown-item" href="../pho/chart.php">Carrello</a>
+                    <a class="dropdown-item" href="../php/cart.php">Carrello</a>
                 </div>
                 <div class="form-group py-2">
                     ');
@@ -96,12 +99,6 @@
                 <div class="form-group">
                     <label for="exampleDropdownFormPassword1">Password</label>
                     <input type="password" name="pass" required="required" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
-                </div>
-                <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="dropdownCheck">
-                    <label class="form-check-label" for="dropdownCheck">
-                    Ricordami
-                    </label>
                 </div>
                 <button type="submit" name="submit" class="btn btn-primary">Entra</button>
                 </form>
