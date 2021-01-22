@@ -10,9 +10,9 @@ if(isset($_POST["query"]))
 	$query = "
 	SELECT * FROM ticket
 	WHERE firstname LIKE '%".$search."%' OR lastname LIKE '%".$search."%' 
-	"; 
+	";
 
-	
+
 }
 else
 {
@@ -45,7 +45,7 @@ if(mysqli_num_rows($result) > 0)
 				<td>'.$row["device"].'</td>
 				<td>'.$row["os"].'</td>
 				<td>'.$row["description"].'</td>
-				<td><a type="button"  href="../chat/index.php" class="btn-sm btn-primary send_chat">Contatta</a></td>
+				<td><a type="button"  href="../chat/index.php" class="btn btn-primary open_chat">Contatta</a></td>
 			</tr>
 		';
 	}
@@ -53,7 +53,7 @@ if(mysqli_num_rows($result) > 0)
 }
 else
 {
-	echo 'Data Not Found';
+	echo 'Nessuna Corrispondenza trovata';
 }
 
 

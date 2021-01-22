@@ -31,12 +31,22 @@ nav {
     margin-left: 0.5vw;
 }
 
-#search_user {
+#my_tickets {
     display: none;
 }
 
+#open_ticket {
+    display: none;
+}
 
+.open_ticket {
+    max-width: 70% !important;
+}
 
+#description {
+    min-height: 30px;
+    resize: none;
+}
 #download {
     display: none;
     text-align: center;
@@ -49,6 +59,3 @@ nav {
     left: 20vw;
 }
 
-#manage_users {
-    display: none;
-}
