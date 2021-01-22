@@ -43,7 +43,11 @@
                    
                         <div class="mt-3">
                           <h4> <?php echo $_SESSION['FIRSTNAME']." ".$_SESSION['LASTNAME']; ?> </h4>
-                          <p class="text-secondary mb-1">Utente</p>
+                          
+                          <?php
+                          if($_SESSION["USER_TYPE"] == 0) echo '<p class="text-secondary mb-1">Utente</p>';
+                          else if($_SESSION["USER_TYPE"] == 1) echo '<p class="text-secondary mb-1">Utente</p>';
+                          ?>
                           <p class="text-muted font-size-sm"></p>
                           <form action="mod_profile.php">
                           <button class="btn btn-primary">Modifica profilo</button>
@@ -90,7 +94,7 @@
                           <h6 class="mb-0">Abbonamento</h6>
                         </div>
                         <div class="col-sm-9 text-secondary">
-                          --
+                            <?php echo $_SESSION['SUB']; ?>
                         </div>
                       </div>
                     </div>
