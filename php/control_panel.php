@@ -18,11 +18,11 @@
 if (!isset($_SESSION)) {
     session_start();
 }
-if ($_SESSION["LOGGED"]==1) {
+if ($_SESSION["LOGGED"]==1 && $_SESSION["USER_TYPE"] == 1) {
     $ver = 1;
 }
-if (!isset($ver) && $ver == 1) {
-    header("Location:login.php?message=Devi effettuare il login");
+if (!isset($ver)) {
+    header("Location:home.php?message=Devi effettuare il login o non disponi delle autorizzazioni necessarie");
 }
 ?>
 
@@ -71,7 +71,7 @@ if (!isset($ver) && $ver == 1) {
 			<h2 align="center">Ticket Aperti</h2><br />
 			<div class="form-group">
 				<div class="input-group">
-					<input type="text" name="search_text" id="search_text2" placeholder="Inserire Nome o Cognome" class="form-control" />
+					<input type="text" name="search_text" id="search_text" placeholder="Inserire Nome o Cognome" class="form-control" />
 				</div>
 			</div>
 			<br />
@@ -145,7 +145,7 @@ if (!isset($ver) && $ver == 1) {
 				</div>
 			</div>
 			<br />
-			<div id="result"></div>
+			<div id="result2"></div>
 		</div>
 		<div style="clear:both"></div>
 		<br />
@@ -224,7 +224,7 @@ if (!isset($ver) && $ver == 1) {
             });
         }
 
-        $('#search_text2').keyup(function(){
+        $('#search_text').keyup(function(){
             var search = $(this).val();
             if(search != '')
             {
@@ -250,12 +250,12 @@ if (!isset($ver) && $ver == 1) {
 
                 success:function(data)
                 {
-                    $('#result').html(data);
+                    $('#result2').html(data);
                 }
             });
         }
 
-        $('#search_text').keyup(function(){
+        $('#search_text2').keyup(function(){
             var search = $(this).val();
             if(search != '')
             {

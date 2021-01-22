@@ -18,11 +18,11 @@
 if (!isset($_SESSION)) {
     session_start();
 }
-if ($_SESSION["LOGGED"]==1) {
+if ($_SESSION["LOGGED"]==1 && $_SESSION["USER_TYPE"] == 0) {
     $ver = 1;
 }
-if (!isset($ver) && $ver == 1) {
-    header("Location:login.php?message=Devi effettuare il login");
+if (!isset($ver)) {
+    header("Location:home.php?message=Devi effettuare il login");
 }
 ?>
 
