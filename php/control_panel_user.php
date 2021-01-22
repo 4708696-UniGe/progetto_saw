@@ -77,49 +77,49 @@ if (!isset($ver) && $ver == 1) {
     </div>
     
     <div id="open_ticket" class="open_ticket">
-    	<form>
-          <div class="row mb-3">
-            <label for="describeProblem" class="col-sm-2 col-form-label">Descrivi il problema</label>
-            <div class="col-sm-10">
-              <textarea type="text" class="form-control" id="description"></textarea>
+    	<form method="POST" action="../php/submit_ticket.php">
+          <div class="row">
+            <label for="describeProblem" class="col-6 col-form-label">Descrivi il problema</label>
+            <div class="col-xl-12">
+              <textarea type="text" class="form-control" name="description" id="description"></textarea>
             </div>
           </div>
-          <fieldset class="row mb-3">
-            <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
-            <div class="col-sm-10">
+          <fieldset class="row py-4">
+            <legend class="col-form-label col-6 pt-0">Sistema Operativo:</legend>
+            <div class="col-6 py-3">
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="Windows">
+                <input class="form-check-input" type="radio" name="os" id="gridRadios1" value="Windows">
                 <label class="form-check-label" for="gridRadios1">
                   Windows
                 </label>
               </div>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="Linux">
+                <input class="form-check-input" type="radio" name="os" id="gridRadios2" value="Linux">
                 <label class="form-check-label" for="gridRadios2">
                   Linux
                 </label>
               </div>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="mac OS">
+                <input class="form-check-input" type="radio" name="os" id="gridRadios3" value="mac OS">
                 <label class="form-check-label" for="gridRadios3">
                   mac OS
                 </label>
               </div>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="Android">
+                <input class="form-check-input" type="radio" name="os" id="gridRadios3" value="Android">
                 <label class="form-check-label" for="gridRadios3">
                   Android
                 </label>
               </div>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="iOS">
+                <input class="form-check-input" type="radio" name="os" id="gridRadios3" value="iOS">
                 <label class="form-check-label" for="gridRadios3">
                   iOS
                 </label>
               </div>
             </div>
           </fieldset>
-          <button type="submit" class="btn btn-primary">Invia</button>
+          <button type="submit" id="send_ticket" class="btn btn-primary">Invia</button>
         </form>
     </div>
     
@@ -216,7 +216,7 @@ if (!isset($ver) && $ver == 1) {
             $("#new_ticket").click(function(){
                 $('#my_tickets').css('display', 'none');
                 $('#download').css('display', 'none');
-                $('#open_ticket').css('display', 'initial');
+                $('#open_ticket').css('display', 'flex');
             });
         });
 
@@ -245,6 +245,17 @@ if (!isset($ver) && $ver == 1) {
         }
 
     });
+
+
+
+   /* $(document).ready(function(){
+        $("input[type='button']").click(function(){
+            var radioValue = $("input[name='os']:checked").val();
+            if(radioValue){
+                alert("Your are a - " + radioValue);
+            }
+        });
+    }); */
 
 
 </script>

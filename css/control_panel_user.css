@@ -40,7 +40,10 @@ nav {
 }
 
 .open_ticket {
-    max-width: 70% !important;
+    position: relative;
+    top: 3vw;
+    left: 30vw;
+    min-width: 100% !important;
 }
 
 #description {

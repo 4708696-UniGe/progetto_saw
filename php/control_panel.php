@@ -71,7 +71,7 @@ if (!isset($ver) && $ver == 1) {
 			<h2 align="center">Ticket Aperti</h2><br />
 			<div class="form-group">
 				<div class="input-group">
-					<input type="text" name="search_text" id="search_text" placeholder="Inserire Nome e Cognome" class="form-control" />
+					<input type="text" name="search_text" id="search_text2" placeholder="Inserire Nome o Cognome" class="form-control" />
 				</div>
 			</div>
 			<br />
@@ -138,10 +138,10 @@ if (!isset($ver) && $ver == 1) {
 			<br />
 			<br />
 			<br />
-			<h2 align="center">Ticket Aperti</h2><br />
+			<h2 align="center">Lista Utenti</h2><br />
 			<div class="form-group">
 				<div class="input-group">
-					<input type="text" name="search_text" id="search_text2" placeholder="Inserire Nome e Cognome" class="form-control" />
+					<input type="text" name="search_text" id="search_text2" placeholder="Inserire Nome o Cognome" class="form-control" />
 				</div>
 			</div>
 			<br />
@@ -207,12 +207,44 @@ if (!isset($ver) && $ver == 1) {
 
           
   
-        load_data();
-        
-        function load_data(query)
+        load_users_ticket();
+        load_users();
+
+        function load_users_ticket(query)
         {
             $.ajax({
                 url:"fetch_users_tickets.php",
+                method:"POST",
+                data:{query:query},
+
+                success:function(data)
+                {
+                    $('#result').html(data);
+                }
+            });
+        }
+
+        $('#search_text2').keyup(function(){
+            var search = $(this).val();
+            if(search != '')
+            {
+
+                load_users_ticket(search);
+                
+            }
+            else
+            {
+
+                load_users_ticket();
+            }
+        });
+
+
+
+    function load_users(query)
+        {
+            $.ajax({
+                url:"fetch_users_data.php",
                 method:"POST",
                 data:{query:query},
 
@@ -228,13 +260,13 @@ if (!isset($ver) && $ver == 1) {
             if(search != '')
             {
 
-                load_data(search);
-                
+                load_users(search);
+
             }
             else
             {
 
-                load_data();
+                load_users();
             }
         });
 

@@ -34,9 +34,10 @@
         )";
 
     $sql_ticket = "CREATE TABLE IF NOT EXISTS ticket (
+        id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
         firstname VARCHAR(50) NOT NULL,
         lastname VARCHAR(50) NOT NULL,
-        email VARCHAR(50) PRIMARY KEY ,
+        email VARCHAR(50) NOT NULL ,
         opening_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
         device VARCHAR(50),
         os VARCHAR(50),
