@@ -28,10 +28,6 @@
         margin: auto;
     }
 
-        .form-signin .checkbox {
-            font-weight: 400;
-        }
-
         .form-signin .form-control {
             position: relative;
             box-sizing: border-box;
@@ -85,6 +81,7 @@
         color: #FBFFF4 !important;
         background-color: #EF8354 !important;
         border-color: #EF8354 !important;
+        margin-top:1.5vw;
     }
 
     .login-needed {

@@ -8,23 +8,16 @@
 
 	if(isset($_POST['email']) && isset($_POST['pass'])) {
 		$email = mysqli_real_escape_string($conn, $_POST['email']);
-		/* SettaCookie("EMAIL", $email, 72000); */
 		$psw = mysqli_real_escape_string($conn, $_POST['pass']);
 
 		$sql="SELECT id, firstname, lastname, email, pass, phone, company_name, workstation_os, mobile_os, about, admin FROM users WHERE email='$email'";
 		$res = mysqli_query($conn, $sql);
 		if (mysqli_affected_rows($conn) != 1) {
-				echo "<script> var flag = 1; </script>";
-		}
-		else{
+		    echo ('<script> var flag = 1 </script>');
+				//echo "Attenzione c'è stato un problema nell'inserimento, controlla i dati. ".mysqli_error($conn);
+		} else {
 				$rows = mysqli_fetch_array($res);
 				if(password_verify($psw, $rows[4])) {
-				    /*
-					SettaCookie("FIRSTNAME", $rows[1], 72000);
-					SettaCookie("LASTNAME", $rows[2], 72000);
-					SettaCookie("ID_USER", $rows[3], 72000);
-				    */
-
                     $_SESSION["ID_USER"]=$rows[0];
                     $_SESSION["FIRSTNAME"]=$rows[1];
                     $_SESSION["LASTNAME"]=$rows[2];
@@ -46,21 +39,14 @@
                     $statement->execute();
                     $_SESSION['login_details_id'] = $conn->insert_id;
 
-
-
-					/*
-					$statement = $conn->prepare($sub_query);
-					$statement->execute();
-					$_SESSION['login_details_id'] = $conn->lastInsertId(); */
-
-					//include 'check_admin.php';
-
 					header("Location: ../php/home.php");
 			}
+				else {
+                    echo ('<script> var flag = 1 </script>');
+                }
 		}
 	}
 	else{
 		echo "Connessione interrotta: ". mysqli_error($conn) . '\n';
 	}
-
 ?>
