@@ -779,6 +779,12 @@ html, body {
     color: #EF8354;
 }
 
+.blank {
+    background-image: linear-gradient(to right, #ff9f61, #918d8d);
+}
+.blank2 {
+    background-image: linear-gradient(to right,#ff9f61,#918d8d);
+}
 
 @keyframes fadein {
     from {
