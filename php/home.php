@@ -36,7 +36,7 @@
 				<div class = "box">
 					<div class="textimg">
 						<h1 id="title2">Chi siamo?<br></h1>
-						<p id="title-desc">Il nostro obiettivo è offrire assistenza informatica professionale ad imprese. <br> <a id="home_link" title="Scopri di più" href="about.php">Scopri di più</a>  </p>
+						<p id="title-desc">Il nostro obiettivo è offrire assistenza informatica professionale ad imprese e privati. <br> <a id="home_link" title="Scopri di più" href="about.php">Scopri di più</a>  </p>
 						<p id="title-desc">Ti serve aiuto? <br> <a id="home_link" title="Assistenza" href="../chat/index.php">Contatta l'assistenza</a> </p>
 					</div>
 				</div>
@@ -45,7 +45,7 @@
 			
 
 		<div class ="blank">
-			<div data-aos="fade-right" class="textimg2">
+			<div data-aos="fade-right" data-aos-offset="0" class="textimg2">
 
 				<h1 id="text-title">Cosa offriamo?<br></h1>
 				<p id="text">Scopri i nostri <a id="home_link" href="products.php">prodotti.</a> </p>
@@ -56,7 +56,7 @@
 		
 		<div class ="blank2">
 		
-			<div data-aos="fade-right" class="textimg2">
+			<div data-aos="fade-right" data-aos-offset="0" class="textimg2">
 
 				<h1 id="text-title">Su quale piattaforma lavori?<br></h1>
 			    <p id="text">Trova la tua tra le nostre <a id="home_link" href="platform_list.php">piattaforme supportate.</a> </p>
