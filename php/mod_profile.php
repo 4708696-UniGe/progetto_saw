@@ -18,7 +18,6 @@
 
 <body>
 
-
     <?php
     if (!isset($_SESSION)) {
         session_start();
@@ -30,6 +29,15 @@
     ?>
 
     <nav> <?php include 'navbar.php'; ?></nav>
+
+
+    <?php
+    if(isset($_SESSION['flag']) && $_SESSION['flag'] == 1) {
+        echo(' <div class="alert alert-danger wrong_pass"> Credenziali errate </div> ');
+        unset($_SESSION['flag']);
+    }
+    ?>
+
 	<div class="container container_card">
 	<div class="row gutters">
 		<div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
@@ -75,6 +83,19 @@
                                     <div class="form-group separatebox">
                                         <label for="email">Email</label>
                                     <?php echo (' <input type="email" class="form-control profile-setting-input" name="email" placeholder="'.$_SESSION["EMAIL"].'"> ') ?>
+                                    </div>
+                                </div>
+                                <hr class="riga_1">
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <div class="form-group separatebox">
+                                        <label for="email">Inserire password corrente</label>
+                                        <?php echo (' <input type="password" class="form-control profile-setting-input" name="old_pass" > ') ?>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <div class="form-group separatebox">
+                                        <label for="email">Inserire nuova password</label>
+                                        <?php echo (' <input type="password" class="form-control profile-setting-input" name="new_pass" > ') ?>
                                     </div>
                                 </div>
                                 <hr class="riga_1">
@@ -128,4 +149,7 @@
 
 	<script src="../bootstrap/js/bootstrap.bundle.min.js"  crossorigin="anonymous"></script>
 	</body>
+
+
+
 </html>

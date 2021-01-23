@@ -54,7 +54,7 @@
                    '.$_SESSION["FIRSTNAME"]. '
                 </button>
                 <div class="dropdown-menu dropdown-menu-left logged">
-                <div class="px-4 py-3" >
+                <div class="px-2 py-3" >
                 <div class="form-group">
                     <a class="dropdown-item" href="../php/show_profile.php">Visualizza il profilo</a>
                 </div>
@@ -70,7 +70,7 @@
              if($_SESSION["USER_TYPE"] == 1) { echo ('<a class="dropdown-item" href="../php/control_panel.php">Pannello di controllo</a> '); }
              echo ('
                 </div>
-                <a class="btn btn-primary" href="../php/logout.php" role="button">Esci</a>
+                <a class="btn btn-primary mx-2" href="../php/logout.php" role="button">Esci</a>
                 </div>
             </li>
                     ');
@@ -81,7 +81,7 @@
                    Profilo
                 </button>
                 <div class="dropdown-menu dropdown-menu-left ">
-                <form class="px-4 py-3" action="login.php" method="post">
+                <form class="px-3 py-1" action="login.php" method="post">
                 <div class="form-group">
                     <label for="exampleDropdownFormEmail1">Indirizzo Email</label>
                     <input type="email" name="email" required="required" class="form-control" id="exampleDropdownFormEmail1" placeholder="Email">
@@ -90,7 +90,7 @@
                     <label for="exampleDropdownFormPassword1">Password</label>
                     <input type="password" name="pass" required="required" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
                 </div>
-                <button type="submit" name="submit" class="btn btn-primary">Entra</button>
+                <button type="submit" name="submit" class="btn btn-primary my-2">Entra</button>
                 </form>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="registration.php">Non hai un profilo? Registrati</a>

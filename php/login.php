@@ -34,11 +34,6 @@
         ?>
         <input type="email" id="inputEmail" name="email" required="required" class="form-control" placeholder="Indirizzo email">
         <input type="password" id="inputPassword" name="pass" required="required" class="form-control" placeholder="Password">
-        <div class="checkbox mb-3 mt-3">
-            <label>
-                <input type="checkbox" value="remember-me"> Ricordami
-            </label>
-        </div>
         <button class="w-100 btn btn-lg btn-primary" type="submit">Accedi</button>
         <p class="mt-5 mb-3 text-muted" id="cr">&#169; 2017-2020</p>
     </form>
@@ -46,7 +41,7 @@
     </div>
 </body>
 
-<script> 
+    <script>
         window.onload = flag_login();
         function flag_login() {
             if(flag == 1) {
@@ -54,6 +49,6 @@
             document.getElementById("flag_log").innerHTML = "Username o password errati.";
             }
         }
-      </script>
+    </script>
 
 </html>

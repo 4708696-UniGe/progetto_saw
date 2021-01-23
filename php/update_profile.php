@@ -20,6 +20,28 @@
             $go_update = 1;
         }
 
+        if (isset($_POST['old_pass']) && $_POST['old_pass'] != "" && isset($_POST['new_pass']) && $_POST['new_pass'] != "") {
+            $old_psw = mysqli_real_escape_string($conn, $_POST['old_pass']);
+            $sql="SELECT pass FROM users WHERE id ='{$_SESSION["ID_USER"]}'";
+            $res = mysqli_query($conn, $sql);
+            $rows = mysqli_fetch_array($res);
+            if (password_verify($old_psw, $rows[0])) {
+                $new_psw = mysqli_real_escape_string($conn, $_POST['new_pass']);
+                $new_psw = password_hash($new_psw, PASSWORD_DEFAULT);
+                $sql_updt_pass = "UPDATE users SET pass='".$new_psw."'
+                    WHERE id='{$_SESSION["ID_USER"]}'";
+                $res = mysqli_query($conn, $sql_updt_pass);
+
+                if (mysqli_affected_rows($conn) != 1) {
+                    echo "Attenzione c'è stato un problema nell'aggiornamento delle informazioni, contattare il servizio clienti " . mysqli_error($conn);
+                }
+            } else {
+                $_SESSION['flag'] = 1;
+                header("Location: ../php/mod_profile.php");
+                exit();
+            }
+        }
+
         if (isset($_POST['phone']) && $_POST['phone'] != $_SESSION["PHONE"] && $_POST['phone'] != "") {
             $_SESSION["PHONE"] = (int)$_POST['phone'];
             $go_update = 1;
