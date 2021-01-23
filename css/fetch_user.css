@@ -1,15 +1,29 @@
-
 /* Mobile View */
 
 @media (max-width: 576px) {
+    .chat_table {
+        position: relative;
+        left: 20vw;
+        max-width: 60%;
+    }
 
 }
 
 @media (max-width: 768px) {
+    .chat_table {
+        position: relative;
+        left: 20vw;
+        max-width: 60%;
+    }
 
 }
 
 @media (max-width: 768px) and (orientation: landscape) {
+    .chat_table {
+        position: relative;
+        left: 20vw;
+        max-width: 60%;
+    }
 
 }
 
@@ -17,16 +31,60 @@
 /* Tablet View */
 
 @media (min-width: 768px) and (orientation: portrait) {
+    .chat_table {
+        position: relative;
+        left: 20vw;
+        max-width: 60%;
+    }
 
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) and (max-width: 992px) {
+    .chat_table {
+        position: relative;
+        left: 20vw;
+        max-width: 60%;
+    }
 
 }
+
 
 /* Desktop view */
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) and (max-width: 1200px) {
+    .chat_table {
+        position: relative;
+        left: 20vw;
+        max-width: 60%;
+        height: 41.4%;
+        overflow-y: auto;
+    }
+
+    footer {
+        position: absolute;
+        bottom:0;
+        min-width: 100%;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1600px) {
+    .chat_table {
+        position: relative;
+        left: 20vw;
+        max-width: 60%;
+        height: 41.4%;
+        overflow-y: auto;
+    }
+
+    footer {
+        position: absolute;
+        bottom:0;
+        min-width: 100%;
+        margin-top: 10vw;
+    }
+}
+
+@media (min-width: 1600px) and (max-width: 1900px) {
     .chat_table {
         position: relative;
         left: 20vw;
@@ -48,8 +106,9 @@
         left: 27vw;
         max-width: 50%;
         margin-bottom: 5vw;
+        height: 41.4%;
+        overflow-y: auto;
     }
-
 }
 
 .table-dark {
@@ -59,3 +118,13 @@
 #row_table {
     --bs-table-bg: #FBFFF4 !important;
 }
+
+
+
+
+
+
+
+
+
+

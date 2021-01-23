@@ -45,8 +45,8 @@
         )";
 
     $sql_cart = "CREATE TABLE IF NOT EXISTS cart (
-       email VARCHAR(50),
-       product_code VARCHAR(10) PRIMARY KEY
+       email VARCHAR(50) PRIMARY KEY,
+       product_code VARCHAR(10)
     )";
 
     $sql_products = "CREATE TABLE IF NOT EXISTS products (
