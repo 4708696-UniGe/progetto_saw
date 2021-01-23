@@ -17,7 +17,7 @@ if(isset($_POST["query"]))
 else
 {
     $query = "
-		SELECT * FROM users";
+		SELECT * FROM users WHERE admin = 0";
 }
 $result = mysqli_query($conn, $query);
 if(mysqli_num_rows($result) > 0)
