@@ -43,7 +43,7 @@
                     <p>+39 3479620471 <i><img src="../images/phone.png" alt="Cellular" width="30" height="30" title="Telefono"></i></p>
                 </div>
                 <div>
-                    <p><a id="email-icon" href="mailto:s4708696@studenti.unige.it"> s4708696@studenti.unige.it</a> <i><img src="../images/mailbox2.png" alt="Mail" width="30" height="30" title="E-mail" ></i></p>
+                    <p><a id="email-icon" href="mailto:s4708696@studenti.unige.it"> contact@systemhospital.it</a> <i><img src="../images/mailbox2.png" alt="Mail" width="30" height="30" title="E-mail" ></i></p>
                 </div>
             </div>
         </div>

@@ -191,7 +191,71 @@
 
 /* Desktop view */
 
-@media (min-width: 1200px) {
+@media (min-width: 768px) and (max-width: 1200px) {
+
+    #logo {
+        height: auto;
+        width: 24vw;
+        padding-top: 2vw;
+        padding-bottom: 3vw;
+    }
+
+    .footer-links {
+        font-size: 1.5vw;
+    }
+
+    .md-4 {
+        margin-top: 0.5rem !important;
+        margin-bottom: 0rem !important;
+    }
+
+    .py-5 {
+        padding-top: 0.5rem !important;
+        padding-bottom: 0.5rem !important;
+    }
+    .py-3 {
+        padding-top: 0.5rem !important;
+        padding-bottom: 0.5rem !important;
+    }
+
+    .py-2 {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+
+    .my-4 {
+        margin-bottom: 0 !important;
+    }
+
+    .container {
+        min-width: 100%;
+    }
+
+    .row {
+        max-width: 100%;
+    }
+
+    .social-link {
+        font-size: 1.5vw;
+        padding-top: 7vw;
+        padding-left: 0;
+    }
+
+    #socialicon {
+        margin-right: 0 !important;
+    }
+
+    .contacts {
+        font-size: 1.3vw;
+        text-align: right !important;
+        margin-right: 0vw !important;
+        padding-top: 3vw;
+        padding-right: 0vw !important;
+    }
+
+}
+
+@media (min-width: 1200px) and (max-width: 1900px) {
     .container {
         max-height: 100% !important;
         max-width: 100% !important;

@@ -25,7 +25,11 @@
 
 /* Desktop view */
 
-@media (min-width: 1200px) {
+@media (min-width: 768px) and (max-width: 1200px) {
+
+}
+
+@media (min-width: 1200px) and (max-width: 1900px) {
 
 }
 
