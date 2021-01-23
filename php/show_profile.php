@@ -85,10 +85,10 @@
                       <hr>
                       <div class="row">
                         <div class="col-sm-3">
-                          <h6 class="mb-0">Abbonamento</h6>
+                          <h6 class="mb-0">Pacchetto</h6>
                         </div>
                         <div class="col-sm-9 text-secondary">
-                          --
+                            <?php echo $_SESSION['SUB']; ?>
                         </div>
                       </div>
                     </div>

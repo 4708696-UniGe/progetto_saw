@@ -11,7 +11,7 @@
 		/* SettaCookie("EMAIL", $email, 72000); */
 		$psw = mysqli_real_escape_string($conn, $_POST['pass']);
 
-		$sql="SELECT id, firstname, lastname, email, pass, phone, company_name, workstation_os, mobile_os, about, admin FROM users WHERE email='$email'";
+		$sql="SELECT id, firstname, lastname, email, pass, phone, company_name, workstation_os, mobile_os, about, admin, subscription FROM users WHERE email='$email'";
 		$res = mysqli_query($conn, $sql);
 		if (mysqli_affected_rows($conn) != 1) {
 		    echo ('<script> var flag = 1 </script>');
@@ -37,6 +37,7 @@
                     $_SESSION["ABOUT"]=$rows[9];
                     $_SESSION["LOGGED"]=1;
 					$_SESSION["USER_TYPE"]=$rows[10];
+					$_SESSION["SUB"]=$rows[11];
 
                     $sub_query = "
 					INSERT INTO login_details 
@@ -57,7 +58,11 @@
 					//include 'check_admin.php';
 
 					header("Location: ../php/home.php");
+					exit();
 			}
+				else {
+                    echo ('<script> var flag = 1 </script>');
+                }
 		}
 	}
 	else{

@@ -27,6 +27,9 @@
                echo ('
             </li>
             <li class="nav-item active">
+                <a class="nav-link" href="../php/cart.php">Carrello <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
                 <a class="nav-link" href="../php/logout.php">Esci <span class="sr-only">(current)</span></a>
             </li>');
          }else{
@@ -59,7 +62,7 @@
                     <a class="dropdown-item" href="../php/mod_profile.php">Modifica il profilo</a>
                 </div>
                 <div class="form-group">
-                    <a class="dropdown-item" href="../pho/chart.php">Carrello</a>
+                    <a class="dropdown-item" href="../php/cart.php">Carrello</a>
                 </div>
                 <div class="form-group py-2">
                     ');

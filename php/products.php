@@ -42,7 +42,7 @@
                       <li>- Assistenza telefonica</li>
                       <li>- Spazio cloud riservato da 5GB</li>
                     </ul>
-                    <a  class="w-100 btn btn-lg btn-primary" href="cart.php" role="button">Acquista</a>
+                    <a  class="w-100 btn btn-lg btn-primary" href="cart.php?action=add&code=bronze1" role="button">Acquista</a>
                   </div>
                 </div>
                 </div>
@@ -57,7 +57,7 @@
                       <li>- Assistenza con accesso remoto per 1 dispositivo contemporaneamente</li>
                       <li>- Spazio cloud riservato da 20GB</li>
                     </ul>
-                    <a  class="w-100 btn btn-lg btn-primary" href="cart.php" role="button">Acquista</a>
+                    <a  class="w-100 btn btn-lg btn-primary" href="cart.php?action=add&code=silver1" role="button">Acquista</a>
                   </div>
                 </div>
                 </div>
@@ -73,7 +73,7 @@
                       <li>- Spazio cloud riservato da 50GB</li>
                       <li>- Servizio "Computer di cortesia" con accesso da remoto</li>
                     </ul>
-                    <a  class="w-100 btn btn-lg btn-primary" href="cart.php" role="button">Acquista</a>
+                    <a  class="w-100 btn btn-lg btn-primary" href="cart.php?action=add&code=gold1" role="button">Acquista</a>
                   </div>
                 </div>
                 </div>
@@ -99,7 +99,7 @@
                       <li>- Assistenza telefonica</li>
                       <li>- Spazio cloud riservato da 5GB</li>
                     </ul>
-                    <a  class="w-100 btn btn-lg btn-primary" href="cart.php" role="button">Acquista</a>
+                    <a  class="w-100 btn btn-lg btn-primary" href="cart.php?action=add&code=bronze2" role="button">Acquista</a>
                   </div>
                 </div>
                 </div>
@@ -114,7 +114,7 @@
                       <li>- Assistenza con accesso remoto per un dispositivo contemporaneamente</li>
                       <li>- Spazio cloud riservato da 20GB</li>
                     </ul>
-                    <a  class="w-100 btn btn-lg btn-primary" href="cart.php" role="button">Acquista</a>
+                    <a  class="w-100 btn btn-lg btn-primary" href="cart.php?action=add&code=silver2" role="button">Acquista</a>
                   </div>
                 </div>
                 </div>
@@ -130,7 +130,7 @@
                       <li>- Spazio cloud riservato da 50 GB</li>
                       <li>- Servizio "Computer di cortesia" con accesso da remoto</li>
                     </ul>
-                     <a  class="w-100 btn btn-lg btn-primary" href="cart.php" role="button">Acquista</a>
+                     <a  class="w-100 btn btn-lg btn-primary" href="cart.php?action=add&code=gold2" role="button">Acquista</a>
                   </div>
                 </div>
                 </div>
@@ -159,7 +159,7 @@
                       <li>- 1 Dispositivo</li>
                       <li>- Assistenza telefonica</li>
                     </ul>
-                    <a class="w-80 btn btn-lg btn-primary" href="cart.php" role="button">Acquista</a>
+                    <a class="w-80 btn btn-lg btn-primary" href="cart.php?action=add&code=bronze1" role="button">Acquista</a>
                   </div>
                 </div>
                 </div>
@@ -175,7 +175,7 @@
                       <li>- Assistenza con accesso remoto per 1 dispositivo contemporaneamente</li>
                       <li>- Spazio cloud riservato da 5GB</li>
                     </ul>
-                     <a class="w-80 btn btn-lg btn-primary" href="cart.php" role="button">Acquista</a>
+                     <a class="w-80 btn btn-lg btn-primary" href="cart.php?action=add&code=silver1" role="button">Acquista</a>
                   </div>
                 </div>
                 </div>
@@ -192,7 +192,7 @@
                       <li>- Spazio cloud riservato da 50GB</li>
                       <li>- Servizio "Computer di cortesia" con accesso da remoto</li>
                     </ul>
-                     <a class="w-80 btn btn-lg btn-primary" href="cart.php" role="button">Acquista</a>
+                     <a class="w-80 btn btn-lg btn-primary" href="cart.php?action=add&code=gold1" role="button">Acquista</a>
                   </div>
                 </div>
                 </div>
@@ -219,7 +219,7 @@
                       <li>- 1 Dispositivo per ticket</li>
                       <li>- Assistenza telefonica</li>
                     </ul>
-                     <a class="w-80 btn btn-lg btn-primary" href="cart.php" role="button">Acquista</a>
+                     <a class="w-80 btn btn-lg btn-primary" href="cart.php?action=add&code=bronze2" role="button">Acquista</a>
                   </div>
                 </div>
                 </div>
@@ -235,7 +235,7 @@
                       <li>- Assistenza con accesso remoto per un dispositivo contemporaneamente</li>
                       <li>- Spazio cloud riservato da 5GB</li>
                     </ul>
-                     <a class="w-80 btn btn-lg btn-primary" href="cart.php" role="button">Acquista</a>
+                     <a class="w-80 btn btn-lg btn-primary" href="cart.php?action=add&code=silver2" role="button">Acquista</a>
                   </div>
                 </div>
                 </div>
@@ -252,7 +252,7 @@
                       <li>- Spazio cloud riservato da 50 GB</li>
                       <li>- Servizio "Computer di cortesia" con accesso da remoto</li>
                     </ul>
-                     <a class="w-80 btn btn-lg btn-primary" href="cart.php" role="button">Acquista</a>
+                     <a class="w-80 btn btn-lg btn-primary" href="cart.php?action=add&code=gold2" role="button">Acquista</a>
                   </div>
                 </div>
                 </div>

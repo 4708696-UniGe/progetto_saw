@@ -1,32 +1,21 @@
 <?php
 
-
-$con = mysqli_connect("localhost","root","","test");
+include '../database/database_connect.php';
 if (mysqli_connect_errno()){
     echo "Failed to connect to MySQL: " . mysqli_connect_error();
     die();
 }
 
-
-$query_cart = "CREATE TABLE IF NOT EXISTS cart (
-   email VARCHAR(50),
-   product_code VARCHAR(10) PRIMARY KEY,
-)";
-$query_products = "CREATE TABLE products (
-  id int(8) NOT NULL AUTO INCREMENT ,
-  name varchar(30) NOT NULL,
-  code varchar(10) NOT NULL,
-  price double(5,2) NOT NULL
-)";
-
-
-
+if (mysqli_query($conn, $sql_cart) === TRUE) {
+}else {
+    echo "Error creating table: " . mysqli_error($conn) . '\n';
+}
 
 if(!empty($_GET["action"])) {
     switch($_GET["action"]) {
         case "add":
 
-            $result = mysqli_query($con, "SELECT * FROM products WHERE code='" . $_GET["code"] . "'");
+            $result = mysqli_query($conn, "SELECT * FROM products WHERE code='" . $_GET["code"] . "'");
             while($row = mysqli_fetch_assoc($result)){
                 $productByCode[] = $row;
             }
@@ -48,9 +37,9 @@ if(!empty($_GET["action"])) {
             } else {
                 $_SESSION["cart_item"] = $itemArray;
                 $query = "INSERT INTO cart (email, product_code) VALUES ('{$_SESSION["EMAIL"]}','{$_GET["code"]}');";
-                mysqli_query($con, $query);
-                if (mysqli_affected_rows($con) != 1) {
-                    echo "Attenzione c'� stato un problema nell'inserimento, controlla i dati. ".mysqli_error($con);
+                mysqli_query($conn, $query);
+                if (mysqli_affected_rows($conn) != 1) {
+                    echo "Attenzione c'� stato un problema nell'inserimento, controlla i dati. ".mysqli_error($conn);
                 }
             }
             break;
@@ -60,9 +49,9 @@ if(!empty($_GET["action"])) {
                 foreach($_SESSION["cart_item"] as $k => $v) {
                     if($_GET["code"] == $k){
                         $query = "DELETE FROM cart WHERE email = '{$_SESSION["EMAIL"]}' AND product_code = '{$_SESSION["cart_item"][$k]["code"]}'";
-                        mysqli_query($con, $query);
-                        if (mysqli_affected_rows($con) != 1) {
-                            echo "Attenzione c'� stato un problema nell'inserimento, controlla i dati. ".mysqli_error($con);
+                        mysqli_query($conn, $query);
+                        if (mysqli_affected_rows($conn) != 1) {
+                            echo "Attenzione c'� stato un problema nell'inserimento, controlla i dati. ".mysqli_error($conn);
                         }
                         unset($_SESSION["cart_item"][$k]);
                     }
@@ -75,9 +64,9 @@ if(!empty($_GET["action"])) {
         case "empty":
             if(!empty($_SESSION["cart_item"])) {
                 $query = "DELETE FROM cart WHERE email = '{$_SESSION["EMAIL"]}'";
-                mysqli_query($con, $query);
-                if (mysqli_affected_rows($con) == 0) {
-                    echo "Attenzione c'� stato un problema nell'inserimento, controlla i dati. " . mysqli_error($con);
+                mysqli_query($conn, $query);
+                if (mysqli_affected_rows($conn) == 0) {
+                    echo "Attenzione c'� stato un problema nell'inserimento, controlla i dati. " . mysqli_error($conn);
                 }
                 unset($_SESSION["cart_item"]);
                 break;
@@ -86,14 +75,14 @@ if(!empty($_GET["action"])) {
 }
 
 $query = "SELECT product_code FROM cart WHERE email = '{$_SESSION["EMAIL"]}'";
-$result = mysqli_query($con, $query);
+$result = mysqli_query($conn, $query);
 $array = mysqli_fetch_all($result);
-if (mysqli_affected_rows($con) != 0) {
+if (mysqli_affected_rows($conn) != 0) {
     $i=0;
     foreach($array as $value){
         $qry = "SELECT * FROM products WHERE code = '".$value[0]."'";
-        $result2 = mysqli_query($con, $qry);
-        if(mysqli_affected_rows($con) != 1){
+        $result2 = mysqli_query($conn, $qry);
+        if(mysqli_affected_rows($conn) != 1){
             echo "problema";
         }else{
             while($row = mysqli_fetch_assoc($result2)){
