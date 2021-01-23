@@ -18,11 +18,15 @@
 if (!isset($_SESSION)) {
     session_start();
 }
-if ($_SESSION["LOGGED"]==1 && $_SESSION["USER_TYPE"] == 0) {
-    $ver = 1;
+
+if (!isset($_SESSION["LOGGED"]) || $_SESSION["LOGGED"] == 0) {
+    header("Location:login.php?message=Devi effettuare il login");
+    exit();
 }
-if (!isset($ver)) {
-    header("Location:home.php?message=Devi effettuare il login");
+
+if ($_SESSION["LOGGED"]==1 && $_SESSION["USER_TYPE"] == 1) {
+    header("Location:control_panel.php");
+    exit();
 }
 ?>
 
@@ -74,8 +78,10 @@ if (!isset($ver)) {
 		</div>
 		<div style="clear:both"></div>
 		<br />
-    </div>
+    </div> ');
     
+    if (isset($_SESSION["SUB"]) && $_SESSION["SUB"] != '--') { echo ('
+
     <div id="open_ticket" class="open_ticket">
     	<form method="POST" action="../php/submit_ticket.php">
           <div class="row">
@@ -122,7 +128,14 @@ if (!isset($ver)) {
           <button type="submit" id="send_ticket" class="btn btn-primary">Invia</button>
         </form>
     </div>
-    
+    '); }
+    else { echo('
+    <div class="alert alert-warning nosub" role="alert"> Non disponi di un abbonamento attivo. <a href="../php/products.php" class="alert-link">Compra un abbonamento</a>. 
+    </div>
+    ');
+    }
+
+    echo('
     <div class="row download" id="download">
         <h1>Scarica lapplicativo per fornire supporto</h1>
         <div class="col-6">
@@ -214,9 +227,9 @@ if (!isset($ver)) {
 
         $(document).ready(function(){
             $("#new_ticket").click(function(){
-                $('#my_tickets').css('display', 'none');
-                $('#download').css('display', 'none');
-                $('#open_ticket').css('display', 'flex');
+                    $('#my_tickets').css('display', 'none');
+                    $('#download').css('display', 'none');
+                    $('#open_ticket').css('display', 'flex');
             });
         });
 

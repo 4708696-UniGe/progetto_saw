@@ -39,8 +39,8 @@
                   <div class="card-body">
                     <h1 class="card-title pricing-card-title">15€</h1>
                     <ul class="list-unstyled mt-3 mb-4">
-                      <li>- 1 Dispositivo</li>
                       <li>- Assistenza telefonica</li>
+                      <li>- Spazio cloud riservato da 5GB</li>
                     </ul>
                     <a  class="w-100 btn btn-lg btn-primary" href="cart.php" role="button">Acquista</a>
                   </div>
@@ -54,9 +54,8 @@
                   <div class="card-body">
                     <h1 class="card-title pricing-card-title">35€</h1>
                     <ul class="list-unstyled mt-3 mb-4">
-                      <li>- 2 Dispositivi</li>
                       <li>- Assistenza con accesso remoto per 1 dispositivo contemporaneamente</li>
-                      <li>- Spazio cloud riservato da 5GB</li>
+                      <li>- Spazio cloud riservato da 20GB</li>
                     </ul>
                     <a  class="w-100 btn btn-lg btn-primary" href="cart.php" role="button">Acquista</a>
                   </div>
@@ -70,7 +69,6 @@
                   <div class="card-body">
                     <h1 class="card-title pricing-card-title">80€</h1>
                     <ul class="list-unstyled mt-3 mb-4">
-                      <li>- 5 Dispositivi</li>
                       <li>- Assistenza con accesso remoto per 3 dispositivi contemporaneamente</li>
                       <li>- Spazio cloud riservato da 50GB</li>
                       <li>- Servizio "Computer di cortesia" con accesso da remoto</li>
@@ -98,8 +96,8 @@
                   <div class="card-body">
                     <h1 class="card-title pricing-card-title">5€ <small class="text-muted">/ mese</small></h1>
                     <ul class="list-unstyled mt-3 mb-4">
-                      <li>- 1 Dispositivo per ticket</li>
                       <li>- Assistenza telefonica</li>
+                      <li>- Spazio cloud riservato da 5GB</li>
                     </ul>
                     <a  class="w-100 btn btn-lg btn-primary" href="cart.php" role="button">Acquista</a>
                   </div>
@@ -113,9 +111,8 @@
                   <div class="card-body">
                     <h1 class="card-title pricing-card-title">20€ <small class="text-muted">/ mese</small></h1>
                     <ul class="list-unstyled mt-3 mb-4">
-                      <li>- 2 Dispositivi per ticket</li>
                       <li>- Assistenza con accesso remoto per un dispositivo contemporaneamente</li>
-                      <li>- Spazio cloud riservato da 5GB</li>
+                      <li>- Spazio cloud riservato da 20GB</li>
                     </ul>
                     <a  class="w-100 btn btn-lg btn-primary" href="cart.php" role="button">Acquista</a>
                   </div>
@@ -129,7 +126,6 @@
                   <div class="card-body">
                     <h1 class="card-title pricing-card-title">60€ <small class="text-muted">/ mese</small></h1>
                     <ul class="list-unstyled mt-3 mb-4">
-                      <li>- 5 Dispositivi per ticket</li>
                       <li>- Assistenza con accesso remoto per un dispositivo contemporaneamente</li>
                       <li>- Spazio cloud riservato da 50 GB</li>
                       <li>- Servizio "Computer di cortesia" con accesso da remoto</li>

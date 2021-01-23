@@ -23,12 +23,10 @@
     if (!isset($_SESSION)) {
         session_start();
     }
-    if ($_SESSION["LOGGED"]==1) {
-        $ver = 1;
+    if (!isset($_SESSION["LOGGED"]) || $_SESSION["LOGGED"] == 0) {
+        header("Location:login.php?message=Devi effettuare il login");
+        exit();
     }
-        if (!isset($ver) && $ver == 1) {
-            header("Location:login.php?message=Devi effettuare il login");
-        }
     ?>
 
     <nav> <?php include 'navbar.php'; ?></nav>

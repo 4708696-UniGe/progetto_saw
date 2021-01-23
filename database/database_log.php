@@ -14,7 +14,8 @@
 		$sql="SELECT id, firstname, lastname, email, pass, phone, company_name, workstation_os, mobile_os, about, admin FROM users WHERE email='$email'";
 		$res = mysqli_query($conn, $sql);
 		if (mysqli_affected_rows($conn) != 1) {
-				echo "Attenzione c'è stato un problema nell'inserimento, controlla i dati. ".mysqli_error($conn);
+		    echo ('<script> var flag = 1 </script>');
+				//echo "Attenzione c'è stato un problema nell'inserimento, controlla i dati. ".mysqli_error($conn);
 		}
 		else{
 				$rows = mysqli_fetch_array($res);

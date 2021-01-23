@@ -18,11 +18,14 @@
 if (!isset($_SESSION)) {
     session_start();
 }
-if ($_SESSION["LOGGED"]==1 && $_SESSION["USER_TYPE"] == 1) {
-    $ver = 1;
+if (!isset($_SESSION["LOGGED"]) || $_SESSION["LOGGED"] == 0) {
+    header("Location:login.php?message=Devi effettuare il login");
+    exit();
 }
-if (!isset($ver)) {
-    header("Location:home.php?message=Devi effettuare il login o non disponi delle autorizzazioni necessarie");
+
+if ($_SESSION["LOGGED"] == 1 && $_SESSION["USER_TYPE"] == 0) {
+    header("Location:home.php?message=Non disponi delle autorizzazioni necessarie");
+    exit();
 }
 ?>
 

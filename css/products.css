@@ -248,9 +248,9 @@
 }
 
 #product-list-category {
-    font-family: -apple-system;
+    font-family: system-ui, sans-serif;
 }
 
 #product-list-description {
-    font-family: -apple-system;
+    font-family: system-ui, sans-serif;
 }

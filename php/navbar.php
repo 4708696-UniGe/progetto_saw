@@ -12,10 +12,6 @@
      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
        <span class="navbar-toggler-icon"></span>
      </button>
-     <form class="search_mobile">
-      <input class="form-control " type="search" placeholder="Cerca" aria-label="Search">
-      <button class="btn btn-outline-success" type="submit">Cerca</button>
-     </form>
      <div class="collapse navbar-collapse" id="navbarSupportedContent">
        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
          <div class="mobile_menu">
@@ -45,12 +41,6 @@
          </li>
          ');
          }?>
-         </div>
-         <div class="search">
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Cerca nel sito" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Cerca</button>
-            </form>
          </div>
          <div class="profile">
          <?php
@@ -96,12 +86,6 @@
                 <div class="form-group">
                     <label for="exampleDropdownFormPassword1">Password</label>
                     <input type="password" name="pass" required="required" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
-                </div>
-                <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="dropdownCheck">
-                    <label class="form-check-label" for="dropdownCheck">
-                    Ricordami
-                    </label>
                 </div>
                 <button type="submit" name="submit" class="btn btn-primary">Entra</button>
                 </form>

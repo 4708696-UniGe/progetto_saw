@@ -87,11 +87,6 @@
         border-color: #EF8354 !important;
     }
 
-    .login-needed {
-        position: absolute !important;
-        top: 3rem;
-        left: 53rem;
-    }
 }
 
 @media(max-width: 992px){
