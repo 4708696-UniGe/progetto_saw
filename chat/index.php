@@ -99,19 +99,23 @@ $(document).ready(function(){
 	// setInterval utilizza le funzioni che sono definite sotto di lei
 	setInterval(function(){
 		update_last_activity();
+		fetch_user();
 		update_chat_history_data();
-        fetch_user();
+        
 	}, 2000);
 
-
+	/*
 	setInterval(function(){
         var scrollTarget = $("#chat_table");
         var pos = scrollTarget.scrollTop();
+
         fetch_user();
         scrollTarget.load('fetch_user.php', function() {
             $('#chat_table').scrollTop(pos);
         });
 	}, 10000);
+	*/
+
 
 
 	// metodo $.ajax: metodo statico che effetua una chiamata ajax alla quale vengono passati dei 
@@ -200,9 +204,9 @@ $(document).ready(function(){
 	{
 		$('.chat_history').each(function(){
 			var to_user_id = $(this).data('touserid');
-            if ($('#user_dialog').parents('.ui-dialog:visible').length) {
+           
                 fetch_user_chat_history(to_user_id);
-            }
+            
 		});
 	}
 

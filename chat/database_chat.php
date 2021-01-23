@@ -1,6 +1,6 @@
 <?php
 
-	include '../database/database_connect.php';
+	//include '../database/database_connect.php';
     $conn = new PDO("mysql:host=localhost;dbname=test;charset=latin1", "root", "");
 
 
