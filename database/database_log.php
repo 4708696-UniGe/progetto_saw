@@ -10,7 +10,7 @@
 		$email = mysqli_real_escape_string($conn, $_POST['email']);
 		$psw = mysqli_real_escape_string($conn, $_POST['pass']);
 
-		$sql="SELECT id, firstname, lastname, email, pass, phone, company_name, workstation_os, mobile_os, about, admin FROM users WHERE email='$email'";
+		$sql="SELECT id, firstname, lastname, email, pass, phone, company_name, workstation_os, mobile_os, about, admin, subscription FROM users WHERE email='$email'";
 		$res = mysqli_query($conn, $sql);
 		if (mysqli_affected_rows($conn) != 1) {
 		    echo ('<script> var flag = 1 </script>');
@@ -27,8 +27,9 @@
                     $_SESSION["WORKSTATION_OS"]=$rows[7];
                     $_SESSION["MOBILE_OS"]=$rows[8];
                     $_SESSION["ABOUT"]=$rows[9];
+                    $_SESSION["USER_TYPE"]=$rows[10];
+                    $_SESSION["SUB"]=$rows[11];
                     $_SESSION["LOGGED"]=1;
-					$_SESSION["USER_TYPE"]=$rows[10];
 
                     $sub_query = "
 					INSERT INTO login_details 
