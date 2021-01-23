@@ -243,15 +243,6 @@
         height: auto;
     }
 
-    .ios {
-        position: relative;
-        top: 2vw;
-        left: 2vw;
-        margin-bottom: 3.5vw;
-        width: 70%;
-        height: auto;
-    }
-
     .card {
         font-size: 0.7vw;
         height: 24vw !important;

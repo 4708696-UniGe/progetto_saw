@@ -32,8 +32,7 @@
                         <img src="../images/linux.png" class="card-img-top linux" alt="Logo Linux">
                         <div class="card-body">
                             <h5 class="card-title">Linux</h5>
-                            <p class="card-text">Data la natura e la ramificazione di questa famiglia di sistemi operativi nelle più svariate distribuzioni esistenti, elencare specifiche distro e/o versioni di kernel non ci sembrato molto sensato. <br>
-                                Non temere, questo non ci impedirà di fornirti l&#39;assistenza che stai cercando.</p>
+                            <p class="card-text">Viene fornito supporto indipendentemente dalla distribuzione e/o kernel utilizzato</p>
                         </div>
                     </div>
                 </div>
@@ -42,7 +41,7 @@
                         <img src="../images/macos.png" class="card-img-top macos" alt="Logo mac OS">
                         <div class="card-body">
                             <h5 class="card-title">mac OS</h5>
-                            <p class="card-text">Sicuramente non potremo fare molto nel caso di un dispositivo basanto sull&#39;architettura PowerPC ma, battute a parte, ti sorprenderà scoprire quanto in realte vi si possa operare con un&#39;approccio non troppo distante da quello di Linux</p>
+                            <p class="card-text">Sono supportate le versioni da Sierra (10.12) in avanti</p>
                         </div>
                     </div>
                 </div>
@@ -51,18 +50,7 @@
                         <img src="../images/android.png" class="card-img-top android" alt="Logo Android">
                         <div class="card-body">
                             <h5 class="card-title">Android</h5>
-                            <p class="card-text">A causa di importanti modifiche nella gestione della cache e delle partizioni di sistema, sono supportate le versioni dalla 4.4 (KitKat) in avanti. <br>
-                                Il tuo dispositivo possiede una versione più datata? Potrebbe essere disponibile una versione di Android AOSP più recente, in ogni caso ti consigliamo di acquistare un dispositivo più recente ma ti forniremo comunque supporto</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-2 mx-4 my-3">
-                    <div class="card">
-                        <img src="../images/iOS.png" class="card-img-top ios" alt="Logo iOS">
-                        <div class="card-body">
-                            <h5 class="card-title">iOS</h5>
-                            <p class="card-text">A causa di importanti modifiche nella gestione della cache e delle partizioni di sistema, sono supportate le versioni dalla 4.4 (KitKat) in avanti. <br>
-                                Il tuo dispositivo possiede una versione più datata? Potrebbe essere disponibile una versione di Android AOSP più recente, in ogni caso ti consigliamo di acquistare un dispositivo più recente ma ti forniremo comunque supporto</p>
+                            <p class="card-text">Il supporto è garantito dalla release Nougat (7) in avanti</p>
                         </div>
                     </div>
                 </div>

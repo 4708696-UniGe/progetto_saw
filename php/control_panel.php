@@ -125,15 +125,6 @@ if ($_SESSION["LOGGED"] == 1 && $_SESSION["USER_TYPE"] == 0) {
                 </div>
             </div>
         </div>
-        <div class="col-6">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">iOS</h5>
-                    <p class="card-text">Selezionare la versione in base al proprio hardware.</p>
-                    <a class="btn btn-primary" href="../dummy" download="dummy.program">Download</a>
-                </div>
-            </div>
-        </div>
     </div>
     
     <div id="manage_users">
