@@ -59,6 +59,7 @@
                 </ul>
             </div>
         </nav>
+
         <?php echo ('
         
     <div id="search_user">
@@ -115,7 +116,7 @@
             <div class="card">
                 <div class="card-body">
                     <h5 class="card-title">Android</h5>
-                    <p class="card-text">Selezionare la versione in base al proprio hardware.</p>
+                    <p class="card-text">Necessario abilitare "fonti sconosciute" dalle impostazioni</p>
                     <a class="btn btn-primary" href="../dummy" download="dummy.program">Download</a>
                 </div>
             </div>
@@ -165,15 +166,11 @@
             $("#wrapper").toggleClass("toggled");
         });
 
-
-
         $(document).ready(function(){
             $("#ticket").click(function(){
-                $(document).ready(function() {
-                    $('#search_user').css('display', 'initial');
-                    $('#download').css('display', 'none');
-                    $('#manage_users').css('display', 'none');
-                });
+                $('#search_user').css('display', 'initial');
+                $('#download').css('display', 'none');
+                $('#manage_users').css('display', 'none');
             });
         });
 
@@ -230,7 +227,7 @@
 
 
 
-    function load_users(query)
+        function load_users(query)
         {
             $.ajax({
                 url:"fetch_users_data.php",

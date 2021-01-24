@@ -93,8 +93,7 @@
                 <button type="submit" name="submit" class="btn btn-primary my-2">Entra</button>
                 </form>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="registration.php">Non hai un profilo? Registrati</a>
-                <a class="dropdown-item" href="forgot_password.php">Password dimenticata?</a>
+                <a class="dropdown-item py-2" href="registration.php">Non hai un profilo? Registrati</a>
             </li>');
             }
             ?>

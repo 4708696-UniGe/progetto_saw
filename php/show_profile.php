@@ -41,7 +41,15 @@
                    
                         <div class="mt-3">
                           <h4> <?php echo $_SESSION['FIRSTNAME']." ".$_SESSION['LASTNAME']; ?> </h4>
-                          <p class="text-secondary mb-1">Utente</p>
+                          <p class="text-secondary mb-1">
+                              <?php
+                                if ($_SESSION["USER_TYPE"] == 1) {
+                                    echo 'Amministratore';
+                                } else if ($_SESSION["USER_TYPE"] == 0) {
+                                    echo 'Utente';
+                                }
+                                ?>
+                          </p>
                           <p class="text-muted font-size-sm"></p>
                           <form action="mod_profile.php">
                           <button class="btn btn-primary">Modifica profilo</button>

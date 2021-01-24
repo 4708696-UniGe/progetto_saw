@@ -53,7 +53,7 @@ include '../database/database_connect.php';
     }
     else
     {
-        echo 'Nessuna Corrispondenza trovata';
+        echo 'Nessuna corrispondenza trovata.';
     }
 
 

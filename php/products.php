@@ -146,7 +146,7 @@
           </div>
           </div>
              
-          <div class"mobile-price">     
+          <div class="mobile-price">
               <div class="row row-cols-1 row-cols-sm-5 text-center mob">
                 <div class="col">
                   <div class="card mb-4 shadow-sm">
@@ -206,7 +206,7 @@
           </div>
           </div>
           
-          <div class"mobile-price">     
+          <div class="mobile-price">
               <div class="row row-cols-1 row-cols-sm-5 text-center mob">
                 <div class="col">
                   <div class="card mb-4 shadow-sm">

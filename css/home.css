@@ -779,6 +779,13 @@ html, body {
     color: #EF8354;
 }
 
+.blank a:link,
+.blank a:visited,
+.blank2 a:link,
+.blank2 a:visited {
+    color: black;
+}
+
 @keyframes fadein {
     from {
         opacity: 0;

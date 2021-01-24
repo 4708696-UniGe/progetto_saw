@@ -23,11 +23,7 @@
                 <p class=" font-weight-bold">
                     <a class="text-white" href="../php/index.php">Home</a>
                     |
-                    <a class="text-white" href="#">Blog</a>
-                    |
                     <a class="text-white" href="about.php">Chi siamo</a>
-                    |
-                    <a class="text-white" href="#">Contattaci</a>
                 </p>
                 <p class="text-light py-3 mb-4">&copy;2020 System Hospital S.r.l.</p>
             </div>
