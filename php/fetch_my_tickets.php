@@ -3,7 +3,7 @@ include '../database/database_connect.php';
     $output = '';
 
     $query = "
-		SELECT * FROM ticket";
+		SELECT * FROM ticket WHERE email = '{$_SESSION["EMAIL"]}'";
 
     $result = mysqli_query($conn, $query);
     if(mysqli_num_rows($result) > 0)
@@ -35,7 +35,7 @@ include '../database/database_connect.php';
     }
     else
     {
-        echo 'Nessuna Corrispondenza trovata';
+        echo 'Nessun ticket aperto.';
     }
 
 

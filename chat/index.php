@@ -20,7 +20,7 @@ include('database_chat.php');
         <title> Chat </title>  
 		<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
         <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet"  crossorigin="anonymous">
-
+        <link rel="icon" href="../images/icon.png">
         <link rel="stylesheet" href="../css/fetch_user.css">
         <link rel="stylesheet" href="../css/chat_box.css">
         <link rel="stylesheet" href="../css/scrollbar.css">

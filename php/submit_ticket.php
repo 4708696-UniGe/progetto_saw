@@ -14,7 +14,7 @@ if(isset($_POST['description'])){
     if ($_POST['os'] == 'Windows' || $_POST['os'] == 'Linux' || $_POST['os'] == 'mac OS') {
         $device = 'desktop';
     }
-    elseif ($_POST['os'] == 'Android' || $_POST['os'] == 'iOS') {
+    elseif ($_POST['os'] == 'Android') {
         $device = 'mobile';
     }
     $sql_t = "INSERT INTO ticket (firstname, lastname, email, opening_date, device, os, description)

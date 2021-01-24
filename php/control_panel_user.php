@@ -125,14 +125,14 @@
     </div>
     '); }
     else { echo('
-    <div class="alert alert-warning nosub" role="alert"> Non disponi di un abbonamento attivo. <a href="../php/products.php" class="alert-link">Compra un abbonamento</a>. 
+    <div class="alert alert-warning nosub" role="alert"> Non disponi di un pacchetto attivo. <a href="../php/products.php" class="alert-link">Compra un abbonamento</a>. 
     </div>
     ');
     }
 
     echo('
     <div class="row download mx-4 my-4" id="download">
-        <h1>Scarica lapplicativo per fornire supporto</h1>
+        <h1>Scarica l&#39;applicativo per fornire supporto</h1>
         <div class="col-6">
             <div class="card">
                 <div class="card-body">
@@ -167,7 +167,7 @@
             <div class="card">
                 <div class="card-body">
                     <h5 class="card-title">Android</h5>
-                    <p class="card-text">Selezionare la versione in base al proprio hardware.</p>
+                    <p class="card-text">Necessario abilitare "fonti sconosciute" dalle impostazioni</p>
                     <a class="btn btn-primary" href="../dummy" download="dummy.program">Download</a>
                 </div>
             </div>
@@ -203,19 +203,17 @@
 
         $(document).ready(function(){
             $("#ticket").click(function(){
-                $(document).ready(function() {
-                    $('#my_tickets').css('display', 'initial');
-                    $('#download').css('display', 'none');
-                    $('#open_ticket').css('display', 'none');
-                });
+                $('#my_tickets').css('display', 'initial');
+                $('#download').css('display', 'none');
+                $('#open_ticket').css('display', 'none');
             });
         });
 
         $(document).ready(function(){
             $("#new_ticket").click(function(){
-                    $('#my_tickets').css('display', 'none');
-                    $('#download').css('display', 'none');
-                    $('#open_ticket').css('display', 'flex');
+                $('#my_tickets').css('display', 'none');
+                $('#download').css('display', 'none');
+                $('#open_ticket').css('display', 'flex');
             });
         });
 

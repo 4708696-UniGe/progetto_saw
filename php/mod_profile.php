@@ -114,13 +114,13 @@
                                 <div class="row gutters">
                                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                                         <div class="form-group">
-                                            <label for="Street">Sistema operativo principale usato sulla workstation</label>
+                                            <label for="workos">Sistema operativo principale usato sulla workstation</label>
                                         <?php echo (' <input type="name" class="form-control profile-setting-input" name="workstation_os" placeholder="'.$_SESSION["WORKSTATION_OS"].'"> ') ?>
                                         </div>
                                     </div>
                                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                                         <div class="form-group">
-                                            <label for="ciTy">Sistema operativo principale usato sul dispositivo mobile</label>
+                                            <label for="mobos">Sistema operativo principale usato sul dispositivo mobile</label>
                                         <?php echo (' <input type="name" class="form-control profile-setting-input" name="mobile_os" placeholder="'.$_SESSION["MOBILE_OS"].'"> ') ?>
                                         </div>
                                     </div>

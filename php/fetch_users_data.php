@@ -9,7 +9,7 @@ include '../database/database_connect.php';
 
         $query = "
         SELECT * FROM users
-        WHERE firstname LIKE '%".$search."%' OR lastname LIKE '%".$search."%' 
+        WHERE (firstname LIKE '%".$search."%' OR lastname LIKE '%".$search."%') AND (admin = 0)
         ";
 
 
@@ -59,6 +59,6 @@ include '../database/database_connect.php';
     }
     else
     {
-        echo 'Nessuna Corrispondenza trovata';
+        echo 'Nessuna corrispondenza trovata.';
     }
 ?>
