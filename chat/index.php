@@ -2,10 +2,10 @@
 session_start();
 
 include('database_chat.php');
-if(!isset($_SESSION['ID_USER']))
-{
-	header("location: ../php/login.php");
-}
+    if(!isset($_SESSION['ID_USER']))
+    {
+        header("location: ../php/login.php");
+    }
 ?>
 
 
@@ -41,22 +41,22 @@ if(!isset($_SESSION['ID_USER']))
 
 
 		<div class="box">
-        <div class="container">
-			<br />
-			
-			<h3 align="center"> Chat </a></h3><br />
-			<br />
+            <div class="container">
+                <br />
 
-			<div class="table-responsive">
-				
-				<div id="user_details"></div>
-				<div id="user_model_details"></div>
-			</div>
-			<br />
-			<br />
-			<br />
-			<br />
-		</div>
+                <h3 align="center"> Chat </a></h3><br />
+                <br />
+
+                <div class="table-responsive">
+
+                    <div id="user_details"></div>
+                    <div id="user_model_details"></div>
+                </div>
+                <br />
+                <br />
+                <br />
+                <br />
+            </div>
 		</div>
 
 		<script src="../bootstrap/js/bootstrap.bundle.min.js"  crossorigin="anonymous"></script>
@@ -68,25 +68,10 @@ if(!isset($_SESSION['ID_USER']))
 
 </html>
 
-<style>
-
-	.chat_message_area
-	{
-		position: relative;
-		width: 100%;
-		height: auto;
-		background-color: #FFF;
-		border: 1px solid #CCC;
-		border-radius: 3px;
-	}
-
-</style>  
-
-
-
 <script>  
 
-// $(document).ready  Verifica se il documento (la pagina) e' pronta per essere manipolata in modo sicuro. Fino a che non e' verificata questa 
+// $(document).ready  Verifica se il documento (la pagina) e' pronta
+// per essere manipolata in modo sicuro. Fino a che non e' verificata questa
 // condizione significa che il DOM non e' pronto per ricevere codice JavaScript
 $(document).ready(function(){
 
@@ -99,23 +84,12 @@ $(document).ready(function(){
         fetch_user();
 	}, 2000);
 
-
-	setInterval(function(){
-        var scrollTarget = $("#chat_table");
-        var pos = scrollTarget.scrollTop();
-        fetch_user();
-        scrollTarget.load('fetch_user.php', function() {
-            $('#chat_table').scrollTop(pos);
-        });
-	}, 10000);
-
-
 	/* metodo $.ajax: metodo statico che effetua una chiamata ajax alla quale vengono passati dei 
 	parametri con notazione JSON.
 	url: url della risorsa alla quale viene inviata la richiesta
 	method: tipo di richiesta HTTP da effetuare 
 	success: funzione che verrà eseguita al successo della chiamata dove data è l'oggetto della richiesta
-	(data: dati restituiti al termine della chiamata)*/
+	(data: dati restituiti al termine della chiamata) */
 	function fetch_user()
 	{
 		$.ajax({
@@ -129,7 +103,7 @@ $(document).ready(function(){
 		})
 	}
 
-
+	// aggiorna l'ultima attività
 	function update_last_activity()
 	{
 		$.ajax({
@@ -165,7 +139,6 @@ $(document).ready(function(){
 		var to_user_name = $(this).data('tousername');
 		make_chat_dialog_box(to_user_id, to_user_name); 
 		$("#user_dialog_"+to_user_id).dialog({
-			autoOpen:false,
 			width:400,
             resizable: false
 		});
@@ -193,7 +166,7 @@ $(document).ready(function(){
 		})
 	});
 
-
+    // Chiamata ajax che ritorna tutta la chat con un utente
 	function fetch_user_chat_history(to_user_id)
 	{
 		$.ajax({
@@ -206,7 +179,7 @@ $(document).ready(function(){
 		})
 	}
 
-
+    // Ottiene i nuovi messaggi
 	function update_chat_history_data()
 	{
 		$('.chat_history').each(function(){
@@ -217,7 +190,7 @@ $(document).ready(function(){
 		});
 	}
 
-
+    // Chiude la finestra di chat
 	$(document).on('click', '.ui-button-icon', function(){
 		$('.user_dialog').dialog('destroy').remove();
 	});

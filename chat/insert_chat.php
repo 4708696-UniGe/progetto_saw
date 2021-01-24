@@ -22,10 +22,10 @@ VALUES (:to_user_id, :from_user_id, :chat_message, :status)
 ";
 
 $statement = $conn->prepare($query);
-if($statement->execute($data))
-{
-	echo fetch_user_chat_history($_SESSION['ID_USER'], $_POST['to_user_id'], $conn);
-	//fetch_user_chat_history in database_chat.php
-}
+    if($statement->execute($data))
+    {
+        echo fetch_user_chat_history($_SESSION['ID_USER'], $_POST['to_user_id'], $conn);
+        //fetch_user_chat_history in database_chat.php
+    }
 
 ?>

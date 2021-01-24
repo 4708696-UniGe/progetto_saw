@@ -1,7 +1,5 @@
 <?php
 
-//fetch_user_chat_history.php
-
 include('database_chat.php');
 
 session_start();
