@@ -1,5 +1,5 @@
-<!DOCTYPE>
-<html>
+<!DOCTYPE html>
+<html lang="it">
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
@@ -26,12 +26,12 @@
         <a href="home.php"><img class="mb-2 mt-1" src="../images/logo.png" alt="Logo" width="100%"></a>
         <h1 class="h1 mb-3 fw-small">Autenticati</h1>
         <p id="flag_log" class="alert alert-danger devisible" role="alert"></p>
-        <?php
-        if(isset($_GET['message'])) {
-            $msg = $_GET['message'];
-            echo(' <div class="alert alert-danger">' . $msg . '</div> ');
-        }
-        ?>
+            <?php
+                if(isset($_GET['message'])) {
+                    $msg = $_GET['message'];
+                    echo(' <div class="alert alert-danger">' . $msg . '</div> ');
+                }
+            ?>
         <input type="email" id="inputEmail" name="email" required="required" class="form-control" placeholder="Indirizzo email">
         <input type="password" id="inputPassword" name="pass" required="required" class="form-control" placeholder="Password">
         <button class="w-100 btn btn-lg btn-primary" type="submit">Accedi</button>

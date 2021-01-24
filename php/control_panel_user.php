@@ -14,21 +14,21 @@
 
 <body>
 
-<?php
-if (!isset($_SESSION)) {
-    session_start();
-}
+    <?php
+        if (!isset($_SESSION)) {
+            session_start();
+        }
 
-if (!isset($_SESSION["LOGGED"]) || $_SESSION["LOGGED"] == 0) {
-    header("Location:login.php?message=Devi effettuare il login");
-    exit();
-}
+        if (!isset($_SESSION["LOGGED"]) || $_SESSION["LOGGED"] == 0) {
+            header("Location:login.php?message=Devi effettuare il login");
+            exit();
+        }
 
-if ($_SESSION["LOGGED"]==1 && $_SESSION["USER_TYPE"] == 1) {
-    header("Location:control_panel.php");
-    exit();
-}
-?>
+        if ($_SESSION["LOGGED"]==1 && $_SESSION["USER_TYPE"] == 1) {
+            header("Location:control_panel.php");
+            exit();
+        }
+    ?>
 
 
 <div class="d-flex" id="wrapper">
@@ -42,7 +42,6 @@ if ($_SESSION["LOGGED"]==1 && $_SESSION["USER_TYPE"] == 1) {
             <a href="#" class="list-group-item list-group-item-action bg-light sidebar-color-entry" id="operate">Area Download</a>
         </div>
     </div>
-    <!-- /#sidebar-wrapper -->
 
     <!-- Page Content -->
     <div id="page-content-wrapper">
@@ -63,7 +62,7 @@ if ($_SESSION["LOGGED"]==1 && $_SESSION["USER_TYPE"] == 1) {
         </nav>
         <?php echo ('
         
-   <div id="my_tickets">
+    <div id="my_tickets">
     	<div class="container">
 			<br />
 			<br />
@@ -245,76 +244,4 @@ if ($_SESSION["LOGGED"]==1 && $_SESSION["USER_TYPE"] == 1) {
         }
 
     });
-
-
-
-   /* $(document).ready(function(){
-        $("input[type='button']").click(function(){
-            var radioValue = $("input[name='os']:checked").val();
-            if(radioValue){
-                alert("Your are a - " + radioValue);
-            }
-        });
-    }); */
-
-
 </script>
-
-<!--
-    <script>
-        /* $('#search_user').submit(function() {
-             var email = $('#user_email').val();
-             return false;
-         }); */
-
-        /* $(document).ready(function () {
-            $('#button-search').bind('click', function (event) {
-                // using this page stop being refreshing
-                event.preventDefault();
-                $("#search_user").ajaxForm({
-                    url: '../database/database_show_ticket_admin.php',
-                    type: 'post'
-                    success: function () {
-                        alert('form was submitted');
-                        $("#ticket_box").load("cp_menu_entry.php #search_user");
-                    }
-                });
-            });
-        });
-        $(document).ready(function () {
-            /*$("#button-search").click(function() {
-                // using this page stop being refreshing
-                //event.preventDefault();
-               // var search = document.querySelector('#user_email');
-                //search_ticket_for_this_user(search);
-
-            }
-
-
-            /* function search_ticket_for_this_user(user_mail)
-            {
-                $.ajax({
-                    url:"../database/database_show_ticket_admin.php",
-                    method:"POST",
-                    data:{user_mail:user_mail},
-                    success:function(){
-                        alert('form was submitted');
-                        $("#ticket_box").load("cp_menu_entry.php #search_user");
-                    }
-                })
-            } */
-
-           /* function sendform() {
-                var search = document.getElementById('#user_email');
-                $.ajax({
-                    url:"../database/database_show_ticket_admin.php",
-                    method:"POST",
-                    data:{user_mail:user_mail},
-                    success:function(){
-                        alert('form was submitted');
-                        $("#ticket_box").load("cp_menu_entry.php #search_user");
-                    }
-                })
-            } */
-} -->
-
