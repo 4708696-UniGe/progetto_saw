@@ -12,7 +12,7 @@
 				$query = "DELETE FROM cart WHERE email = '{$_SESSION["EMAIL"]}'";
 				mysqli_query($conn, $query);
 				if (mysqli_affected_rows($conn) == 0) {
-					echo "Attenzione c'� stato un problema nell'inserimento, controlla i dati. ".mysqli_error($con);
+					echo "Attenzione c'e' stato un problema nell'inserimento, controlla i dati. ".mysqli_error($con);
 				}
 				unset($_SESSION["cart_item"]);
 				$_SESSION["SUB"] = $item["code"];
