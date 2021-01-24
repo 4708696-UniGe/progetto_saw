@@ -21,7 +21,7 @@
                 <img id="logo" src="../images/logo.png" alt="Logo azienda">
 
                 <p class=" font-weight-bold">
-                    <a class="text-white" href="home.php">Home</a>
+                    <a class="text-white" href="../php/index.php">Home</a>
                     |
                     <a class="text-white" href="#">Blog</a>
                     |

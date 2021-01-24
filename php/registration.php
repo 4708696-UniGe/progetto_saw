@@ -20,54 +20,10 @@
     }
     ?>
 
-   <!--
-    <nav> <?php include 'navbar.php'; ?> </nav>
-      <?php /* Mobile page */ ?>
-      
-        <header align="center"><h1 class="titolo-mobile">Registrazione<h1></header>
-        <div class="reg-mobile">
-          <form class="regform-mobile" action="registration.php" method="post">
-              <input type="text" name="firstname" placeholder="Nome">
-              </br></br>
-              <input type="text" name="lastname" placeholder="Cognome">
-              </br>
-              <p id="flag_email"></p>
-              <input type="email" name="email" placeholder="Email">
-              </br></br>
-              <input type="password" name="pass" placeholder="Password">
-              </br></br>
-              <input type="password" name="confirm" placeholder="Conferma Password">
-              </br></br>
-              <input class="submit-mobile" type="submit" name="submit" value="Invia">
-          </form>
-         </div>
-      
-      
-      
-      <?php /* Destop page */ ?>
-      
-        <header align="center"><h1 class="titolo">Registrazione<h1></header>
-        <div class="reg">
-          <form class="regform" action="registration.php" method="post">
-              <input type="text" name="firstname" placeholder="Nome">
-              </br></br>
-              <input type="text" name="lastname" placeholder="Cognome">
-              </br></br>
-              <p id="flag_reg" class="alert alert-danger devisible" role="alert"></p>
-              <input type="email" name="email" placeholder="Email">
-              </br></br>
-              <input type="password" name="pass" placeholder="Password">
-              </br></br>
-              <input type="password" name="confirm" placeholder="Conferma Password">
-              </br></br>
-              <input class="submit" type="submit" name="submit" value="Invia">
-          </form>
-         </div>
-      -->
       <div class="boxcont">
       <div class="form-signin border-animation">
     <form action="registration.php" method="post">
-        <a href="home.php"><img class="mb-2" src="../images/logo.png" alt="Logo" width="100%"></a>
+        <a href="../php/index.php"><img class="mb-2" src="../images/logo.png" alt="Logo" width="100%"></a>
         <h1 class="h1 mb-3 fw-small">Registrati</h1>
         <p id="flag_reg" class="alert alert-danger devisible" role="alert"></p>
         <input type="text" name="firstname" placeholder="Nome" required="required" class="form-control">

@@ -24,7 +24,7 @@
         }
 
         if ($_SESSION["LOGGED"] == 1 && $_SESSION["USER_TYPE"] == 0) {
-            header("Location:home.php?message=Non disponi delle autorizzazioni necessarie");
+            header("Location:index.php?message=Non disponi delle autorizzazioni necessarie");
             exit();
         }
     ?>
@@ -51,7 +51,7 @@
             <div class="navbar" id="navbarSupportedContent">
                 <ul class="nav">
                     <li class="nav-item active">
-                        <a class="nav-link" href="home.php">Home</a>
+                        <a class="nav-link" href="../php/index.php">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="logout.php">Logout</a>

@@ -57,7 +57,7 @@
 
 					//include 'check_admin.php';
 
-					header("Location: ../php/home.php");
+					header("Location: ../php/index.php");
 					exit();
 			}
 				else {

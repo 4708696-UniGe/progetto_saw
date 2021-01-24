@@ -23,7 +23,7 @@
     <div class="boxcont">
     <div class="form-signin border-animation">
     <form action="login.php" method="post">
-        <a href="home.php"><img class="mb-2 mt-1" src="../images/logo.png" alt="Logo" width="100%"></a>
+        <a href="../php/index.php"><img class="mb-2 mt-1" src="../images/logo.png" alt="Logo" width="100%"></a>
         <h1 class="h1 mb-3 fw-small">Autenticati</h1>
         <p id="flag_log" class="alert alert-danger devisible" role="alert"></p>
             <?php

@@ -30,7 +30,7 @@
 			if (mysqli_affected_rows($conn) != 1) {
 				echo "Attenzione c'è stato un problema nell'inserimento, controlla i dati. ".mysqli_error($conn);
 			} else {
-			    header("Location: ../php/home.php");
+			    header("Location: ../php/index.php");
 		    }
 		}
 	}
