@@ -39,6 +39,7 @@ if(!isset($_SESSION['ID_USER']))
 		<!-- navbar -->
 		<?php include '../php/navbar.php'; ?>
 
+
 		<div class="box">
         <div class="container">
 			<br />
@@ -46,7 +47,6 @@ if(!isset($_SESSION['ID_USER']))
 			<h3 align="center"> Chat </a></h3><br />
 			<br />
 
-			
 			<div class="table-responsive">
 				
 				<div id="user_details"></div>
@@ -54,7 +54,6 @@ if(!isset($_SESSION['ID_USER']))
 			</div>
 			<br />
 			<br />
-			
 			<br />
 			<br />
 		</div>
@@ -70,7 +69,6 @@ if(!isset($_SESSION['ID_USER']))
 </html>
 
 <style>
-
 
 	.chat_message_area
 	{
@@ -88,15 +86,13 @@ if(!isset($_SESSION['ID_USER']))
 
 <script>  
 
-// $(document).ready  Verifica se il documento (la pagina) � pronta per essere manipolata in modo sicuro. Fino a che non � verificata questa 
-// condizione non si inizia a leggere la parte di javascript. 
+// $(document).ready  Verifica se il documento (la pagina) e' pronta per essere manipolata in modo sicuro. Fino a che non e' verificata questa 
+// condizione significa che il DOM non e' pronto per ricevere codice JavaScript
 $(document).ready(function(){
 
 	fetch_user();
 
-
-
-	// setInterval utilizza le funzioni che sono definite sotto di lei
+	// setInterval esegue le funzioni ogni 2sec
 	setInterval(function(){
 		update_last_activity();
 		update_chat_history_data();
@@ -114,21 +110,25 @@ $(document).ready(function(){
 	}, 10000);
 
 
-	// metodo $.ajax: metodo statico che effetua una chiamata ajax alla quale vengono passati dei 
-	// parametri con notazione JSON.
-	// url: url della risorsa alla quale viene inviata la richiesta
-	// method: tipo di richiesta HTTP da effetuare 
-	// success: funzione che verrà eseguita al successo della chiamata dove data è l'oggetto della richiesta'
+	/* metodo $.ajax: metodo statico che effetua una chiamata ajax alla quale vengono passati dei 
+	parametri con notazione JSON.
+	url: url della risorsa alla quale viene inviata la richiesta
+	method: tipo di richiesta HTTP da effetuare 
+	success: funzione che verrà eseguita al successo della chiamata dove data è l'oggetto della richiesta
+	(data: dati restituiti al termine della chiamata)*/
 	function fetch_user()
 	{
 		$.ajax({
 			url:"fetch_user.php",
 			method:"POST",
 			success:function(data){
+				//$(selector).html(content): imposta il contenuto dell'id selezionato con i dati passati come parametro
+				// #user_details: div line 52
 				$('#user_details').html(data);
 			}
 		})
 	}
+
 
 	function update_last_activity()
 	{
@@ -141,8 +141,10 @@ $(document).ready(function(){
 		})
 	}
 
+
 	function make_chat_dialog_box(to_user_id, to_user_name)
 	{
+		//operatore '+' concatena le stringhe 
 		var modal_content = '<div id="user_dialog_'+to_user_id+'" class="user_dialog" title="'+to_user_name+'">';
 		modal_content += '<div class="chat_history" data-touserid="'+to_user_id+'" id="chat_history_'+to_user_id+'">';
 		modal_content += fetch_user_chat_history(to_user_id);
@@ -152,12 +154,16 @@ $(document).ready(function(){
 		modal_content += '</div><div class="form-group" align="right">';
 		modal_content+= '<button type="button" name="send_chat" id="'+to_user_id+'" class="btn btn-primary send_chat">Invia</button></div></div>';
 		$('#user_model_details').html(modal_content);
+		//#user_model_details: div line 53. Il contenuto di questo div sarà la stringa concatenata modal_content
 	}
 
+
+	//.start_chat id bottone in fetch_user, se cliccato il bottone viene eseguita la funzione:
 	$(document).on('click', '.start_chat', function(){
-		var to_user_id = $(this).data('touserid');
+		//$(selector).data(name) estrae dati dall'elemento con nome indicato e li mette in una variabile
+		var to_user_id = $(this).data('touserid'); 
 		var to_user_name = $(this).data('tousername');
-		make_chat_dialog_box(to_user_id, to_user_name);
+		make_chat_dialog_box(to_user_id, to_user_name); 
 		$("#user_dialog_"+to_user_id).dialog({
 			autoOpen:false,
 			width:400,
@@ -167,9 +173,11 @@ $(document).ready(function(){
 
 	});
 
+		
+	//send_chat nome bottone per inviare messaggi, creato in make_chat_dialog_box
 	$(document).on('click', '.send_chat', function(){
-		var to_user_id = $(this).attr('id');
-		var chat_message = $('#chat_message_'+to_user_id).val();
+		var to_user_id = $(this).attr('id'); //salva in una variabile l'id del destinatario
+		var chat_message = $('#chat_message_'+to_user_id).val(); //salva in una variabile il contenuto del messaggio
 		$.ajax({
 			url:"insert_chat.php",
 			method:"POST",
@@ -179,10 +187,12 @@ $(document).ready(function(){
 				//$('#chat_message_'+to_user_id).val('');
 				var element = $('#chat_message_'+to_user_id).val('');
 				
+				//$(selector).html(content): imposta il contenuto dell'id selezionato con i dati passati come parametro
 				$('#chat_history_'+to_user_id).html(data);
 			}
 		})
 	});
+
 
 	function fetch_user_chat_history(to_user_id)
 	{
@@ -196,6 +206,7 @@ $(document).ready(function(){
 		})
 	}
 
+
 	function update_chat_history_data()
 	{
 		$('.chat_history').each(function(){
@@ -205,6 +216,7 @@ $(document).ready(function(){
             //}
 		});
 	}
+
 
 	$(document).on('click', '.ui-button-icon', function(){
 		$('.user_dialog').dialog('destroy').remove();

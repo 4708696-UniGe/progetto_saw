@@ -6,6 +6,10 @@ include('database_chat.php');
 session_start();
 
 
+/*
+  Utente --> visualizza solo le chat con gli admin
+  Admin --> visualizza solo le chat con gli utenti
+*/
 if( $_SESSION["USER_TYPE"] == 1 ){
 
 	$query = "
@@ -23,22 +27,11 @@ if( $_SESSION["USER_TYPE"] == 1 ){
 }
 
 $statement = $conn->prepare($query);
-
 $statement->execute();
-
 $result = $statement->fetchAll();
 
-/*
-	$query = "
-	SELECT * FROM users
-	WHERE id != '".$_SESSION['ID_USER']."' 
-	";
-	*/
 
-
-
-
-
+//$output: stringa concatenata
 $output = '
 <div id="chat_table" class="chat_table">
 <table class="table">
@@ -51,11 +44,14 @@ $output = '
 	</thead>
 ';
 
+//ciclo per ogni riga ottenuta con l'esecuzione della query
 foreach($result as $row)
 {
 	$status = '';
 	$current_timestamp = strtotime(date("Y-m-d H:i:s") . '- 20 second'); // Formato data: 2001-03-10 17:16:18
 	$current_timestamp = date('Y-m-d H:i:s', $current_timestamp);
+
+	//chiamata alla funzione feetch_user_last_activity (in database_chat.php) che ritorna l'ultima attività dell utente
 	$user_last_activity = fetch_user_last_activity($row['id'], $conn);
 	if($user_last_activity > $current_timestamp)
 	{
@@ -65,6 +61,7 @@ foreach($result as $row)
 	{
 		$status = '<span class="label label-danger">Offline</span>';
 	}
+
 	$output .= '
 	<tr id="row_table">
 		<td>'.$row['email'].' '.count_unseen_message($row['id'], $_SESSION['ID_USER'], $conn).' </td>
@@ -72,6 +69,7 @@ foreach($result as $row)
 		<td><button type="button" class="btn btn-success btn-sm start_chat" data-touserid="'.$row['id'].'" data-tousername="'.$row['email'].'">Chat</button></td>
 	</tr>
 	';
+	//count_unseen_message (in database_chat.php) ritorna il numero di messaggi non letti
 }
 $output .= '</table> </div>';
 
