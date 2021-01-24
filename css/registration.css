@@ -27,34 +27,34 @@ body {
     margin: auto;
 }
 
-    .form-signin .checkbox {
-        font-weight: 400;
-    }
+.form-signin .checkbox {
+    font-weight: 400;
+}
 
-    .form-signin .form-control {
-        position: relative;
-        box-sizing: border-box;
-        height: auto;
-        padding: 10px;
-        font-size: 16px;
-    }
+.form-signin .form-control {
+    position: relative;
+    box-sizing: border-box;
+    height: auto;
+    padding: 10px;
+    font-size: 16px;
+}
 
-        .form-signin .form-control:focus {
-            z-index: 2;
-        }
+.form-signin .form-control:focus {
+    z-index: 2;
+}
 
-    .form-signin input[type="email"],
-    .form-signin input[type="text"] {
-        margin-bottom: 0;
-        border-bottom-right-radius: 0;
-        border-bottom-left-radius: 0;
-    }
+.form-signin input[type="email"],
+.form-signin input[type="text"] {
+    margin-bottom: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
 
-    .form-signin input[name="confirm"] {
-        margin-bottom: 1vw;
-        border-top-left-radius: 0;
-        border-top-right-radius: 0;
-    }
+.form-signin input[name="confirm"] {
+    margin-bottom: 1vw;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
 
 h1{
     position:relative;
@@ -126,24 +126,24 @@ h1:after {
     border: var(--border-width) solid transparent;
 }
 
-    .border-animation:before, .border-animation:after {
-        content: "";
-        position: absolute;
-        background: var(--color);
-    }
+.border-animation:before, .border-animation:after {
+    content: "";
+    position: absolute;
+    background: var(--color);
+}
 
-    .border-animation:focus:before, .border-animation:before {
-        animation: beforeBorders var(--animation-speed) forwards;
-    }
+.border-animation:focus:before, .border-animation:before {
+    animation: beforeBorders var(--animation-speed) forwards;
+}
 
-    .border-animation:focus:after, .border-animation:after {
-        animation: afterBorders var(--animation-speed) forwards;
-    }
+.border-animation:focus:after, .border-animation:after {
+    animation: afterBorders var(--animation-speed) forwards;
+}
 
-    .border-animation:focus, .border-animation {
-        animation: borderColors var(--animation-speed) steps(1) forwards;
-        outline: none;
-    }
+.border-animation:focus, .border-animation {
+    animation: borderColors var(--animation-speed) steps(1) forwards;
+    outline: none;
+}
 
 @keyframes beforeBorders {
     0% {

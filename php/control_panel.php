@@ -49,12 +49,8 @@ if ($_SESSION["LOGGED"] == 1 && $_SESSION["USER_TYPE"] == 0) {
         <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
             <button class="btn btn-danger btn-menu" id="menu-toggle">Menu</button>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <div class="navbar" id="navbarSupportedContent">
+                <ul class="nav">
                     <li class="nav-item active">
                         <a class="nav-link" href="home.php">Home</a>
                     </li>
@@ -84,8 +80,8 @@ if ($_SESSION["LOGGED"] == 1 && $_SESSION["USER_TYPE"] == 0) {
 		<br />
     </div>
     
-    <div class="row download" id="download">
-        <h1>Scarica lapplicativo per fornire supporto</h1>
+    <div class="row download mx-4 my-4" id="download">
+        <h1>Scarica l&#39;applicativo per fornire supporto</h1>
         <div class="col-6">
             <div class="card">
                 <div class="card-body">
