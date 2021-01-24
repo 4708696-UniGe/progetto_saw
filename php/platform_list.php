@@ -17,7 +17,7 @@
 	        <nav> <?php include 'navbar.php'; ?></nav>
 
             <div class="row platform px-2 py-3">
-                <div class="col-2 mx-4 my-3">
+                <div class="col-2 mx-5 my-3">
                     <div class="card">
                         <img src="../images/windows.png" class="card-img-top win" alt="Logo Windows">
                         <div class="card-body">
@@ -27,7 +27,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-2 mx-4 my-3">
+                <div class="col-2 mx-5 my-3">
                     <div class="card">
                         <img src="../images/linux.png" class="card-img-top linux" alt="Logo Linux">
                         <div class="card-body">
@@ -36,7 +36,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-2 mx-4 my-3">
+                <div class="col-2 mx-5 my-3">
                     <div class="card">
                         <img src="../images/macos.png" class="card-img-top macos" alt="Logo mac OS">
                         <div class="card-body">
@@ -45,7 +45,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-2 mx-4 my-3">
+                <div class="col-2 mx-5 my-3">
                     <div class="card">
                         <img src="../images/android.png" class="card-img-top android" alt="Logo Android">
                         <div class="card-body">
