@@ -197,7 +197,8 @@
 
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) and (max-width: 992px) {
+
     #logotop {
         width: auto;
         height: 3vw;
@@ -207,6 +208,7 @@
     }
 
     .btn-secondary{
+        visibility: hidden;
         position: relative !important;
         right: auto !important;
         left: 78vw !important;
@@ -241,14 +243,117 @@
     }
 
     .mobile_menu {
-        display: none;
+        position: center !important;
+        text-align: center;
+        margin-bottom: -1.5vw;
+        padding-top: 2.5vw;
     }
 
 }
 
 /* Desktop view */
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) and (max-width: 1200px) {
+    #logotop {
+        width: auto;
+        height: 5vw;
+        position: relative;
+        left: 0.8vw;
+        top: 0.2vw;
+    }
+
+    .btn-secondary{
+        position: relative !important;
+        right: auto !important;
+        left: 74vw !important;
+        color: #FBFFF4 !important;
+        background-color: #EF8354 !important;
+        border-color: #EF8354 !important;
+    }
+
+    .dropdown-menu {
+        position: absolute !important;
+        right: auto !important;
+        left: 60vw !important;
+        top: 4.3vw !important;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+        background-color: #FBFFF4 !important;
+    }
+
+    .search {
+        display: none !important;
+    }
+
+
+    .search_mobile {
+        position: absolute;
+        left: 30vw;
+        top: 2.2vw;
+    }
+
+    .btn-outline-success {
+        position: absolute;
+        left: 29vw;
+        top: 0;
+    }
+
+    .mobile_menu {
+        display: none;
+    }
+
+}
+
+@media (min-width: 1200px) and (max-width: 1600px) {
+    #logotop {
+        width: auto;
+        height: 2.5vw;
+        position: relative;
+        left: 0.8vw;
+        top: 0.2vw;
+    }
+
+    .btn-secondary {
+        position: relative !important;
+        right: auto !important;
+        left: 81.7vw !important;
+        color: #FBFFF4 !important;
+        background-color: #EF8354 !important;
+        border-color: #EF8354 !important;
+    }
+
+    .dropdown-menu {
+        position: absolute !important;
+        right: auto !important;
+        left: 71vw !important;
+        top: 3vw !important;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+        background-color: #FBFFF4 !important;
+    }
+
+    .logged {
+        position: absolute !important;
+        left: 73.6vw !important;
+        top: 2.8vw !important;
+        margin-top: 0.5rem;
+        min-width: 10vw !important;
+    }
+
+    .search {
+        position: absolute !important;
+        right: 300px !important;
+    }
+
+    .search_mobile {
+        display: none;
+    }
+
+    .mobile_menu {
+        display: none;
+    }
+}
+
+
+@media (min-width: 1600px) and (max-width: 1900px){
     #logotop {
         width: auto;
         height: 2.5vw;
@@ -277,7 +382,7 @@
 
     .logged {
         position: absolute !important;
-        left: 78.6vw !important;
+        left: 79.2vw !important;
         top: 2.3vw !important;
         margin-top: 0.5rem;
         min-width: 10vw !important;

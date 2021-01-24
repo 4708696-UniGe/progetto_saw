@@ -1,3 +1,155 @@
+/* Mobile View */
+
+@media (max-width: 576px) {
+
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 768px) and (orientation: landscape) {
+
+}
+
+
+/* Tablet View */
+
+@media (min-width: 768px) and (orientation: portrait) {
+
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    nav {
+        max-height: 6vw;
+    }
+
+    #menu-toggle {
+        max-height: 10.5vw;
+        margin-left: 0.5vw;
+    }
+
+    .nav {
+        position: relative;
+        top: -1vw;
+        max-height: 2vw;
+    }
+
+    #download {
+        max-width: 50%;
+    }
+
+    .download {
+        position: relative;
+        top: 2vw;
+        left: 20vw;
+    }
+}
+
+/* Desktop view */
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    nav {
+        max-height: 4vw;
+    }
+
+    #menu-toggle {
+        max-height: 2.7vw;
+        margin-left: 0.5vw;
+    }
+
+    .nav {
+        position: relative;
+        top: -1vw;
+        max-height: 2vw;
+    }
+
+    #download {
+        max-width: 50%;
+    }
+
+    .download {
+        position: relative;
+        top: 2vw;
+        left: 20vw;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1600px) {
+    nav {
+        max-height: 3vw;
+    }
+
+    #menu-toggle {
+        max-height: 2.6vw;
+        margin-left: 0.5vw;
+    }
+
+    #download {
+        max-width: 50%;
+    }
+
+    .nav {
+        position: relative;
+        top: -1.2vw;
+        max-height: 1vw;
+    }
+
+    .download {
+        position: relative;
+        top: 2vw;
+        left: 20vw;
+    }
+}
+
+@media (min-width: 1600px) and (max-width: 1900px) {
+    nav {
+        max-height: 3vw;
+    }
+
+    #menu-toggle {
+        max-height: 2.5vw;
+        margin-left: 0.5vw;
+    }
+
+    .nav {
+        position: relative;
+        top: -0.6vw;
+        max-height: 1vw;
+    }
+
+    #download {
+        max-width: 50%;
+    }
+
+    .download {
+        position: relative;
+        top: 2vw;
+        left: 20vw;
+    }
+}
+
+@media (min-width: 1900px) {
+    nav {
+        max-height: 3vw;
+    }
+
+    #menu-toggle {
+        max-height: 2.5vw;
+        margin-left: 0.5vw;
+    }
+
+    #download {
+        max-width: 50%;
+    }
+
+    .download {
+        position: relative;
+        top: 2vw;
+        left: 20vw;
+    }
+}
+
 .sidebar-color-head,
 .sidebar-color-entry {
     background-color: #1a1e21 !important;
@@ -9,10 +161,6 @@
 
 .sidebar-color-entry {
     color: #FFFFFF ;
-}
-
-nav {
-    max-height: 3vw;
 }
 
 .navbar {
@@ -27,26 +175,15 @@ nav {
 #menu-toggle {
     background-color: #EF8354 !important;
     border-color: #EF8354 !important;
-    max-height: 2.5vw;
-    margin-left: 0.5vw;
 }
 
 #search_user {
     display: none;
 }
 
-
-
 #download {
     display: none;
     text-align: center;
-    max-width: 50%;
-}
-
-.download {
-    position: relative;
-    top: 2vw;
-    left: 20vw;
 }
 
 #manage_users {

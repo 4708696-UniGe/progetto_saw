@@ -91,15 +91,18 @@ function fetch_user_chat_history($from_user_id, $to_user_id, $conn)
 		';
 	}
 	$output .= '</ul>';
-	$query = "
-	UPDATE chat_message 
-	SET status = '0' 
-	WHERE from_user_id = '".$to_user_id."' 
-	AND to_user_id = '".$from_user_id."' 
-	AND status = '1'
-	";
-	$statement = $conn->prepare($query);
-	$statement->execute();
+
+    $query = "
+        UPDATE chat_message 
+        SET status = '0' 
+        WHERE from_user_id = '".$to_user_id."' 
+        AND to_user_id = '".$from_user_id."' 
+        AND status = '1'
+        ";
+    
+    $statement = $conn->prepare($query);
+    $statement->execute();
+
 	return $output;
 }
 

@@ -311,7 +311,7 @@
 	}
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) and (max-width: 992px) {
 
 	.riga_left{
 		position: relative;
@@ -406,9 +406,105 @@
 }
 
 
+
+
 /* Desktop view */
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) and (max-width: 1200px) {
+
+	.riga_left{
+		position: relative;
+		right: rem;
+		width: 97.8%;
+		margin-top: 1.5rem;
+	}
+
+	.riga_1 {
+		position: relative;
+		right: -0.8rem;
+		width: 97.2%;
+	}
+
+	.riga_2 {
+		position: relative;
+		right: -0.8rem;
+		width: 97.2%;
+		margin-top: 1rem;
+	}
+
+	.card {
+		position: relative;
+		left: 0vw;
+		margin-top: 2vw;
+		margin-left: 1vw;
+		margin-right: 1vw;
+		margin-bottom: 0vw;
+		box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06);
+	}
+
+	.left_card {
+		margin-top: 1vw;
+		margin-bottom: 0vw;
+		padding-top: -1vw;
+	}
+
+	.col-lg-3 {
+		width: 45% !important;
+	}
+
+	.col-lg-9 {
+		width: 55% !important;
+	}
+
+	.user-name {
+		font-size: 1.5rem;
+	}
+
+	.user-email {
+		font-size: 1rem !important;
+	}
+
+	.ab {
+		margin-top: 2rem;
+	}
+
+	#about-text {
+		position: relative;
+		left: 9.5vw;
+	}
+
+	#about {
+		position: relative;
+		top: 1rem;
+		left: 5rem;
+		width: 120%;
+		height: 10vw;
+		resize:none;
+	}
+
+	.mod_button_left {
+		position: relative;
+		top: 3rem;
+		left: 9.5vw;
+
+	}
+
+	.separatebox {
+		margin-bottom: 1rem;
+	}
+
+	footer {
+		margin-top: 1.8rem;
+	}
+
+	.buttonmod {
+		position: absolute;
+		right: 1.5vw;
+		bottom: 1vw;
+	}
+}
+
+@media (min-width: 1200px) and (max-width: 1600px) {
 	nav {
 		position: absolute;
 		top: 0;
@@ -506,8 +602,131 @@
 		margin-bottom: 1rem;
 	}
 
+	.wrong_pass {
+		position: absolute;
+		top: 6vw;
+		left: 40vw;
+		z-index: 1;
+	}
+
 	footer {
 		margin-top: 17.4rem !important;
+	}
+
+	.buttonmod {
+		position: absolute;
+		right: 1.5vw;
+		bottom: 1vw;
+	}
+}
+
+@media (min-width: 1600px) and (max-width: 1900px) {
+	nav {
+		position: absolute;
+		top: 0;
+		min-width: 100%;
+		z-index: 1;
+	}
+
+	.logged {
+		position: absolute !important;
+	}
+
+	.dropdown-menu {
+		position: absolute !important;
+		left: 20vw !important;
+		right: 20vw !important;
+	}
+
+	.riga_left{
+		position: relative;
+		right: -0.8rem;
+		width: 97.2%;
+		margin-top: 1.5rem;
+	}
+
+	.riga_1 {
+		position: relative;
+		right: -0.8rem;
+		width: 97.2%;
+	}
+
+	.riga_2 {
+		position: relative;
+		right: -0.8rem;
+		width: 97.2%;
+		margin-top: 1rem;
+	}
+
+	.card {
+		position: relative;
+		left: 15rem !important;
+		margin-top: 10rem !important;
+		margin-left: 0rem !important;
+		margin-bottom: -4vw !important;
+		box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06);
+	}
+
+	.left_card {
+		margin-top: 1vw;
+		margin-bottom: -2vw;
+		padding-top: -1vw;
+	}
+
+	.col-lg-3 {
+		width: 25% !important;
+	}
+
+	.col-lg-9 {
+		width: 55% !important;
+	}
+
+	.user-name {
+		font-size: 1.5rem;
+	}
+
+	.user-email {
+		font-size: 1rem !important;
+	}
+
+	.ab {
+		margin-top: 2rem;
+	}
+
+	#about-text {
+		position: relative;
+		left: 0vw;
+	}
+
+	#about {
+		position: relative;
+		top: 1rem;
+		left: 5rem !important;
+		width: 60% !important;
+		height: 4rem !important;
+		resize:none;
+	}
+
+	.mod_button_left {
+		position: relative;
+		top: 2.5vw;
+		left: 0vw;
+
+	}
+
+	.separatebox {
+		margin-bottom: 1rem;
+	}
+
+	.wrong_pass {
+		position: absolute;
+		top: 6vw;
+		left: 40vw;
+		z-index: 1;
+	}
+
+	footer {
+		margin-top: 11.8rem !important;
 	}
 
 	.buttonmod {
@@ -615,8 +834,15 @@
 		margin-bottom: 1rem;
 	}
 
+	.wrong_pass {
+		position: absolute;
+		top: 6vw;
+		left: 40vw;
+		z-index: 1;
+	}
+
 	footer {
-		margin-top: 18.4rem !important;
+		margin-top: 13.6rem !important;
 	}
 
 	.buttonmod {
@@ -683,4 +909,24 @@ body {
 	font-size: .825rem;
 	background: #FFFFFF;
 	color: #bcd0f7;
+}
+
+.wrong_pass {
+	animation: fadeOut 2s forwards;
+	animation-delay: 3s;
+}
+
+.devisible {
+	display: none;
+}
+
+
+@keyframes fadeOut {
+	from {
+		opacity: 1;
+	}
+
+	to {
+		opacity: 0;
+	}
 }

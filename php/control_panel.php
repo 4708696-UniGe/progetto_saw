@@ -14,20 +14,20 @@
 
 <body>
 
-<?php
-if (!isset($_SESSION)) {
-    session_start();
-}
-if (!isset($_SESSION["LOGGED"]) || $_SESSION["LOGGED"] == 0) {
-    header("Location:login.php?message=Devi effettuare il login");
-    exit();
-}
+    <?php
+        if (!isset($_SESSION)) {
+            session_start();
+        }
+        if (!isset($_SESSION["LOGGED"]) || $_SESSION["LOGGED"] == 0) {
+            header("Location:login.php?message=Devi effettuare il login");
+            exit();
+        }
 
-if ($_SESSION["LOGGED"] == 1 && $_SESSION["USER_TYPE"] == 0) {
-    header("Location:home.php?message=Non disponi delle autorizzazioni necessarie");
-    exit();
-}
-?>
+        if ($_SESSION["LOGGED"] == 1 && $_SESSION["USER_TYPE"] == 0) {
+            header("Location:home.php?message=Non disponi delle autorizzazioni necessarie");
+            exit();
+        }
+    ?>
 
 
 <div class="d-flex" id="wrapper">
@@ -41,7 +41,6 @@ if ($_SESSION["LOGGED"] == 1 && $_SESSION["USER_TYPE"] == 0) {
             <a href="#" class="list-group-item list-group-item-action bg-light sidebar-color-entry" id="manage">Gestione Utenti</a>
         </div>
     </div>
-    <!-- /#sidebar-wrapper -->
 
     <!-- Page Content -->
     <div id="page-content-wrapper">
@@ -49,12 +48,8 @@ if ($_SESSION["LOGGED"] == 1 && $_SESSION["USER_TYPE"] == 0) {
         <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
             <button class="btn btn-danger btn-menu" id="menu-toggle">Menu</button>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <div class="navbar" id="navbarSupportedContent">
+                <ul class="nav">
                     <li class="nav-item active">
                         <a class="nav-link" href="home.php">Home</a>
                     </li>
@@ -66,7 +61,7 @@ if ($_SESSION["LOGGED"] == 1 && $_SESSION["USER_TYPE"] == 0) {
         </nav>
         <?php echo ('
         
-   <div id="search_user">
+    <div id="search_user">
     	<div class="container">
 			<br />
 			<br />
@@ -84,8 +79,8 @@ if ($_SESSION["LOGGED"] == 1 && $_SESSION["USER_TYPE"] == 0) {
 		<br />
     </div>
     
-    <div class="row download" id="download">
-        <h1>Scarica lapplicativo per fornire supporto</h1>
+    <div class="row download mx-4 my-4" id="download">
+        <h1>Scarica l&#39;applicativo per fornire supporto</h1>
         <div class="col-6">
             <div class="card">
                 <div class="card-body">
@@ -120,15 +115,6 @@ if ($_SESSION["LOGGED"] == 1 && $_SESSION["USER_TYPE"] == 0) {
             <div class="card">
                 <div class="card-body">
                     <h5 class="card-title">Android</h5>
-                    <p class="card-text">Selezionare la versione in base al proprio hardware.</p>
-                    <a class="btn btn-primary" href="../dummy" download="dummy.program">Download</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-6">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">iOS</h5>
                     <p class="card-text">Selezionare la versione in base al proprio hardware.</p>
                     <a class="btn btn-primary" href="../dummy" download="dummy.program">Download</a>
                 </div>
@@ -274,65 +260,4 @@ if ($_SESSION["LOGGED"] == 1 && $_SESSION["USER_TYPE"] == 0) {
         });
 
     });
-
-
     </script>
-
-<!--
-    <script>
-        /* $('#search_user').submit(function() {
-             var email = $('#user_email').val();
-             return false;
-         }); */
-
-        /* $(document).ready(function () {
-            $('#button-search').bind('click', function (event) {
-                // using this page stop being refreshing
-                event.preventDefault();
-                $("#search_user").ajaxForm({
-                    url: '../database/database_show_ticket_admin.php',
-                    type: 'post'
-                    success: function () {
-                        alert('form was submitted');
-                        $("#ticket_box").load("cp_menu_entry.php #search_user");
-                    }
-                });
-            });
-        }); 
-        $(document).ready(function () {
-            /*$("#button-search").click(function() {
-                // using this page stop being refreshing
-                //event.preventDefault();
-               // var search = document.querySelector('#user_email');
-                //search_ticket_for_this_user(search);
-
-            }
-
-
-            /* function search_ticket_for_this_user(user_mail)
-            {
-                $.ajax({
-                    url:"../database/database_show_ticket_admin.php",
-                    method:"POST",
-                    data:{user_mail:user_mail},
-                    success:function(){
-                        alert('form was submitted');
-                        $("#ticket_box").load("cp_menu_entry.php #search_user");
-                    }
-                })
-            } */
-
-           /* function sendform() {
-                var search = document.getElementById('#user_email');
-                $.ajax({
-                    url:"../database/database_show_ticket_admin.php",
-                    method:"POST",
-                    data:{user_mail:user_mail},
-                    success:function(){
-                        alert('form was submitted');
-                        $("#ticket_box").load("cp_menu_entry.php #search_user");
-                    }
-                })
-            } */
-} -->
-

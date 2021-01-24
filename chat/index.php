@@ -200,9 +200,9 @@ $(document).ready(function(){
 	{
 		$('.chat_history').each(function(){
 			var to_user_id = $(this).data('touserid');
-            if ($('#user_dialog').parents('.ui-dialog:visible').length) {
+            //if ($('#user_dialog').parents('.ui-dialog:visible').length) {
                 fetch_user_chat_history(to_user_id);
-            }
+            //}
 		});
 	}
 
