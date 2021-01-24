@@ -14,6 +14,10 @@
 		`status` int(1) NOT NULL
 	)";
 	$result = $conn->query($sql_chat_message);
+	if ($conn->query($sql_chat_message) === TRUE) {
+	}else {
+	echo "Error creating table: " . $conn->error;
+	}
 
 
 	// Tabella login_details:
@@ -23,6 +27,10 @@
 		  `last_activity` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 	)";
 	$result = $conn->query($sql_login_details);
+	if ($conn->query($sql_login_details) === TRUE) {
+	}else {
+	echo "Error creating table: " . $conn->error;
+	}
 
 
 
