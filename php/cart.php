@@ -19,6 +19,13 @@ include ("../database/database_cart.php");
 
     <nav> <?php include 'navbar.php'; ?></nav>
 
+    <?php
+        if (!isset($_SESSION["LOGGED"]) || $_SESSION["LOGGED"] == 0) {
+            header("Location:login.php?message=Devi effettuare il login");
+            exit();
+        }
+        ?>
+
     <div id="shopping-cart">
         <div class = "cart_alert">
             <p id="flag_cart" class="alert alert-danger devisible" role="alert"></p>
