@@ -11,7 +11,6 @@
 	<link rel="icon" href="../images/icon.png">
 	<link rel="stylesheet" href="../css/about.css">
     <link rel="stylesheet" href="../css/scrollbar.css">
-    <link rel="stylesheet" href="../aos/aos.css" />
     </head>
 
 <body>
@@ -28,11 +27,6 @@
 	<footer> <?php include 'footer.php'; ?> </footer>
 
 	<script src="../bootstrap/js/bootstrap.bundle.min.js"  crossorigin="anonymous"></script>
-	<script src="../aos/aos.js"></script>
-	<script>
-		AOS.init();
-	</script>
-
 	</body>
 
 </html>
