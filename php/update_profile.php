@@ -16,8 +16,18 @@
         }
 
         if (isset($_POST['email']) && $_POST['email'] != $_SESSION["EMAIL"] && $_POST['email'] != "") {
-            $_SESSION["EMAIL"] = mysqli_real_escape_string($conn, $_POST['email']);
-            $go_update = 1;
+            $email = mysqli_real_escape_string($conn, $_POST['email']);
+            $sql_e = "SELECT * FROM users WHERE email='$email'";
+            $res_e = mysqli_query($conn, $sql_e);
+            if(mysqli_num_rows($res_e) == 0){
+                $_SESSION["EMAIL"] = $email;
+                $go_update = 1;
+            }
+            else {
+                $_SESSION['flag'] = 1;
+                header("Location: ../php/mod_profile.php");
+                exit();
+            }
         }
 
         if (isset($_POST['old_pass']) && $_POST['old_pass'] != "" && isset($_POST['new_pass']) && $_POST['new_pass'] != "") {
